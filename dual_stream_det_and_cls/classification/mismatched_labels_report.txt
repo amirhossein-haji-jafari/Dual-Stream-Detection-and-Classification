@@ -1,0 +1,482 @@
+--- Report on Mismatched Image Labels ---
+
+----------------------------------------
+Group: Patient P113, Side R
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P113_R_DM_MLO: Benign
+  - P113_R_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P115, Side L
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P115_L_DM_CC: Benign
+  - P115_L_DM_MLO: Benign
+  - P115_L_CM_CC: Normal
+  - P115_L_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P116, Side L
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P116_L_DM_MLO: Benign
+  - P116_L_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P119, Side R
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P119_R_DM_CC: Benign
+  - P119_R_DM_MLO: Benign
+  - P119_R_CM_CC: Normal
+  - P119_R_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P121, Side R
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P121_R_DM_MLO: Benign
+  - P121_R_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P123, Side L
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P123_L_DM_CC: Benign
+  - P123_L_DM_MLO: Benign
+  - P123_L_CM_CC: Normal
+  - P123_L_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P138, Side L
+Conflicting Labels: ['Normal', 'Benign']
+Images in this group:
+  - P138_L_DM_CC: Normal
+  - P138_L_DM_MLO: Normal
+  - P138_L_CM_CC: Benign
+  - P138_L_CM_MLO: Benign
+----------------------------------------
+
+----------------------------------------
+Group: Patient P140, Side L
+Conflicting Labels: ['Normal', 'Benign']
+Images in this group:
+  - P140_L_DM_CC: Normal
+  - P140_L_DM_MLO: Normal
+  - P140_L_CM_CC: Benign
+  - P140_L_CM_MLO: Benign
+----------------------------------------
+
+----------------------------------------
+Group: Patient P141, Side L
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P141_L_DM_CC: Benign
+  - P141_L_DM_MLO: Benign
+  - P141_L_CM_CC: Normal
+  - P141_L_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P141, Side R
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P141_R_DM_CC: Benign
+  - P141_R_DM_MLO: Benign
+  - P141_R_CM_CC: Normal
+  - P141_R_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P143, Side L
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P143_L_DM_CC: Benign
+  - P143_L_DM_MLO: Normal
+  - P143_L_CM_CC: Benign
+  - P143_L_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P144, Side L
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P144_L_DM_CC: Benign
+  - P144_L_DM_MLO: Benign
+  - P144_L_CM_CC: Normal
+  - P144_L_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P145, Side R
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P145_R_DM_CC: Benign
+  - P145_R_DM_MLO: Benign
+  - P145_R_CM_CC: Normal
+  - P145_R_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P152, Side R
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P152_R_DM_CC: Benign
+  - P152_R_CM_CC: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P16, Side R
+Conflicting Labels: ['Normal', 'Malignant']
+Images in this group:
+  - P16_R_DM_CC: Normal
+  - P16_R_DM_MLO: Malignant
+  - P16_R_CM_CC: Normal
+  - P16_R_CM_MLO: Malignant
+----------------------------------------
+
+----------------------------------------
+Group: Patient P164, Side L
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P164_L_DM_CC: Benign
+  - P164_L_CM_CC: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P169, Side L
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P169_L_DM_CC: Benign
+  - P169_L_DM_MLO: Benign
+  - P169_L_CM_CC: Normal
+  - P169_L_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P192, Side L
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P192_L_DM_CC: Benign
+  - P192_L_DM_MLO: Benign
+  - P192_L_CM_CC: Normal
+  - P192_L_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P192, Side R
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P192_R_DM_CC: Benign
+  - P192_R_DM_MLO: Benign
+  - P192_R_CM_CC: Normal
+  - P192_R_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P197, Side L
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P197_L_DM_CC: Benign
+  - P197_L_DM_MLO: Normal
+  - P197_L_CM_CC: Normal
+  - P197_L_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P200, Side L
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P200_L_DM_CC: Benign
+  - P200_L_DM_MLO: Benign
+  - P200_L_CM_CC: Normal
+  - P200_L_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P203, Side R
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P203_R_DM_CC: Benign
+  - P203_R_DM_MLO: Benign
+  - P203_R_CM_CC: Normal
+  - P203_R_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P234, Side L
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P234_L_DM_CC: Benign
+  - P234_L_CM_CC: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P244, Side L
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P244_L_DM_CC: Benign
+  - P244_L_DM_MLO: Benign
+  - P244_L_CM_CC: Normal
+  - P244_L_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P245, Side R
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P245_R_DM_CC: Benign
+  - P245_R_CM_CC: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P254, Side L
+Conflicting Labels: ['Normal', 'Benign']
+Images in this group:
+  - P254_L_DM_CC: Normal
+  - P254_L_DM_MLO: Benign
+  - P254_L_CM_CC: Normal
+  - P254_L_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P262, Side R
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P262_R_DM_CC: Benign
+  - P262_R_DM_MLO: Benign
+  - P262_R_CM_CC: Normal
+  - P262_R_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P273, Side R
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P273_R_DM_CC: Benign
+  - P273_R_DM_MLO: Benign
+  - P273_R_CM_CC: Normal
+  - P273_R_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P280, Side R
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P280_R_DM_CC: Benign
+  - P280_R_DM_MLO: Benign
+  - P280_R_CM_CC: Normal
+  - P280_R_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P290, Side L
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P290_L_DM_CC: Benign
+  - P290_L_DM_MLO: Benign
+  - P290_L_CM_CC: Normal
+  - P290_L_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P292, Side L
+Conflicting Labels: ['Normal', 'Benign']
+Images in this group:
+  - P292_L_DM_CC: Normal
+  - P292_L_DM_MLO: Benign
+  - P292_L_CM_CC: Normal
+  - P292_L_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P296, Side R
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P296_R_DM_CC: Benign
+  - P296_R_DM_MLO: Benign
+  - P296_R_CM_CC: Normal
+  - P296_R_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P297, Side R
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P297_R_DM_CC: Benign
+  - P297_R_DM_MLO: Benign
+  - P297_R_CM_CC: Normal
+  - P297_R_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P30, Side R
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P30_R_DM_CC: Benign
+  - P30_R_DM_MLO: Benign
+  - P30_R_CM_CC: Normal
+  - P30_R_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P301, Side R
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P301_R_DM_CC: Benign
+  - P301_R_DM_MLO: Benign
+  - P301_R_CM_CC: Normal
+  - P301_R_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P310, Side R
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P310_R_DM_CC: Benign
+  - P310_R_DM_MLO: Benign
+  - P310_R_CM_CC: Normal
+  - P310_R_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P315, Side R
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P315_R_DM_CC: Benign
+  - P315_R_DM_MLO: Benign
+  - P315_R_CM_CC: Normal
+  - P315_R_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P318, Side L
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P318_L_DM_CC: Benign
+  - P318_L_DM_MLO: Benign
+  - P318_L_CM_CC: Normal
+  - P318_L_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P326, Side R
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P326_R_DM_CC: Benign
+  - P326_R_DM_MLO: Benign
+  - P326_R_CM_CC: Normal
+  - P326_R_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P51, Side L
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P51_L_DM_CC: Benign
+  - P51_L_DM_MLO: Benign
+  - P51_L_CM_CC: Normal
+  - P51_L_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P52, Side L
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P52_L_DM_CC: Benign
+  - P52_L_DM_MLO: Benign
+  - P52_L_CM_CC: Normal
+  - P52_L_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P59, Side L
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P59_L_DM_CC: Benign
+  - P59_L_DM_MLO: Benign
+  - P59_L_CM_CC: Normal
+  - P59_L_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P6, Side R
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P6_R_DM_CC: Benign
+  - P6_R_CM_CC: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P69, Side L
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P69_L_DM_CC: Benign
+  - P69_L_DM_MLO: Benign
+  - P69_L_CM_CC: Normal
+  - P69_L_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P73, Side L
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P73_L_DM_CC: Benign
+  - P73_L_DM_MLO: Benign
+  - P73_L_CM_CC: Normal
+  - P73_L_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P8, Side L
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P8_L_DM_MLO: Benign
+  - P8_L_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P9, Side L
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P9_L_DM_MLO: Benign
+  - P9_L_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P93, Side R
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P93_R_DM_CC: Benign
+  - P93_R_DM_MLO: Benign
+  - P93_R_CM_CC: Normal
+  - P93_R_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P94, Side L
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P94_L_DM_CC: Benign
+  - P94_L_DM_MLO: Benign
+  - P94_L_CM_CC: Normal
+  - P94_L_CM_MLO: Normal
+----------------------------------------
+
+----------------------------------------
+Group: Patient P96, Side L
+Conflicting Labels: ['Benign', 'Normal']
+Images in this group:
+  - P96_L_DM_CC: Benign
+  - P96_L_DM_MLO: Benign
+  - P96_L_CM_CC: Normal
+  - P96_L_CM_MLO: Normal
+----------------------------------------
+

@@ -1,0 +1,10 @@
+**/__pycache__/
+**/*.jpg
+**/*.pth
+**/*.pt
+**/*.png
+implementations/head2toe/checkpoints
+implementations/mmcb/previous runs
+implementations/ERetinaNet/VOCdevkit
+dual_stream_det_and_cls/detection/map_out
+**/*.docx

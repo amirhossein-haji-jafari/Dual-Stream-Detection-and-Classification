@@ -1,0 +1,4752 @@
+Pathology Classification/ Follow up
+Normal       416
+Malignant    331
+Benign       256
+Name: count, dtype: int64
+Mismatched CM and DM labels found:
+Patient: 3
+  CM: P3_L_CM_CC - Label: Malignant
+  DM: P3_R_DM_CC - Label: Benign
+Patient: 3
+  CM: P3_L_CM_CC - Label: Malignant
+  DM: P3_R_DM_MLO - Label: Benign
+Patient: 3
+  CM: P3_L_CM_MLO - Label: Malignant
+  DM: P3_R_DM_CC - Label: Benign
+Patient: 3
+  CM: P3_L_CM_MLO - Label: Malignant
+  DM: P3_R_DM_MLO - Label: Benign
+Patient: 3
+  CM: P3_R_CM_CC - Label: Benign
+  DM: P3_L_DM_CC - Label: Malignant
+Patient: 3
+  CM: P3_R_CM_CC - Label: Benign
+  DM: P3_L_DM_MLO - Label: Malignant
+Patient: 3
+  CM: P3_R_CM_MLO - Label: Benign
+  DM: P3_L_DM_CC - Label: Malignant
+Patient: 3
+  CM: P3_R_CM_MLO - Label: Benign
+  DM: P3_L_DM_MLO - Label: Malignant
+Patient: 6
+  CM: P6_R_CM_CC - Label: Normal
+  DM: P6_R_DM_CC - Label: Benign
+Patient: 6
+  CM: P6_R_CM_CC - Label: Normal
+  DM: P6_L_DM_MLO - Label: Benign
+Patient: 7
+  CM: P7_R_CM_CC - Label: Normal
+  DM: P7_L_DM_MLO - Label: Malignant
+Patient: 7
+  CM: P7_R_CM_MLO - Label: Normal
+  DM: P7_L_DM_MLO - Label: Malignant
+Patient: 7
+  CM: P7_L_CM_MLO - Label: Malignant
+  DM: P7_R_DM_CC - Label: Normal
+Patient: 7
+  CM: P7_L_CM_MLO - Label: Malignant
+  DM: P7_R_DM_MLO - Label: Normal
+Patient: 8
+  CM: P8_L_CM_MLO - Label: Normal
+  DM: P8_L_DM_MLO - Label: Benign
+Patient: 9
+  CM: P9_L_CM_MLO - Label: Normal
+  DM: P9_L_DM_MLO - Label: Benign
+Patient: 12
+  CM: P12_R_CM_CC - Label: Normal
+  DM: P12_L_DM_CC - Label: Malignant
+Patient: 12
+  CM: P12_R_CM_CC - Label: Normal
+  DM: P12_L_DM_MLO - Label: Malignant
+Patient: 12
+  CM: P12_R_CM_MLO - Label: Normal
+  DM: P12_L_DM_CC - Label: Malignant
+Patient: 12
+  CM: P12_R_CM_MLO - Label: Normal
+  DM: P12_L_DM_MLO - Label: Malignant
+Patient: 12
+  CM: P12_L_CM_CC - Label: Malignant
+  DM: P12_R_DM_CC - Label: Normal
+Patient: 12
+  CM: P12_L_CM_CC - Label: Malignant
+  DM: P12_R_DM_MLO - Label: Normal
+Patient: 12
+  CM: P12_L_CM_MLO - Label: Malignant
+  DM: P12_R_DM_CC - Label: Normal
+Patient: 12
+  CM: P12_L_CM_MLO - Label: Malignant
+  DM: P12_R_DM_MLO - Label: Normal
+Patient: 14
+  CM: P14_L_CM_CC - Label: Normal
+  DM: P14_R_DM_CC - Label: Benign
+Patient: 14
+  CM: P14_L_CM_CC - Label: Normal
+  DM: P14_R_DM_MLO - Label: Benign
+Patient: 14
+  CM: P14_L_CM_MLO - Label: Normal
+  DM: P14_R_DM_CC - Label: Benign
+Patient: 14
+  CM: P14_L_CM_MLO - Label: Normal
+  DM: P14_R_DM_MLO - Label: Benign
+Patient: 14
+  CM: P14_R_CM_CC - Label: Benign
+  DM: P14_L_DM_CC - Label: Normal
+Patient: 14
+  CM: P14_R_CM_CC - Label: Benign
+  DM: P14_L_DM_MLO - Label: Normal
+Patient: 14
+  CM: P14_R_CM_MLO - Label: Benign
+  DM: P14_L_DM_CC - Label: Normal
+Patient: 14
+  CM: P14_R_CM_MLO - Label: Benign
+  DM: P14_L_DM_MLO - Label: Normal
+Patient: 15
+  CM: P15_L_CM_MLO - Label: Benign
+  DM: P15_R_DM_MLO - Label: Normal
+Patient: 15
+  CM: P15_R_CM_MLO - Label: Normal
+  DM: P15_L_DM_MLO - Label: Benign
+Patient: 16
+  CM: P16_R_CM_CC - Label: Normal
+  DM: P16_R_DM_MLO - Label: Malignant
+Patient: 16
+  CM: P16_R_CM_MLO - Label: Malignant
+  DM: P16_R_DM_CC - Label: Normal
+Patient: 16
+  CM: P16_R_CM_MLO - Label: Malignant
+  DM: P16_L_DM_CC - Label: Normal
+Patient: 16
+  CM: P16_R_CM_MLO - Label: Malignant
+  DM: P16_L_DM_MLO - Label: Normal
+Patient: 16
+  CM: P16_L_CM_CC - Label: Normal
+  DM: P16_R_DM_MLO - Label: Malignant
+Patient: 16
+  CM: P16_L_CM_MLO - Label: Normal
+  DM: P16_R_DM_MLO - Label: Malignant
+Patient: 18
+  CM: P18_R_CM_CC - Label: Benign
+  DM: P18_L_DM_CC - Label: Malignant
+Patient: 18
+  CM: P18_R_CM_CC - Label: Benign
+  DM: P18_L_DM_MLO - Label: Malignant
+Patient: 18
+  CM: P18_R_CM_MLO - Label: Benign
+  DM: P18_L_DM_CC - Label: Malignant
+Patient: 18
+  CM: P18_R_CM_MLO - Label: Benign
+  DM: P18_L_DM_MLO - Label: Malignant
+Patient: 18
+  CM: P18_L_CM_CC - Label: Malignant
+  DM: P18_R_DM_CC - Label: Benign
+Patient: 18
+  CM: P18_L_CM_CC - Label: Malignant
+  DM: P18_R_DM_MLO - Label: Benign
+Patient: 18
+  CM: P18_L_CM_MLO - Label: Malignant
+  DM: P18_R_DM_CC - Label: Benign
+Patient: 18
+  CM: P18_L_CM_MLO - Label: Malignant
+  DM: P18_R_DM_MLO - Label: Benign
+Patient: 19
+  CM: P19_R_CM_MLO - Label: Normal
+  DM: P19_L_DM_CC - Label: Benign
+Patient: 19
+  CM: P19_R_CM_MLO - Label: Normal
+  DM: P19_L_DM_MLO - Label: Benign
+Patient: 19
+  CM: P19_L_CM_CC - Label: Benign
+  DM: P19_R_DM_MLO - Label: Normal
+Patient: 19
+  CM: P19_L_CM_MLO - Label: Benign
+  DM: P19_R_DM_MLO - Label: Normal
+Patient: 21
+  CM: P21_R_CM_CC - Label: Benign
+  DM: P21_L_DM_CC - Label: Normal
+Patient: 21
+  CM: P21_R_CM_CC - Label: Benign
+  DM: P21_L_DM_MLO - Label: Normal
+Patient: 21
+  CM: P21_R_CM_MLO - Label: Benign
+  DM: P21_L_DM_CC - Label: Normal
+Patient: 21
+  CM: P21_R_CM_MLO - Label: Benign
+  DM: P21_L_DM_MLO - Label: Normal
+Patient: 21
+  CM: P21_L_CM_CC - Label: Normal
+  DM: P21_R_DM_CC - Label: Benign
+Patient: 21
+  CM: P21_L_CM_CC - Label: Normal
+  DM: P21_R_DM_MLO - Label: Benign
+Patient: 21
+  CM: P21_L_CM_MLO - Label: Normal
+  DM: P21_R_DM_CC - Label: Benign
+Patient: 21
+  CM: P21_L_CM_MLO - Label: Normal
+  DM: P21_R_DM_MLO - Label: Benign
+Patient: 24
+  CM: P24_R_CM_CC - Label: Malignant
+  DM: P24_L_DM_CC - Label: Normal
+Patient: 24
+  CM: P24_R_CM_CC - Label: Malignant
+  DM: P24_L_DM_MLO - Label: Normal
+Patient: 24
+  CM: P24_R_CM_MLO - Label: Malignant
+  DM: P24_L_DM_CC - Label: Normal
+Patient: 24
+  CM: P24_R_CM_MLO - Label: Malignant
+  DM: P24_L_DM_MLO - Label: Normal
+Patient: 24
+  CM: P24_L_CM_CC - Label: Normal
+  DM: P24_R_DM_CC - Label: Malignant
+Patient: 24
+  CM: P24_L_CM_CC - Label: Normal
+  DM: P24_R_DM_MLO - Label: Malignant
+Patient: 24
+  CM: P24_L_CM_MLO - Label: Normal
+  DM: P24_R_DM_CC - Label: Malignant
+Patient: 24
+  CM: P24_L_CM_MLO - Label: Normal
+  DM: P24_R_DM_MLO - Label: Malignant
+Patient: 25
+  CM: P25_R_CM_CC - Label: Normal
+  DM: P25_L_DM_MLO - Label: Benign
+Patient: 25
+  CM: P25_L_CM_MLO - Label: Benign
+  DM: P25_R_DM_CC - Label: Normal
+Patient: 28
+  CM: P28_R_CM_CC - Label: Benign
+  DM: P28_L_DM_MLO - Label: Malignant
+Patient: 28
+  CM: P28_R_CM_MLO - Label: Benign
+  DM: P28_L_DM_MLO - Label: Malignant
+Patient: 28
+  CM: P28_L_CM_MLO - Label: Malignant
+  DM: P28_R_DM_CC - Label: Benign
+Patient: 28
+  CM: P28_L_CM_MLO - Label: Malignant
+  DM: P28_R_DM_MLO - Label: Benign
+Patient: 29
+  CM: P29_R_CM_CC - Label: Normal
+  DM: P29_L_DM_CC - Label: Malignant
+Patient: 29
+  CM: P29_R_CM_MLO - Label: Normal
+  DM: P29_L_DM_CC - Label: Malignant
+Patient: 29
+  CM: P29_L_CM_CC - Label: Malignant
+  DM: P29_R_DM_CC - Label: Normal
+Patient: 29
+  CM: P29_L_CM_CC - Label: Malignant
+  DM: P29_R_DM_MLO - Label: Normal
+Patient: 30
+  CM: P30_R_CM_CC - Label: Normal
+  DM: P30_R_DM_CC - Label: Benign
+Patient: 30
+  CM: P30_R_CM_CC - Label: Normal
+  DM: P30_R_DM_MLO - Label: Benign
+Patient: 30
+  CM: P30_R_CM_MLO - Label: Normal
+  DM: P30_R_DM_CC - Label: Benign
+Patient: 30
+  CM: P30_R_CM_MLO - Label: Normal
+  DM: P30_R_DM_MLO - Label: Benign
+Patient: 30
+  CM: P30_L_CM_CC - Label: Normal
+  DM: P30_R_DM_CC - Label: Benign
+Patient: 30
+  CM: P30_L_CM_CC - Label: Normal
+  DM: P30_R_DM_MLO - Label: Benign
+Patient: 30
+  CM: P30_L_CM_MLO - Label: Normal
+  DM: P30_R_DM_CC - Label: Benign
+Patient: 30
+  CM: P30_L_CM_MLO - Label: Normal
+  DM: P30_R_DM_MLO - Label: Benign
+Patient: 32
+  CM: P32_R_CM_CC - Label: Malignant
+  DM: P32_L_DM_CC - Label: Normal
+Patient: 32
+  CM: P32_R_CM_CC - Label: Malignant
+  DM: P32_L_DM_MLO - Label: Normal
+Patient: 32
+  CM: P32_R_CM_MLO - Label: Malignant
+  DM: P32_L_DM_CC - Label: Normal
+Patient: 32
+  CM: P32_R_CM_MLO - Label: Malignant
+  DM: P32_L_DM_MLO - Label: Normal
+Patient: 32
+  CM: P32_L_CM_CC - Label: Normal
+  DM: P32_R_DM_CC - Label: Malignant
+Patient: 32
+  CM: P32_L_CM_CC - Label: Normal
+  DM: P32_R_DM_MLO - Label: Malignant
+Patient: 32
+  CM: P32_L_CM_MLO - Label: Normal
+  DM: P32_R_DM_CC - Label: Malignant
+Patient: 32
+  CM: P32_L_CM_MLO - Label: Normal
+  DM: P32_R_DM_MLO - Label: Malignant
+Patient: 34
+  CM: P34_R_CM_MLO - Label: Malignant
+  DM: P34_L_DM_CC - Label: Normal
+Patient: 34
+  CM: P34_L_CM_CC - Label: Normal
+  DM: P34_R_DM_MLO - Label: Malignant
+Patient: 37
+  CM: P37_R_CM_CC - Label: Normal
+  DM: P37_L_DM_CC - Label: Malignant
+Patient: 37
+  CM: P37_R_CM_CC - Label: Normal
+  DM: P37_L_DM_MLO - Label: Malignant
+Patient: 37
+  CM: P37_R_CM_MLO - Label: Normal
+  DM: P37_L_DM_CC - Label: Malignant
+Patient: 37
+  CM: P37_R_CM_MLO - Label: Normal
+  DM: P37_L_DM_MLO - Label: Malignant
+Patient: 37
+  CM: P37_L_CM_CC - Label: Malignant
+  DM: P37_R_DM_CC - Label: Normal
+Patient: 37
+  CM: P37_L_CM_CC - Label: Malignant
+  DM: P37_R_DM_MLO - Label: Normal
+Patient: 37
+  CM: P37_L_CM_MLO - Label: Malignant
+  DM: P37_R_DM_CC - Label: Normal
+Patient: 37
+  CM: P37_L_CM_MLO - Label: Malignant
+  DM: P37_R_DM_MLO - Label: Normal
+Patient: 46
+  CM: P46_R_CM_CC - Label: Normal
+  DM: P46_L_DM_CC - Label: Benign
+Patient: 46
+  CM: P46_R_CM_CC - Label: Normal
+  DM: P46_L_DM_MLO - Label: Benign
+Patient: 46
+  CM: P46_R_CM_MLO - Label: Normal
+  DM: P46_L_DM_CC - Label: Benign
+Patient: 46
+  CM: P46_R_CM_MLO - Label: Normal
+  DM: P46_L_DM_MLO - Label: Benign
+Patient: 46
+  CM: P46_L_CM_CC - Label: Benign
+  DM: P46_R_DM_CC - Label: Normal
+Patient: 46
+  CM: P46_L_CM_CC - Label: Benign
+  DM: P46_R_DM_MLO - Label: Normal
+Patient: 46
+  CM: P46_L_CM_MLO - Label: Benign
+  DM: P46_R_DM_CC - Label: Normal
+Patient: 46
+  CM: P46_L_CM_MLO - Label: Benign
+  DM: P46_R_DM_MLO - Label: Normal
+Patient: 51
+  CM: P51_R_CM_CC - Label: Malignant
+  DM: P51_L_DM_CC - Label: Benign
+Patient: 51
+  CM: P51_R_CM_CC - Label: Malignant
+  DM: P51_L_DM_MLO - Label: Benign
+Patient: 51
+  CM: P51_R_CM_MLO - Label: Malignant
+  DM: P51_L_DM_CC - Label: Benign
+Patient: 51
+  CM: P51_R_CM_MLO - Label: Malignant
+  DM: P51_L_DM_MLO - Label: Benign
+Patient: 51
+  CM: P51_L_CM_CC - Label: Normal
+  DM: P51_R_DM_CC - Label: Malignant
+Patient: 51
+  CM: P51_L_CM_CC - Label: Normal
+  DM: P51_R_DM_MLO - Label: Malignant
+Patient: 51
+  CM: P51_L_CM_CC - Label: Normal
+  DM: P51_L_DM_CC - Label: Benign
+Patient: 51
+  CM: P51_L_CM_CC - Label: Normal
+  DM: P51_L_DM_MLO - Label: Benign
+Patient: 51
+  CM: P51_L_CM_MLO - Label: Normal
+  DM: P51_R_DM_CC - Label: Malignant
+Patient: 51
+  CM: P51_L_CM_MLO - Label: Normal
+  DM: P51_R_DM_MLO - Label: Malignant
+Patient: 51
+  CM: P51_L_CM_MLO - Label: Normal
+  DM: P51_L_DM_CC - Label: Benign
+Patient: 51
+  CM: P51_L_CM_MLO - Label: Normal
+  DM: P51_L_DM_MLO - Label: Benign
+Patient: 52
+  CM: P52_R_CM_CC - Label: Normal
+  DM: P52_L_DM_CC - Label: Benign
+Patient: 52
+  CM: P52_R_CM_CC - Label: Normal
+  DM: P52_L_DM_MLO - Label: Benign
+Patient: 52
+  CM: P52_R_CM_MLO - Label: Normal
+  DM: P52_L_DM_CC - Label: Benign
+Patient: 52
+  CM: P52_R_CM_MLO - Label: Normal
+  DM: P52_L_DM_MLO - Label: Benign
+Patient: 52
+  CM: P52_L_CM_CC - Label: Normal
+  DM: P52_L_DM_CC - Label: Benign
+Patient: 52
+  CM: P52_L_CM_CC - Label: Normal
+  DM: P52_L_DM_MLO - Label: Benign
+Patient: 52
+  CM: P52_L_CM_MLO - Label: Normal
+  DM: P52_L_DM_CC - Label: Benign
+Patient: 52
+  CM: P52_L_CM_MLO - Label: Normal
+  DM: P52_L_DM_MLO - Label: Benign
+Patient: 54
+  CM: P54_R_CM_CC - Label: Benign
+  DM: P54_L_DM_CC - Label: Normal
+Patient: 54
+  CM: P54_R_CM_CC - Label: Benign
+  DM: P54_L_DM_MLO - Label: Normal
+Patient: 54
+  CM: P54_R_CM_MLO - Label: Benign
+  DM: P54_L_DM_CC - Label: Normal
+Patient: 54
+  CM: P54_R_CM_MLO - Label: Benign
+  DM: P54_L_DM_MLO - Label: Normal
+Patient: 54
+  CM: P54_L_CM_CC - Label: Normal
+  DM: P54_R_DM_CC - Label: Benign
+Patient: 54
+  CM: P54_L_CM_CC - Label: Normal
+  DM: P54_R_DM_MLO - Label: Benign
+Patient: 54
+  CM: P54_L_CM_MLO - Label: Normal
+  DM: P54_R_DM_CC - Label: Benign
+Patient: 54
+  CM: P54_L_CM_MLO - Label: Normal
+  DM: P54_R_DM_MLO - Label: Benign
+Patient: 55
+  CM: P55_R_CM_CC - Label: Malignant
+  DM: P55_L_DM_CC - Label: Normal
+Patient: 55
+  CM: P55_R_CM_CC - Label: Malignant
+  DM: P55_L_DM_MLO - Label: Normal
+Patient: 55
+  CM: P55_R_CM_MLO - Label: Malignant
+  DM: P55_L_DM_CC - Label: Normal
+Patient: 55
+  CM: P55_R_CM_MLO - Label: Malignant
+  DM: P55_L_DM_MLO - Label: Normal
+Patient: 55
+  CM: P55_L_CM_CC - Label: Normal
+  DM: P55_R_DM_CC - Label: Malignant
+Patient: 55
+  CM: P55_L_CM_CC - Label: Normal
+  DM: P55_R_DM_MLO - Label: Malignant
+Patient: 55
+  CM: P55_L_CM_MLO - Label: Normal
+  DM: P55_R_DM_CC - Label: Malignant
+Patient: 55
+  CM: P55_L_CM_MLO - Label: Normal
+  DM: P55_R_DM_MLO - Label: Malignant
+Patient: 56
+  CM: P56_R_CM_CC - Label: Normal
+  DM: P56_L_DM_MLO - Label: Malignant
+Patient: 56
+  CM: P56_R_CM_MLO - Label: Normal
+  DM: P56_L_DM_MLO - Label: Malignant
+Patient: 56
+  CM: P56_L_CM_MLO - Label: Malignant
+  DM: P56_R_DM_CC - Label: Normal
+Patient: 56
+  CM: P56_L_CM_MLO - Label: Malignant
+  DM: P56_R_DM_MLO - Label: Normal
+Patient: 59
+  CM: P59_R_CM_CC - Label: Malignant
+  DM: P59_L_DM_CC - Label: Benign
+Patient: 59
+  CM: P59_R_CM_CC - Label: Malignant
+  DM: P59_L_DM_MLO - Label: Benign
+Patient: 59
+  CM: P59_R_CM_MLO - Label: Malignant
+  DM: P59_L_DM_CC - Label: Benign
+Patient: 59
+  CM: P59_R_CM_MLO - Label: Malignant
+  DM: P59_L_DM_MLO - Label: Benign
+Patient: 59
+  CM: P59_L_CM_CC - Label: Normal
+  DM: P59_R_DM_CC - Label: Malignant
+Patient: 59
+  CM: P59_L_CM_CC - Label: Normal
+  DM: P59_R_DM_MLO - Label: Malignant
+Patient: 59
+  CM: P59_L_CM_CC - Label: Normal
+  DM: P59_L_DM_CC - Label: Benign
+Patient: 59
+  CM: P59_L_CM_CC - Label: Normal
+  DM: P59_L_DM_MLO - Label: Benign
+Patient: 59
+  CM: P59_L_CM_MLO - Label: Normal
+  DM: P59_R_DM_CC - Label: Malignant
+Patient: 59
+  CM: P59_L_CM_MLO - Label: Normal
+  DM: P59_R_DM_MLO - Label: Malignant
+Patient: 59
+  CM: P59_L_CM_MLO - Label: Normal
+  DM: P59_L_DM_CC - Label: Benign
+Patient: 59
+  CM: P59_L_CM_MLO - Label: Normal
+  DM: P59_L_DM_MLO - Label: Benign
+Patient: 61
+  CM: P61_R_CM_CC - Label: Normal
+  DM: P61_L_DM_CC - Label: Benign
+Patient: 61
+  CM: P61_R_CM_CC - Label: Normal
+  DM: P61_L_DM_MLO - Label: Benign
+Patient: 61
+  CM: P61_R_CM_MLO - Label: Normal
+  DM: P61_L_DM_CC - Label: Benign
+Patient: 61
+  CM: P61_R_CM_MLO - Label: Normal
+  DM: P61_L_DM_MLO - Label: Benign
+Patient: 61
+  CM: P61_L_CM_CC - Label: Benign
+  DM: P61_R_DM_CC - Label: Normal
+Patient: 61
+  CM: P61_L_CM_CC - Label: Benign
+  DM: P61_R_DM_MLO - Label: Normal
+Patient: 61
+  CM: P61_L_CM_MLO - Label: Benign
+  DM: P61_R_DM_CC - Label: Normal
+Patient: 61
+  CM: P61_L_CM_MLO - Label: Benign
+  DM: P61_R_DM_MLO - Label: Normal
+Patient: 64
+  CM: P64_R_CM_CC - Label: Malignant
+  DM: P64_L_DM_CC - Label: Benign
+Patient: 64
+  CM: P64_R_CM_CC - Label: Malignant
+  DM: P64_L_DM_MLO - Label: Benign
+Patient: 64
+  CM: P64_L_CM_CC - Label: Benign
+  DM: P64_R_DM_CC - Label: Malignant
+Patient: 64
+  CM: P64_L_CM_MLO - Label: Benign
+  DM: P64_R_DM_CC - Label: Malignant
+Patient: 65
+  CM: P65_R_CM_CC - Label: Normal
+  DM: P65_L_DM_CC - Label: Benign
+Patient: 65
+  CM: P65_R_CM_CC - Label: Normal
+  DM: P65_L_DM_MLO - Label: Benign
+Patient: 65
+  CM: P65_R_CM_MLO - Label: Normal
+  DM: P65_L_DM_CC - Label: Benign
+Patient: 65
+  CM: P65_R_CM_MLO - Label: Normal
+  DM: P65_L_DM_MLO - Label: Benign
+Patient: 65
+  CM: P65_L_CM_CC - Label: Benign
+  DM: P65_R_DM_CC - Label: Normal
+Patient: 65
+  CM: P65_L_CM_CC - Label: Benign
+  DM: P65_R_DM_MLO - Label: Normal
+Patient: 65
+  CM: P65_L_CM_MLO - Label: Benign
+  DM: P65_R_DM_CC - Label: Normal
+Patient: 65
+  CM: P65_L_CM_MLO - Label: Benign
+  DM: P65_R_DM_MLO - Label: Normal
+Patient: 69
+  CM: P69_L_CM_CC - Label: Normal
+  DM: P69_L_DM_CC - Label: Benign
+Patient: 69
+  CM: P69_L_CM_CC - Label: Normal
+  DM: P69_L_DM_MLO - Label: Benign
+Patient: 69
+  CM: P69_L_CM_MLO - Label: Normal
+  DM: P69_L_DM_CC - Label: Benign
+Patient: 69
+  CM: P69_L_CM_MLO - Label: Normal
+  DM: P69_L_DM_MLO - Label: Benign
+Patient: 72
+  CM: P72_R_CM_CC - Label: Malignant
+  DM: P72_L_DM_CC - Label: Normal
+Patient: 72
+  CM: P72_L_CM_CC - Label: Normal
+  DM: P72_R_DM_CC - Label: Malignant
+Patient: 73
+  CM: P73_L_CM_CC - Label: Normal
+  DM: P73_R_DM_CC - Label: Benign
+Patient: 73
+  CM: P73_L_CM_CC - Label: Normal
+  DM: P73_R_DM_MLO - Label: Benign
+Patient: 73
+  CM: P73_L_CM_CC - Label: Normal
+  DM: P73_L_DM_CC - Label: Benign
+Patient: 73
+  CM: P73_L_CM_CC - Label: Normal
+  DM: P73_L_DM_MLO - Label: Benign
+Patient: 73
+  CM: P73_L_CM_MLO - Label: Normal
+  DM: P73_R_DM_CC - Label: Benign
+Patient: 73
+  CM: P73_L_CM_MLO - Label: Normal
+  DM: P73_R_DM_MLO - Label: Benign
+Patient: 73
+  CM: P73_L_CM_MLO - Label: Normal
+  DM: P73_L_DM_CC - Label: Benign
+Patient: 73
+  CM: P73_L_CM_MLO - Label: Normal
+  DM: P73_L_DM_MLO - Label: Benign
+Patient: 74
+  CM: P74_R_CM_CC - Label: Normal
+  DM: P74_L_DM_CC - Label: Malignant
+Patient: 74
+  CM: P74_R_CM_CC - Label: Normal
+  DM: P74_L_DM_MLO - Label: Malignant
+Patient: 74
+  CM: P74_R_CM_MLO - Label: Normal
+  DM: P74_L_DM_CC - Label: Malignant
+Patient: 74
+  CM: P74_R_CM_MLO - Label: Normal
+  DM: P74_L_DM_MLO - Label: Malignant
+Patient: 74
+  CM: P74_L_CM_CC - Label: Malignant
+  DM: P74_R_DM_CC - Label: Normal
+Patient: 74
+  CM: P74_L_CM_CC - Label: Malignant
+  DM: P74_R_DM_MLO - Label: Normal
+Patient: 74
+  CM: P74_L_CM_MLO - Label: Malignant
+  DM: P74_R_DM_CC - Label: Normal
+Patient: 74
+  CM: P74_L_CM_MLO - Label: Malignant
+  DM: P74_R_DM_MLO - Label: Normal
+Patient: 76
+  CM: P76_R_CM_CC - Label: Benign
+  DM: P76_L_DM_CC - Label: Normal
+Patient: 76
+  CM: P76_R_CM_CC - Label: Benign
+  DM: P76_L_DM_MLO - Label: Normal
+Patient: 76
+  CM: P76_R_CM_MLO - Label: Benign
+  DM: P76_L_DM_CC - Label: Normal
+Patient: 76
+  CM: P76_R_CM_MLO - Label: Benign
+  DM: P76_L_DM_MLO - Label: Normal
+Patient: 76
+  CM: P76_L_CM_CC - Label: Normal
+  DM: P76_R_DM_CC - Label: Benign
+Patient: 76
+  CM: P76_L_CM_CC - Label: Normal
+  DM: P76_R_DM_MLO - Label: Benign
+Patient: 76
+  CM: P76_L_CM_MLO - Label: Normal
+  DM: P76_R_DM_CC - Label: Benign
+Patient: 76
+  CM: P76_L_CM_MLO - Label: Normal
+  DM: P76_R_DM_MLO - Label: Benign
+Patient: 77
+  CM: P77_R_CM_CC - Label: Benign
+  DM: P77_L_DM_MLO - Label: Normal
+Patient: 77
+  CM: P77_L_CM_MLO - Label: Normal
+  DM: P77_R_DM_CC - Label: Benign
+Patient: 80
+  CM: P80_R_CM_MLO - Label: Normal
+  DM: P80_L_DM_CC - Label: Benign
+Patient: 80
+  CM: P80_R_CM_MLO - Label: Normal
+  DM: P80_L_DM_MLO - Label: Benign
+Patient: 80
+  CM: P80_L_CM_CC - Label: Benign
+  DM: P80_R_DM_MLO - Label: Normal
+Patient: 80
+  CM: P80_L_CM_MLO - Label: Benign
+  DM: P80_R_DM_MLO - Label: Normal
+Patient: 81
+  CM: P81_R_CM_CC - Label: Normal
+  DM: P81_L_DM_CC - Label: Benign
+Patient: 81
+  CM: P81_R_CM_CC - Label: Normal
+  DM: P81_L_DM_MLO - Label: Benign
+Patient: 81
+  CM: P81_R_CM_MLO - Label: Normal
+  DM: P81_L_DM_CC - Label: Benign
+Patient: 81
+  CM: P81_R_CM_MLO - Label: Normal
+  DM: P81_L_DM_MLO - Label: Benign
+Patient: 81
+  CM: P81_L_CM_CC - Label: Benign
+  DM: P81_R_DM_CC - Label: Normal
+Patient: 81
+  CM: P81_L_CM_CC - Label: Benign
+  DM: P81_R_DM_MLO - Label: Normal
+Patient: 81
+  CM: P81_L_CM_MLO - Label: Benign
+  DM: P81_R_DM_CC - Label: Normal
+Patient: 81
+  CM: P81_L_CM_MLO - Label: Benign
+  DM: P81_R_DM_MLO - Label: Normal
+Patient: 82
+  CM: P82_R_CM_CC - Label: Normal
+  DM: P82_L_DM_CC - Label: Malignant
+Patient: 82
+  CM: P82_R_CM_CC - Label: Normal
+  DM: P82_L_DM_MLO - Label: Malignant
+Patient: 82
+  CM: P82_R_CM_MLO - Label: Normal
+  DM: P82_L_DM_CC - Label: Malignant
+Patient: 82
+  CM: P82_R_CM_MLO - Label: Normal
+  DM: P82_L_DM_MLO - Label: Malignant
+Patient: 82
+  CM: P82_L_CM_CC - Label: Malignant
+  DM: P82_R_DM_CC - Label: Normal
+Patient: 82
+  CM: P82_L_CM_CC - Label: Malignant
+  DM: P82_R_DM_MLO - Label: Normal
+Patient: 82
+  CM: P82_L_CM_MLO - Label: Malignant
+  DM: P82_R_DM_CC - Label: Normal
+Patient: 82
+  CM: P82_L_CM_MLO - Label: Malignant
+  DM: P82_R_DM_MLO - Label: Normal
+Patient: 83
+  CM: P83_R_CM_CC - Label: Normal
+  DM: P83_L_DM_CC - Label: Malignant
+Patient: 83
+  CM: P83_R_CM_CC - Label: Normal
+  DM: P83_L_DM_MLO - Label: Malignant
+Patient: 83
+  CM: P83_R_CM_MLO - Label: Normal
+  DM: P83_L_DM_CC - Label: Malignant
+Patient: 83
+  CM: P83_R_CM_MLO - Label: Normal
+  DM: P83_L_DM_MLO - Label: Malignant
+Patient: 83
+  CM: P83_L_CM_CC - Label: Malignant
+  DM: P83_R_DM_CC - Label: Normal
+Patient: 83
+  CM: P83_L_CM_CC - Label: Malignant
+  DM: P83_R_DM_MLO - Label: Normal
+Patient: 83
+  CM: P83_L_CM_MLO - Label: Malignant
+  DM: P83_R_DM_CC - Label: Normal
+Patient: 83
+  CM: P83_L_CM_MLO - Label: Malignant
+  DM: P83_R_DM_MLO - Label: Normal
+Patient: 84
+  CM: P84_R_CM_CC - Label: Normal
+  DM: P84_L_DM_CC - Label: Malignant
+Patient: 84
+  CM: P84_R_CM_CC - Label: Normal
+  DM: P84_L_DM_MLO - Label: Malignant
+Patient: 84
+  CM: P84_R_CM_MLO - Label: Normal
+  DM: P84_L_DM_CC - Label: Malignant
+Patient: 84
+  CM: P84_R_CM_MLO - Label: Normal
+  DM: P84_L_DM_MLO - Label: Malignant
+Patient: 84
+  CM: P84_L_CM_CC - Label: Malignant
+  DM: P84_R_DM_CC - Label: Normal
+Patient: 84
+  CM: P84_L_CM_CC - Label: Malignant
+  DM: P84_R_DM_MLO - Label: Normal
+Patient: 84
+  CM: P84_L_CM_MLO - Label: Malignant
+  DM: P84_R_DM_CC - Label: Normal
+Patient: 84
+  CM: P84_L_CM_MLO - Label: Malignant
+  DM: P84_R_DM_MLO - Label: Normal
+Patient: 86
+  CM: P86_R_CM_MLO - Label: Benign
+  DM: P86_L_DM_CC - Label: Normal
+Patient: 86
+  CM: P86_L_CM_CC - Label: Normal
+  DM: P86_R_DM_MLO - Label: Benign
+Patient: 87
+  CM: P87_R_CM_CC - Label: Normal
+  DM: P87_L_DM_CC - Label: Malignant
+Patient: 87
+  CM: P87_R_CM_CC - Label: Normal
+  DM: P87_L_DM_MLO - Label: Malignant
+Patient: 87
+  CM: P87_R_CM_MLO - Label: Normal
+  DM: P87_L_DM_CC - Label: Malignant
+Patient: 87
+  CM: P87_R_CM_MLO - Label: Normal
+  DM: P87_L_DM_MLO - Label: Malignant
+Patient: 87
+  CM: P87_L_CM_CC - Label: Malignant
+  DM: P87_R_DM_CC - Label: Normal
+Patient: 87
+  CM: P87_L_CM_CC - Label: Malignant
+  DM: P87_R_DM_MLO - Label: Normal
+Patient: 87
+  CM: P87_L_CM_MLO - Label: Malignant
+  DM: P87_R_DM_CC - Label: Normal
+Patient: 87
+  CM: P87_L_CM_MLO - Label: Malignant
+  DM: P87_R_DM_MLO - Label: Normal
+Patient: 88
+  CM: P88_R_CM_CC - Label: Benign
+  DM: P88_L_DM_CC - Label: Normal
+Patient: 88
+  CM: P88_R_CM_CC - Label: Benign
+  DM: P88_L_DM_MLO - Label: Normal
+Patient: 88
+  CM: P88_R_CM_MLO - Label: Benign
+  DM: P88_L_DM_CC - Label: Normal
+Patient: 88
+  CM: P88_R_CM_MLO - Label: Benign
+  DM: P88_L_DM_MLO - Label: Normal
+Patient: 88
+  CM: P88_L_CM_CC - Label: Normal
+  DM: P88_R_DM_CC - Label: Benign
+Patient: 88
+  CM: P88_L_CM_CC - Label: Normal
+  DM: P88_R_DM_MLO - Label: Benign
+Patient: 88
+  CM: P88_L_CM_MLO - Label: Normal
+  DM: P88_R_DM_CC - Label: Benign
+Patient: 88
+  CM: P88_L_CM_MLO - Label: Normal
+  DM: P88_R_DM_MLO - Label: Benign
+Patient: 89
+  CM: P89_R_CM_CC - Label: Malignant
+  DM: P89_L_DM_CC - Label: Normal
+Patient: 89
+  CM: P89_R_CM_CC - Label: Malignant
+  DM: P89_L_DM_MLO - Label: Normal
+Patient: 89
+  CM: P89_R_CM_MLO - Label: Malignant
+  DM: P89_L_DM_CC - Label: Normal
+Patient: 89
+  CM: P89_R_CM_MLO - Label: Malignant
+  DM: P89_L_DM_MLO - Label: Normal
+Patient: 89
+  CM: P89_L_CM_CC - Label: Normal
+  DM: P89_R_DM_CC - Label: Malignant
+Patient: 89
+  CM: P89_L_CM_CC - Label: Normal
+  DM: P89_R_DM_MLO - Label: Malignant
+Patient: 89
+  CM: P89_L_CM_MLO - Label: Normal
+  DM: P89_R_DM_CC - Label: Malignant
+Patient: 89
+  CM: P89_L_CM_MLO - Label: Normal
+  DM: P89_R_DM_MLO - Label: Malignant
+Patient: 90
+  CM: P90_R_CM_CC - Label: Malignant
+  DM: P90_L_DM_CC - Label: Normal
+Patient: 90
+  CM: P90_R_CM_CC - Label: Malignant
+  DM: P90_L_DM_MLO - Label: Normal
+Patient: 90
+  CM: P90_R_CM_MLO - Label: Malignant
+  DM: P90_L_DM_CC - Label: Normal
+Patient: 90
+  CM: P90_R_CM_MLO - Label: Malignant
+  DM: P90_L_DM_MLO - Label: Normal
+Patient: 90
+  CM: P90_L_CM_CC - Label: Normal
+  DM: P90_R_DM_CC - Label: Malignant
+Patient: 90
+  CM: P90_L_CM_CC - Label: Normal
+  DM: P90_R_DM_MLO - Label: Malignant
+Patient: 90
+  CM: P90_L_CM_MLO - Label: Normal
+  DM: P90_R_DM_CC - Label: Malignant
+Patient: 90
+  CM: P90_L_CM_MLO - Label: Normal
+  DM: P90_R_DM_MLO - Label: Malignant
+Patient: 93
+  CM: P93_R_CM_CC - Label: Normal
+  DM: P93_R_DM_CC - Label: Benign
+Patient: 93
+  CM: P93_R_CM_CC - Label: Normal
+  DM: P93_R_DM_MLO - Label: Benign
+Patient: 93
+  CM: P93_R_CM_CC - Label: Normal
+  DM: P93_L_DM_CC - Label: Malignant
+Patient: 93
+  CM: P93_R_CM_CC - Label: Normal
+  DM: P93_L_DM_MLO - Label: Malignant
+Patient: 93
+  CM: P93_R_CM_MLO - Label: Normal
+  DM: P93_R_DM_CC - Label: Benign
+Patient: 93
+  CM: P93_R_CM_MLO - Label: Normal
+  DM: P93_R_DM_MLO - Label: Benign
+Patient: 93
+  CM: P93_R_CM_MLO - Label: Normal
+  DM: P93_L_DM_CC - Label: Malignant
+Patient: 93
+  CM: P93_R_CM_MLO - Label: Normal
+  DM: P93_L_DM_MLO - Label: Malignant
+Patient: 93
+  CM: P93_L_CM_CC - Label: Malignant
+  DM: P93_R_DM_CC - Label: Benign
+Patient: 93
+  CM: P93_L_CM_CC - Label: Malignant
+  DM: P93_R_DM_MLO - Label: Benign
+Patient: 93
+  CM: P93_L_CM_MLO - Label: Malignant
+  DM: P93_R_DM_CC - Label: Benign
+Patient: 93
+  CM: P93_L_CM_MLO - Label: Malignant
+  DM: P93_R_DM_MLO - Label: Benign
+Patient: 94
+  CM: P94_R_CM_CC - Label: Malignant
+  DM: P94_L_DM_CC - Label: Benign
+Patient: 94
+  CM: P94_R_CM_CC - Label: Malignant
+  DM: P94_L_DM_MLO - Label: Benign
+Patient: 94
+  CM: P94_R_CM_MLO - Label: Malignant
+  DM: P94_L_DM_CC - Label: Benign
+Patient: 94
+  CM: P94_R_CM_MLO - Label: Malignant
+  DM: P94_L_DM_MLO - Label: Benign
+Patient: 94
+  CM: P94_L_CM_CC - Label: Normal
+  DM: P94_R_DM_CC - Label: Malignant
+Patient: 94
+  CM: P94_L_CM_CC - Label: Normal
+  DM: P94_R_DM_MLO - Label: Malignant
+Patient: 94
+  CM: P94_L_CM_CC - Label: Normal
+  DM: P94_L_DM_CC - Label: Benign
+Patient: 94
+  CM: P94_L_CM_CC - Label: Normal
+  DM: P94_L_DM_MLO - Label: Benign
+Patient: 94
+  CM: P94_L_CM_MLO - Label: Normal
+  DM: P94_R_DM_CC - Label: Malignant
+Patient: 94
+  CM: P94_L_CM_MLO - Label: Normal
+  DM: P94_R_DM_MLO - Label: Malignant
+Patient: 94
+  CM: P94_L_CM_MLO - Label: Normal
+  DM: P94_L_DM_CC - Label: Benign
+Patient: 94
+  CM: P94_L_CM_MLO - Label: Normal
+  DM: P94_L_DM_MLO - Label: Benign
+Patient: 95
+  CM: P95_R_CM_MLO - Label: Normal
+  DM: P95_L_DM_CC - Label: Malignant
+Patient: 95
+  CM: P95_L_CM_CC - Label: Malignant
+  DM: P95_R_DM_MLO - Label: Normal
+Patient: 96
+  CM: P96_R_CM_CC - Label: Malignant
+  DM: P96_L_DM_CC - Label: Benign
+Patient: 96
+  CM: P96_R_CM_CC - Label: Malignant
+  DM: P96_L_DM_MLO - Label: Benign
+Patient: 96
+  CM: P96_R_CM_MLO - Label: Malignant
+  DM: P96_L_DM_CC - Label: Benign
+Patient: 96
+  CM: P96_R_CM_MLO - Label: Malignant
+  DM: P96_L_DM_MLO - Label: Benign
+Patient: 96
+  CM: P96_L_CM_CC - Label: Normal
+  DM: P96_R_DM_CC - Label: Malignant
+Patient: 96
+  CM: P96_L_CM_CC - Label: Normal
+  DM: P96_R_DM_MLO - Label: Malignant
+Patient: 96
+  CM: P96_L_CM_CC - Label: Normal
+  DM: P96_L_DM_CC - Label: Benign
+Patient: 96
+  CM: P96_L_CM_CC - Label: Normal
+  DM: P96_L_DM_MLO - Label: Benign
+Patient: 96
+  CM: P96_L_CM_MLO - Label: Normal
+  DM: P96_R_DM_CC - Label: Malignant
+Patient: 96
+  CM: P96_L_CM_MLO - Label: Normal
+  DM: P96_R_DM_MLO - Label: Malignant
+Patient: 96
+  CM: P96_L_CM_MLO - Label: Normal
+  DM: P96_L_DM_CC - Label: Benign
+Patient: 96
+  CM: P96_L_CM_MLO - Label: Normal
+  DM: P96_L_DM_MLO - Label: Benign
+Patient: 97
+  CM: P97_R_CM_CC - Label: Normal
+  DM: P97_L_DM_CC - Label: Malignant
+Patient: 97
+  CM: P97_R_CM_CC - Label: Normal
+  DM: P97_L_DM_MLO - Label: Malignant
+Patient: 97
+  CM: P97_R_CM_MLO - Label: Normal
+  DM: P97_L_DM_CC - Label: Malignant
+Patient: 97
+  CM: P97_R_CM_MLO - Label: Normal
+  DM: P97_L_DM_MLO - Label: Malignant
+Patient: 97
+  CM: P97_L_CM_CC - Label: Malignant
+  DM: P97_R_DM_CC - Label: Normal
+Patient: 97
+  CM: P97_L_CM_CC - Label: Malignant
+  DM: P97_R_DM_MLO - Label: Normal
+Patient: 97
+  CM: P97_L_CM_MLO - Label: Malignant
+  DM: P97_R_DM_CC - Label: Normal
+Patient: 97
+  CM: P97_L_CM_MLO - Label: Malignant
+  DM: P97_R_DM_MLO - Label: Normal
+Patient: 98
+  CM: P98_R_CM_CC - Label: Normal
+  DM: P98_L_DM_CC - Label: Benign
+Patient: 98
+  CM: P98_R_CM_CC - Label: Normal
+  DM: P98_L_DM_MLO - Label: Benign
+Patient: 98
+  CM: P98_R_CM_MLO - Label: Normal
+  DM: P98_L_DM_CC - Label: Benign
+Patient: 98
+  CM: P98_R_CM_MLO - Label: Normal
+  DM: P98_L_DM_MLO - Label: Benign
+Patient: 98
+  CM: P98_L_CM_CC - Label: Benign
+  DM: P98_R_DM_CC - Label: Normal
+Patient: 98
+  CM: P98_L_CM_CC - Label: Benign
+  DM: P98_R_DM_MLO - Label: Normal
+Patient: 98
+  CM: P98_L_CM_MLO - Label: Benign
+  DM: P98_R_DM_CC - Label: Normal
+Patient: 98
+  CM: P98_L_CM_MLO - Label: Benign
+  DM: P98_R_DM_MLO - Label: Normal
+Patient: 99
+  CM: P99_R_CM_CC - Label: Malignant
+  DM: P99_L_DM_CC - Label: Normal
+Patient: 99
+  CM: P99_R_CM_CC - Label: Malignant
+  DM: P99_L_DM_MLO - Label: Normal
+Patient: 99
+  CM: P99_R_CM_CC - Label: Malignant
+  DM: P99_L_DM_MLO_2 - Label: Normal
+Patient: 99
+  CM: P99_R_CM_MLO - Label: Malignant
+  DM: P99_L_DM_CC - Label: Normal
+Patient: 99
+  CM: P99_R_CM_MLO - Label: Malignant
+  DM: P99_L_DM_MLO - Label: Normal
+Patient: 99
+  CM: P99_R_CM_MLO - Label: Malignant
+  DM: P99_L_DM_MLO_2 - Label: Normal
+Patient: 99
+  CM: P99_L_CM_CC - Label: Normal
+  DM: P99_R_DM_CC - Label: Malignant
+Patient: 99
+  CM: P99_L_CM_CC - Label: Normal
+  DM: P99_R_DM_MLO - Label: Malignant
+Patient: 99
+  CM: P99_L_CM_MLO - Label: Normal
+  DM: P99_R_DM_CC - Label: Malignant
+Patient: 99
+  CM: P99_L_CM_MLO - Label: Normal
+  DM: P99_R_DM_MLO - Label: Malignant
+Patient: 99
+  CM: P99_L_CM_MLO_2 - Label: Normal
+  DM: P99_R_DM_CC - Label: Malignant
+Patient: 99
+  CM: P99_L_CM_MLO_2 - Label: Normal
+  DM: P99_R_DM_MLO - Label: Malignant
+Patient: 100
+  CM: P100_R_CM_CC - Label: Normal
+  DM: P100_L_DM_CC - Label: Benign
+Patient: 100
+  CM: P100_R_CM_CC - Label: Normal
+  DM: P100_L_DM_MLO - Label: Benign
+Patient: 100
+  CM: P100_R_CM_MLO - Label: Normal
+  DM: P100_L_DM_CC - Label: Benign
+Patient: 100
+  CM: P100_R_CM_MLO - Label: Normal
+  DM: P100_L_DM_MLO - Label: Benign
+Patient: 100
+  CM: P100_L_CM_CC - Label: Benign
+  DM: P100_R_DM_CC - Label: Normal
+Patient: 100
+  CM: P100_L_CM_CC - Label: Benign
+  DM: P100_R_DM_MLO - Label: Normal
+Patient: 100
+  CM: P100_L_CM_MLO - Label: Benign
+  DM: P100_R_DM_CC - Label: Normal
+Patient: 100
+  CM: P100_L_CM_MLO - Label: Benign
+  DM: P100_R_DM_MLO - Label: Normal
+Patient: 102
+  CM: P102_R_CM_CC - Label: Malignant
+  DM: P102_L_DM_CC - Label: Normal
+Patient: 102
+  CM: P102_R_CM_CC - Label: Malignant
+  DM: P102_L_DM_MLO - Label: Normal
+Patient: 102
+  CM: P102_R_CM_MLO - Label: Malignant
+  DM: P102_L_DM_CC - Label: Normal
+Patient: 102
+  CM: P102_R_CM_MLO - Label: Malignant
+  DM: P102_L_DM_MLO - Label: Normal
+Patient: 102
+  CM: P102_L_CM_CC - Label: Normal
+  DM: P102_R_DM_CC - Label: Malignant
+Patient: 102
+  CM: P102_L_CM_CC - Label: Normal
+  DM: P102_R_DM_MLO - Label: Malignant
+Patient: 102
+  CM: P102_L_CM_MLO - Label: Normal
+  DM: P102_R_DM_CC - Label: Malignant
+Patient: 102
+  CM: P102_L_CM_MLO - Label: Normal
+  DM: P102_R_DM_MLO - Label: Malignant
+Patient: 103
+  CM: P103_R_CM_CC - Label: Benign
+  DM: P103_L_DM_CC - Label: Normal
+Patient: 103
+  CM: P103_R_CM_CC - Label: Benign
+  DM: P103_L_DM_MLO - Label: Normal
+Patient: 103
+  CM: P103_R_CM_MLO - Label: Benign
+  DM: P103_L_DM_CC - Label: Normal
+Patient: 103
+  CM: P103_R_CM_MLO - Label: Benign
+  DM: P103_L_DM_MLO - Label: Normal
+Patient: 103
+  CM: P103_L_CM_CC - Label: Normal
+  DM: P103_R_DM_CC - Label: Benign
+Patient: 103
+  CM: P103_L_CM_CC - Label: Normal
+  DM: P103_R_DM_MLO - Label: Benign
+Patient: 103
+  CM: P103_L_CM_MLO - Label: Normal
+  DM: P103_R_DM_CC - Label: Benign
+Patient: 103
+  CM: P103_L_CM_MLO - Label: Normal
+  DM: P103_R_DM_MLO - Label: Benign
+Patient: 104
+  CM: P104_R_CM_CC - Label: Normal
+  DM: P104_L_DM_MLO - Label: Benign
+Patient: 104
+  CM: P104_L_CM_MLO - Label: Benign
+  DM: P104_R_DM_CC - Label: Normal
+Patient: 105
+  CM: P105_R_CM_CC - Label: Malignant
+  DM: P105_L_DM_CC - Label: Normal
+Patient: 105
+  CM: P105_R_CM_CC - Label: Malignant
+  DM: P105_L_DM_MLO - Label: Normal
+Patient: 105
+  CM: P105_R_CM_MLO - Label: Malignant
+  DM: P105_L_DM_CC - Label: Normal
+Patient: 105
+  CM: P105_R_CM_MLO - Label: Malignant
+  DM: P105_L_DM_MLO - Label: Normal
+Patient: 105
+  CM: P105_L_CM_CC - Label: Normal
+  DM: P105_R_DM_CC - Label: Malignant
+Patient: 105
+  CM: P105_L_CM_CC - Label: Normal
+  DM: P105_R_DM_MLO - Label: Malignant
+Patient: 105
+  CM: P105_L_CM_MLO - Label: Normal
+  DM: P105_R_DM_CC - Label: Malignant
+Patient: 105
+  CM: P105_L_CM_MLO - Label: Normal
+  DM: P105_R_DM_MLO - Label: Malignant
+Patient: 106
+  CM: P106_R_CM_CC - Label: Benign
+  DM: P106_L_DM_MLO - Label: Malignant
+Patient: 106
+  CM: P106_L_CM_MLO - Label: Malignant
+  DM: P106_R_DM_CC - Label: Benign
+Patient: 107
+  CM: P107_R_CM_CC - Label: Malignant
+  DM: P107_L_DM_CC - Label: Normal
+Patient: 107
+  CM: P107_R_CM_MLO - Label: Malignant
+  DM: P107_L_DM_CC - Label: Normal
+Patient: 107
+  CM: P107_L_CM_CC - Label: Normal
+  DM: P107_R_DM_CC - Label: Malignant
+Patient: 107
+  CM: P107_L_CM_CC - Label: Normal
+  DM: P107_R_DM_MLO - Label: Malignant
+Patient: 108
+  CM: P108_R_CM_CC - Label: Normal
+  DM: P108_L_DM_CC - Label: Malignant
+Patient: 108
+  CM: P108_L_CM_CC - Label: Malignant
+  DM: P108_R_DM_CC - Label: Normal
+Patient: 110
+  CM: P110_R_CM_CC - Label: Normal
+  DM: P110_L_DM_MLO - Label: Malignant
+Patient: 110
+  CM: P110_R_CM_MLO - Label: Normal
+  DM: P110_L_DM_MLO - Label: Malignant
+Patient: 110
+  CM: P110_L_CM_MLO - Label: Malignant
+  DM: P110_R_DM_CC - Label: Normal
+Patient: 110
+  CM: P110_L_CM_MLO - Label: Malignant
+  DM: P110_R_DM_MLO - Label: Normal
+Patient: 111
+  CM: P111_R_CM_CC - Label: Malignant
+  DM: P111_L_DM_CC - Label: Normal
+Patient: 111
+  CM: P111_R_CM_CC - Label: Malignant
+  DM: P111_L_DM_MLO - Label: Normal
+Patient: 111
+  CM: P111_R_CM_MLO - Label: Malignant
+  DM: P111_L_DM_CC - Label: Normal
+Patient: 111
+  CM: P111_R_CM_MLO - Label: Malignant
+  DM: P111_L_DM_MLO - Label: Normal
+Patient: 111
+  CM: P111_L_CM_CC - Label: Normal
+  DM: P111_R_DM_CC - Label: Malignant
+Patient: 111
+  CM: P111_L_CM_CC - Label: Normal
+  DM: P111_R_DM_MLO - Label: Malignant
+Patient: 111
+  CM: P111_L_CM_MLO - Label: Normal
+  DM: P111_R_DM_CC - Label: Malignant
+Patient: 111
+  CM: P111_L_CM_MLO - Label: Normal
+  DM: P111_R_DM_MLO - Label: Malignant
+Patient: 113
+  CM: P113_R_CM_MLO - Label: Normal
+  DM: P113_R_DM_MLO - Label: Benign
+Patient: 113
+  CM: P113_R_CM_MLO - Label: Normal
+  DM: P113_L_DM_CC - Label: Malignant
+Patient: 113
+  CM: P113_R_CM_MLO - Label: Normal
+  DM: P113_L_DM_MLO - Label: Malignant
+Patient: 113
+  CM: P113_L_CM_CC - Label: Malignant
+  DM: P113_R_DM_MLO - Label: Benign
+Patient: 113
+  CM: P113_L_CM_MLO - Label: Malignant
+  DM: P113_R_DM_MLO - Label: Benign
+Patient: 114
+  CM: P114_R_CM_CC - Label: Benign
+  DM: P114_L_DM_CC - Label: Normal
+Patient: 114
+  CM: P114_R_CM_CC - Label: Benign
+  DM: P114_L_DM_MLO - Label: Normal
+Patient: 114
+  CM: P114_R_CM_MLO - Label: Benign
+  DM: P114_L_DM_CC - Label: Normal
+Patient: 114
+  CM: P114_R_CM_MLO - Label: Benign
+  DM: P114_L_DM_MLO - Label: Normal
+Patient: 114
+  CM: P114_L_CM_CC - Label: Normal
+  DM: P114_R_DM_CC - Label: Benign
+Patient: 114
+  CM: P114_L_CM_CC - Label: Normal
+  DM: P114_R_DM_MLO - Label: Benign
+Patient: 114
+  CM: P114_L_CM_MLO - Label: Normal
+  DM: P114_R_DM_CC - Label: Benign
+Patient: 114
+  CM: P114_L_CM_MLO - Label: Normal
+  DM: P114_R_DM_MLO - Label: Benign
+Patient: 115
+  CM: P115_R_CM_CC - Label: Malignant
+  DM: P115_L_DM_CC - Label: Benign
+Patient: 115
+  CM: P115_R_CM_CC - Label: Malignant
+  DM: P115_L_DM_MLO - Label: Benign
+Patient: 115
+  CM: P115_R_CM_MLO - Label: Malignant
+  DM: P115_L_DM_CC - Label: Benign
+Patient: 115
+  CM: P115_R_CM_MLO - Label: Malignant
+  DM: P115_L_DM_MLO - Label: Benign
+Patient: 115
+  CM: P115_L_CM_CC - Label: Normal
+  DM: P115_R_DM_CC - Label: Malignant
+Patient: 115
+  CM: P115_L_CM_CC - Label: Normal
+  DM: P115_R_DM_MLO - Label: Malignant
+Patient: 115
+  CM: P115_L_CM_CC - Label: Normal
+  DM: P115_L_DM_CC - Label: Benign
+Patient: 115
+  CM: P115_L_CM_CC - Label: Normal
+  DM: P115_L_DM_MLO - Label: Benign
+Patient: 115
+  CM: P115_L_CM_MLO - Label: Normal
+  DM: P115_R_DM_CC - Label: Malignant
+Patient: 115
+  CM: P115_L_CM_MLO - Label: Normal
+  DM: P115_R_DM_MLO - Label: Malignant
+Patient: 115
+  CM: P115_L_CM_MLO - Label: Normal
+  DM: P115_L_DM_CC - Label: Benign
+Patient: 115
+  CM: P115_L_CM_MLO - Label: Normal
+  DM: P115_L_DM_MLO - Label: Benign
+Patient: 116
+  CM: P116_R_CM_CC - Label: Malignant
+  DM: P116_L_DM_MLO - Label: Benign
+Patient: 116
+  CM: P116_R_CM_MLO - Label: Malignant
+  DM: P116_L_DM_MLO - Label: Benign
+Patient: 116
+  CM: P116_L_CM_MLO - Label: Normal
+  DM: P116_R_DM_CC - Label: Malignant
+Patient: 116
+  CM: P116_L_CM_MLO - Label: Normal
+  DM: P116_R_DM_MLO - Label: Malignant
+Patient: 116
+  CM: P116_L_CM_MLO - Label: Normal
+  DM: P116_L_DM_MLO - Label: Benign
+Patient: 118
+  CM: P118_R_CM_CC - Label: Normal
+  DM: P118_L_DM_CC - Label: Benign
+Patient: 118
+  CM: P118_R_CM_MLO - Label: Normal
+  DM: P118_L_DM_CC - Label: Benign
+Patient: 118
+  CM: P118_L_CM_CC - Label: Benign
+  DM: P118_R_DM_CC - Label: Normal
+Patient: 118
+  CM: P118_L_CM_CC - Label: Benign
+  DM: P118_R_DM_MLO - Label: Normal
+Patient: 119
+  CM: P119_R_CM_CC - Label: Normal
+  DM: P119_R_DM_CC - Label: Benign
+Patient: 119
+  CM: P119_R_CM_CC - Label: Normal
+  DM: P119_R_DM_MLO - Label: Benign
+Patient: 119
+  CM: P119_R_CM_CC - Label: Normal
+  DM: P119_L_DM_CC - Label: Malignant
+Patient: 119
+  CM: P119_R_CM_CC - Label: Normal
+  DM: P119_L_DM_MLO - Label: Malignant
+Patient: 119
+  CM: P119_R_CM_MLO - Label: Normal
+  DM: P119_R_DM_CC - Label: Benign
+Patient: 119
+  CM: P119_R_CM_MLO - Label: Normal
+  DM: P119_R_DM_MLO - Label: Benign
+Patient: 119
+  CM: P119_R_CM_MLO - Label: Normal
+  DM: P119_L_DM_CC - Label: Malignant
+Patient: 119
+  CM: P119_R_CM_MLO - Label: Normal
+  DM: P119_L_DM_MLO - Label: Malignant
+Patient: 119
+  CM: P119_L_CM_CC - Label: Malignant
+  DM: P119_R_DM_CC - Label: Benign
+Patient: 119
+  CM: P119_L_CM_CC - Label: Malignant
+  DM: P119_R_DM_MLO - Label: Benign
+Patient: 119
+  CM: P119_L_CM_MLO - Label: Malignant
+  DM: P119_R_DM_CC - Label: Benign
+Patient: 119
+  CM: P119_L_CM_MLO - Label: Malignant
+  DM: P119_R_DM_MLO - Label: Benign
+Patient: 121
+  CM: P121_R_CM_MLO - Label: Normal
+  DM: P121_R_DM_MLO - Label: Benign
+Patient: 121
+  CM: P121_R_CM_MLO - Label: Normal
+  DM: P121_L_DM_CC - Label: Malignant
+Patient: 121
+  CM: P121_L_CM_CC - Label: Malignant
+  DM: P121_R_DM_MLO - Label: Benign
+Patient: 122
+  CM: P122_R_CM_CC - Label: Benign
+  DM: P122_L_DM_CC - Label: Malignant
+Patient: 122
+  CM: P122_R_CM_CC - Label: Benign
+  DM: P122_L_DM_MLO - Label: Malignant
+Patient: 122
+  CM: P122_R_CM_MLO - Label: Benign
+  DM: P122_L_DM_CC - Label: Malignant
+Patient: 122
+  CM: P122_R_CM_MLO - Label: Benign
+  DM: P122_L_DM_MLO - Label: Malignant
+Patient: 122
+  CM: P122_L_CM_CC - Label: Malignant
+  DM: P122_R_DM_CC - Label: Benign
+Patient: 122
+  CM: P122_L_CM_CC - Label: Malignant
+  DM: P122_R_DM_MLO - Label: Benign
+Patient: 122
+  CM: P122_L_CM_MLO - Label: Malignant
+  DM: P122_R_DM_CC - Label: Benign
+Patient: 122
+  CM: P122_L_CM_MLO - Label: Malignant
+  DM: P122_R_DM_MLO - Label: Benign
+Patient: 123
+  CM: P123_R_CM_CC - Label: Malignant
+  DM: P123_L_DM_CC - Label: Benign
+Patient: 123
+  CM: P123_R_CM_CC - Label: Malignant
+  DM: P123_L_DM_MLO - Label: Benign
+Patient: 123
+  CM: P123_R_CM_MLO - Label: Malignant
+  DM: P123_L_DM_CC - Label: Benign
+Patient: 123
+  CM: P123_R_CM_MLO - Label: Malignant
+  DM: P123_L_DM_MLO - Label: Benign
+Patient: 123
+  CM: P123_L_CM_CC - Label: Normal
+  DM: P123_R_DM_CC - Label: Malignant
+Patient: 123
+  CM: P123_L_CM_CC - Label: Normal
+  DM: P123_R_DM_MLO - Label: Malignant
+Patient: 123
+  CM: P123_L_CM_CC - Label: Normal
+  DM: P123_L_DM_CC - Label: Benign
+Patient: 123
+  CM: P123_L_CM_CC - Label: Normal
+  DM: P123_L_DM_MLO - Label: Benign
+Patient: 123
+  CM: P123_L_CM_MLO - Label: Normal
+  DM: P123_R_DM_CC - Label: Malignant
+Patient: 123
+  CM: P123_L_CM_MLO - Label: Normal
+  DM: P123_R_DM_MLO - Label: Malignant
+Patient: 123
+  CM: P123_L_CM_MLO - Label: Normal
+  DM: P123_L_DM_CC - Label: Benign
+Patient: 123
+  CM: P123_L_CM_MLO - Label: Normal
+  DM: P123_L_DM_MLO - Label: Benign
+Patient: 124
+  CM: P124_R_CM_CC - Label: Malignant
+  DM: P124_L_DM_CC - Label: Normal
+Patient: 124
+  CM: P124_R_CM_CC - Label: Malignant
+  DM: P124_L_DM_MLO - Label: Normal
+Patient: 124
+  CM: P124_R_CM_MLO - Label: Malignant
+  DM: P124_L_DM_CC - Label: Normal
+Patient: 124
+  CM: P124_R_CM_MLO - Label: Malignant
+  DM: P124_L_DM_MLO - Label: Normal
+Patient: 124
+  CM: P124_L_CM_CC - Label: Normal
+  DM: P124_R_DM_CC - Label: Malignant
+Patient: 124
+  CM: P124_L_CM_CC - Label: Normal
+  DM: P124_R_DM_MLO - Label: Malignant
+Patient: 124
+  CM: P124_L_CM_MLO - Label: Normal
+  DM: P124_R_DM_CC - Label: Malignant
+Patient: 124
+  CM: P124_L_CM_MLO - Label: Normal
+  DM: P124_R_DM_MLO - Label: Malignant
+Patient: 125
+  CM: P125_R_CM_CC - Label: Normal
+  DM: P125_L_DM_CC - Label: Benign
+Patient: 125
+  CM: P125_R_CM_CC - Label: Normal
+  DM: P125_L_DM_MLO - Label: Benign
+Patient: 125
+  CM: P125_R_CM_MLO - Label: Normal
+  DM: P125_L_DM_CC - Label: Benign
+Patient: 125
+  CM: P125_R_CM_MLO - Label: Normal
+  DM: P125_L_DM_MLO - Label: Benign
+Patient: 125
+  CM: P125_L_CM_CC - Label: Benign
+  DM: P125_R_DM_CC - Label: Normal
+Patient: 125
+  CM: P125_L_CM_CC - Label: Benign
+  DM: P125_R_DM_MLO - Label: Normal
+Patient: 125
+  CM: P125_L_CM_MLO - Label: Benign
+  DM: P125_R_DM_CC - Label: Normal
+Patient: 125
+  CM: P125_L_CM_MLO - Label: Benign
+  DM: P125_R_DM_MLO - Label: Normal
+Patient: 126
+  CM: P126_R_CM_CC - Label: Normal
+  DM: P126_L_DM_CC - Label: Malignant
+Patient: 126
+  CM: P126_R_CM_CC - Label: Normal
+  DM: P126_L_DM_MLO - Label: Malignant
+Patient: 126
+  CM: P126_R_CM_MLO - Label: Normal
+  DM: P126_L_DM_CC - Label: Malignant
+Patient: 126
+  CM: P126_R_CM_MLO - Label: Normal
+  DM: P126_L_DM_MLO - Label: Malignant
+Patient: 126
+  CM: P126_L_CM_CC - Label: Malignant
+  DM: P126_R_DM_CC - Label: Normal
+Patient: 126
+  CM: P126_L_CM_CC - Label: Malignant
+  DM: P126_R_DM_MLO - Label: Normal
+Patient: 126
+  CM: P126_L_CM_MLO - Label: Malignant
+  DM: P126_R_DM_CC - Label: Normal
+Patient: 126
+  CM: P126_L_CM_MLO - Label: Malignant
+  DM: P126_R_DM_MLO - Label: Normal
+Patient: 128
+  CM: P128_R_CM_CC - Label: Normal
+  DM: P128_L_DM_CC - Label: Benign
+Patient: 128
+  CM: P128_R_CM_CC - Label: Normal
+  DM: P128_L_DM_MLO - Label: Benign
+Patient: 128
+  CM: P128_R_CM_MLO - Label: Normal
+  DM: P128_L_DM_CC - Label: Benign
+Patient: 128
+  CM: P128_R_CM_MLO - Label: Normal
+  DM: P128_L_DM_MLO - Label: Benign
+Patient: 128
+  CM: P128_L_CM_CC - Label: Benign
+  DM: P128_R_DM_CC - Label: Normal
+Patient: 128
+  CM: P128_L_CM_CC - Label: Benign
+  DM: P128_R_DM_MLO - Label: Normal
+Patient: 128
+  CM: P128_L_CM_MLO - Label: Benign
+  DM: P128_R_DM_CC - Label: Normal
+Patient: 128
+  CM: P128_L_CM_MLO - Label: Benign
+  DM: P128_R_DM_MLO - Label: Normal
+Patient: 129
+  CM: P129_R_CM_CC - Label: Normal
+  DM: P129_L_DM_CC - Label: Malignant
+Patient: 129
+  CM: P129_R_CM_CC - Label: Normal
+  DM: P129_L_DM_MLO - Label: Malignant
+Patient: 129
+  CM: P129_R_CM_MLO - Label: Normal
+  DM: P129_L_DM_CC - Label: Malignant
+Patient: 129
+  CM: P129_R_CM_MLO - Label: Normal
+  DM: P129_L_DM_MLO - Label: Malignant
+Patient: 129
+  CM: P129_L_CM_CC - Label: Malignant
+  DM: P129_R_DM_CC - Label: Normal
+Patient: 129
+  CM: P129_L_CM_CC - Label: Malignant
+  DM: P129_R_DM_MLO - Label: Normal
+Patient: 129
+  CM: P129_L_CM_MLO - Label: Malignant
+  DM: P129_R_DM_CC - Label: Normal
+Patient: 129
+  CM: P129_L_CM_MLO - Label: Malignant
+  DM: P129_R_DM_MLO - Label: Normal
+Patient: 132
+  CM: P132_R_CM_CC - Label: Benign
+  DM: P132_L_DM_CC - Label: Normal
+Patient: 132
+  CM: P132_R_CM_CC - Label: Benign
+  DM: P132_L_DM_MLO - Label: Normal
+Patient: 132
+  CM: P132_R_CM_MLO - Label: Benign
+  DM: P132_L_DM_CC - Label: Normal
+Patient: 132
+  CM: P132_R_CM_MLO - Label: Benign
+  DM: P132_L_DM_MLO - Label: Normal
+Patient: 132
+  CM: P132_L_CM_CC - Label: Normal
+  DM: P132_R_DM_CC - Label: Benign
+Patient: 132
+  CM: P132_L_CM_CC - Label: Normal
+  DM: P132_R_DM_MLO - Label: Benign
+Patient: 132
+  CM: P132_L_CM_MLO - Label: Normal
+  DM: P132_R_DM_CC - Label: Benign
+Patient: 132
+  CM: P132_L_CM_MLO - Label: Normal
+  DM: P132_R_DM_MLO - Label: Benign
+Patient: 136
+  CM: P136_R_CM_CC - Label: Normal
+  DM: P136_L_DM_MLO - Label: Benign
+Patient: 136
+  CM: P136_R_CM_MLO - Label: Normal
+  DM: P136_L_DM_MLO - Label: Benign
+Patient: 136
+  CM: P136_L_CM_MLO - Label: Benign
+  DM: P136_R_DM_CC - Label: Normal
+Patient: 136
+  CM: P136_L_CM_MLO - Label: Benign
+  DM: P136_R_DM_MLO - Label: Normal
+Patient: 138
+  CM: P138_R_CM_CC - Label: Malignant
+  DM: P138_L_DM_CC - Label: Normal
+Patient: 138
+  CM: P138_R_CM_CC - Label: Malignant
+  DM: P138_L_DM_MLO - Label: Normal
+Patient: 138
+  CM: P138_R_CM_MLO - Label: Malignant
+  DM: P138_L_DM_CC - Label: Normal
+Patient: 138
+  CM: P138_R_CM_MLO - Label: Malignant
+  DM: P138_L_DM_MLO - Label: Normal
+Patient: 138
+  CM: P138_L_CM_CC - Label: Benign
+  DM: P138_R_DM_CC - Label: Malignant
+Patient: 138
+  CM: P138_L_CM_CC - Label: Benign
+  DM: P138_R_DM_MLO - Label: Malignant
+Patient: 138
+  CM: P138_L_CM_CC - Label: Benign
+  DM: P138_L_DM_CC - Label: Normal
+Patient: 138
+  CM: P138_L_CM_CC - Label: Benign
+  DM: P138_L_DM_MLO - Label: Normal
+Patient: 138
+  CM: P138_L_CM_MLO - Label: Benign
+  DM: P138_R_DM_CC - Label: Malignant
+Patient: 138
+  CM: P138_L_CM_MLO - Label: Benign
+  DM: P138_R_DM_MLO - Label: Malignant
+Patient: 138
+  CM: P138_L_CM_MLO - Label: Benign
+  DM: P138_L_DM_CC - Label: Normal
+Patient: 138
+  CM: P138_L_CM_MLO - Label: Benign
+  DM: P138_L_DM_MLO - Label: Normal
+Patient: 140
+  CM: P140_R_CM_CC - Label: Benign
+  DM: P140_L_DM_CC - Label: Normal
+Patient: 140
+  CM: P140_R_CM_CC - Label: Benign
+  DM: P140_L_DM_MLO - Label: Normal
+Patient: 140
+  CM: P140_R_CM_MLO - Label: Benign
+  DM: P140_L_DM_CC - Label: Normal
+Patient: 140
+  CM: P140_R_CM_MLO - Label: Benign
+  DM: P140_L_DM_MLO - Label: Normal
+Patient: 140
+  CM: P140_L_CM_CC - Label: Benign
+  DM: P140_L_DM_CC - Label: Normal
+Patient: 140
+  CM: P140_L_CM_CC - Label: Benign
+  DM: P140_L_DM_MLO - Label: Normal
+Patient: 140
+  CM: P140_L_CM_MLO - Label: Benign
+  DM: P140_L_DM_CC - Label: Normal
+Patient: 140
+  CM: P140_L_CM_MLO - Label: Benign
+  DM: P140_L_DM_MLO - Label: Normal
+Patient: 141
+  CM: P141_R_CM_CC - Label: Normal
+  DM: P141_R_DM_CC - Label: Benign
+Patient: 141
+  CM: P141_R_CM_CC - Label: Normal
+  DM: P141_R_DM_MLO - Label: Benign
+Patient: 141
+  CM: P141_R_CM_CC - Label: Normal
+  DM: P141_L_DM_CC - Label: Benign
+Patient: 141
+  CM: P141_R_CM_CC - Label: Normal
+  DM: P141_L_DM_MLO - Label: Benign
+Patient: 141
+  CM: P141_R_CM_MLO - Label: Normal
+  DM: P141_R_DM_CC - Label: Benign
+Patient: 141
+  CM: P141_R_CM_MLO - Label: Normal
+  DM: P141_R_DM_MLO - Label: Benign
+Patient: 141
+  CM: P141_R_CM_MLO - Label: Normal
+  DM: P141_L_DM_CC - Label: Benign
+Patient: 141
+  CM: P141_R_CM_MLO - Label: Normal
+  DM: P141_L_DM_MLO - Label: Benign
+Patient: 141
+  CM: P141_L_CM_CC - Label: Normal
+  DM: P141_R_DM_CC - Label: Benign
+Patient: 141
+  CM: P141_L_CM_CC - Label: Normal
+  DM: P141_R_DM_MLO - Label: Benign
+Patient: 141
+  CM: P141_L_CM_CC - Label: Normal
+  DM: P141_L_DM_CC - Label: Benign
+Patient: 141
+  CM: P141_L_CM_CC - Label: Normal
+  DM: P141_L_DM_MLO - Label: Benign
+Patient: 141
+  CM: P141_L_CM_MLO - Label: Normal
+  DM: P141_R_DM_CC - Label: Benign
+Patient: 141
+  CM: P141_L_CM_MLO - Label: Normal
+  DM: P141_R_DM_MLO - Label: Benign
+Patient: 141
+  CM: P141_L_CM_MLO - Label: Normal
+  DM: P141_L_DM_CC - Label: Benign
+Patient: 141
+  CM: P141_L_CM_MLO - Label: Normal
+  DM: P141_L_DM_MLO - Label: Benign
+Patient: 143
+  CM: P143_R_CM_CC - Label: Benign
+  DM: P143_L_DM_MLO - Label: Normal
+Patient: 143
+  CM: P143_R_CM_MLO - Label: Benign
+  DM: P143_L_DM_MLO - Label: Normal
+Patient: 143
+  CM: P143_L_CM_CC - Label: Benign
+  DM: P143_L_DM_MLO - Label: Normal
+Patient: 143
+  CM: P143_L_CM_MLO - Label: Normal
+  DM: P143_R_DM_CC - Label: Benign
+Patient: 143
+  CM: P143_L_CM_MLO - Label: Normal
+  DM: P143_R_DM_MLO - Label: Benign
+Patient: 143
+  CM: P143_L_CM_MLO - Label: Normal
+  DM: P143_L_DM_CC - Label: Benign
+Patient: 144
+  CM: P144_L_CM_CC - Label: Normal
+  DM: P144_R_DM_CC - Label: Benign
+Patient: 144
+  CM: P144_L_CM_CC - Label: Normal
+  DM: P144_R_DM_MLO - Label: Benign
+Patient: 144
+  CM: P144_L_CM_CC - Label: Normal
+  DM: P144_L_DM_CC - Label: Benign
+Patient: 144
+  CM: P144_L_CM_CC - Label: Normal
+  DM: P144_L_DM_MLO - Label: Benign
+Patient: 144
+  CM: P144_L_CM_MLO - Label: Normal
+  DM: P144_R_DM_CC - Label: Benign
+Patient: 144
+  CM: P144_L_CM_MLO - Label: Normal
+  DM: P144_R_DM_MLO - Label: Benign
+Patient: 144
+  CM: P144_L_CM_MLO - Label: Normal
+  DM: P144_L_DM_CC - Label: Benign
+Patient: 144
+  CM: P144_L_CM_MLO - Label: Normal
+  DM: P144_L_DM_MLO - Label: Benign
+Patient: 145
+  CM: P145_R_CM_CC - Label: Normal
+  DM: P145_R_DM_CC - Label: Benign
+Patient: 145
+  CM: P145_R_CM_CC - Label: Normal
+  DM: P145_R_DM_MLO - Label: Benign
+Patient: 145
+  CM: P145_R_CM_CC - Label: Normal
+  DM: P145_L_DM_CC - Label: Malignant
+Patient: 145
+  CM: P145_R_CM_CC - Label: Normal
+  DM: P145_L_DM_MLO - Label: Malignant
+Patient: 145
+  CM: P145_R_CM_MLO - Label: Normal
+  DM: P145_R_DM_CC - Label: Benign
+Patient: 145
+  CM: P145_R_CM_MLO - Label: Normal
+  DM: P145_R_DM_MLO - Label: Benign
+Patient: 145
+  CM: P145_R_CM_MLO - Label: Normal
+  DM: P145_L_DM_CC - Label: Malignant
+Patient: 145
+  CM: P145_R_CM_MLO - Label: Normal
+  DM: P145_L_DM_MLO - Label: Malignant
+Patient: 145
+  CM: P145_L_CM_CC - Label: Malignant
+  DM: P145_R_DM_CC - Label: Benign
+Patient: 145
+  CM: P145_L_CM_CC - Label: Malignant
+  DM: P145_R_DM_MLO - Label: Benign
+Patient: 145
+  CM: P145_L_CM_MLO - Label: Malignant
+  DM: P145_R_DM_CC - Label: Benign
+Patient: 145
+  CM: P145_L_CM_MLO - Label: Malignant
+  DM: P145_R_DM_MLO - Label: Benign
+Patient: 146
+  CM: P146_R_CM_CC - Label: Malignant
+  DM: P146_L_DM_CC - Label: Normal
+Patient: 146
+  CM: P146_R_CM_CC - Label: Malignant
+  DM: P146_L_DM_MLO - Label: Normal
+Patient: 146
+  CM: P146_R_CM_MLO - Label: Malignant
+  DM: P146_L_DM_CC - Label: Normal
+Patient: 146
+  CM: P146_R_CM_MLO - Label: Malignant
+  DM: P146_L_DM_MLO - Label: Normal
+Patient: 146
+  CM: P146_L_CM_CC - Label: Normal
+  DM: P146_R_DM_CC - Label: Malignant
+Patient: 146
+  CM: P146_L_CM_CC - Label: Normal
+  DM: P146_R_DM_MLO - Label: Malignant
+Patient: 146
+  CM: P146_L_CM_MLO - Label: Normal
+  DM: P146_R_DM_CC - Label: Malignant
+Patient: 146
+  CM: P146_L_CM_MLO - Label: Normal
+  DM: P146_R_DM_MLO - Label: Malignant
+Patient: 148
+  CM: P148_R_CM_CC - Label: Benign
+  DM: P148_L_DM_CC - Label: Normal
+Patient: 148
+  CM: P148_R_CM_CC - Label: Benign
+  DM: P148_L_DM_MLO - Label: Normal
+Patient: 148
+  CM: P148_R_CM_MLO - Label: Benign
+  DM: P148_L_DM_CC - Label: Normal
+Patient: 148
+  CM: P148_R_CM_MLO - Label: Benign
+  DM: P148_L_DM_MLO - Label: Normal
+Patient: 148
+  CM: P148_L_CM_CC - Label: Normal
+  DM: P148_R_DM_CC - Label: Benign
+Patient: 148
+  CM: P148_L_CM_CC - Label: Normal
+  DM: P148_R_DM_MLO - Label: Benign
+Patient: 148
+  CM: P148_L_CM_MLO - Label: Normal
+  DM: P148_R_DM_CC - Label: Benign
+Patient: 148
+  CM: P148_L_CM_MLO - Label: Normal
+  DM: P148_R_DM_MLO - Label: Benign
+Patient: 149
+  CM: P149_R_CM_CC - Label: Malignant
+  DM: P149_L_DM_CC - Label: Benign
+Patient: 149
+  CM: P149_R_CM_CC - Label: Malignant
+  DM: P149_L_DM_MLO - Label: Benign
+Patient: 149
+  CM: P149_R_CM_MLO - Label: Malignant
+  DM: P149_L_DM_CC - Label: Benign
+Patient: 149
+  CM: P149_R_CM_MLO - Label: Malignant
+  DM: P149_L_DM_MLO - Label: Benign
+Patient: 149
+  CM: P149_L_CM_CC - Label: Benign
+  DM: P149_R_DM_CC - Label: Malignant
+Patient: 149
+  CM: P149_L_CM_CC - Label: Benign
+  DM: P149_R_DM_MLO - Label: Malignant
+Patient: 149
+  CM: P149_L_CM_MLO - Label: Benign
+  DM: P149_R_DM_CC - Label: Malignant
+Patient: 149
+  CM: P149_L_CM_MLO - Label: Benign
+  DM: P149_R_DM_MLO - Label: Malignant
+Patient: 150
+  CM: P150_R_CM_CC - Label: Normal
+  DM: P150_L_DM_CC - Label: Malignant
+Patient: 150
+  CM: P150_R_CM_CC - Label: Normal
+  DM: P150_L_DM_MLO - Label: Malignant
+Patient: 150
+  CM: P150_R_CM_MLO - Label: Normal
+  DM: P150_L_DM_CC - Label: Malignant
+Patient: 150
+  CM: P150_R_CM_MLO - Label: Normal
+  DM: P150_L_DM_MLO - Label: Malignant
+Patient: 150
+  CM: P150_L_CM_CC - Label: Malignant
+  DM: P150_R_DM_CC - Label: Normal
+Patient: 150
+  CM: P150_L_CM_CC - Label: Malignant
+  DM: P150_R_DM_MLO - Label: Normal
+Patient: 150
+  CM: P150_L_CM_MLO - Label: Malignant
+  DM: P150_R_DM_CC - Label: Normal
+Patient: 150
+  CM: P150_L_CM_MLO - Label: Malignant
+  DM: P150_R_DM_MLO - Label: Normal
+Patient: 152
+  CM: P152_R_CM_CC - Label: Normal
+  DM: P152_R_DM_CC - Label: Benign
+Patient: 152
+  CM: P152_R_CM_CC - Label: Normal
+  DM: P152_L_DM_CC - Label: Malignant
+Patient: 152
+  CM: P152_R_CM_CC - Label: Normal
+  DM: P152_L_DM_MLO - Label: Malignant
+Patient: 152
+  CM: P152_L_CM_CC - Label: Malignant
+  DM: P152_R_DM_CC - Label: Benign
+Patient: 152
+  CM: P152_L_CM_MLO - Label: Malignant
+  DM: P152_R_DM_CC - Label: Benign
+Patient: 154
+  CM: P154_R_CM_CC - Label: Normal
+  DM: P154_L_DM_CC - Label: Malignant
+Patient: 154
+  CM: P154_R_CM_CC - Label: Normal
+  DM: P154_L_DM_MLO - Label: Malignant
+Patient: 154
+  CM: P154_R_CM_MLO - Label: Normal
+  DM: P154_L_DM_CC - Label: Malignant
+Patient: 154
+  CM: P154_R_CM_MLO - Label: Normal
+  DM: P154_L_DM_MLO - Label: Malignant
+Patient: 154
+  CM: P154_L_CM_CC - Label: Malignant
+  DM: P154_R_DM_CC - Label: Normal
+Patient: 154
+  CM: P154_L_CM_CC - Label: Malignant
+  DM: P154_R_DM_MLO - Label: Normal
+Patient: 154
+  CM: P154_L_CM_MLO - Label: Malignant
+  DM: P154_R_DM_CC - Label: Normal
+Patient: 154
+  CM: P154_L_CM_MLO - Label: Malignant
+  DM: P154_R_DM_MLO - Label: Normal
+Patient: 155
+  CM: P155_R_CM_CC - Label: Normal
+  DM: P155_L_DM_CC - Label: Malignant
+Patient: 155
+  CM: P155_R_CM_CC - Label: Normal
+  DM: P155_L_DM_MLO - Label: Malignant
+Patient: 155
+  CM: P155_R_CM_MLO - Label: Normal
+  DM: P155_L_DM_CC - Label: Malignant
+Patient: 155
+  CM: P155_R_CM_MLO - Label: Normal
+  DM: P155_L_DM_MLO - Label: Malignant
+Patient: 155
+  CM: P155_L_CM_CC - Label: Malignant
+  DM: P155_R_DM_CC - Label: Normal
+Patient: 155
+  CM: P155_L_CM_CC - Label: Malignant
+  DM: P155_R_DM_MLO - Label: Normal
+Patient: 155
+  CM: P155_L_CM_MLO - Label: Malignant
+  DM: P155_R_DM_CC - Label: Normal
+Patient: 155
+  CM: P155_L_CM_MLO - Label: Malignant
+  DM: P155_R_DM_MLO - Label: Normal
+Patient: 156
+  CM: P156_R_CM_CC - Label: Benign
+  DM: P156_L_DM_CC - Label: Normal
+Patient: 156
+  CM: P156_R_CM_CC - Label: Benign
+  DM: P156_L_DM_MLO - Label: Normal
+Patient: 156
+  CM: P156_R_CM_MLO - Label: Benign
+  DM: P156_L_DM_CC - Label: Normal
+Patient: 156
+  CM: P156_R_CM_MLO - Label: Benign
+  DM: P156_L_DM_MLO - Label: Normal
+Patient: 156
+  CM: P156_L_CM_CC - Label: Normal
+  DM: P156_R_DM_CC - Label: Benign
+Patient: 156
+  CM: P156_L_CM_CC - Label: Normal
+  DM: P156_R_DM_MLO - Label: Benign
+Patient: 156
+  CM: P156_L_CM_MLO - Label: Normal
+  DM: P156_R_DM_CC - Label: Benign
+Patient: 156
+  CM: P156_L_CM_MLO - Label: Normal
+  DM: P156_R_DM_MLO - Label: Benign
+Patient: 162
+  CM: P162_R_CM_CC - Label: Malignant
+  DM: P162_L_DM_CC - Label: Normal
+Patient: 162
+  CM: P162_R_CM_CC - Label: Malignant
+  DM: P162_L_DM_MLO - Label: Normal
+Patient: 162
+  CM: P162_R_CM_MLO - Label: Malignant
+  DM: P162_L_DM_CC - Label: Normal
+Patient: 162
+  CM: P162_R_CM_MLO - Label: Malignant
+  DM: P162_L_DM_MLO - Label: Normal
+Patient: 162
+  CM: P162_L_CM_CC - Label: Normal
+  DM: P162_R_DM_CC - Label: Malignant
+Patient: 162
+  CM: P162_L_CM_CC - Label: Normal
+  DM: P162_R_DM_MLO - Label: Malignant
+Patient: 162
+  CM: P162_L_CM_MLO - Label: Normal
+  DM: P162_R_DM_CC - Label: Malignant
+Patient: 162
+  CM: P162_L_CM_MLO - Label: Normal
+  DM: P162_R_DM_MLO - Label: Malignant
+Patient: 164
+  CM: P164_L_CM_CC - Label: Normal
+  DM: P164_L_DM_CC - Label: Benign
+Patient: 165
+  CM: P165_R_CM_CC - Label: Benign
+  DM: P165_L_DM_CC - Label: Malignant
+Patient: 165
+  CM: P165_R_CM_CC - Label: Benign
+  DM: P165_L_DM_MLO - Label: Malignant
+Patient: 165
+  CM: P165_R_CM_MLO - Label: Benign
+  DM: P165_L_DM_CC - Label: Malignant
+Patient: 165
+  CM: P165_R_CM_MLO - Label: Benign
+  DM: P165_L_DM_MLO - Label: Malignant
+Patient: 165
+  CM: P165_L_CM_CC - Label: Malignant
+  DM: P165_R_DM_CC - Label: Benign
+Patient: 165
+  CM: P165_L_CM_CC - Label: Malignant
+  DM: P165_R_DM_MLO - Label: Benign
+Patient: 165
+  CM: P165_L_CM_MLO - Label: Malignant
+  DM: P165_R_DM_CC - Label: Benign
+Patient: 165
+  CM: P165_L_CM_MLO - Label: Malignant
+  DM: P165_R_DM_MLO - Label: Benign
+Patient: 169
+  CM: P169_R_CM_CC - Label: Malignant
+  DM: P169_L_DM_CC - Label: Benign
+Patient: 169
+  CM: P169_R_CM_CC - Label: Malignant
+  DM: P169_L_DM_MLO - Label: Benign
+Patient: 169
+  CM: P169_L_CM_CC - Label: Normal
+  DM: P169_R_DM_CC - Label: Malignant
+Patient: 169
+  CM: P169_L_CM_CC - Label: Normal
+  DM: P169_L_DM_CC - Label: Benign
+Patient: 169
+  CM: P169_L_CM_CC - Label: Normal
+  DM: P169_L_DM_MLO - Label: Benign
+Patient: 169
+  CM: P169_L_CM_MLO - Label: Normal
+  DM: P169_R_DM_CC - Label: Malignant
+Patient: 169
+  CM: P169_L_CM_MLO - Label: Normal
+  DM: P169_L_DM_CC - Label: Benign
+Patient: 169
+  CM: P169_L_CM_MLO - Label: Normal
+  DM: P169_L_DM_MLO - Label: Benign
+Patient: 172
+  CM: P172_R_CM_CC - Label: Benign
+  DM: P172_L_DM_CC - Label: Malignant
+Patient: 172
+  CM: P172_R_CM_CC - Label: Benign
+  DM: P172_L_DM_MLO - Label: Malignant
+Patient: 172
+  CM: P172_R_CM_MLO - Label: Benign
+  DM: P172_L_DM_CC - Label: Malignant
+Patient: 172
+  CM: P172_R_CM_MLO - Label: Benign
+  DM: P172_L_DM_MLO - Label: Malignant
+Patient: 172
+  CM: P172_L_CM_CC - Label: Malignant
+  DM: P172_R_DM_CC - Label: Benign
+Patient: 172
+  CM: P172_L_CM_CC - Label: Malignant
+  DM: P172_R_DM_MLO - Label: Benign
+Patient: 172
+  CM: P172_L_CM_MLO - Label: Malignant
+  DM: P172_R_DM_CC - Label: Benign
+Patient: 172
+  CM: P172_L_CM_MLO - Label: Malignant
+  DM: P172_R_DM_MLO - Label: Benign
+Patient: 173
+  CM: P173_R_CM_CC - Label: Normal
+  DM: P173_L_DM_CC - Label: Malignant
+Patient: 173
+  CM: P173_R_CM_CC - Label: Normal
+  DM: P173_L_DM_MLO - Label: Malignant
+Patient: 173
+  CM: P173_R_CM_MLO - Label: Normal
+  DM: P173_L_DM_CC - Label: Malignant
+Patient: 173
+  CM: P173_R_CM_MLO - Label: Normal
+  DM: P173_L_DM_MLO - Label: Malignant
+Patient: 173
+  CM: P173_L_CM_CC - Label: Malignant
+  DM: P173_R_DM_CC - Label: Normal
+Patient: 173
+  CM: P173_L_CM_CC - Label: Malignant
+  DM: P173_R_DM_MLO - Label: Normal
+Patient: 173
+  CM: P173_L_CM_MLO - Label: Malignant
+  DM: P173_R_DM_CC - Label: Normal
+Patient: 173
+  CM: P173_L_CM_MLO - Label: Malignant
+  DM: P173_R_DM_MLO - Label: Normal
+Patient: 174
+  CM: P174_R_CM_CC - Label: Benign
+  DM: P174_L_DM_CC - Label: Malignant
+Patient: 174
+  CM: P174_R_CM_CC - Label: Benign
+  DM: P174_L_DM_MLO - Label: Malignant
+Patient: 174
+  CM: P174_R_CM_MLO - Label: Benign
+  DM: P174_L_DM_CC - Label: Malignant
+Patient: 174
+  CM: P174_R_CM_MLO - Label: Benign
+  DM: P174_L_DM_MLO - Label: Malignant
+Patient: 174
+  CM: P174_L_CM_CC - Label: Malignant
+  DM: P174_R_DM_CC - Label: Benign
+Patient: 174
+  CM: P174_L_CM_CC - Label: Malignant
+  DM: P174_R_DM_MLO - Label: Benign
+Patient: 174
+  CM: P174_L_CM_MLO - Label: Malignant
+  DM: P174_R_DM_CC - Label: Benign
+Patient: 174
+  CM: P174_L_CM_MLO - Label: Malignant
+  DM: P174_R_DM_MLO - Label: Benign
+Patient: 176
+  CM: P176_R_CM_CC - Label: Malignant
+  DM: P176_L_DM_CC - Label: Normal
+Patient: 176
+  CM: P176_R_CM_CC - Label: Malignant
+  DM: P176_L_DM_MLO - Label: Normal
+Patient: 176
+  CM: P176_R_CM_MLO - Label: Malignant
+  DM: P176_L_DM_CC - Label: Normal
+Patient: 176
+  CM: P176_R_CM_MLO - Label: Malignant
+  DM: P176_L_DM_MLO - Label: Normal
+Patient: 176
+  CM: P176_L_CM_CC - Label: Normal
+  DM: P176_R_DM_CC - Label: Malignant
+Patient: 176
+  CM: P176_L_CM_CC - Label: Normal
+  DM: P176_R_DM_MLO - Label: Malignant
+Patient: 176
+  CM: P176_L_CM_MLO - Label: Normal
+  DM: P176_R_DM_CC - Label: Malignant
+Patient: 176
+  CM: P176_L_CM_MLO - Label: Normal
+  DM: P176_R_DM_MLO - Label: Malignant
+Patient: 177
+  CM: P177_R_CM_CC - Label: Malignant
+  DM: P177_L_DM_CC - Label: Benign
+Patient: 177
+  CM: P177_R_CM_CC - Label: Malignant
+  DM: P177_L_DM_MLO - Label: Benign
+Patient: 177
+  CM: P177_R_CM_MLO - Label: Malignant
+  DM: P177_L_DM_CC - Label: Benign
+Patient: 177
+  CM: P177_R_CM_MLO - Label: Malignant
+  DM: P177_L_DM_MLO - Label: Benign
+Patient: 177
+  CM: P177_L_CM_CC - Label: Benign
+  DM: P177_R_DM_CC - Label: Malignant
+Patient: 177
+  CM: P177_L_CM_CC - Label: Benign
+  DM: P177_R_DM_MLO - Label: Malignant
+Patient: 177
+  CM: P177_L_CM_MLO - Label: Benign
+  DM: P177_R_DM_CC - Label: Malignant
+Patient: 177
+  CM: P177_L_CM_MLO - Label: Benign
+  DM: P177_R_DM_MLO - Label: Malignant
+Patient: 180
+  CM: P180_R_CM_CC - Label: Malignant
+  DM: P180_L_DM_CC - Label: Benign
+Patient: 180
+  CM: P180_R_CM_CC - Label: Malignant
+  DM: P180_L_DM_MLO - Label: Benign
+Patient: 180
+  CM: P180_R_CM_MLO - Label: Malignant
+  DM: P180_L_DM_CC - Label: Benign
+Patient: 180
+  CM: P180_R_CM_MLO - Label: Malignant
+  DM: P180_L_DM_MLO - Label: Benign
+Patient: 180
+  CM: P180_L_CM_CC - Label: Benign
+  DM: P180_R_DM_CC - Label: Malignant
+Patient: 180
+  CM: P180_L_CM_CC - Label: Benign
+  DM: P180_R_DM_MLO - Label: Malignant
+Patient: 180
+  CM: P180_L_CM_MLO - Label: Benign
+  DM: P180_R_DM_CC - Label: Malignant
+Patient: 180
+  CM: P180_L_CM_MLO - Label: Benign
+  DM: P180_R_DM_MLO - Label: Malignant
+Patient: 181
+  CM: P181_R_CM_CC - Label: Normal
+  DM: P181_L_DM_CC - Label: Benign
+Patient: 181
+  CM: P181_R_CM_CC - Label: Normal
+  DM: P181_L_DM_MLO - Label: Benign
+Patient: 181
+  CM: P181_R_CM_MLO - Label: Normal
+  DM: P181_L_DM_CC - Label: Benign
+Patient: 181
+  CM: P181_R_CM_MLO - Label: Normal
+  DM: P181_L_DM_MLO - Label: Benign
+Patient: 181
+  CM: P181_L_CM_CC - Label: Benign
+  DM: P181_R_DM_CC - Label: Normal
+Patient: 181
+  CM: P181_L_CM_CC - Label: Benign
+  DM: P181_R_DM_MLO - Label: Normal
+Patient: 181
+  CM: P181_L_CM_MLO - Label: Benign
+  DM: P181_R_DM_CC - Label: Normal
+Patient: 181
+  CM: P181_L_CM_MLO - Label: Benign
+  DM: P181_R_DM_MLO - Label: Normal
+Patient: 183
+  CM: P183_R_CM_CC - Label: Normal
+  DM: P183_L_DM_CC - Label: Malignant
+Patient: 183
+  CM: P183_R_CM_CC - Label: Normal
+  DM: P183_L_DM_MLO - Label: Malignant
+Patient: 183
+  CM: P183_R_CM_MLO - Label: Normal
+  DM: P183_L_DM_CC - Label: Malignant
+Patient: 183
+  CM: P183_R_CM_MLO - Label: Normal
+  DM: P183_L_DM_MLO - Label: Malignant
+Patient: 183
+  CM: P183_L_CM_CC - Label: Malignant
+  DM: P183_R_DM_CC - Label: Normal
+Patient: 183
+  CM: P183_L_CM_CC - Label: Malignant
+  DM: P183_R_DM_MLO - Label: Normal
+Patient: 183
+  CM: P183_L_CM_MLO - Label: Malignant
+  DM: P183_R_DM_CC - Label: Normal
+Patient: 183
+  CM: P183_L_CM_MLO - Label: Malignant
+  DM: P183_R_DM_MLO - Label: Normal
+Patient: 184
+  CM: P184_R_CM_CC - Label: Malignant
+  DM: P184_L_DM_CC - Label: Benign
+Patient: 184
+  CM: P184_R_CM_CC - Label: Malignant
+  DM: P184_L_DM_MLO - Label: Benign
+Patient: 184
+  CM: P184_R_CM_MLO - Label: Malignant
+  DM: P184_L_DM_CC - Label: Benign
+Patient: 184
+  CM: P184_R_CM_MLO - Label: Malignant
+  DM: P184_L_DM_MLO - Label: Benign
+Patient: 184
+  CM: P184_L_CM_CC - Label: Benign
+  DM: P184_R_DM_CC - Label: Malignant
+Patient: 184
+  CM: P184_L_CM_CC - Label: Benign
+  DM: P184_R_DM_MLO - Label: Malignant
+Patient: 184
+  CM: P184_L_CM_MLO - Label: Benign
+  DM: P184_R_DM_CC - Label: Malignant
+Patient: 184
+  CM: P184_L_CM_MLO - Label: Benign
+  DM: P184_R_DM_MLO - Label: Malignant
+Patient: 186
+  CM: P186_R_CM_CC - Label: Benign
+  DM: P186_L_DM_CC - Label: Malignant
+Patient: 186
+  CM: P186_R_CM_CC - Label: Benign
+  DM: P186_L_DM_MLO - Label: Malignant
+Patient: 186
+  CM: P186_L_CM_CC - Label: Malignant
+  DM: P186_R_DM_CC - Label: Benign
+Patient: 186
+  CM: P186_L_CM_MLO - Label: Malignant
+  DM: P186_R_DM_CC - Label: Benign
+Patient: 187
+  CM: P187_R_CM_CC - Label: Malignant
+  DM: P187_L_DM_CC - Label: Benign
+Patient: 187
+  CM: P187_L_CM_CC - Label: Benign
+  DM: P187_R_DM_CC - Label: Malignant
+Patient: 188
+  CM: P188_R_CM_CC - Label: Malignant
+  DM: P188_L_DM_CC - Label: Normal
+Patient: 188
+  CM: P188_R_CM_CC - Label: Malignant
+  DM: P188_L_DM_MLO - Label: Normal
+Patient: 188
+  CM: P188_R_CM_MLO - Label: Malignant
+  DM: P188_L_DM_CC - Label: Normal
+Patient: 188
+  CM: P188_R_CM_MLO - Label: Malignant
+  DM: P188_L_DM_MLO - Label: Normal
+Patient: 188
+  CM: P188_L_CM_CC - Label: Normal
+  DM: P188_R_DM_CC - Label: Malignant
+Patient: 188
+  CM: P188_L_CM_CC - Label: Normal
+  DM: P188_R_DM_MLO - Label: Malignant
+Patient: 188
+  CM: P188_L_CM_MLO - Label: Normal
+  DM: P188_R_DM_CC - Label: Malignant
+Patient: 188
+  CM: P188_L_CM_MLO - Label: Normal
+  DM: P188_R_DM_MLO - Label: Malignant
+Patient: 190
+  CM: P190_R_CM_MLO - Label: Normal
+  DM: P190_L_DM_CC - Label: Malignant
+Patient: 190
+  CM: P190_R_CM_MLO - Label: Normal
+  DM: P190_L_DM_MLO - Label: Malignant
+Patient: 190
+  CM: P190_L_CM_CC - Label: Malignant
+  DM: P190_R_DM_MLO - Label: Normal
+Patient: 190
+  CM: P190_L_CM_MLO - Label: Malignant
+  DM: P190_R_DM_MLO - Label: Normal
+Patient: 191
+  CM: P191_R_CM_CC - Label: Benign
+  DM: P191_L_DM_CC - Label: Malignant
+Patient: 191
+  CM: P191_R_CM_CC - Label: Benign
+  DM: P191_L_DM_MLO - Label: Malignant
+Patient: 191
+  CM: P191_R_CM_MLO - Label: Benign
+  DM: P191_L_DM_CC - Label: Malignant
+Patient: 191
+  CM: P191_R_CM_MLO - Label: Benign
+  DM: P191_L_DM_MLO - Label: Malignant
+Patient: 191
+  CM: P191_L_CM_CC - Label: Malignant
+  DM: P191_R_DM_CC - Label: Benign
+Patient: 191
+  CM: P191_L_CM_CC - Label: Malignant
+  DM: P191_R_DM_MLO - Label: Benign
+Patient: 191
+  CM: P191_L_CM_MLO - Label: Malignant
+  DM: P191_R_DM_CC - Label: Benign
+Patient: 191
+  CM: P191_L_CM_MLO - Label: Malignant
+  DM: P191_R_DM_MLO - Label: Benign
+Patient: 192
+  CM: P192_R_CM_CC - Label: Normal
+  DM: P192_R_DM_CC - Label: Benign
+Patient: 192
+  CM: P192_R_CM_CC - Label: Normal
+  DM: P192_R_DM_MLO - Label: Benign
+Patient: 192
+  CM: P192_R_CM_CC - Label: Normal
+  DM: P192_L_DM_CC - Label: Benign
+Patient: 192
+  CM: P192_R_CM_CC - Label: Normal
+  DM: P192_L_DM_MLO - Label: Benign
+Patient: 192
+  CM: P192_R_CM_MLO - Label: Normal
+  DM: P192_R_DM_CC - Label: Benign
+Patient: 192
+  CM: P192_R_CM_MLO - Label: Normal
+  DM: P192_R_DM_MLO - Label: Benign
+Patient: 192
+  CM: P192_R_CM_MLO - Label: Normal
+  DM: P192_L_DM_CC - Label: Benign
+Patient: 192
+  CM: P192_R_CM_MLO - Label: Normal
+  DM: P192_L_DM_MLO - Label: Benign
+Patient: 192
+  CM: P192_L_CM_CC - Label: Normal
+  DM: P192_R_DM_CC - Label: Benign
+Patient: 192
+  CM: P192_L_CM_CC - Label: Normal
+  DM: P192_R_DM_MLO - Label: Benign
+Patient: 192
+  CM: P192_L_CM_CC - Label: Normal
+  DM: P192_L_DM_CC - Label: Benign
+Patient: 192
+  CM: P192_L_CM_CC - Label: Normal
+  DM: P192_L_DM_MLO - Label: Benign
+Patient: 192
+  CM: P192_L_CM_MLO - Label: Normal
+  DM: P192_R_DM_CC - Label: Benign
+Patient: 192
+  CM: P192_L_CM_MLO - Label: Normal
+  DM: P192_R_DM_MLO - Label: Benign
+Patient: 192
+  CM: P192_L_CM_MLO - Label: Normal
+  DM: P192_L_DM_CC - Label: Benign
+Patient: 192
+  CM: P192_L_CM_MLO - Label: Normal
+  DM: P192_L_DM_MLO - Label: Benign
+Patient: 194
+  CM: P194_R_CM_CC - Label: Malignant
+  DM: P194_L_DM_CC - Label: Normal
+Patient: 194
+  CM: P194_R_CM_CC - Label: Malignant
+  DM: P194_L_DM_MLO - Label: Normal
+Patient: 194
+  CM: P194_R_CM_MLO - Label: Malignant
+  DM: P194_L_DM_CC - Label: Normal
+Patient: 194
+  CM: P194_R_CM_MLO - Label: Malignant
+  DM: P194_L_DM_MLO - Label: Normal
+Patient: 194
+  CM: P194_L_CM_CC - Label: Normal
+  DM: P194_R_DM_CC - Label: Malignant
+Patient: 194
+  CM: P194_L_CM_CC - Label: Normal
+  DM: P194_R_DM_MLO - Label: Malignant
+Patient: 194
+  CM: P194_L_CM_MLO - Label: Normal
+  DM: P194_R_DM_CC - Label: Malignant
+Patient: 194
+  CM: P194_L_CM_MLO - Label: Normal
+  DM: P194_R_DM_MLO - Label: Malignant
+Patient: 195
+  CM: P195_R_CM_CC - Label: Normal
+  DM: P195_L_DM_CC - Label: Malignant
+Patient: 195
+  CM: P195_R_CM_CC - Label: Normal
+  DM: P195_L_DM_MLO - Label: Malignant
+Patient: 195
+  CM: P195_R_CM_MLO - Label: Normal
+  DM: P195_L_DM_CC - Label: Malignant
+Patient: 195
+  CM: P195_R_CM_MLO - Label: Normal
+  DM: P195_L_DM_MLO - Label: Malignant
+Patient: 195
+  CM: P195_L_CM_CC - Label: Malignant
+  DM: P195_R_DM_CC - Label: Normal
+Patient: 195
+  CM: P195_L_CM_CC - Label: Malignant
+  DM: P195_R_DM_MLO - Label: Normal
+Patient: 195
+  CM: P195_L_CM_MLO - Label: Malignant
+  DM: P195_R_DM_CC - Label: Normal
+Patient: 195
+  CM: P195_L_CM_MLO - Label: Malignant
+  DM: P195_R_DM_MLO - Label: Normal
+Patient: 196
+  CM: P196_R_CM_MLO - Label: Malignant
+  DM: P196_L_DM_CC - Label: Benign
+Patient: 196
+  CM: P196_R_CM_MLO - Label: Malignant
+  DM: P196_L_DM_MLO - Label: Benign
+Patient: 196
+  CM: P196_L_CM_CC - Label: Benign
+  DM: P196_R_DM_MLO - Label: Malignant
+Patient: 196
+  CM: P196_L_CM_MLO - Label: Benign
+  DM: P196_R_DM_MLO - Label: Malignant
+Patient: 197
+  CM: P197_R_CM_CC - Label: Benign
+  DM: P197_L_DM_MLO - Label: Normal
+Patient: 197
+  CM: P197_R_CM_MLO - Label: Benign
+  DM: P197_L_DM_MLO - Label: Normal
+Patient: 197
+  CM: P197_L_CM_CC - Label: Normal
+  DM: P197_R_DM_CC - Label: Benign
+Patient: 197
+  CM: P197_L_CM_CC - Label: Normal
+  DM: P197_R_DM_MLO - Label: Benign
+Patient: 197
+  CM: P197_L_CM_CC - Label: Normal
+  DM: P197_L_DM_CC - Label: Benign
+Patient: 197
+  CM: P197_L_CM_MLO - Label: Normal
+  DM: P197_R_DM_CC - Label: Benign
+Patient: 197
+  CM: P197_L_CM_MLO - Label: Normal
+  DM: P197_R_DM_MLO - Label: Benign
+Patient: 197
+  CM: P197_L_CM_MLO - Label: Normal
+  DM: P197_L_DM_CC - Label: Benign
+Patient: 200
+  CM: P200_R_CM_CC - Label: Normal
+  DM: P200_L_DM_CC - Label: Benign
+Patient: 200
+  CM: P200_R_CM_CC - Label: Normal
+  DM: P200_L_DM_MLO - Label: Benign
+Patient: 200
+  CM: P200_R_CM_MLO - Label: Normal
+  DM: P200_L_DM_CC - Label: Benign
+Patient: 200
+  CM: P200_R_CM_MLO - Label: Normal
+  DM: P200_L_DM_MLO - Label: Benign
+Patient: 200
+  CM: P200_L_CM_CC - Label: Normal
+  DM: P200_L_DM_CC - Label: Benign
+Patient: 200
+  CM: P200_L_CM_CC - Label: Normal
+  DM: P200_L_DM_MLO - Label: Benign
+Patient: 200
+  CM: P200_L_CM_MLO - Label: Normal
+  DM: P200_L_DM_CC - Label: Benign
+Patient: 200
+  CM: P200_L_CM_MLO - Label: Normal
+  DM: P200_L_DM_MLO - Label: Benign
+Patient: 202
+  CM: P202_R_CM_CC - Label: Normal
+  DM: P202_L_DM_CC - Label: Malignant
+Patient: 202
+  CM: P202_R_CM_CC - Label: Normal
+  DM: P202_L_DM_MLO - Label: Malignant
+Patient: 202
+  CM: P202_R_CM_MLO - Label: Normal
+  DM: P202_L_DM_CC - Label: Malignant
+Patient: 202
+  CM: P202_R_CM_MLO - Label: Normal
+  DM: P202_L_DM_MLO - Label: Malignant
+Patient: 202
+  CM: P202_L_CM_CC - Label: Malignant
+  DM: P202_R_DM_CC - Label: Normal
+Patient: 202
+  CM: P202_L_CM_CC - Label: Malignant
+  DM: P202_R_DM_MLO - Label: Normal
+Patient: 202
+  CM: P202_L_CM_MLO - Label: Malignant
+  DM: P202_R_DM_CC - Label: Normal
+Patient: 202
+  CM: P202_L_CM_MLO - Label: Malignant
+  DM: P202_R_DM_MLO - Label: Normal
+Patient: 203
+  CM: P203_R_CM_CC - Label: Normal
+  DM: P203_R_DM_CC - Label: Benign
+Patient: 203
+  CM: P203_R_CM_CC - Label: Normal
+  DM: P203_R_DM_MLO - Label: Benign
+Patient: 203
+  CM: P203_R_CM_MLO - Label: Normal
+  DM: P203_R_DM_CC - Label: Benign
+Patient: 203
+  CM: P203_R_CM_MLO - Label: Normal
+  DM: P203_R_DM_MLO - Label: Benign
+Patient: 206
+  CM: P206_R_CM_CC - Label: Normal
+  DM: P206_L_DM_CC - Label: Malignant
+Patient: 206
+  CM: P206_R_CM_CC - Label: Normal
+  DM: P206_L_DM_MLO - Label: Malignant
+Patient: 206
+  CM: P206_R_CM_MLO - Label: Normal
+  DM: P206_L_DM_CC - Label: Malignant
+Patient: 206
+  CM: P206_R_CM_MLO - Label: Normal
+  DM: P206_L_DM_MLO - Label: Malignant
+Patient: 206
+  CM: P206_L_CM_CC - Label: Malignant
+  DM: P206_R_DM_CC - Label: Normal
+Patient: 206
+  CM: P206_L_CM_CC - Label: Malignant
+  DM: P206_R_DM_MLO - Label: Normal
+Patient: 206
+  CM: P206_L_CM_MLO - Label: Malignant
+  DM: P206_R_DM_CC - Label: Normal
+Patient: 206
+  CM: P206_L_CM_MLO - Label: Malignant
+  DM: P206_R_DM_MLO - Label: Normal
+Patient: 207
+  CM: P207_R_CM_CC - Label: Normal
+  DM: P207_L_DM_CC - Label: Malignant
+Patient: 207
+  CM: P207_R_CM_CC - Label: Normal
+  DM: P207_L_DM_MLO - Label: Malignant
+Patient: 207
+  CM: P207_R_CM_MLO - Label: Normal
+  DM: P207_L_DM_CC - Label: Malignant
+Patient: 207
+  CM: P207_R_CM_MLO - Label: Normal
+  DM: P207_L_DM_MLO - Label: Malignant
+Patient: 207
+  CM: P207_L_CM_CC - Label: Malignant
+  DM: P207_R_DM_CC - Label: Normal
+Patient: 207
+  CM: P207_L_CM_CC - Label: Malignant
+  DM: P207_R_DM_MLO - Label: Normal
+Patient: 207
+  CM: P207_L_CM_MLO - Label: Malignant
+  DM: P207_R_DM_CC - Label: Normal
+Patient: 207
+  CM: P207_L_CM_MLO - Label: Malignant
+  DM: P207_R_DM_MLO - Label: Normal
+Patient: 209
+  CM: P209_R_CM_CC - Label: Benign
+  DM: P209_L_DM_CC - Label: Malignant
+Patient: 209
+  CM: P209_R_CM_CC - Label: Benign
+  DM: P209_L_DM_MLO - Label: Malignant
+Patient: 209
+  CM: P209_R_CM_MLO - Label: Benign
+  DM: P209_L_DM_CC - Label: Malignant
+Patient: 209
+  CM: P209_R_CM_MLO - Label: Benign
+  DM: P209_L_DM_MLO - Label: Malignant
+Patient: 209
+  CM: P209_L_CM_CC - Label: Malignant
+  DM: P209_R_DM_CC - Label: Benign
+Patient: 209
+  CM: P209_L_CM_CC - Label: Malignant
+  DM: P209_R_DM_MLO - Label: Benign
+Patient: 209
+  CM: P209_L_CM_MLO - Label: Malignant
+  DM: P209_R_DM_CC - Label: Benign
+Patient: 209
+  CM: P209_L_CM_MLO - Label: Malignant
+  DM: P209_R_DM_MLO - Label: Benign
+Patient: 211
+  CM: P211_R_CM_CC - Label: Normal
+  DM: P211_L_DM_CC - Label: Malignant
+Patient: 211
+  CM: P211_R_CM_CC - Label: Normal
+  DM: P211_L_DM_MLO - Label: Malignant
+Patient: 211
+  CM: P211_R_CM_MLO - Label: Normal
+  DM: P211_L_DM_CC - Label: Malignant
+Patient: 211
+  CM: P211_R_CM_MLO - Label: Normal
+  DM: P211_L_DM_MLO - Label: Malignant
+Patient: 211
+  CM: P211_L_CM_CC - Label: Malignant
+  DM: P211_R_DM_CC - Label: Normal
+Patient: 211
+  CM: P211_L_CM_CC - Label: Malignant
+  DM: P211_R_DM_MLO - Label: Normal
+Patient: 211
+  CM: P211_L_CM_MLO - Label: Malignant
+  DM: P211_R_DM_CC - Label: Normal
+Patient: 211
+  CM: P211_L_CM_MLO - Label: Malignant
+  DM: P211_R_DM_MLO - Label: Normal
+Patient: 212
+  CM: P212_R_CM_CC - Label: Normal
+  DM: P212_L_DM_CC - Label: Malignant
+Patient: 212
+  CM: P212_R_CM_CC - Label: Normal
+  DM: P212_L_DM_MLO - Label: Malignant
+Patient: 212
+  CM: P212_R_CM_MLO - Label: Normal
+  DM: P212_L_DM_CC - Label: Malignant
+Patient: 212
+  CM: P212_R_CM_MLO - Label: Normal
+  DM: P212_L_DM_MLO - Label: Malignant
+Patient: 212
+  CM: P212_L_CM_CC - Label: Malignant
+  DM: P212_R_DM_CC - Label: Normal
+Patient: 212
+  CM: P212_L_CM_CC - Label: Malignant
+  DM: P212_R_DM_MLO - Label: Normal
+Patient: 212
+  CM: P212_L_CM_MLO - Label: Malignant
+  DM: P212_R_DM_CC - Label: Normal
+Patient: 212
+  CM: P212_L_CM_MLO - Label: Malignant
+  DM: P212_R_DM_MLO - Label: Normal
+Patient: 213
+  CM: P213_R_CM_CC - Label: Normal
+  DM: P213_L_DM_CC - Label: Malignant
+Patient: 213
+  CM: P213_R_CM_CC - Label: Normal
+  DM: P213_L_DM_MLO - Label: Malignant
+Patient: 213
+  CM: P213_R_CM_MLO - Label: Normal
+  DM: P213_L_DM_CC - Label: Malignant
+Patient: 213
+  CM: P213_R_CM_MLO - Label: Normal
+  DM: P213_L_DM_MLO - Label: Malignant
+Patient: 213
+  CM: P213_L_CM_CC - Label: Malignant
+  DM: P213_R_DM_CC - Label: Normal
+Patient: 213
+  CM: P213_L_CM_CC - Label: Malignant
+  DM: P213_R_DM_MLO - Label: Normal
+Patient: 213
+  CM: P213_L_CM_MLO - Label: Malignant
+  DM: P213_R_DM_CC - Label: Normal
+Patient: 213
+  CM: P213_L_CM_MLO - Label: Malignant
+  DM: P213_R_DM_MLO - Label: Normal
+Patient: 214
+  CM: P214_R_CM_CC - Label: Normal
+  DM: P214_L_DM_CC - Label: Malignant
+Patient: 214
+  CM: P214_R_CM_CC - Label: Normal
+  DM: P214_L_DM_MLO - Label: Malignant
+Patient: 214
+  CM: P214_R_CM_MLO - Label: Normal
+  DM: P214_L_DM_CC - Label: Malignant
+Patient: 214
+  CM: P214_R_CM_MLO - Label: Normal
+  DM: P214_L_DM_MLO - Label: Malignant
+Patient: 214
+  CM: P214_L_CM_CC - Label: Malignant
+  DM: P214_R_DM_CC - Label: Normal
+Patient: 214
+  CM: P214_L_CM_CC - Label: Malignant
+  DM: P214_R_DM_MLO - Label: Normal
+Patient: 214
+  CM: P214_L_CM_MLO - Label: Malignant
+  DM: P214_R_DM_CC - Label: Normal
+Patient: 214
+  CM: P214_L_CM_MLO - Label: Malignant
+  DM: P214_R_DM_MLO - Label: Normal
+Patient: 215
+  CM: P215_R_CM_CC - Label: Normal
+  DM: P215_L_DM_CC - Label: Malignant
+Patient: 215
+  CM: P215_R_CM_MLO - Label: Normal
+  DM: P215_L_DM_CC - Label: Malignant
+Patient: 215
+  CM: P215_L_CM_CC - Label: Malignant
+  DM: P215_R_DM_CC - Label: Normal
+Patient: 215
+  CM: P215_L_CM_CC - Label: Malignant
+  DM: P215_R_DM_MLO - Label: Normal
+Patient: 216
+  CM: P216_R_CM_CC - Label: Malignant
+  DM: P216_L_DM_CC - Label: Normal
+Patient: 216
+  CM: P216_R_CM_CC - Label: Malignant
+  DM: P216_L_DM_MLO - Label: Normal
+Patient: 216
+  CM: P216_R_CM_MLO - Label: Malignant
+  DM: P216_L_DM_CC - Label: Normal
+Patient: 216
+  CM: P216_R_CM_MLO - Label: Malignant
+  DM: P216_L_DM_MLO - Label: Normal
+Patient: 216
+  CM: P216_L_CM_CC - Label: Normal
+  DM: P216_R_DM_CC - Label: Malignant
+Patient: 216
+  CM: P216_L_CM_CC - Label: Normal
+  DM: P216_R_DM_MLO - Label: Malignant
+Patient: 216
+  CM: P216_L_CM_MLO - Label: Normal
+  DM: P216_R_DM_CC - Label: Malignant
+Patient: 216
+  CM: P216_L_CM_MLO - Label: Normal
+  DM: P216_R_DM_MLO - Label: Malignant
+Patient: 218
+  CM: P218_R_CM_CC - Label: Normal
+  DM: P218_L_DM_MLO - Label: Malignant
+Patient: 218
+  CM: P218_L_CM_MLO - Label: Malignant
+  DM: P218_R_DM_CC - Label: Normal
+Patient: 220
+  CM: P220_R_CM_CC - Label: Malignant
+  DM: P220_L_DM_CC - Label: Normal
+Patient: 220
+  CM: P220_R_CM_CC - Label: Malignant
+  DM: P220_L_DM_MLO - Label: Normal
+Patient: 220
+  CM: P220_R_CM_MLO - Label: Malignant
+  DM: P220_L_DM_CC - Label: Normal
+Patient: 220
+  CM: P220_R_CM_MLO - Label: Malignant
+  DM: P220_L_DM_MLO - Label: Normal
+Patient: 220
+  CM: P220_L_CM_CC - Label: Normal
+  DM: P220_R_DM_CC - Label: Malignant
+Patient: 220
+  CM: P220_L_CM_CC - Label: Normal
+  DM: P220_R_DM_MLO - Label: Malignant
+Patient: 220
+  CM: P220_L_CM_MLO - Label: Normal
+  DM: P220_R_DM_CC - Label: Malignant
+Patient: 220
+  CM: P220_L_CM_MLO - Label: Normal
+  DM: P220_R_DM_MLO - Label: Malignant
+Patient: 223
+  CM: P223_R_CM_MLO - Label: Normal
+  DM: P223_L_DM_CC - Label: Malignant
+Patient: 223
+  CM: P223_R_CM_MLO - Label: Normal
+  DM: P223_L_DM_MLO - Label: Malignant
+Patient: 223
+  CM: P223_L_CM_CC - Label: Malignant
+  DM: P223_R_DM_MLO - Label: Normal
+Patient: 223
+  CM: P223_L_CM_MLO - Label: Malignant
+  DM: P223_R_DM_MLO - Label: Normal
+Patient: 225
+  CM: P225_R_CM_CC - Label: Normal
+  DM: P225_L_DM_CC - Label: Benign
+Patient: 225
+  CM: P225_R_CM_CC - Label: Normal
+  DM: P225_L_DM_MLO - Label: Benign
+Patient: 225
+  CM: P225_R_CM_MLO - Label: Normal
+  DM: P225_L_DM_CC - Label: Benign
+Patient: 225
+  CM: P225_R_CM_MLO - Label: Normal
+  DM: P225_L_DM_MLO - Label: Benign
+Patient: 225
+  CM: P225_L_CM_CC - Label: Benign
+  DM: P225_R_DM_CC - Label: Normal
+Patient: 225
+  CM: P225_L_CM_CC - Label: Benign
+  DM: P225_R_DM_MLO - Label: Normal
+Patient: 225
+  CM: P225_L_CM_MLO - Label: Benign
+  DM: P225_R_DM_CC - Label: Normal
+Patient: 225
+  CM: P225_L_CM_MLO - Label: Benign
+  DM: P225_R_DM_MLO - Label: Normal
+Patient: 227
+  CM: P227_R_CM_CC - Label: Benign
+  DM: P227_L_DM_CC - Label: Normal
+Patient: 227
+  CM: P227_R_CM_CC - Label: Benign
+  DM: P227_L_DM_MLO - Label: Normal
+Patient: 227
+  CM: P227_R_CM_MLO - Label: Benign
+  DM: P227_L_DM_CC - Label: Normal
+Patient: 227
+  CM: P227_R_CM_MLO - Label: Benign
+  DM: P227_L_DM_MLO - Label: Normal
+Patient: 227
+  CM: P227_L_CM_CC - Label: Normal
+  DM: P227_R_DM_CC - Label: Benign
+Patient: 227
+  CM: P227_L_CM_CC - Label: Normal
+  DM: P227_R_DM_MLO - Label: Benign
+Patient: 227
+  CM: P227_L_CM_MLO - Label: Normal
+  DM: P227_R_DM_CC - Label: Benign
+Patient: 227
+  CM: P227_L_CM_MLO - Label: Normal
+  DM: P227_R_DM_MLO - Label: Benign
+Patient: 230
+  CM: P230_R_CM_CC - Label: Malignant
+  DM: P230_L_DM_CC - Label: Normal
+Patient: 230
+  CM: P230_R_CM_CC - Label: Malignant
+  DM: P230_L_DM_MLO - Label: Normal
+Patient: 230
+  CM: P230_R_CM_MLO - Label: Malignant
+  DM: P230_L_DM_CC - Label: Normal
+Patient: 230
+  CM: P230_R_CM_MLO - Label: Malignant
+  DM: P230_L_DM_MLO - Label: Normal
+Patient: 230
+  CM: P230_L_CM_CC - Label: Normal
+  DM: P230_R_DM_CC - Label: Malignant
+Patient: 230
+  CM: P230_L_CM_CC - Label: Normal
+  DM: P230_R_DM_MLO - Label: Malignant
+Patient: 230
+  CM: P230_L_CM_MLO - Label: Normal
+  DM: P230_R_DM_CC - Label: Malignant
+Patient: 230
+  CM: P230_L_CM_MLO - Label: Normal
+  DM: P230_R_DM_MLO - Label: Malignant
+Patient: 232
+  CM: P232_R_CM_CC - Label: Normal
+  DM: P232_L_DM_CC - Label: Malignant
+Patient: 232
+  CM: P232_R_CM_CC - Label: Normal
+  DM: P232_L_DM_MLO - Label: Malignant
+Patient: 232
+  CM: P232_R_CM_MLO - Label: Normal
+  DM: P232_L_DM_CC - Label: Malignant
+Patient: 232
+  CM: P232_R_CM_MLO - Label: Normal
+  DM: P232_L_DM_MLO - Label: Malignant
+Patient: 232
+  CM: P232_L_CM_CC - Label: Malignant
+  DM: P232_R_DM_CC - Label: Normal
+Patient: 232
+  CM: P232_L_CM_CC - Label: Malignant
+  DM: P232_R_DM_MLO - Label: Normal
+Patient: 232
+  CM: P232_L_CM_MLO - Label: Malignant
+  DM: P232_R_DM_CC - Label: Normal
+Patient: 232
+  CM: P232_L_CM_MLO - Label: Malignant
+  DM: P232_R_DM_MLO - Label: Normal
+Patient: 233
+  CM: P233_R_CM_CC - Label: Normal
+  DM: P233_L_DM_CC - Label: Malignant
+Patient: 233
+  CM: P233_R_CM_CC - Label: Normal
+  DM: P233_L_DM_MLO - Label: Malignant
+Patient: 233
+  CM: P233_R_CM_MLO - Label: Normal
+  DM: P233_L_DM_CC - Label: Malignant
+Patient: 233
+  CM: P233_R_CM_MLO - Label: Normal
+  DM: P233_L_DM_MLO - Label: Malignant
+Patient: 233
+  CM: P233_L_CM_CC - Label: Malignant
+  DM: P233_R_DM_CC - Label: Normal
+Patient: 233
+  CM: P233_L_CM_CC - Label: Malignant
+  DM: P233_R_DM_MLO - Label: Normal
+Patient: 233
+  CM: P233_L_CM_MLO - Label: Malignant
+  DM: P233_R_DM_CC - Label: Normal
+Patient: 233
+  CM: P233_L_CM_MLO - Label: Malignant
+  DM: P233_R_DM_MLO - Label: Normal
+Patient: 234
+  CM: P234_L_CM_CC - Label: Normal
+  DM: P234_L_DM_CC - Label: Benign
+Patient: 236
+  CM: P236_R_CM_CC - Label: Normal
+  DM: P236_L_DM_CC - Label: Benign
+Patient: 236
+  CM: P236_R_CM_CC - Label: Normal
+  DM: P236_L_DM_MLO - Label: Benign
+Patient: 236
+  CM: P236_R_CM_MLO - Label: Normal
+  DM: P236_L_DM_CC - Label: Benign
+Patient: 236
+  CM: P236_R_CM_MLO - Label: Normal
+  DM: P236_L_DM_MLO - Label: Benign
+Patient: 236
+  CM: P236_L_CM_CC - Label: Benign
+  DM: P236_R_DM_CC - Label: Normal
+Patient: 236
+  CM: P236_L_CM_CC - Label: Benign
+  DM: P236_R_DM_MLO - Label: Normal
+Patient: 236
+  CM: P236_L_CM_MLO - Label: Benign
+  DM: P236_R_DM_CC - Label: Normal
+Patient: 236
+  CM: P236_L_CM_MLO - Label: Benign
+  DM: P236_R_DM_MLO - Label: Normal
+Patient: 237
+  CM: P237_R_CM_CC - Label: Normal
+  DM: P237_L_DM_CC - Label: Benign
+Patient: 237
+  CM: P237_R_CM_CC - Label: Normal
+  DM: P237_L_DM_MLO - Label: Benign
+Patient: 237
+  CM: P237_R_CM_MLO - Label: Normal
+  DM: P237_L_DM_CC - Label: Benign
+Patient: 237
+  CM: P237_R_CM_MLO - Label: Normal
+  DM: P237_L_DM_MLO - Label: Benign
+Patient: 237
+  CM: P237_L_CM_CC - Label: Benign
+  DM: P237_R_DM_CC - Label: Normal
+Patient: 237
+  CM: P237_L_CM_CC - Label: Benign
+  DM: P237_R_DM_MLO - Label: Normal
+Patient: 237
+  CM: P237_L_CM_MLO - Label: Benign
+  DM: P237_R_DM_CC - Label: Normal
+Patient: 237
+  CM: P237_L_CM_MLO - Label: Benign
+  DM: P237_R_DM_MLO - Label: Normal
+Patient: 239
+  CM: P239_R_CM_CC - Label: Malignant
+  DM: P239_L_DM_CC - Label: Normal
+Patient: 239
+  CM: P239_R_CM_CC - Label: Malignant
+  DM: P239_L_DM_MLO - Label: Normal
+Patient: 239
+  CM: P239_R_CM_MLO - Label: Malignant
+  DM: P239_L_DM_CC - Label: Normal
+Patient: 239
+  CM: P239_R_CM_MLO - Label: Malignant
+  DM: P239_L_DM_MLO - Label: Normal
+Patient: 239
+  CM: P239_L_CM_CC - Label: Normal
+  DM: P239_R_DM_CC - Label: Malignant
+Patient: 239
+  CM: P239_L_CM_CC - Label: Normal
+  DM: P239_R_DM_MLO - Label: Malignant
+Patient: 239
+  CM: P239_L_CM_MLO - Label: Normal
+  DM: P239_R_DM_CC - Label: Malignant
+Patient: 239
+  CM: P239_L_CM_MLO - Label: Normal
+  DM: P239_R_DM_MLO - Label: Malignant
+Patient: 242
+  CM: P242_R_CM_MLO - Label: Malignant
+  DM: P242_L_DM_CC - Label: Normal
+Patient: 242
+  CM: P242_L_CM_CC - Label: Normal
+  DM: P242_R_DM_MLO - Label: Malignant
+Patient: 243
+  CM: P243_R_CM_CC - Label: Malignant
+  DM: P243_L_DM_CC - Label: Normal
+Patient: 243
+  CM: P243_R_CM_CC - Label: Malignant
+  DM: P243_L_DM_MLO - Label: Normal
+Patient: 243
+  CM: P243_R_CM_MLO - Label: Malignant
+  DM: P243_L_DM_CC - Label: Normal
+Patient: 243
+  CM: P243_R_CM_MLO - Label: Malignant
+  DM: P243_L_DM_MLO - Label: Normal
+Patient: 243
+  CM: P243_L_CM_CC - Label: Normal
+  DM: P243_R_DM_CC - Label: Malignant
+Patient: 243
+  CM: P243_L_CM_CC - Label: Normal
+  DM: P243_R_DM_MLO - Label: Malignant
+Patient: 243
+  CM: P243_L_CM_MLO - Label: Normal
+  DM: P243_R_DM_CC - Label: Malignant
+Patient: 243
+  CM: P243_L_CM_MLO - Label: Normal
+  DM: P243_R_DM_MLO - Label: Malignant
+Patient: 244
+  CM: P244_R_CM_CC - Label: Normal
+  DM: P244_L_DM_CC - Label: Benign
+Patient: 244
+  CM: P244_R_CM_CC - Label: Normal
+  DM: P244_L_DM_MLO - Label: Benign
+Patient: 244
+  CM: P244_R_CM_MLO - Label: Normal
+  DM: P244_L_DM_CC - Label: Benign
+Patient: 244
+  CM: P244_R_CM_MLO - Label: Normal
+  DM: P244_L_DM_MLO - Label: Benign
+Patient: 244
+  CM: P244_L_CM_CC - Label: Normal
+  DM: P244_L_DM_CC - Label: Benign
+Patient: 244
+  CM: P244_L_CM_CC - Label: Normal
+  DM: P244_L_DM_MLO - Label: Benign
+Patient: 244
+  CM: P244_L_CM_MLO - Label: Normal
+  DM: P244_L_DM_CC - Label: Benign
+Patient: 244
+  CM: P244_L_CM_MLO - Label: Normal
+  DM: P244_L_DM_MLO - Label: Benign
+Patient: 245
+  CM: P245_R_CM_CC - Label: Normal
+  DM: P245_R_DM_CC - Label: Benign
+Patient: 245
+  CM: P245_R_CM_CC - Label: Normal
+  DM: P245_L_DM_CC - Label: Malignant
+Patient: 245
+  CM: P245_L_CM_CC - Label: Malignant
+  DM: P245_R_DM_CC - Label: Benign
+Patient: 248
+  CM: P248_R_CM_MLO - Label: Normal
+  DM: P248_L_DM_CC - Label: Benign
+Patient: 248
+  CM: P248_R_CM_MLO - Label: Normal
+  DM: P248_L_DM_MLO - Label: Benign
+Patient: 248
+  CM: P248_L_CM_CC - Label: Benign
+  DM: P248_R_DM_MLO - Label: Normal
+Patient: 248
+  CM: P248_L_CM_MLO - Label: Benign
+  DM: P248_R_DM_MLO - Label: Normal
+Patient: 249
+  CM: P249_R_CM_CC - Label: Malignant
+  DM: P249_L_DM_CC - Label: Normal
+Patient: 249
+  CM: P249_R_CM_CC - Label: Malignant
+  DM: P249_L_DM_MLO - Label: Normal
+Patient: 249
+  CM: P249_R_CM_MLO - Label: Malignant
+  DM: P249_L_DM_CC - Label: Normal
+Patient: 249
+  CM: P249_R_CM_MLO - Label: Malignant
+  DM: P249_L_DM_MLO - Label: Normal
+Patient: 249
+  CM: P249_L_CM_CC - Label: Normal
+  DM: P249_R_DM_CC - Label: Malignant
+Patient: 249
+  CM: P249_L_CM_CC - Label: Normal
+  DM: P249_R_DM_MLO - Label: Malignant
+Patient: 249
+  CM: P249_L_CM_MLO - Label: Normal
+  DM: P249_R_DM_CC - Label: Malignant
+Patient: 249
+  CM: P249_L_CM_MLO - Label: Normal
+  DM: P249_R_DM_MLO - Label: Malignant
+Patient: 251
+  CM: P251_R_CM_CC - Label: Malignant
+  DM: P251_L_DM_CC - Label: Normal
+Patient: 251
+  CM: P251_R_CM_CC - Label: Malignant
+  DM: P251_L_DM_MLO - Label: Normal
+Patient: 251
+  CM: P251_R_CM_MLO - Label: Malignant
+  DM: P251_L_DM_CC - Label: Normal
+Patient: 251
+  CM: P251_R_CM_MLO - Label: Malignant
+  DM: P251_L_DM_MLO - Label: Normal
+Patient: 251
+  CM: P251_L_CM_CC - Label: Normal
+  DM: P251_R_DM_CC - Label: Malignant
+Patient: 251
+  CM: P251_L_CM_CC - Label: Normal
+  DM: P251_R_DM_MLO - Label: Malignant
+Patient: 251
+  CM: P251_L_CM_MLO - Label: Normal
+  DM: P251_R_DM_CC - Label: Malignant
+Patient: 251
+  CM: P251_L_CM_MLO - Label: Normal
+  DM: P251_R_DM_MLO - Label: Malignant
+Patient: 252
+  CM: P252_R_CM_CC - Label: Malignant
+  DM: P252_L_DM_CC - Label: Normal
+Patient: 252
+  CM: P252_R_CM_CC - Label: Malignant
+  DM: P252_L_DM_MLO - Label: Normal
+Patient: 252
+  CM: P252_R_CM_MLO - Label: Malignant
+  DM: P252_L_DM_CC - Label: Normal
+Patient: 252
+  CM: P252_R_CM_MLO - Label: Malignant
+  DM: P252_L_DM_MLO - Label: Normal
+Patient: 252
+  CM: P252_L_CM_CC - Label: Normal
+  DM: P252_R_DM_CC - Label: Malignant
+Patient: 252
+  CM: P252_L_CM_CC - Label: Normal
+  DM: P252_R_DM_MLO - Label: Malignant
+Patient: 252
+  CM: P252_L_CM_MLO - Label: Normal
+  DM: P252_R_DM_CC - Label: Malignant
+Patient: 252
+  CM: P252_L_CM_MLO - Label: Normal
+  DM: P252_R_DM_MLO - Label: Malignant
+Patient: 253
+  CM: P253_R_CM_CC - Label: Malignant
+  DM: P253_L_DM_CC - Label: Normal
+Patient: 253
+  CM: P253_R_CM_CC - Label: Malignant
+  DM: P253_L_DM_MLO - Label: Normal
+Patient: 253
+  CM: P253_R_CM_MLO - Label: Malignant
+  DM: P253_L_DM_CC - Label: Normal
+Patient: 253
+  CM: P253_R_CM_MLO - Label: Malignant
+  DM: P253_L_DM_MLO - Label: Normal
+Patient: 253
+  CM: P253_L_CM_CC - Label: Normal
+  DM: P253_R_DM_CC - Label: Malignant
+Patient: 253
+  CM: P253_L_CM_CC - Label: Normal
+  DM: P253_R_DM_MLO - Label: Malignant
+Patient: 253
+  CM: P253_L_CM_MLO - Label: Normal
+  DM: P253_R_DM_CC - Label: Malignant
+Patient: 253
+  CM: P253_L_CM_MLO - Label: Normal
+  DM: P253_R_DM_MLO - Label: Malignant
+Patient: 254
+  CM: P254_R_CM_CC - Label: Malignant
+  DM: P254_L_DM_CC - Label: Normal
+Patient: 254
+  CM: P254_R_CM_CC - Label: Malignant
+  DM: P254_L_DM_MLO - Label: Benign
+Patient: 254
+  CM: P254_R_CM_MLO - Label: Malignant
+  DM: P254_L_DM_CC - Label: Normal
+Patient: 254
+  CM: P254_R_CM_MLO - Label: Malignant
+  DM: P254_L_DM_MLO - Label: Benign
+Patient: 254
+  CM: P254_L_CM_CC - Label: Normal
+  DM: P254_R_DM_CC - Label: Malignant
+Patient: 254
+  CM: P254_L_CM_CC - Label: Normal
+  DM: P254_R_DM_MLO - Label: Malignant
+Patient: 254
+  CM: P254_L_CM_CC - Label: Normal
+  DM: P254_L_DM_MLO - Label: Benign
+Patient: 254
+  CM: P254_L_CM_MLO - Label: Normal
+  DM: P254_R_DM_CC - Label: Malignant
+Patient: 254
+  CM: P254_L_CM_MLO - Label: Normal
+  DM: P254_R_DM_MLO - Label: Malignant
+Patient: 254
+  CM: P254_L_CM_MLO - Label: Normal
+  DM: P254_L_DM_MLO - Label: Benign
+Patient: 255
+  CM: P255_R_CM_CC - Label: Benign
+  DM: P255_L_DM_CC - Label: Malignant
+Patient: 255
+  CM: P255_R_CM_CC - Label: Benign
+  DM: P255_L_DM_MLO - Label: Malignant
+Patient: 255
+  CM: P255_R_CM_MLO - Label: Benign
+  DM: P255_L_DM_CC - Label: Malignant
+Patient: 255
+  CM: P255_R_CM_MLO - Label: Benign
+  DM: P255_L_DM_MLO - Label: Malignant
+Patient: 255
+  CM: P255_L_CM_CC - Label: Malignant
+  DM: P255_R_DM_CC - Label: Benign
+Patient: 255
+  CM: P255_L_CM_CC - Label: Malignant
+  DM: P255_R_DM_MLO - Label: Benign
+Patient: 255
+  CM: P255_L_CM_MLO - Label: Malignant
+  DM: P255_R_DM_CC - Label: Benign
+Patient: 255
+  CM: P255_L_CM_MLO - Label: Malignant
+  DM: P255_R_DM_MLO - Label: Benign
+Patient: 257
+  CM: P257_R_CM_CC - Label: Malignant
+  DM: P257_L_DM_CC - Label: Normal
+Patient: 257
+  CM: P257_R_CM_CC - Label: Malignant
+  DM: P257_L_DM_MLO - Label: Normal
+Patient: 257
+  CM: P257_R_CM_MLO - Label: Malignant
+  DM: P257_L_DM_CC - Label: Normal
+Patient: 257
+  CM: P257_R_CM_MLO - Label: Malignant
+  DM: P257_L_DM_MLO - Label: Normal
+Patient: 257
+  CM: P257_L_CM_CC - Label: Normal
+  DM: P257_R_DM_CC - Label: Malignant
+Patient: 257
+  CM: P257_L_CM_CC - Label: Normal
+  DM: P257_R_DM_MLO - Label: Malignant
+Patient: 257
+  CM: P257_L_CM_MLO - Label: Normal
+  DM: P257_R_DM_CC - Label: Malignant
+Patient: 257
+  CM: P257_L_CM_MLO - Label: Normal
+  DM: P257_R_DM_MLO - Label: Malignant
+Patient: 258
+  CM: P258_R_CM_CC - Label: Malignant
+  DM: P258_L_DM_CC - Label: Normal
+Patient: 258
+  CM: P258_R_CM_CC - Label: Malignant
+  DM: P258_L_DM_MLO - Label: Normal
+Patient: 258
+  CM: P258_R_CM_MLO - Label: Malignant
+  DM: P258_L_DM_CC - Label: Normal
+Patient: 258
+  CM: P258_R_CM_MLO - Label: Malignant
+  DM: P258_L_DM_MLO - Label: Normal
+Patient: 258
+  CM: P258_L_CM_CC - Label: Normal
+  DM: P258_R_DM_CC - Label: Malignant
+Patient: 258
+  CM: P258_L_CM_CC - Label: Normal
+  DM: P258_R_DM_MLO - Label: Malignant
+Patient: 258
+  CM: P258_L_CM_MLO - Label: Normal
+  DM: P258_R_DM_CC - Label: Malignant
+Patient: 258
+  CM: P258_L_CM_MLO - Label: Normal
+  DM: P258_R_DM_MLO - Label: Malignant
+Patient: 259
+  CM: P259_R_CM_CC - Label: Normal
+  DM: P259_L_DM_CC - Label: Malignant
+Patient: 259
+  CM: P259_R_CM_CC - Label: Normal
+  DM: P259_L_DM_MLO - Label: Malignant
+Patient: 259
+  CM: P259_R_CM_MLO - Label: Normal
+  DM: P259_L_DM_CC - Label: Malignant
+Patient: 259
+  CM: P259_R_CM_MLO - Label: Normal
+  DM: P259_L_DM_MLO - Label: Malignant
+Patient: 259
+  CM: P259_L_CM_CC - Label: Malignant
+  DM: P259_R_DM_CC - Label: Normal
+Patient: 259
+  CM: P259_L_CM_CC - Label: Malignant
+  DM: P259_R_DM_MLO - Label: Normal
+Patient: 259
+  CM: P259_L_CM_MLO - Label: Malignant
+  DM: P259_R_DM_CC - Label: Normal
+Patient: 259
+  CM: P259_L_CM_MLO - Label: Malignant
+  DM: P259_R_DM_MLO - Label: Normal
+Patient: 260
+  CM: P260_R_CM_CC - Label: Malignant
+  DM: P260_L_DM_CC - Label: Normal
+Patient: 260
+  CM: P260_R_CM_CC - Label: Malignant
+  DM: P260_L_DM_MLO - Label: Normal
+Patient: 260
+  CM: P260_R_CM_MLO - Label: Malignant
+  DM: P260_L_DM_CC - Label: Normal
+Patient: 260
+  CM: P260_R_CM_MLO - Label: Malignant
+  DM: P260_L_DM_MLO - Label: Normal
+Patient: 260
+  CM: P260_L_CM_CC - Label: Normal
+  DM: P260_R_DM_CC - Label: Malignant
+Patient: 260
+  CM: P260_L_CM_CC - Label: Normal
+  DM: P260_R_DM_MLO - Label: Malignant
+Patient: 260
+  CM: P260_L_CM_MLO - Label: Normal
+  DM: P260_R_DM_CC - Label: Malignant
+Patient: 260
+  CM: P260_L_CM_MLO - Label: Normal
+  DM: P260_R_DM_MLO - Label: Malignant
+Patient: 261
+  CM: P261_R_CM_CC - Label: Normal
+  DM: P261_L_DM_CC - Label: Malignant
+Patient: 261
+  CM: P261_R_CM_CC - Label: Normal
+  DM: P261_L_DM_MLO - Label: Malignant
+Patient: 261
+  CM: P261_R_CM_MLO - Label: Normal
+  DM: P261_L_DM_CC - Label: Malignant
+Patient: 261
+  CM: P261_R_CM_MLO - Label: Normal
+  DM: P261_L_DM_MLO - Label: Malignant
+Patient: 261
+  CM: P261_L_CM_CC - Label: Malignant
+  DM: P261_R_DM_CC - Label: Normal
+Patient: 261
+  CM: P261_L_CM_CC - Label: Malignant
+  DM: P261_R_DM_MLO - Label: Normal
+Patient: 261
+  CM: P261_L_CM_MLO - Label: Malignant
+  DM: P261_R_DM_CC - Label: Normal
+Patient: 261
+  CM: P261_L_CM_MLO - Label: Malignant
+  DM: P261_R_DM_MLO - Label: Normal
+Patient: 262
+  CM: P262_R_CM_CC - Label: Normal
+  DM: P262_R_DM_CC - Label: Benign
+Patient: 262
+  CM: P262_R_CM_CC - Label: Normal
+  DM: P262_R_DM_MLO - Label: Benign
+Patient: 262
+  CM: P262_R_CM_CC - Label: Normal
+  DM: P262_L_DM_CC - Label: Malignant
+Patient: 262
+  CM: P262_R_CM_CC - Label: Normal
+  DM: P262_L_DM_MLO - Label: Malignant
+Patient: 262
+  CM: P262_R_CM_MLO - Label: Normal
+  DM: P262_R_DM_CC - Label: Benign
+Patient: 262
+  CM: P262_R_CM_MLO - Label: Normal
+  DM: P262_R_DM_MLO - Label: Benign
+Patient: 262
+  CM: P262_R_CM_MLO - Label: Normal
+  DM: P262_L_DM_CC - Label: Malignant
+Patient: 262
+  CM: P262_R_CM_MLO - Label: Normal
+  DM: P262_L_DM_MLO - Label: Malignant
+Patient: 262
+  CM: P262_L_CM_CC - Label: Malignant
+  DM: P262_R_DM_CC - Label: Benign
+Patient: 262
+  CM: P262_L_CM_CC - Label: Malignant
+  DM: P262_R_DM_MLO - Label: Benign
+Patient: 262
+  CM: P262_L_CM_MLO - Label: Malignant
+  DM: P262_R_DM_CC - Label: Benign
+Patient: 262
+  CM: P262_L_CM_MLO - Label: Malignant
+  DM: P262_R_DM_MLO - Label: Benign
+Patient: 263
+  CM: P263_R_CM_CC - Label: Malignant
+  DM: P263_L_DM_CC - Label: Benign
+Patient: 263
+  CM: P263_R_CM_CC - Label: Malignant
+  DM: P263_L_DM_MLO - Label: Benign
+Patient: 263
+  CM: P263_R_CM_MLO - Label: Malignant
+  DM: P263_L_DM_CC - Label: Benign
+Patient: 263
+  CM: P263_R_CM_MLO - Label: Malignant
+  DM: P263_L_DM_MLO - Label: Benign
+Patient: 263
+  CM: P263_L_CM_CC - Label: Benign
+  DM: P263_R_DM_CC - Label: Malignant
+Patient: 263
+  CM: P263_L_CM_CC - Label: Benign
+  DM: P263_R_DM_MLO - Label: Malignant
+Patient: 263
+  CM: P263_L_CM_MLO - Label: Benign
+  DM: P263_R_DM_CC - Label: Malignant
+Patient: 263
+  CM: P263_L_CM_MLO - Label: Benign
+  DM: P263_R_DM_MLO - Label: Malignant
+Patient: 264
+  CM: P264_R_CM_CC - Label: Normal
+  DM: P264_L_DM_CC - Label: Malignant
+Patient: 264
+  CM: P264_R_CM_CC - Label: Normal
+  DM: P264_L_DM_MLO - Label: Malignant
+Patient: 264
+  CM: P264_R_CM_MLO - Label: Normal
+  DM: P264_L_DM_CC - Label: Malignant
+Patient: 264
+  CM: P264_R_CM_MLO - Label: Normal
+  DM: P264_L_DM_MLO - Label: Malignant
+Patient: 264
+  CM: P264_L_CM_CC - Label: Malignant
+  DM: P264_R_DM_CC - Label: Normal
+Patient: 264
+  CM: P264_L_CM_CC - Label: Malignant
+  DM: P264_R_DM_MLO - Label: Normal
+Patient: 264
+  CM: P264_L_CM_MLO - Label: Malignant
+  DM: P264_R_DM_CC - Label: Normal
+Patient: 264
+  CM: P264_L_CM_MLO - Label: Malignant
+  DM: P264_R_DM_MLO - Label: Normal
+Patient: 266
+  CM: P266_R_CM_CC - Label: Malignant
+  DM: P266_L_DM_CC - Label: Normal
+Patient: 266
+  CM: P266_R_CM_CC - Label: Malignant
+  DM: P266_L_DM_MLO - Label: Normal
+Patient: 266
+  CM: P266_R_CM_MLO - Label: Malignant
+  DM: P266_L_DM_CC - Label: Normal
+Patient: 266
+  CM: P266_R_CM_MLO - Label: Malignant
+  DM: P266_L_DM_MLO - Label: Normal
+Patient: 266
+  CM: P266_L_CM_CC - Label: Normal
+  DM: P266_R_DM_CC - Label: Malignant
+Patient: 266
+  CM: P266_L_CM_CC - Label: Normal
+  DM: P266_R_DM_MLO - Label: Malignant
+Patient: 266
+  CM: P266_L_CM_MLO - Label: Normal
+  DM: P266_R_DM_CC - Label: Malignant
+Patient: 266
+  CM: P266_L_CM_MLO - Label: Normal
+  DM: P266_R_DM_MLO - Label: Malignant
+Patient: 267
+  CM: P267_R_CM_CC - Label: Normal
+  DM: P267_L_DM_CC - Label: Malignant
+Patient: 267
+  CM: P267_R_CM_CC - Label: Normal
+  DM: P267_L_DM_MLO - Label: Malignant
+Patient: 267
+  CM: P267_R_CM_MLO - Label: Normal
+  DM: P267_L_DM_CC - Label: Malignant
+Patient: 267
+  CM: P267_R_CM_MLO - Label: Normal
+  DM: P267_L_DM_MLO - Label: Malignant
+Patient: 267
+  CM: P267_L_CM_CC - Label: Malignant
+  DM: P267_R_DM_CC - Label: Normal
+Patient: 267
+  CM: P267_L_CM_CC - Label: Malignant
+  DM: P267_R_DM_MLO - Label: Normal
+Patient: 267
+  CM: P267_L_CM_MLO - Label: Malignant
+  DM: P267_R_DM_CC - Label: Normal
+Patient: 267
+  CM: P267_L_CM_MLO - Label: Malignant
+  DM: P267_R_DM_MLO - Label: Normal
+Patient: 268
+  CM: P268_R_CM_CC - Label: Normal
+  DM: P268_L_DM_CC - Label: Malignant
+Patient: 268
+  CM: P268_R_CM_CC - Label: Normal
+  DM: P268_L_DM_MLO - Label: Malignant
+Patient: 268
+  CM: P268_R_CM_MLO - Label: Normal
+  DM: P268_L_DM_CC - Label: Malignant
+Patient: 268
+  CM: P268_R_CM_MLO - Label: Normal
+  DM: P268_L_DM_MLO - Label: Malignant
+Patient: 268
+  CM: P268_L_CM_CC - Label: Malignant
+  DM: P268_R_DM_CC - Label: Normal
+Patient: 268
+  CM: P268_L_CM_CC - Label: Malignant
+  DM: P268_R_DM_MLO - Label: Normal
+Patient: 268
+  CM: P268_L_CM_MLO - Label: Malignant
+  DM: P268_R_DM_CC - Label: Normal
+Patient: 268
+  CM: P268_L_CM_MLO - Label: Malignant
+  DM: P268_R_DM_MLO - Label: Normal
+Patient: 269
+  CM: P269_R_CM_CC - Label: Normal
+  DM: P269_L_DM_CC - Label: Malignant
+Patient: 269
+  CM: P269_R_CM_CC - Label: Normal
+  DM: P269_L_DM_MLO - Label: Malignant
+Patient: 269
+  CM: P269_R_CM_MLO - Label: Normal
+  DM: P269_L_DM_CC - Label: Malignant
+Patient: 269
+  CM: P269_R_CM_MLO - Label: Normal
+  DM: P269_L_DM_MLO - Label: Malignant
+Patient: 269
+  CM: P269_L_CM_CC - Label: Malignant
+  DM: P269_R_DM_CC - Label: Normal
+Patient: 269
+  CM: P269_L_CM_CC - Label: Malignant
+  DM: P269_R_DM_MLO - Label: Normal
+Patient: 269
+  CM: P269_L_CM_MLO - Label: Malignant
+  DM: P269_R_DM_CC - Label: Normal
+Patient: 269
+  CM: P269_L_CM_MLO - Label: Malignant
+  DM: P269_R_DM_MLO - Label: Normal
+Patient: 270
+  CM: P270_R_CM_CC - Label: Benign
+  DM: P270_L_DM_CC - Label: Normal
+Patient: 270
+  CM: P270_R_CM_CC - Label: Benign
+  DM: P270_L_DM_MLO - Label: Normal
+Patient: 270
+  CM: P270_R_CM_MLO - Label: Benign
+  DM: P270_L_DM_CC - Label: Normal
+Patient: 270
+  CM: P270_R_CM_MLO - Label: Benign
+  DM: P270_L_DM_MLO - Label: Normal
+Patient: 270
+  CM: P270_L_CM_CC - Label: Normal
+  DM: P270_R_DM_CC - Label: Benign
+Patient: 270
+  CM: P270_L_CM_CC - Label: Normal
+  DM: P270_R_DM_MLO - Label: Benign
+Patient: 270
+  CM: P270_L_CM_MLO - Label: Normal
+  DM: P270_R_DM_CC - Label: Benign
+Patient: 270
+  CM: P270_L_CM_MLO - Label: Normal
+  DM: P270_R_DM_MLO - Label: Benign
+Patient: 271
+  CM: P271_R_CM_CC - Label: Benign
+  DM: P271_L_DM_CC - Label: Malignant
+Patient: 271
+  CM: P271_R_CM_CC - Label: Benign
+  DM: P271_L_DM_MLO - Label: Malignant
+Patient: 271
+  CM: P271_R_CM_MLO - Label: Benign
+  DM: P271_L_DM_CC - Label: Malignant
+Patient: 271
+  CM: P271_R_CM_MLO - Label: Benign
+  DM: P271_L_DM_MLO - Label: Malignant
+Patient: 271
+  CM: P271_L_CM_CC - Label: Malignant
+  DM: P271_R_DM_CC - Label: Benign
+Patient: 271
+  CM: P271_L_CM_CC - Label: Malignant
+  DM: P271_R_DM_MLO - Label: Benign
+Patient: 271
+  CM: P271_L_CM_MLO - Label: Malignant
+  DM: P271_R_DM_CC - Label: Benign
+Patient: 271
+  CM: P271_L_CM_MLO - Label: Malignant
+  DM: P271_R_DM_MLO - Label: Benign
+Patient: 272
+  CM: P272_R_CM_CC - Label: Normal
+  DM: P272_L_DM_CC - Label: Malignant
+Patient: 272
+  CM: P272_R_CM_CC - Label: Normal
+  DM: P272_L_DM_MLO - Label: Malignant
+Patient: 272
+  CM: P272_R_CM_MLO - Label: Normal
+  DM: P272_L_DM_CC - Label: Malignant
+Patient: 272
+  CM: P272_R_CM_MLO - Label: Normal
+  DM: P272_L_DM_MLO - Label: Malignant
+Patient: 272
+  CM: P272_L_CM_CC - Label: Malignant
+  DM: P272_R_DM_CC - Label: Normal
+Patient: 272
+  CM: P272_L_CM_CC - Label: Malignant
+  DM: P272_R_DM_MLO - Label: Normal
+Patient: 272
+  CM: P272_L_CM_MLO - Label: Malignant
+  DM: P272_R_DM_CC - Label: Normal
+Patient: 272
+  CM: P272_L_CM_MLO - Label: Malignant
+  DM: P272_R_DM_MLO - Label: Normal
+Patient: 273
+  CM: P273_R_CM_CC - Label: Normal
+  DM: P273_R_DM_CC - Label: Benign
+Patient: 273
+  CM: P273_R_CM_CC - Label: Normal
+  DM: P273_R_DM_MLO - Label: Benign
+Patient: 273
+  CM: P273_R_CM_CC - Label: Normal
+  DM: P273_L_DM_CC - Label: Malignant
+Patient: 273
+  CM: P273_R_CM_CC - Label: Normal
+  DM: P273_L_DM_MLO - Label: Malignant
+Patient: 273
+  CM: P273_R_CM_MLO - Label: Normal
+  DM: P273_R_DM_CC - Label: Benign
+Patient: 273
+  CM: P273_R_CM_MLO - Label: Normal
+  DM: P273_R_DM_MLO - Label: Benign
+Patient: 273
+  CM: P273_R_CM_MLO - Label: Normal
+  DM: P273_L_DM_CC - Label: Malignant
+Patient: 273
+  CM: P273_R_CM_MLO - Label: Normal
+  DM: P273_L_DM_MLO - Label: Malignant
+Patient: 273
+  CM: P273_L_CM_CC - Label: Malignant
+  DM: P273_R_DM_CC - Label: Benign
+Patient: 273
+  CM: P273_L_CM_CC - Label: Malignant
+  DM: P273_R_DM_MLO - Label: Benign
+Patient: 273
+  CM: P273_L_CM_MLO - Label: Malignant
+  DM: P273_R_DM_CC - Label: Benign
+Patient: 273
+  CM: P273_L_CM_MLO - Label: Malignant
+  DM: P273_R_DM_MLO - Label: Benign
+Patient: 274
+  CM: P274_R_CM_CC - Label: Benign
+  DM: P274_L_DM_CC - Label: Malignant
+Patient: 274
+  CM: P274_R_CM_CC - Label: Benign
+  DM: P274_L_DM_MLO - Label: Malignant
+Patient: 274
+  CM: P274_R_CM_MLO - Label: Benign
+  DM: P274_L_DM_CC - Label: Malignant
+Patient: 274
+  CM: P274_R_CM_MLO - Label: Benign
+  DM: P274_L_DM_MLO - Label: Malignant
+Patient: 274
+  CM: P274_L_CM_CC - Label: Malignant
+  DM: P274_R_DM_CC - Label: Benign
+Patient: 274
+  CM: P274_L_CM_CC - Label: Malignant
+  DM: P274_R_DM_MLO - Label: Benign
+Patient: 274
+  CM: P274_L_CM_MLO - Label: Malignant
+  DM: P274_R_DM_CC - Label: Benign
+Patient: 274
+  CM: P274_L_CM_MLO - Label: Malignant
+  DM: P274_R_DM_MLO - Label: Benign
+Patient: 275
+  CM: P275_R_CM_CC - Label: Normal
+  DM: P275_L_DM_CC - Label: Malignant
+Patient: 275
+  CM: P275_R_CM_CC - Label: Normal
+  DM: P275_L_DM_MLO - Label: Malignant
+Patient: 275
+  CM: P275_R_CM_MLO - Label: Normal
+  DM: P275_L_DM_CC - Label: Malignant
+Patient: 275
+  CM: P275_R_CM_MLO - Label: Normal
+  DM: P275_L_DM_MLO - Label: Malignant
+Patient: 275
+  CM: P275_L_CM_CC - Label: Malignant
+  DM: P275_R_DM_CC - Label: Normal
+Patient: 275
+  CM: P275_L_CM_CC - Label: Malignant
+  DM: P275_R_DM_MLO - Label: Normal
+Patient: 275
+  CM: P275_L_CM_MLO - Label: Malignant
+  DM: P275_R_DM_CC - Label: Normal
+Patient: 275
+  CM: P275_L_CM_MLO - Label: Malignant
+  DM: P275_R_DM_MLO - Label: Normal
+Patient: 276
+  CM: P276_R_CM_CC - Label: Normal
+  DM: P276_L_DM_CC - Label: Malignant
+Patient: 276
+  CM: P276_R_CM_CC - Label: Normal
+  DM: P276_L_DM_MLO - Label: Malignant
+Patient: 276
+  CM: P276_R_CM_MLO - Label: Normal
+  DM: P276_L_DM_CC - Label: Malignant
+Patient: 276
+  CM: P276_R_CM_MLO - Label: Normal
+  DM: P276_L_DM_MLO - Label: Malignant
+Patient: 276
+  CM: P276_L_CM_CC - Label: Malignant
+  DM: P276_R_DM_CC - Label: Normal
+Patient: 276
+  CM: P276_L_CM_CC - Label: Malignant
+  DM: P276_R_DM_MLO - Label: Normal
+Patient: 276
+  CM: P276_L_CM_MLO - Label: Malignant
+  DM: P276_R_DM_CC - Label: Normal
+Patient: 276
+  CM: P276_L_CM_MLO - Label: Malignant
+  DM: P276_R_DM_MLO - Label: Normal
+Patient: 277
+  CM: P277_R_CM_CC - Label: Normal
+  DM: P277_L_DM_CC - Label: Malignant
+Patient: 277
+  CM: P277_R_CM_CC - Label: Normal
+  DM: P277_L_DM_MLO - Label: Malignant
+Patient: 277
+  CM: P277_R_CM_MLO - Label: Normal
+  DM: P277_L_DM_CC - Label: Malignant
+Patient: 277
+  CM: P277_R_CM_MLO - Label: Normal
+  DM: P277_L_DM_MLO - Label: Malignant
+Patient: 277
+  CM: P277_L_CM_CC - Label: Malignant
+  DM: P277_R_DM_CC - Label: Normal
+Patient: 277
+  CM: P277_L_CM_CC - Label: Malignant
+  DM: P277_R_DM_MLO - Label: Normal
+Patient: 277
+  CM: P277_L_CM_MLO - Label: Malignant
+  DM: P277_R_DM_CC - Label: Normal
+Patient: 277
+  CM: P277_L_CM_MLO - Label: Malignant
+  DM: P277_R_DM_MLO - Label: Normal
+Patient: 278
+  CM: P278_R_CM_CC - Label: Benign
+  DM: P278_L_DM_CC - Label: Malignant
+Patient: 278
+  CM: P278_R_CM_CC - Label: Benign
+  DM: P278_L_DM_MLO - Label: Malignant
+Patient: 278
+  CM: P278_R_CM_MLO - Label: Benign
+  DM: P278_L_DM_CC - Label: Malignant
+Patient: 278
+  CM: P278_R_CM_MLO - Label: Benign
+  DM: P278_L_DM_MLO - Label: Malignant
+Patient: 278
+  CM: P278_L_CM_CC - Label: Malignant
+  DM: P278_R_DM_CC - Label: Benign
+Patient: 278
+  CM: P278_L_CM_CC - Label: Malignant
+  DM: P278_R_DM_MLO - Label: Benign
+Patient: 278
+  CM: P278_L_CM_MLO - Label: Malignant
+  DM: P278_R_DM_CC - Label: Benign
+Patient: 278
+  CM: P278_L_CM_MLO - Label: Malignant
+  DM: P278_R_DM_MLO - Label: Benign
+Patient: 279
+  CM: P279_R_CM_CC - Label: Malignant
+  DM: P279_L_DM_CC - Label: Normal
+Patient: 279
+  CM: P279_R_CM_CC - Label: Malignant
+  DM: P279_L_DM_MLO - Label: Normal
+Patient: 279
+  CM: P279_R_CM_MLO - Label: Malignant
+  DM: P279_L_DM_CC - Label: Normal
+Patient: 279
+  CM: P279_R_CM_MLO - Label: Malignant
+  DM: P279_L_DM_MLO - Label: Normal
+Patient: 279
+  CM: P279_L_CM_CC - Label: Normal
+  DM: P279_R_DM_CC - Label: Malignant
+Patient: 279
+  CM: P279_L_CM_CC - Label: Normal
+  DM: P279_R_DM_MLO - Label: Malignant
+Patient: 279
+  CM: P279_L_CM_MLO - Label: Normal
+  DM: P279_R_DM_CC - Label: Malignant
+Patient: 279
+  CM: P279_L_CM_MLO - Label: Normal
+  DM: P279_R_DM_MLO - Label: Malignant
+Patient: 280
+  CM: P280_R_CM_CC - Label: Normal
+  DM: P280_R_DM_CC - Label: Benign
+Patient: 280
+  CM: P280_R_CM_CC - Label: Normal
+  DM: P280_R_DM_MLO - Label: Benign
+Patient: 280
+  CM: P280_R_CM_CC - Label: Normal
+  DM: P280_L_DM_CC - Label: Malignant
+Patient: 280
+  CM: P280_R_CM_CC - Label: Normal
+  DM: P280_L_DM_MLO - Label: Malignant
+Patient: 280
+  CM: P280_R_CM_MLO - Label: Normal
+  DM: P280_R_DM_CC - Label: Benign
+Patient: 280
+  CM: P280_R_CM_MLO - Label: Normal
+  DM: P280_R_DM_MLO - Label: Benign
+Patient: 280
+  CM: P280_R_CM_MLO - Label: Normal
+  DM: P280_L_DM_CC - Label: Malignant
+Patient: 280
+  CM: P280_R_CM_MLO - Label: Normal
+  DM: P280_L_DM_MLO - Label: Malignant
+Patient: 280
+  CM: P280_L_CM_CC - Label: Malignant
+  DM: P280_R_DM_CC - Label: Benign
+Patient: 280
+  CM: P280_L_CM_CC - Label: Malignant
+  DM: P280_R_DM_MLO - Label: Benign
+Patient: 280
+  CM: P280_L_CM_MLO - Label: Malignant
+  DM: P280_R_DM_CC - Label: Benign
+Patient: 280
+  CM: P280_L_CM_MLO - Label: Malignant
+  DM: P280_R_DM_MLO - Label: Benign
+Patient: 281
+  CM: P281_R_CM_CC - Label: Malignant
+  DM: P281_L_DM_CC - Label: Normal
+Patient: 281
+  CM: P281_R_CM_CC - Label: Malignant
+  DM: P281_L_DM_MLO - Label: Normal
+Patient: 281
+  CM: P281_R_CM_CC - Label: Malignant
+  DM: P281_L_DM_MLO2 - Label: Normal
+Patient: 281
+  CM: P281_R_CM_MLO - Label: Malignant
+  DM: P281_L_DM_CC - Label: Normal
+Patient: 281
+  CM: P281_R_CM_MLO - Label: Malignant
+  DM: P281_L_DM_MLO - Label: Normal
+Patient: 281
+  CM: P281_R_CM_MLO - Label: Malignant
+  DM: P281_L_DM_MLO2 - Label: Normal
+Patient: 281
+  CM: P281_L_CM_CC - Label: Normal
+  DM: P281_R_DM_CC - Label: Malignant
+Patient: 281
+  CM: P281_L_CM_CC - Label: Normal
+  DM: P281_R_DM_MLO - Label: Malignant
+Patient: 281
+  CM: P281_L_CM_MLO - Label: Normal
+  DM: P281_R_DM_CC - Label: Malignant
+Patient: 281
+  CM: P281_L_CM_MLO - Label: Normal
+  DM: P281_R_DM_MLO - Label: Malignant
+Patient: 281
+  CM: P281_L_CM_MLO2 - Label: Normal
+  DM: P281_R_DM_CC - Label: Malignant
+Patient: 281
+  CM: P281_L_CM_MLO2 - Label: Normal
+  DM: P281_R_DM_MLO - Label: Malignant
+Patient: 283
+  CM: P283_R_CM_CC - Label: Normal
+  DM: P283_L_DM_CC - Label: Malignant
+Patient: 283
+  CM: P283_R_CM_CC - Label: Normal
+  DM: P283_L_DM_MLO - Label: Malignant
+Patient: 283
+  CM: P283_R_CM_MLO - Label: Normal
+  DM: P283_L_DM_CC - Label: Malignant
+Patient: 283
+  CM: P283_R_CM_MLO - Label: Normal
+  DM: P283_L_DM_MLO - Label: Malignant
+Patient: 283
+  CM: P283_L_CM_CC - Label: Malignant
+  DM: P283_R_DM_CC - Label: Normal
+Patient: 283
+  CM: P283_L_CM_CC - Label: Malignant
+  DM: P283_R_DM_MLO - Label: Normal
+Patient: 283
+  CM: P283_L_CM_MLO - Label: Malignant
+  DM: P283_R_DM_CC - Label: Normal
+Patient: 283
+  CM: P283_L_CM_MLO - Label: Malignant
+  DM: P283_R_DM_MLO - Label: Normal
+Patient: 285
+  CM: P285_R_CM_CC - Label: Malignant
+  DM: P285_L_DM_CC - Label: Benign
+Patient: 285
+  CM: P285_R_CM_CC - Label: Malignant
+  DM: P285_L_DM_MLO - Label: Benign
+Patient: 285
+  CM: P285_R_CM_MLO - Label: Malignant
+  DM: P285_L_DM_CC - Label: Benign
+Patient: 285
+  CM: P285_R_CM_MLO - Label: Malignant
+  DM: P285_L_DM_MLO - Label: Benign
+Patient: 285
+  CM: P285_L_CM_CC - Label: Benign
+  DM: P285_R_DM_CC - Label: Malignant
+Patient: 285
+  CM: P285_L_CM_CC - Label: Benign
+  DM: P285_R_DM_MLO - Label: Malignant
+Patient: 285
+  CM: P285_L_CM_MLO - Label: Benign
+  DM: P285_R_DM_CC - Label: Malignant
+Patient: 285
+  CM: P285_L_CM_MLO - Label: Benign
+  DM: P285_R_DM_MLO - Label: Malignant
+Patient: 286
+  CM: P286_R_CM_CC - Label: Malignant
+  DM: P286_L_DM_CC - Label: Normal
+Patient: 286
+  CM: P286_R_CM_CC - Label: Malignant
+  DM: P286_L_DM_MLO - Label: Normal
+Patient: 286
+  CM: P286_R_CM_MLO - Label: Malignant
+  DM: P286_L_DM_CC - Label: Normal
+Patient: 286
+  CM: P286_R_CM_MLO - Label: Malignant
+  DM: P286_L_DM_MLO - Label: Normal
+Patient: 286
+  CM: P286_L_CM_CC - Label: Normal
+  DM: P286_R_DM_CC - Label: Malignant
+Patient: 286
+  CM: P286_L_CM_CC - Label: Normal
+  DM: P286_R_DM_MLO - Label: Malignant
+Patient: 286
+  CM: P286_L_CM_MLO - Label: Normal
+  DM: P286_R_DM_CC - Label: Malignant
+Patient: 286
+  CM: P286_L_CM_MLO - Label: Normal
+  DM: P286_R_DM_MLO - Label: Malignant
+Patient: 287
+  CM: P287_R_CM_CC - Label: Benign
+  DM: P287_L_DM_CC - Label: Malignant
+Patient: 287
+  CM: P287_R_CM_CC - Label: Benign
+  DM: P287_L_DM_MLO - Label: Malignant
+Patient: 287
+  CM: P287_R_CM_MLO - Label: Benign
+  DM: P287_L_DM_CC - Label: Malignant
+Patient: 287
+  CM: P287_R_CM_MLO - Label: Benign
+  DM: P287_L_DM_MLO - Label: Malignant
+Patient: 287
+  CM: P287_L_CM_CC - Label: Malignant
+  DM: P287_R_DM_CC - Label: Benign
+Patient: 287
+  CM: P287_L_CM_CC - Label: Malignant
+  DM: P287_R_DM_MLO - Label: Benign
+Patient: 287
+  CM: P287_L_CM_MLO - Label: Malignant
+  DM: P287_R_DM_CC - Label: Benign
+Patient: 287
+  CM: P287_L_CM_MLO - Label: Malignant
+  DM: P287_R_DM_MLO - Label: Benign
+Patient: 288
+  CM: P288_R_CM_CC - Label: Normal
+  DM: P288_L_DM_CC - Label: Malignant
+Patient: 288
+  CM: P288_R_CM_CC - Label: Normal
+  DM: P288_L_DM_MLO - Label: Malignant
+Patient: 288
+  CM: P288_R_CM_MLO - Label: Normal
+  DM: P288_L_DM_CC - Label: Malignant
+Patient: 288
+  CM: P288_R_CM_MLO - Label: Normal
+  DM: P288_L_DM_MLO - Label: Malignant
+Patient: 288
+  CM: P288_L_CM_CC - Label: Malignant
+  DM: P288_R_DM_CC - Label: Normal
+Patient: 288
+  CM: P288_L_CM_CC - Label: Malignant
+  DM: P288_R_DM_MLO - Label: Normal
+Patient: 288
+  CM: P288_L_CM_MLO - Label: Malignant
+  DM: P288_R_DM_CC - Label: Normal
+Patient: 288
+  CM: P288_L_CM_MLO - Label: Malignant
+  DM: P288_R_DM_MLO - Label: Normal
+Patient: 289
+  CM: P289_R_CM_CC - Label: Malignant
+  DM: P289_L_DM_CC - Label: Normal
+Patient: 289
+  CM: P289_R_CM_CC - Label: Malignant
+  DM: P289_L_DM_MLO - Label: Normal
+Patient: 289
+  CM: P289_R_CM_MLO - Label: Malignant
+  DM: P289_L_DM_CC - Label: Normal
+Patient: 289
+  CM: P289_R_CM_MLO - Label: Malignant
+  DM: P289_L_DM_MLO - Label: Normal
+Patient: 289
+  CM: P289_L_CM_CC - Label: Normal
+  DM: P289_R_DM_CC - Label: Malignant
+Patient: 289
+  CM: P289_L_CM_CC - Label: Normal
+  DM: P289_R_DM_MLO - Label: Malignant
+Patient: 289
+  CM: P289_L_CM_MLO - Label: Normal
+  DM: P289_R_DM_CC - Label: Malignant
+Patient: 289
+  CM: P289_L_CM_MLO - Label: Normal
+  DM: P289_R_DM_MLO - Label: Malignant
+Patient: 290
+  CM: P290_R_CM_CC - Label: Malignant
+  DM: P290_L_DM_CC - Label: Benign
+Patient: 290
+  CM: P290_R_CM_CC - Label: Malignant
+  DM: P290_L_DM_MLO - Label: Benign
+Patient: 290
+  CM: P290_R_CM_MLO - Label: Malignant
+  DM: P290_L_DM_CC - Label: Benign
+Patient: 290
+  CM: P290_R_CM_MLO - Label: Malignant
+  DM: P290_L_DM_MLO - Label: Benign
+Patient: 290
+  CM: P290_L_CM_CC - Label: Normal
+  DM: P290_R_DM_CC - Label: Malignant
+Patient: 290
+  CM: P290_L_CM_CC - Label: Normal
+  DM: P290_R_DM_MLO - Label: Malignant
+Patient: 290
+  CM: P290_L_CM_CC - Label: Normal
+  DM: P290_L_DM_CC - Label: Benign
+Patient: 290
+  CM: P290_L_CM_CC - Label: Normal
+  DM: P290_L_DM_MLO - Label: Benign
+Patient: 290
+  CM: P290_L_CM_MLO - Label: Normal
+  DM: P290_R_DM_CC - Label: Malignant
+Patient: 290
+  CM: P290_L_CM_MLO - Label: Normal
+  DM: P290_R_DM_MLO - Label: Malignant
+Patient: 290
+  CM: P290_L_CM_MLO - Label: Normal
+  DM: P290_L_DM_CC - Label: Benign
+Patient: 290
+  CM: P290_L_CM_MLO - Label: Normal
+  DM: P290_L_DM_MLO - Label: Benign
+Patient: 291
+  CM: P291_R_CM_CC - Label: Malignant
+  DM: P291_L_DM_CC - Label: Normal
+Patient: 291
+  CM: P291_R_CM_CC - Label: Malignant
+  DM: P291_L_DM_MLO - Label: Normal
+Patient: 291
+  CM: P291_R_CM_MLO - Label: Malignant
+  DM: P291_L_DM_CC - Label: Normal
+Patient: 291
+  CM: P291_R_CM_MLO - Label: Malignant
+  DM: P291_L_DM_MLO - Label: Normal
+Patient: 291
+  CM: P291_L_CM_CC - Label: Normal
+  DM: P291_R_DM_CC - Label: Malignant
+Patient: 291
+  CM: P291_L_CM_CC - Label: Normal
+  DM: P291_R_DM_MLO - Label: Malignant
+Patient: 291
+  CM: P291_L_CM_MLO - Label: Normal
+  DM: P291_R_DM_CC - Label: Malignant
+Patient: 291
+  CM: P291_L_CM_MLO - Label: Normal
+  DM: P291_R_DM_MLO - Label: Malignant
+Patient: 292
+  CM: P292_R_CM_CC - Label: Malignant
+  DM: P292_L_DM_CC - Label: Normal
+Patient: 292
+  CM: P292_R_CM_CC - Label: Malignant
+  DM: P292_L_DM_MLO - Label: Benign
+Patient: 292
+  CM: P292_R_CM_MLO - Label: Malignant
+  DM: P292_L_DM_CC - Label: Normal
+Patient: 292
+  CM: P292_R_CM_MLO - Label: Malignant
+  DM: P292_L_DM_MLO - Label: Benign
+Patient: 292
+  CM: P292_L_CM_CC - Label: Normal
+  DM: P292_R_DM_CC - Label: Malignant
+Patient: 292
+  CM: P292_L_CM_CC - Label: Normal
+  DM: P292_R_DM_MLO - Label: Malignant
+Patient: 292
+  CM: P292_L_CM_CC - Label: Normal
+  DM: P292_L_DM_MLO - Label: Benign
+Patient: 292
+  CM: P292_L_CM_MLO - Label: Normal
+  DM: P292_R_DM_CC - Label: Malignant
+Patient: 292
+  CM: P292_L_CM_MLO - Label: Normal
+  DM: P292_R_DM_MLO - Label: Malignant
+Patient: 292
+  CM: P292_L_CM_MLO - Label: Normal
+  DM: P292_L_DM_MLO - Label: Benign
+Patient: 293
+  CM: P293_R_CM_CC - Label: Benign
+  DM: P293_L_DM_CC - Label: Normal
+Patient: 293
+  CM: P293_R_CM_CC - Label: Benign
+  DM: P293_L_DM_MLO - Label: Normal
+Patient: 293
+  CM: P293_R_CM_MLO - Label: Benign
+  DM: P293_L_DM_CC - Label: Normal
+Patient: 293
+  CM: P293_R_CM_MLO - Label: Benign
+  DM: P293_L_DM_MLO - Label: Normal
+Patient: 293
+  CM: P293_L_CM_CC - Label: Normal
+  DM: P293_R_DM_CC - Label: Benign
+Patient: 293
+  CM: P293_L_CM_CC - Label: Normal
+  DM: P293_R_DM_MLO - Label: Benign
+Patient: 293
+  CM: P293_L_CM_MLO - Label: Normal
+  DM: P293_R_DM_CC - Label: Benign
+Patient: 293
+  CM: P293_L_CM_MLO - Label: Normal
+  DM: P293_R_DM_MLO - Label: Benign
+Patient: 296
+  CM: P296_R_CM_CC - Label: Normal
+  DM: P296_R_DM_CC - Label: Benign
+Patient: 296
+  CM: P296_R_CM_CC - Label: Normal
+  DM: P296_R_DM_MLO - Label: Benign
+Patient: 296
+  CM: P296_R_CM_CC - Label: Normal
+  DM: P296_L_DM_CC - Label: Malignant
+Patient: 296
+  CM: P296_R_CM_CC - Label: Normal
+  DM: P296_L_DM_MLO - Label: Malignant
+Patient: 296
+  CM: P296_R_CM_MLO - Label: Normal
+  DM: P296_R_DM_CC - Label: Benign
+Patient: 296
+  CM: P296_R_CM_MLO - Label: Normal
+  DM: P296_R_DM_MLO - Label: Benign
+Patient: 296
+  CM: P296_R_CM_MLO - Label: Normal
+  DM: P296_L_DM_CC - Label: Malignant
+Patient: 296
+  CM: P296_R_CM_MLO - Label: Normal
+  DM: P296_L_DM_MLO - Label: Malignant
+Patient: 296
+  CM: P296_L_CM_CC - Label: Malignant
+  DM: P296_R_DM_CC - Label: Benign
+Patient: 296
+  CM: P296_L_CM_CC - Label: Malignant
+  DM: P296_R_DM_MLO - Label: Benign
+Patient: 296
+  CM: P296_L_CM_MLO - Label: Malignant
+  DM: P296_R_DM_CC - Label: Benign
+Patient: 296
+  CM: P296_L_CM_MLO - Label: Malignant
+  DM: P296_R_DM_MLO - Label: Benign
+Patient: 297
+  CM: P297_R_CM_CC - Label: Normal
+  DM: P297_R_DM_CC - Label: Benign
+Patient: 297
+  CM: P297_R_CM_CC - Label: Normal
+  DM: P297_R_DM_MLO - Label: Benign
+Patient: 297
+  CM: P297_R_CM_CC - Label: Normal
+  DM: P297_L_DM_CC - Label: Malignant
+Patient: 297
+  CM: P297_R_CM_CC - Label: Normal
+  DM: P297_L_DM_MLO - Label: Malignant
+Patient: 297
+  CM: P297_R_CM_MLO - Label: Normal
+  DM: P297_R_DM_CC - Label: Benign
+Patient: 297
+  CM: P297_R_CM_MLO - Label: Normal
+  DM: P297_R_DM_MLO - Label: Benign
+Patient: 297
+  CM: P297_R_CM_MLO - Label: Normal
+  DM: P297_L_DM_CC - Label: Malignant
+Patient: 297
+  CM: P297_R_CM_MLO - Label: Normal
+  DM: P297_L_DM_MLO - Label: Malignant
+Patient: 297
+  CM: P297_L_CM_CC - Label: Malignant
+  DM: P297_R_DM_CC - Label: Benign
+Patient: 297
+  CM: P297_L_CM_CC - Label: Malignant
+  DM: P297_R_DM_MLO - Label: Benign
+Patient: 297
+  CM: P297_L_CM_MLO - Label: Malignant
+  DM: P297_R_DM_CC - Label: Benign
+Patient: 297
+  CM: P297_L_CM_MLO - Label: Malignant
+  DM: P297_R_DM_MLO - Label: Benign
+Patient: 298
+  CM: P298_R_CM_CC - Label: Normal
+  DM: P298_L_DM_CC - Label: Malignant
+Patient: 298
+  CM: P298_R_CM_CC - Label: Normal
+  DM: P298_L_DM_MLO - Label: Malignant
+Patient: 298
+  CM: P298_R_CM_MLO - Label: Normal
+  DM: P298_L_DM_CC - Label: Malignant
+Patient: 298
+  CM: P298_R_CM_MLO - Label: Normal
+  DM: P298_L_DM_MLO - Label: Malignant
+Patient: 298
+  CM: P298_L_CM_CC - Label: Malignant
+  DM: P298_R_DM_CC - Label: Normal
+Patient: 298
+  CM: P298_L_CM_CC - Label: Malignant
+  DM: P298_R_DM_MLO - Label: Normal
+Patient: 298
+  CM: P298_L_CM_MLO - Label: Malignant
+  DM: P298_R_DM_CC - Label: Normal
+Patient: 298
+  CM: P298_L_CM_MLO - Label: Malignant
+  DM: P298_R_DM_MLO - Label: Normal
+Patient: 299
+  CM: P299_R_CM_CC - Label: Malignant
+  DM: P299_L_DM_CC - Label: Normal
+Patient: 299
+  CM: P299_R_CM_CC - Label: Malignant
+  DM: P299_L_DM_MLO - Label: Normal
+Patient: 299
+  CM: P299_R_CM_MLO - Label: Malignant
+  DM: P299_L_DM_CC - Label: Normal
+Patient: 299
+  CM: P299_R_CM_MLO - Label: Malignant
+  DM: P299_L_DM_MLO - Label: Normal
+Patient: 299
+  CM: P299_L_CM_CC - Label: Normal
+  DM: P299_R_DM_CC - Label: Malignant
+Patient: 299
+  CM: P299_L_CM_CC - Label: Normal
+  DM: P299_R_DM_MLO - Label: Malignant
+Patient: 299
+  CM: P299_L_CM_MLO - Label: Normal
+  DM: P299_R_DM_CC - Label: Malignant
+Patient: 299
+  CM: P299_L_CM_MLO - Label: Normal
+  DM: P299_R_DM_MLO - Label: Malignant
+Patient: 300
+  CM: P300_R_CM_CC - Label: Benign
+  DM: P300_L_DM_CC - Label: Normal
+Patient: 300
+  CM: P300_R_CM_CC - Label: Benign
+  DM: P300_L_DM_MLO - Label: Normal
+Patient: 300
+  CM: P300_R_CM_MLO - Label: Benign
+  DM: P300_L_DM_CC - Label: Normal
+Patient: 300
+  CM: P300_R_CM_MLO - Label: Benign
+  DM: P300_L_DM_MLO - Label: Normal
+Patient: 300
+  CM: P300_L_CM_CC - Label: Normal
+  DM: P300_R_DM_CC - Label: Benign
+Patient: 300
+  CM: P300_L_CM_CC - Label: Normal
+  DM: P300_R_DM_MLO - Label: Benign
+Patient: 300
+  CM: P300_L_CM_MLO - Label: Normal
+  DM: P300_R_DM_CC - Label: Benign
+Patient: 300
+  CM: P300_L_CM_MLO - Label: Normal
+  DM: P300_R_DM_MLO - Label: Benign
+Patient: 301
+  CM: P301_R_CM_CC - Label: Normal
+  DM: P301_R_DM_CC - Label: Benign
+Patient: 301
+  CM: P301_R_CM_CC - Label: Normal
+  DM: P301_R_DM_MLO - Label: Benign
+Patient: 301
+  CM: P301_R_CM_CC - Label: Normal
+  DM: P301_L_DM_CC - Label: Benign
+Patient: 301
+  CM: P301_R_CM_CC - Label: Normal
+  DM: P301_L_DM_MLO - Label: Benign
+Patient: 301
+  CM: P301_R_CM_MLO - Label: Normal
+  DM: P301_R_DM_CC - Label: Benign
+Patient: 301
+  CM: P301_R_CM_MLO - Label: Normal
+  DM: P301_R_DM_MLO - Label: Benign
+Patient: 301
+  CM: P301_R_CM_MLO - Label: Normal
+  DM: P301_L_DM_CC - Label: Benign
+Patient: 301
+  CM: P301_R_CM_MLO - Label: Normal
+  DM: P301_L_DM_MLO - Label: Benign
+Patient: 302
+  CM: P302_R_CM_CC - Label: Normal
+  DM: P302_L_DM_CC - Label: Benign
+Patient: 302
+  CM: P302_R_CM_CC - Label: Normal
+  DM: P302_L_DM_MLO - Label: Benign
+Patient: 302
+  CM: P302_R_CM_MLO - Label: Normal
+  DM: P302_L_DM_CC - Label: Benign
+Patient: 302
+  CM: P302_R_CM_MLO - Label: Normal
+  DM: P302_L_DM_MLO - Label: Benign
+Patient: 302
+  CM: P302_L_CM_CC - Label: Benign
+  DM: P302_R_DM_CC - Label: Normal
+Patient: 302
+  CM: P302_L_CM_CC - Label: Benign
+  DM: P302_R_DM_MLO - Label: Normal
+Patient: 302
+  CM: P302_L_CM_MLO - Label: Benign
+  DM: P302_R_DM_CC - Label: Normal
+Patient: 302
+  CM: P302_L_CM_MLO - Label: Benign
+  DM: P302_R_DM_MLO - Label: Normal
+Patient: 303
+  CM: P303_R_CM_CC - Label: Normal
+  DM: P303_L_DM_CC - Label: Malignant
+Patient: 303
+  CM: P303_R_CM_CC - Label: Normal
+  DM: P303_L_DM_MLO - Label: Malignant
+Patient: 303
+  CM: P303_R_CM_MLO - Label: Normal
+  DM: P303_L_DM_CC - Label: Malignant
+Patient: 303
+  CM: P303_R_CM_MLO - Label: Normal
+  DM: P303_L_DM_MLO - Label: Malignant
+Patient: 303
+  CM: P303_L_CM_CC - Label: Malignant
+  DM: P303_R_DM_CC - Label: Normal
+Patient: 303
+  CM: P303_L_CM_CC - Label: Malignant
+  DM: P303_R_DM_MLO - Label: Normal
+Patient: 303
+  CM: P303_L_CM_MLO - Label: Malignant
+  DM: P303_R_DM_CC - Label: Normal
+Patient: 303
+  CM: P303_L_CM_MLO - Label: Malignant
+  DM: P303_R_DM_MLO - Label: Normal
+Patient: 304
+  CM: P304_R_CM_CC - Label: Malignant
+  DM: P304_L_DM_CC - Label: Normal
+Patient: 304
+  CM: P304_R_CM_CC - Label: Malignant
+  DM: P304_L_DM_MLO - Label: Normal
+Patient: 304
+  CM: P304_R_CM_MLO - Label: Malignant
+  DM: P304_L_DM_CC - Label: Normal
+Patient: 304
+  CM: P304_R_CM_MLO - Label: Malignant
+  DM: P304_L_DM_MLO - Label: Normal
+Patient: 304
+  CM: P304_L_CM_CC - Label: Normal
+  DM: P304_R_DM_CC - Label: Malignant
+Patient: 304
+  CM: P304_L_CM_CC - Label: Normal
+  DM: P304_R_DM_MLO - Label: Malignant
+Patient: 304
+  CM: P304_L_CM_MLO - Label: Normal
+  DM: P304_R_DM_CC - Label: Malignant
+Patient: 304
+  CM: P304_L_CM_MLO - Label: Normal
+  DM: P304_R_DM_MLO - Label: Malignant
+Patient: 305
+  CM: P305_R_CM_CC - Label: Malignant
+  DM: P305_L_DM_CC - Label: Benign
+Patient: 305
+  CM: P305_R_CM_CC - Label: Malignant
+  DM: P305_L_DM_MLO - Label: Benign
+Patient: 305
+  CM: P305_R_CM_MLO - Label: Malignant
+  DM: P305_L_DM_CC - Label: Benign
+Patient: 305
+  CM: P305_R_CM_MLO - Label: Malignant
+  DM: P305_L_DM_MLO - Label: Benign
+Patient: 305
+  CM: P305_L_CM_CC - Label: Benign
+  DM: P305_R_DM_CC - Label: Malignant
+Patient: 305
+  CM: P305_L_CM_CC - Label: Benign
+  DM: P305_R_DM_MLO - Label: Malignant
+Patient: 305
+  CM: P305_L_CM_MLO - Label: Benign
+  DM: P305_R_DM_CC - Label: Malignant
+Patient: 305
+  CM: P305_L_CM_MLO - Label: Benign
+  DM: P305_R_DM_MLO - Label: Malignant
+Patient: 307
+  CM: P307_R_CM_CC - Label: Benign
+  DM: P307_L_DM_CC - Label: Malignant
+Patient: 307
+  CM: P307_R_CM_CC - Label: Benign
+  DM: P307_L_DM_MLO - Label: Malignant
+Patient: 307
+  CM: P307_R_CM_MLO - Label: Benign
+  DM: P307_L_DM_CC - Label: Malignant
+Patient: 307
+  CM: P307_R_CM_MLO - Label: Benign
+  DM: P307_L_DM_MLO - Label: Malignant
+Patient: 307
+  CM: P307_L_CM_CC - Label: Malignant
+  DM: P307_R_DM_CC - Label: Benign
+Patient: 307
+  CM: P307_L_CM_CC - Label: Malignant
+  DM: P307_R_DM_MLO - Label: Benign
+Patient: 307
+  CM: P307_L_CM_MLO - Label: Malignant
+  DM: P307_R_DM_CC - Label: Benign
+Patient: 307
+  CM: P307_L_CM_MLO - Label: Malignant
+  DM: P307_R_DM_MLO - Label: Benign
+Patient: 308
+  CM: P308_R_CM_CC - Label: Normal
+  DM: P308_L_DM_CC - Label: Malignant
+Patient: 308
+  CM: P308_R_CM_CC - Label: Normal
+  DM: P308_L_DM_MLO - Label: Malignant
+Patient: 308
+  CM: P308_R_CM_MLO - Label: Normal
+  DM: P308_L_DM_CC - Label: Malignant
+Patient: 308
+  CM: P308_R_CM_MLO - Label: Normal
+  DM: P308_L_DM_MLO - Label: Malignant
+Patient: 308
+  CM: P308_L_CM_CC - Label: Malignant
+  DM: P308_R_DM_CC - Label: Normal
+Patient: 308
+  CM: P308_L_CM_CC - Label: Malignant
+  DM: P308_R_DM_MLO - Label: Normal
+Patient: 308
+  CM: P308_L_CM_MLO - Label: Malignant
+  DM: P308_R_DM_CC - Label: Normal
+Patient: 308
+  CM: P308_L_CM_MLO - Label: Malignant
+  DM: P308_R_DM_MLO - Label: Normal
+Patient: 310
+  CM: P310_R_CM_CC - Label: Normal
+  DM: P310_R_DM_CC - Label: Benign
+Patient: 310
+  CM: P310_R_CM_CC - Label: Normal
+  DM: P310_R_DM_MLO - Label: Benign
+Patient: 310
+  CM: P310_R_CM_CC - Label: Normal
+  DM: P310_L_DM_CC - Label: Malignant
+Patient: 310
+  CM: P310_R_CM_CC - Label: Normal
+  DM: P310_L_DM_MLO - Label: Malignant
+Patient: 310
+  CM: P310_R_CM_MLO - Label: Normal
+  DM: P310_R_DM_CC - Label: Benign
+Patient: 310
+  CM: P310_R_CM_MLO - Label: Normal
+  DM: P310_R_DM_MLO - Label: Benign
+Patient: 310
+  CM: P310_R_CM_MLO - Label: Normal
+  DM: P310_L_DM_CC - Label: Malignant
+Patient: 310
+  CM: P310_R_CM_MLO - Label: Normal
+  DM: P310_L_DM_MLO - Label: Malignant
+Patient: 310
+  CM: P310_L_CM_CC - Label: Malignant
+  DM: P310_R_DM_CC - Label: Benign
+Patient: 310
+  CM: P310_L_CM_CC - Label: Malignant
+  DM: P310_R_DM_MLO - Label: Benign
+Patient: 310
+  CM: P310_L_CM_MLO - Label: Malignant
+  DM: P310_R_DM_CC - Label: Benign
+Patient: 310
+  CM: P310_L_CM_MLO - Label: Malignant
+  DM: P310_R_DM_MLO - Label: Benign
+Patient: 311
+  CM: P311_R_CM_CC - Label: Malignant
+  DM: P311_L_DM_CC - Label: Benign
+Patient: 311
+  CM: P311_R_CM_CC - Label: Malignant
+  DM: P311_L_DM_MLO - Label: Benign
+Patient: 311
+  CM: P311_R_CM_MLO - Label: Malignant
+  DM: P311_L_DM_CC - Label: Benign
+Patient: 311
+  CM: P311_R_CM_MLO - Label: Malignant
+  DM: P311_L_DM_MLO - Label: Benign
+Patient: 311
+  CM: P311_L_CM_CC - Label: Benign
+  DM: P311_R_DM_CC - Label: Malignant
+Patient: 311
+  CM: P311_L_CM_CC - Label: Benign
+  DM: P311_R_DM_MLO - Label: Malignant
+Patient: 311
+  CM: P311_L_CM_MLO - Label: Benign
+  DM: P311_R_DM_CC - Label: Malignant
+Patient: 311
+  CM: P311_L_CM_MLO - Label: Benign
+  DM: P311_R_DM_MLO - Label: Malignant
+Patient: 312
+  CM: P312_R_CM_CC - Label: Normal
+  DM: P312_L_DM_CC - Label: Malignant
+Patient: 312
+  CM: P312_R_CM_CC - Label: Normal
+  DM: P312_L_DM_MLO - Label: Malignant
+Patient: 312
+  CM: P312_R_CM_MLO - Label: Normal
+  DM: P312_L_DM_CC - Label: Malignant
+Patient: 312
+  CM: P312_R_CM_MLO - Label: Normal
+  DM: P312_L_DM_MLO - Label: Malignant
+Patient: 312
+  CM: P312_L_CM_CC - Label: Malignant
+  DM: P312_R_DM_CC - Label: Normal
+Patient: 312
+  CM: P312_L_CM_CC - Label: Malignant
+  DM: P312_R_DM_MLO - Label: Normal
+Patient: 312
+  CM: P312_L_CM_MLO - Label: Malignant
+  DM: P312_R_DM_CC - Label: Normal
+Patient: 312
+  CM: P312_L_CM_MLO - Label: Malignant
+  DM: P312_R_DM_MLO - Label: Normal
+Patient: 314
+  CM: P314_R_CM_CC - Label: Normal
+  DM: P314_L_DM_CC - Label: Malignant
+Patient: 314
+  CM: P314_R_CM_CC - Label: Normal
+  DM: P314_L_DM_MLO - Label: Malignant
+Patient: 314
+  CM: P314_R_CM_MLO - Label: Normal
+  DM: P314_L_DM_CC - Label: Malignant
+Patient: 314
+  CM: P314_R_CM_MLO - Label: Normal
+  DM: P314_L_DM_MLO - Label: Malignant
+Patient: 314
+  CM: P314_L_CM_CC - Label: Malignant
+  DM: P314_R_DM_CC - Label: Normal
+Patient: 314
+  CM: P314_L_CM_CC - Label: Malignant
+  DM: P314_R_DM_MLO - Label: Normal
+Patient: 314
+  CM: P314_L_CM_MLO - Label: Malignant
+  DM: P314_R_DM_CC - Label: Normal
+Patient: 314
+  CM: P314_L_CM_MLO - Label: Malignant
+  DM: P314_R_DM_MLO - Label: Normal
+Patient: 315
+  CM: P315_R_CM_CC - Label: Normal
+  DM: P315_R_DM_CC - Label: Benign
+Patient: 315
+  CM: P315_R_CM_CC - Label: Normal
+  DM: P315_R_DM_MLO - Label: Benign
+Patient: 315
+  CM: P315_R_CM_CC - Label: Normal
+  DM: P315_L_DM_CC - Label: Malignant
+Patient: 315
+  CM: P315_R_CM_CC - Label: Normal
+  DM: P315_L_DM_MLO - Label: Malignant
+Patient: 315
+  CM: P315_R_CM_MLO - Label: Normal
+  DM: P315_R_DM_CC - Label: Benign
+Patient: 315
+  CM: P315_R_CM_MLO - Label: Normal
+  DM: P315_R_DM_MLO - Label: Benign
+Patient: 315
+  CM: P315_R_CM_MLO - Label: Normal
+  DM: P315_L_DM_CC - Label: Malignant
+Patient: 315
+  CM: P315_R_CM_MLO - Label: Normal
+  DM: P315_L_DM_MLO - Label: Malignant
+Patient: 315
+  CM: P315_L_CM_CC - Label: Malignant
+  DM: P315_R_DM_CC - Label: Benign
+Patient: 315
+  CM: P315_L_CM_CC - Label: Malignant
+  DM: P315_R_DM_MLO - Label: Benign
+Patient: 315
+  CM: P315_L_CM_MLO - Label: Malignant
+  DM: P315_R_DM_CC - Label: Benign
+Patient: 315
+  CM: P315_L_CM_MLO - Label: Malignant
+  DM: P315_R_DM_MLO - Label: Benign
+Patient: 316
+  CM: P316_R_CM_CC - Label: Benign
+  DM: P316_L_DM_CC - Label: Malignant
+Patient: 316
+  CM: P316_R_CM_CC - Label: Benign
+  DM: P316_L_DM_MLO - Label: Malignant
+Patient: 316
+  CM: P316_R_CM_MLO - Label: Benign
+  DM: P316_L_DM_CC - Label: Malignant
+Patient: 316
+  CM: P316_R_CM_MLO - Label: Benign
+  DM: P316_L_DM_MLO - Label: Malignant
+Patient: 316
+  CM: P316_L_CM_CC - Label: Malignant
+  DM: P316_R_DM_CC - Label: Benign
+Patient: 316
+  CM: P316_L_CM_CC - Label: Malignant
+  DM: P316_R_DM_MLO - Label: Benign
+Patient: 316
+  CM: P316_L_CM_MLO - Label: Malignant
+  DM: P316_R_DM_CC - Label: Benign
+Patient: 316
+  CM: P316_L_CM_MLO - Label: Malignant
+  DM: P316_R_DM_MLO - Label: Benign
+Patient: 317
+  CM: P317_R_CM_CC - Label: Benign
+  DM: P317_L_DM_CC - Label: Malignant
+Patient: 317
+  CM: P317_R_CM_CC - Label: Benign
+  DM: P317_L_DM_MLO - Label: Malignant
+Patient: 317
+  CM: P317_R_CM_MLO - Label: Benign
+  DM: P317_L_DM_CC - Label: Malignant
+Patient: 317
+  CM: P317_R_CM_MLO - Label: Benign
+  DM: P317_L_DM_MLO - Label: Malignant
+Patient: 317
+  CM: P317_L_CM_CC - Label: Malignant
+  DM: P317_R_DM_CC - Label: Benign
+Patient: 317
+  CM: P317_L_CM_CC - Label: Malignant
+  DM: P317_R_DM_MLO - Label: Benign
+Patient: 317
+  CM: P317_L_CM_MLO - Label: Malignant
+  DM: P317_R_DM_CC - Label: Benign
+Patient: 317
+  CM: P317_L_CM_MLO - Label: Malignant
+  DM: P317_R_DM_MLO - Label: Benign
+Patient: 318
+  CM: P318_R_CM_CC - Label: Malignant
+  DM: P318_L_DM_CC - Label: Benign
+Patient: 318
+  CM: P318_R_CM_CC - Label: Malignant
+  DM: P318_L_DM_MLO - Label: Benign
+Patient: 318
+  CM: P318_R_CM_MLO - Label: Malignant
+  DM: P318_L_DM_CC - Label: Benign
+Patient: 318
+  CM: P318_R_CM_MLO - Label: Malignant
+  DM: P318_L_DM_MLO - Label: Benign
+Patient: 318
+  CM: P318_L_CM_CC - Label: Normal
+  DM: P318_R_DM_CC - Label: Malignant
+Patient: 318
+  CM: P318_L_CM_CC - Label: Normal
+  DM: P318_R_DM_MLO - Label: Malignant
+Patient: 318
+  CM: P318_L_CM_CC - Label: Normal
+  DM: P318_L_DM_CC - Label: Benign
+Patient: 318
+  CM: P318_L_CM_CC - Label: Normal
+  DM: P318_L_DM_MLO - Label: Benign
+Patient: 318
+  CM: P318_L_CM_MLO - Label: Normal
+  DM: P318_R_DM_CC - Label: Malignant
+Patient: 318
+  CM: P318_L_CM_MLO - Label: Normal
+  DM: P318_R_DM_MLO - Label: Malignant
+Patient: 318
+  CM: P318_L_CM_MLO - Label: Normal
+  DM: P318_L_DM_CC - Label: Benign
+Patient: 318
+  CM: P318_L_CM_MLO - Label: Normal
+  DM: P318_L_DM_MLO - Label: Benign
+Patient: 320
+  CM: P320_R_CM_CC - Label: Normal
+  DM: P320_L_DM_CC - Label: Malignant
+Patient: 320
+  CM: P320_R_CM_CC - Label: Normal
+  DM: P320_L_DM_MLO - Label: Malignant
+Patient: 320
+  CM: P320_R_CM_MLO - Label: Normal
+  DM: P320_L_DM_CC - Label: Malignant
+Patient: 320
+  CM: P320_R_CM_MLO - Label: Normal
+  DM: P320_L_DM_MLO - Label: Malignant
+Patient: 320
+  CM: P320_L_CM_CC - Label: Malignant
+  DM: P320_R_DM_CC - Label: Normal
+Patient: 320
+  CM: P320_L_CM_CC - Label: Malignant
+  DM: P320_R_DM_MLO - Label: Normal
+Patient: 320
+  CM: P320_L_CM_MLO - Label: Malignant
+  DM: P320_R_DM_CC - Label: Normal
+Patient: 320
+  CM: P320_L_CM_MLO - Label: Malignant
+  DM: P320_R_DM_MLO - Label: Normal
+Patient: 322
+  CM: P322_R_CM_CC - Label: Normal
+  DM: P322_L_DM_CC - Label: Malignant
+Patient: 322
+  CM: P322_R_CM_CC - Label: Normal
+  DM: P322_L_DM_MLO - Label: Malignant
+Patient: 322
+  CM: P322_R_CM_MLO - Label: Normal
+  DM: P322_L_DM_CC - Label: Malignant
+Patient: 322
+  CM: P322_R_CM_MLO - Label: Normal
+  DM: P322_L_DM_MLO - Label: Malignant
+Patient: 322
+  CM: P322_L_CM_CC - Label: Malignant
+  DM: P322_R_DM_CC - Label: Normal
+Patient: 322
+  CM: P322_L_CM_CC - Label: Malignant
+  DM: P322_R_DM_MLO - Label: Normal
+Patient: 322
+  CM: P322_L_CM_MLO - Label: Malignant
+  DM: P322_R_DM_CC - Label: Normal
+Patient: 322
+  CM: P322_L_CM_MLO - Label: Malignant
+  DM: P322_R_DM_MLO - Label: Normal
+Patient: 323
+  CM: P323_R_CM_CC - Label: Normal
+  DM: P323_L_DM_CC - Label: Malignant
+Patient: 323
+  CM: P323_R_CM_CC - Label: Normal
+  DM: P323_L_DM_MLO - Label: Malignant
+Patient: 323
+  CM: P323_R_CM_MLO - Label: Normal
+  DM: P323_L_DM_CC - Label: Malignant
+Patient: 323
+  CM: P323_R_CM_MLO - Label: Normal
+  DM: P323_L_DM_MLO - Label: Malignant
+Patient: 323
+  CM: P323_L_CM_CC - Label: Malignant
+  DM: P323_R_DM_CC - Label: Normal
+Patient: 323
+  CM: P323_L_CM_CC - Label: Malignant
+  DM: P323_R_DM_MLO - Label: Normal
+Patient: 323
+  CM: P323_L_CM_MLO - Label: Malignant
+  DM: P323_R_DM_CC - Label: Normal
+Patient: 323
+  CM: P323_L_CM_MLO - Label: Malignant
+  DM: P323_R_DM_MLO - Label: Normal
+Patient: 324
+  CM: P324_R_CM_MLO - Label: Benign
+  DM: P324_L_DM_CC - Label: Normal
+Patient: 324
+  CM: P324_R_CM_MLO - Label: Benign
+  DM: P324_L_DM_MLO - Label: Normal
+Patient: 324
+  CM: P324_L_CM_CC - Label: Normal
+  DM: P324_R_DM_MLO - Label: Benign
+Patient: 324
+  CM: P324_L_CM_MLO - Label: Normal
+  DM: P324_R_DM_MLO - Label: Benign
+Patient: 325
+  CM: P325_R_CM_CC - Label: Benign
+  DM: P325_L_DM_CC - Label: Normal
+Patient: 325
+  CM: P325_R_CM_CC - Label: Benign
+  DM: P325_L_DM_MLO - Label: Normal
+Patient: 325
+  CM: P325_R_CM_MLO - Label: Benign
+  DM: P325_L_DM_CC - Label: Normal
+Patient: 325
+  CM: P325_R_CM_MLO - Label: Benign
+  DM: P325_L_DM_MLO - Label: Normal
+Patient: 325
+  CM: P325_L_CM_CC - Label: Normal
+  DM: P325_R_DM_CC - Label: Benign
+Patient: 325
+  CM: P325_L_CM_CC - Label: Normal
+  DM: P325_R_DM_MLO - Label: Benign
+Patient: 325
+  CM: P325_L_CM_MLO - Label: Normal
+  DM: P325_R_DM_CC - Label: Benign
+Patient: 325
+  CM: P325_L_CM_MLO - Label: Normal
+  DM: P325_R_DM_MLO - Label: Benign
+Patient: 326
+  CM: P326_R_CM_CC - Label: Normal
+  DM: P326_R_DM_CC - Label: Benign
+Patient: 326
+  CM: P326_R_CM_CC - Label: Normal
+  DM: P326_R_DM_MLO - Label: Benign
+Patient: 326
+  CM: P326_R_CM_CC - Label: Normal
+  DM: P326_L_DM_CC - Label: Malignant
+Patient: 326
+  CM: P326_R_CM_CC - Label: Normal
+  DM: P326_L_DM_MLO - Label: Malignant
+Patient: 326
+  CM: P326_R_CM_MLO - Label: Normal
+  DM: P326_R_DM_CC - Label: Benign
+Patient: 326
+  CM: P326_R_CM_MLO - Label: Normal
+  DM: P326_R_DM_MLO - Label: Benign
+Patient: 326
+  CM: P326_R_CM_MLO - Label: Normal
+  DM: P326_L_DM_CC - Label: Malignant
+Patient: 326
+  CM: P326_R_CM_MLO - Label: Normal
+  DM: P326_L_DM_MLO - Label: Malignant
+Patient: 326
+  CM: P326_L_CM_CC - Label: Malignant
+  DM: P326_R_DM_CC - Label: Benign
+Patient: 326
+  CM: P326_L_CM_CC - Label: Malignant
+  DM: P326_R_DM_MLO - Label: Benign
+Patient: 326
+  CM: P326_L_CM_MLO - Label: Malignant
+  DM: P326_R_DM_CC - Label: Benign
+Patient: 326
+  CM: P326_L_CM_MLO - Label: Malignant
+  DM: P326_R_DM_MLO - Label: Benign
+class distribution:  {'Normal': '41.48%', 'Malignant': '33.00%', 'Benign': '25.52%'}
+Training set distribution: {'Normal': '42.80%', 'Malignant': '32.83%', 'Benign': '24.37%'}
+Validation set distribution: {'Normal': '36.49%', 'Malignant': '33.65%', 'Benign': '29.86%'}

@@ -1,0 +1,6 @@
+--- Evaluation Results ---
+
+Object Detection Metrics:
+----------------------------------------------------------
+  - Average Precision (AP) for 'mass' class (IoU=0.5): 0.5437
+----------------------------------------------------------
