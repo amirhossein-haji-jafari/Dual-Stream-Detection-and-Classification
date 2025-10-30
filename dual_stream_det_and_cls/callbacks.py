@@ -10,9 +10,10 @@ from PIL import Image
 from tqdm import tqdm
 from matplotlib.ticker import MaxNLocator
 
-from .utils import cvtColor, preprocess_input, resize_image
+from .utils import cvtColor, resize_image
 from .detection.utils.utils_bbox import decodebox, non_max_suppression
 from .detection.utils.utils_map import get_map
+from .medical_image_utils import min_max_normalise
 
 matplotlib.use('Agg')
 
@@ -149,7 +150,7 @@ class EvalCallback():
         image = cvtColor(image)
         image_data = resize_image(image, (self.input_shape[1], self.input_shape[0]), self.letterbox_image)
         #   preprocess
-        image_data = np.expand_dims(np.transpose(preprocess_input(np.array(image_data, dtype='float32')), (2, 0, 1)), 0)
+        image_data = np.expand_dims(np.transpose(min_max_normalise(np.array(image_data, dtype='float32')), (2, 0, 1)), 0)
 
         with torch.no_grad():
             images = torch.from_numpy(image_data)

@@ -35,10 +35,10 @@ def get_lr(optimizer):
     # Returns a list of learning rates for all parameter groups
     return [param_group['lr'] for param_group in optimizer.param_groups]
         
-def preprocess_input(image):
-    image   /= 255
-    mean    = (0.406, 0.456, 0.485)
-    std     = (0.225, 0.224, 0.229)
-    image   -= mean
-    image   /= std
-    return image
+# def preprocess_input(image):
+#     image   /= 255
+#     mean    = (0.406, 0.456, 0.485)
+#     std     = (0.225, 0.224, 0.229)
+#     image   -= mean
+#     image   /= std
+#     return image

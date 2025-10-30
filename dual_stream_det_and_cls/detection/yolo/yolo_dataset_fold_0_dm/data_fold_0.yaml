@@ -1,0 +1,6 @@
+
+train: /home/monstalinux/final-project/dual_stream_det_and_cls/detection/yolo/yolo_dataset_fold_0_dm/train/images
+val: /home/monstalinux/final-project/dual_stream_det_and_cls/detection/yolo/yolo_dataset_fold_0_dm/val/images
+
+nc: 1
+names: ['mass']

@@ -1,0 +1,860 @@
+
+
+############################## FOLD 1 / 5 ##############################
+Loading pre-trained weights from /home/monstalinux/final-project/dual_stream_det_and_cls/detection/RetinaNet_ResNet50.pth for SingleStreamRetinaNet
+Using SimplifiedRegressionModel; skipping weight mapping for regression head.
+Using SimplifiedClassificationModel; skipping weight mapping for classification head.
+Pre-trained weights loaded successfully into single stream model.
+
+==================== STARTING STAGE 1 ====================
+Applying freezing strategy for this stage...
+Freezing FPN adaptation layers...
+Number of trainable parameters for Stage 1: 4,076,461
+
+Start Train (lr: 0.001)
+Start Validation
+
+Calculating validation mAP...
+15.73% = mass AP 	||	score_threhold=0.5 : F1=0.02 ; Recall=0.76% ; Precision=100.00%
+mAP = 15.73%
+Epoch:1/10, Total Loss: 1.761, Val Loss: 0.210, Val mAP: 0.157
+New best model found (mAP 0.157 > -1.000). Saving...
+Start Train (lr: 0.00085)
+Start Validation
+
+Calculating validation mAP...
+26.06% = mass AP 	||	score_threhold=0.5 : F1=0.17 ; Recall=9.85% ; Precision=65.00%
+mAP = 26.06%
+Epoch:2/10, Total Loss: 0.160, Val Loss: 0.171, Val mAP: 0.261
+New best model found (mAP 0.261 > 0.157). Saving...
+Start Train (lr: 0.0007224999999999999)
+Start Validation
+
+Calculating validation mAP...
+27.03% = mass AP 	||	score_threhold=0.5 : F1=0.16 ; Recall=9.09% ; Precision=60.00%
+mAP = 27.03%
+Epoch:3/10, Total Loss: 0.137, Val Loss: 0.178, Val mAP: 0.270
+New best model found (mAP 0.270 > 0.261). Saving...
+Start Train (lr: 0.000614125)
+Start Validation
+
+Calculating validation mAP...
+31.18% = mass AP 	||	score_threhold=0.5 : F1=0.33 ; Recall=21.97% ; Precision=64.44%
+mAP = 31.18%
+Epoch:4/10, Total Loss: 0.125, Val Loss: 0.163, Val mAP: 0.312
+New best model found (mAP 0.312 > 0.270). Saving...
+Start Train (lr: 0.00052200625)
+Start Validation
+
+Calculating validation mAP...
+31.48% = mass AP 	||	score_threhold=0.5 : F1=0.33 ; Recall=21.97% ; Precision=65.91%
+mAP = 31.48%
+Epoch:5/10, Total Loss: 0.115, Val Loss: 0.164, Val mAP: 0.315
+New best model found (mAP 0.315 > 0.312). Saving...
+Start Train (lr: 0.00044370531249999997)
+Start Validation
+
+Calculating validation mAP...
+31.36% = mass AP 	||	score_threhold=0.5 : F1=0.21 ; Recall=12.12% ; Precision=80.00%
+mAP = 31.36%
+Epoch:6/10, Total Loss: 0.109, Val Loss: 0.207, Val mAP: 0.314
+Start Train (lr: 0.00037714951562499996)
+Start Validation
+
+Calculating validation mAP...
+34.41% = mass AP 	||	score_threhold=0.5 : F1=0.36 ; Recall=24.24% ; Precision=69.57%
+mAP = 34.41%
+Epoch:7/10, Total Loss: 0.102, Val Loss: 0.163, Val mAP: 0.344
+New best model found (mAP 0.344 > 0.315). Saving...
+Start Train (lr: 0.00032057708828124994)
+Start Validation
+
+Calculating validation mAP...
+29.93% = mass AP 	||	score_threhold=0.5 : F1=0.32 ; Recall=21.21% ; Precision=63.64%
+mAP = 29.93%
+Epoch:8/10, Total Loss: 0.095, Val Loss: 0.160, Val mAP: 0.299
+Start Train (lr: 0.0002724905250390624)
+Start Validation
+
+Calculating validation mAP...
+33.58% = mass AP 	||	score_threhold=0.5 : F1=0.32 ; Recall=20.45% ; Precision=69.23%
+mAP = 33.58%
+Epoch:9/10, Total Loss: 0.090, Val Loss: 0.162, Val mAP: 0.336
+Start Train (lr: 0.00023161694628320305)
+Start Validation
+
+Calculating validation mAP...
+33.52% = mass AP 	||	score_threhold=0.5 : F1=0.35 ; Recall=24.24% ; Precision=60.38%
+mAP = 33.52%
+Epoch:10/10, Total Loss: 0.086, Val Loss: 0.165, Val mAP: 0.335
+==================== FINISHED STAGE 1 ====================
+
+
+==================== STARTING STAGE 2 ====================
+Loading weights from: /home/monstalinux/final-project/dual_stream_det_and_cls/detection/detection_logs/single_stream_fold_0/s1_last_ep010-loss0.086-val_loss0.165-val_map0.335.pth
+Applying freezing strategy for this stage...
+Number of trainable parameters for Stage 2: 27,584,493
+
+Start Train (lr: 0.0002)
+Start Validation
+
+Calculating validation mAP...
+27.40% = mass AP 	||	score_threhold=0.5 : F1=0.07 ; Recall=3.79% ; Precision=83.33%
+mAP = 27.40%
+Epoch:11/20, Total Loss: 0.144, Val Loss: 0.172, Val mAP: 0.274
+New best model found (mAP 0.274 > -1.000). Saving...
+Start Train (lr: 0.00017)
+Start Validation
+
+Calculating validation mAP...
+34.77% = mass AP 	||	score_threhold=0.5 : F1=0.32 ; Recall=21.97% ; Precision=61.70%
+mAP = 34.77%
+Epoch:12/20, Total Loss: 0.100, Val Loss: 0.167, Val mAP: 0.348
+New best model found (mAP 0.348 > 0.274). Saving...
+Start Train (lr: 0.00014450000000000002)
+Start Validation
+
+Calculating validation mAP...
+30.55% = mass AP 	||	score_threhold=0.5 : F1=0.31 ; Recall=21.21% ; Precision=57.14%
+mAP = 30.55%
+Epoch:13/20, Total Loss: 0.072, Val Loss: 0.178, Val mAP: 0.305
+Start Train (lr: 0.00012282500000000002)
+Start Validation
+
+Calculating validation mAP...
+32.10% = mass AP 	||	score_threhold=0.5 : F1=0.30 ; Recall=19.70% ; Precision=65.00%
+mAP = 32.10%
+Epoch:14/20, Total Loss: 0.050, Val Loss: 0.193, Val mAP: 0.321
+Start Train (lr: 0.00010440125000000001)
+Start Validation
+
+Calculating validation mAP...
+32.68% = mass AP 	||	score_threhold=0.5 : F1=0.33 ; Recall=23.48% ; Precision=57.41%
+mAP = 32.68%
+Epoch:15/20, Total Loss: 0.035, Val Loss: 0.228, Val mAP: 0.327
+Start Train (lr: 8.87410625e-05)
+Start Validation
+
+Calculating validation mAP...
+32.39% = mass AP 	||	score_threhold=0.5 : F1=0.36 ; Recall=26.52% ; Precision=58.33%
+mAP = 32.39%
+Epoch:16/20, Total Loss: 0.025, Val Loss: 0.266, Val mAP: 0.324
+Start Train (lr: 7.5429903125e-05)
+Start Validation
+
+Calculating validation mAP...
+30.78% = mass AP 	||	score_threhold=0.5 : F1=0.35 ; Recall=24.24% ; Precision=60.38%
+mAP = 30.78%
+Epoch:17/20, Total Loss: 0.018, Val Loss: 0.318, Val mAP: 0.308
+Start Train (lr: 6.411541765624999e-05)
+Start Validation
+
+Calculating validation mAP...
+30.81% = mass AP 	||	score_threhold=0.5 : F1=0.35 ; Recall=25.76% ; Precision=52.31%
+mAP = 30.81%
+Epoch:18/20, Total Loss: 0.014, Val Loss: 0.408, Val mAP: 0.308
+Start Train (lr: 5.449810500781249e-05)
+Start Validation
+
+Calculating validation mAP...
+29.51% = mass AP 	||	score_threhold=0.5 : F1=0.36 ; Recall=26.52% ; Precision=58.33%
+mAP = 29.51%
+Epoch:19/20, Total Loss: 0.011, Val Loss: 0.439, Val mAP: 0.295
+Start Train (lr: 4.6323389256640616e-05)
+Start Validation
+
+Calculating validation mAP...
+30.10% = mass AP 	||	score_threhold=0.5 : F1=0.37 ; Recall=28.03% ; Precision=56.06%
+mAP = 30.10%
+Epoch:20/20, Total Loss: 0.009, Val Loss: 0.474, Val mAP: 0.301
+==================== FINISHED STAGE 2 ====================
+
+############################## COMPLETED FOLD 1 / 5 ##############################
+
+
+############################## FOLD 2 / 5 ##############################
+Loading pre-trained weights from /home/monstalinux/final-project/dual_stream_det_and_cls/detection/RetinaNet_ResNet50.pth for SingleStreamRetinaNet
+Using SimplifiedRegressionModel; skipping weight mapping for regression head.
+Using SimplifiedClassificationModel; skipping weight mapping for classification head.
+Pre-trained weights loaded successfully into single stream model.
+
+==================== STARTING STAGE 1 ====================
+Applying freezing strategy for this stage...
+Freezing FPN adaptation layers...
+Number of trainable parameters for Stage 1: 4,076,461
+
+Start Train (lr: 0.001)
+Start Validation
+
+Calculating validation mAP...
+29.20% = mass AP 	||	score_threhold=0.5 : F1=0.05 ; Recall=2.34% ; Precision=75.00%
+mAP = 29.20%
+Epoch:1/10, Total Loss: 0.798, Val Loss: 0.176, Val mAP: 0.292
+New best model found (mAP 0.292 > -1.000). Saving...
+Start Train (lr: 0.00085)
+Start Validation
+
+Calculating validation mAP...
+43.89% = mass AP 	||	score_threhold=0.5 : F1=0.28 ; Recall=17.19% ; Precision=81.48%
+mAP = 43.89%
+Epoch:2/10, Total Loss: 0.167, Val Loss: 0.181, Val mAP: 0.439
+New best model found (mAP 0.439 > 0.292). Saving...
+Start Train (lr: 0.0007224999999999999)
+Start Validation
+
+Calculating validation mAP...
+47.90% = mass AP 	||	score_threhold=0.5 : F1=0.33 ; Recall=20.31% ; Precision=92.86%
+mAP = 47.90%
+Epoch:3/10, Total Loss: 0.147, Val Loss: 0.158, Val mAP: 0.479
+New best model found (mAP 0.479 > 0.439). Saving...
+Start Train (lr: 0.000614125)
+Start Validation
+
+Calculating validation mAP...
+45.88% = mass AP 	||	score_threhold=0.5 : F1=0.40 ; Recall=26.56% ; Precision=85.00%
+mAP = 45.88%
+Epoch:4/10, Total Loss: 0.137, Val Loss: 0.150, Val mAP: 0.459
+Start Train (lr: 0.00052200625)
+Start Validation
+
+Calculating validation mAP...
+46.07% = mass AP 	||	score_threhold=0.5 : F1=0.39 ; Recall=25.00% ; Precision=88.89%
+mAP = 46.07%
+Epoch:5/10, Total Loss: 0.128, Val Loss: 0.145, Val mAP: 0.461
+Start Train (lr: 0.00044370531249999997)
+Start Validation
+
+Calculating validation mAP...
+50.23% = mass AP 	||	score_threhold=0.5 : F1=0.50 ; Recall=35.94% ; Precision=82.14%
+mAP = 50.23%
+Epoch:6/10, Total Loss: 0.118, Val Loss: 0.144, Val mAP: 0.502
+New best model found (mAP 0.502 > 0.479). Saving...
+Start Train (lr: 0.00037714951562499996)
+Start Validation
+
+Calculating validation mAP...
+48.76% = mass AP 	||	score_threhold=0.5 : F1=0.50 ; Recall=35.16% ; Precision=88.24%
+mAP = 48.76%
+Epoch:7/10, Total Loss: 0.111, Val Loss: 0.145, Val mAP: 0.488
+Start Train (lr: 0.00032057708828124994)
+Start Validation
+
+Calculating validation mAP...
+46.48% = mass AP 	||	score_threhold=0.5 : F1=0.46 ; Recall=34.38% ; Precision=67.69%
+mAP = 46.48%
+Epoch:8/10, Total Loss: 0.105, Val Loss: 0.153, Val mAP: 0.465
+Start Train (lr: 0.0002724905250390624)
+Start Validation
+
+Calculating validation mAP...
+48.94% = mass AP 	||	score_threhold=0.5 : F1=0.49 ; Recall=35.16% ; Precision=83.33%
+mAP = 48.94%
+Epoch:9/10, Total Loss: 0.101, Val Loss: 0.146, Val mAP: 0.489
+Start Train (lr: 0.00023161694628320305)
+Start Validation
+
+Calculating validation mAP...
+50.12% = mass AP 	||	score_threhold=0.5 : F1=0.50 ; Recall=35.94% ; Precision=80.70%
+mAP = 50.12%
+Epoch:10/10, Total Loss: 0.094, Val Loss: 0.142, Val mAP: 0.501
+==================== FINISHED STAGE 1 ====================
+
+
+==================== STARTING STAGE 2 ====================
+Loading weights from: /home/monstalinux/final-project/dual_stream_det_and_cls/detection/detection_logs/single_stream_fold_1/s1_last_ep010-loss0.094-val_loss0.142-val_map0.501.pth
+Applying freezing strategy for this stage...
+Number of trainable parameters for Stage 2: 27,584,493
+
+Start Train (lr: 0.0002)
+Start Validation
+
+Calculating validation mAP...
+50.02% = mass AP 	||	score_threhold=0.5 : F1=0.39 ; Recall=25.00% ; Precision=88.89%
+mAP = 50.02%
+Epoch:11/20, Total Loss: 0.154, Val Loss: 0.146, Val mAP: 0.500
+New best model found (mAP 0.500 > -1.000). Saving...
+Start Train (lr: 0.00017)
+Start Validation
+
+Calculating validation mAP...
+44.95% = mass AP 	||	score_threhold=0.5 : F1=0.43 ; Recall=28.12% ; Precision=87.80%
+mAP = 44.95%
+Epoch:12/20, Total Loss: 0.108, Val Loss: 0.164, Val mAP: 0.450
+Start Train (lr: 0.00014450000000000002)
+Start Validation
+
+Calculating validation mAP...
+50.84% = mass AP 	||	score_threhold=0.5 : F1=0.43 ; Recall=27.34% ; Precision=97.22%
+mAP = 50.84%
+Epoch:13/20, Total Loss: 0.079, Val Loss: 0.181, Val mAP: 0.508
+New best model found (mAP 0.508 > 0.500). Saving...
+Start Train (lr: 0.00012282500000000002)
+Start Validation
+
+Calculating validation mAP...
+49.34% = mass AP 	||	score_threhold=0.5 : F1=0.51 ; Recall=39.06% ; Precision=73.53%
+mAP = 49.34%
+Epoch:14/20, Total Loss: 0.055, Val Loss: 0.186, Val mAP: 0.493
+Start Train (lr: 0.00010440125000000001)
+Start Validation
+
+Calculating validation mAP...
+52.08% = mass AP 	||	score_threhold=0.5 : F1=0.56 ; Recall=44.53% ; Precision=75.00%
+mAP = 52.08%
+Epoch:15/20, Total Loss: 0.040, Val Loss: 0.203, Val mAP: 0.521
+New best model found (mAP 0.521 > 0.508). Saving...
+Start Train (lr: 8.87410625e-05)
+Start Validation
+
+Calculating validation mAP...
+51.37% = mass AP 	||	score_threhold=0.5 : F1=0.58 ; Recall=50.78% ; Precision=67.01%
+mAP = 51.37%
+Epoch:16/20, Total Loss: 0.027, Val Loss: 0.214, Val mAP: 0.514
+Start Train (lr: 7.5429903125e-05)
+Start Validation
+
+Calculating validation mAP...
+53.48% = mass AP 	||	score_threhold=0.5 : F1=0.57 ; Recall=48.44% ; Precision=68.13%
+mAP = 53.48%
+Epoch:17/20, Total Loss: 0.021, Val Loss: 0.228, Val mAP: 0.535
+New best model found (mAP 0.535 > 0.521). Saving...
+Start Train (lr: 6.411541765624999e-05)
+Start Validation
+
+Calculating validation mAP...
+48.41% = mass AP 	||	score_threhold=0.5 : F1=0.55 ; Recall=46.88% ; Precision=65.22%
+mAP = 48.41%
+Epoch:18/20, Total Loss: 0.015, Val Loss: 0.289, Val mAP: 0.484
+Start Train (lr: 5.449810500781249e-05)
+Start Validation
+
+Calculating validation mAP...
+51.43% = mass AP 	||	score_threhold=0.5 : F1=0.57 ; Recall=46.88% ; Precision=72.29%
+mAP = 51.43%
+Epoch:19/20, Total Loss: 0.011, Val Loss: 0.289, Val mAP: 0.514
+Start Train (lr: 4.6323389256640616e-05)
+Start Validation
+
+Calculating validation mAP...
+49.44% = mass AP 	||	score_threhold=0.5 : F1=0.56 ; Recall=48.44% ; Precision=66.67%
+mAP = 49.44%
+Epoch:20/20, Total Loss: 0.010, Val Loss: 0.314, Val mAP: 0.494
+==================== FINISHED STAGE 2 ====================
+
+############################## COMPLETED FOLD 2 / 5 ##############################
+
+
+############################## FOLD 3 / 5 ##############################
+Loading pre-trained weights from /home/monstalinux/final-project/dual_stream_det_and_cls/detection/RetinaNet_ResNet50.pth for SingleStreamRetinaNet
+Using SimplifiedRegressionModel; skipping weight mapping for regression head.
+Using SimplifiedClassificationModel; skipping weight mapping for classification head.
+Pre-trained weights loaded successfully into single stream model.
+
+==================== STARTING STAGE 1 ====================
+Applying freezing strategy for this stage...
+Freezing FPN adaptation layers...
+Number of trainable parameters for Stage 1: 4,076,461
+
+Start Train (lr: 0.001)
+Start Validation
+
+Calculating validation mAP...
+38.44% = mass AP 	||	score_threhold=0.5 : F1=0.02 ; Recall=1.05% ; Precision=100.00%
+mAP = 38.44%
+Epoch:1/10, Total Loss: 1.971, Val Loss: 0.148, Val mAP: 0.384
+New best model found (mAP 0.384 > -1.000). Saving...
+Start Train (lr: 0.00085)
+Start Validation
+
+Calculating validation mAP...
+48.38% = mass AP 	||	score_threhold=0.5 : F1=0.10 ; Recall=5.26% ; Precision=83.33%
+mAP = 48.38%
+Epoch:2/10, Total Loss: 0.168, Val Loss: 0.141, Val mAP: 0.484
+New best model found (mAP 0.484 > 0.384). Saving...
+Start Train (lr: 0.0007224999999999999)
+Start Validation
+
+Calculating validation mAP...
+45.85% = mass AP 	||	score_threhold=0.5 : F1=0.43 ; Recall=31.58% ; Precision=65.22%
+mAP = 45.85%
+Epoch:3/10, Total Loss: 0.155, Val Loss: 0.145, Val mAP: 0.459
+Start Train (lr: 0.000614125)
+Start Validation
+
+Calculating validation mAP...
+49.73% = mass AP 	||	score_threhold=0.5 : F1=0.41 ; Recall=28.42% ; Precision=75.00%
+mAP = 49.73%
+Epoch:4/10, Total Loss: 0.140, Val Loss: 0.133, Val mAP: 0.497
+New best model found (mAP 0.497 > 0.484). Saving...
+Start Train (lr: 0.00052200625)
+Start Validation
+
+Calculating validation mAP...
+52.94% = mass AP 	||	score_threhold=0.5 : F1=0.51 ; Recall=37.89% ; Precision=78.26%
+mAP = 52.94%
+Epoch:5/10, Total Loss: 0.128, Val Loss: 0.132, Val mAP: 0.529
+New best model found (mAP 0.529 > 0.497). Saving...
+Start Train (lr: 0.00044370531249999997)
+Start Validation
+
+Calculating validation mAP...
+52.30% = mass AP 	||	score_threhold=0.5 : F1=0.52 ; Recall=40.00% ; Precision=73.08%
+mAP = 52.30%
+Epoch:6/10, Total Loss: 0.122, Val Loss: 0.125, Val mAP: 0.523
+Start Train (lr: 0.00037714951562499996)
+Start Validation
+
+Calculating validation mAP...
+49.89% = mass AP 	||	score_threhold=0.5 : F1=0.53 ; Recall=42.11% ; Precision=71.43%
+mAP = 49.89%
+Epoch:7/10, Total Loss: 0.117, Val Loss: 0.129, Val mAP: 0.499
+Start Train (lr: 0.00032057708828124994)
+Start Validation
+
+Calculating validation mAP...
+51.03% = mass AP 	||	score_threhold=0.5 : F1=0.49 ; Recall=38.95% ; Precision=66.07%
+mAP = 51.03%
+Epoch:8/10, Total Loss: 0.111, Val Loss: 0.132, Val mAP: 0.510
+Start Train (lr: 0.0002724905250390624)
+Start Validation
+
+Calculating validation mAP...
+51.83% = mass AP 	||	score_threhold=0.5 : F1=0.52 ; Recall=43.16% ; Precision=65.08%
+mAP = 51.83%
+Epoch:9/10, Total Loss: 0.105, Val Loss: 0.131, Val mAP: 0.518
+Start Train (lr: 0.00023161694628320305)
+Start Validation
+
+Calculating validation mAP...
+54.41% = mass AP 	||	score_threhold=0.5 : F1=0.52 ; Recall=40.00% ; Precision=73.08%
+mAP = 54.41%
+Epoch:10/10, Total Loss: 0.101, Val Loss: 0.129, Val mAP: 0.544
+New best model found (mAP 0.544 > 0.529). Saving...
+==================== FINISHED STAGE 1 ====================
+
+
+==================== STARTING STAGE 2 ====================
+Loading weights from: /home/monstalinux/final-project/dual_stream_det_and_cls/detection/detection_logs/single_stream_fold_2/s1_last_ep010-loss0.101-val_loss0.129-val_map0.544.pth
+Applying freezing strategy for this stage...
+Number of trainable parameters for Stage 2: 27,584,493
+
+Start Train (lr: 0.0002)
+Start Validation
+
+Calculating validation mAP...
+46.19% = mass AP 	||	score_threhold=0.5 : F1=0.28 ; Recall=16.84% ; Precision=84.21%
+mAP = 46.19%
+Epoch:11/20, Total Loss: 0.154, Val Loss: 0.147, Val mAP: 0.462
+New best model found (mAP 0.462 > -1.000). Saving...
+Start Train (lr: 0.00017)
+Start Validation
+
+Calculating validation mAP...
+41.80% = mass AP 	||	score_threhold=0.5 : F1=0.49 ; Recall=44.21% ; Precision=56.00%
+mAP = 41.80%
+Epoch:12/20, Total Loss: 0.111, Val Loss: 0.180, Val mAP: 0.418
+Start Train (lr: 0.00014450000000000002)
+Start Validation
+
+Calculating validation mAP...
+51.98% = mass AP 	||	score_threhold=0.5 : F1=0.50 ; Recall=37.89% ; Precision=73.47%
+mAP = 51.98%
+Epoch:13/20, Total Loss: 0.081, Val Loss: 0.139, Val mAP: 0.520
+New best model found (mAP 0.520 > 0.462). Saving...
+Start Train (lr: 0.00012282500000000002)
+Start Validation
+
+Calculating validation mAP...
+48.84% = mass AP 	||	score_threhold=0.5 : F1=0.55 ; Recall=44.21% ; Precision=71.19%
+mAP = 48.84%
+Epoch:14/20, Total Loss: 0.060, Val Loss: 0.177, Val mAP: 0.488
+Start Train (lr: 0.00010440125000000001)
+Start Validation
+
+Calculating validation mAP...
+50.14% = mass AP 	||	score_threhold=0.5 : F1=0.51 ; Recall=40.00% ; Precision=70.37%
+mAP = 50.14%
+Epoch:15/20, Total Loss: 0.044, Val Loss: 0.187, Val mAP: 0.501
+Start Train (lr: 8.87410625e-05)
+Start Validation
+
+Calculating validation mAP...
+50.82% = mass AP 	||	score_threhold=0.5 : F1=0.55 ; Recall=46.32% ; Precision=67.69%
+mAP = 50.82%
+Epoch:16/20, Total Loss: 0.030, Val Loss: 0.209, Val mAP: 0.508
+Start Train (lr: 7.5429903125e-05)
+Start Validation
+
+Calculating validation mAP...
+54.08% = mass AP 	||	score_threhold=0.5 : F1=0.53 ; Recall=50.53% ; Precision=55.81%
+mAP = 54.08%
+Epoch:17/20, Total Loss: 0.022, Val Loss: 0.214, Val mAP: 0.541
+New best model found (mAP 0.541 > 0.520). Saving...
+Start Train (lr: 6.411541765624999e-05)
+Start Validation
+
+Calculating validation mAP...
+52.35% = mass AP 	||	score_threhold=0.5 : F1=0.55 ; Recall=49.47% ; Precision=61.04%
+mAP = 52.35%
+Epoch:18/20, Total Loss: 0.017, Val Loss: 0.264, Val mAP: 0.523
+Start Train (lr: 5.449810500781249e-05)
+Start Validation
+
+Calculating validation mAP...
+52.78% = mass AP 	||	score_threhold=0.5 : F1=0.54 ; Recall=50.53% ; Precision=58.54%
+mAP = 52.78%
+Epoch:19/20, Total Loss: 0.013, Val Loss: 0.261, Val mAP: 0.528
+Start Train (lr: 4.6323389256640616e-05)
+Start Validation
+
+Calculating validation mAP...
+49.90% = mass AP 	||	score_threhold=0.5 : F1=0.53 ; Recall=47.37% ; Precision=60.81%
+mAP = 49.90%
+Epoch:20/20, Total Loss: 0.011, Val Loss: 0.311, Val mAP: 0.499
+==================== FINISHED STAGE 2 ====================
+
+############################## COMPLETED FOLD 3 / 5 ##############################
+
+
+############################## FOLD 4 / 5 ##############################
+Loading pre-trained weights from /home/monstalinux/final-project/dual_stream_det_and_cls/detection/RetinaNet_ResNet50.pth for SingleStreamRetinaNet
+Using SimplifiedRegressionModel; skipping weight mapping for regression head.
+Using SimplifiedClassificationModel; skipping weight mapping for classification head.
+Pre-trained weights loaded successfully into single stream model.
+
+==================== STARTING STAGE 1 ====================
+Applying freezing strategy for this stage...
+Freezing FPN adaptation layers...
+Number of trainable parameters for Stage 1: 4,076,461
+
+Start Train (lr: 0.001)
+Start Validation
+
+Calculating validation mAP...
+31.30% = mass AP 	||	score_threhold=0.5 : F1=0.08 ; Recall=4.14% ; Precision=100.00%
+mAP = 31.30%
+Epoch:1/10, Total Loss: 0.824, Val Loss: 0.183, Val mAP: 0.313
+New best model found (mAP 0.313 > -1.000). Saving...
+Start Train (lr: 0.00085)
+Start Validation
+
+Calculating validation mAP...
+39.01% = mass AP 	||	score_threhold=0.5 : F1=0.37 ; Recall=22.76% ; Precision=94.29%
+mAP = 39.01%
+Epoch:2/10, Total Loss: 0.162, Val Loss: 0.160, Val mAP: 0.390
+New best model found (mAP 0.390 > 0.313). Saving...
+Start Train (lr: 0.0007224999999999999)
+Start Validation
+
+Calculating validation mAP...
+44.59% = mass AP 	||	score_threhold=0.5 : F1=0.41 ; Recall=26.90% ; Precision=90.70%
+mAP = 44.59%
+Epoch:3/10, Total Loss: 0.142, Val Loss: 0.159, Val mAP: 0.446
+New best model found (mAP 0.446 > 0.390). Saving...
+Start Train (lr: 0.000614125)
+Start Validation
+
+Calculating validation mAP...
+42.08% = mass AP 	||	score_threhold=0.5 : F1=0.35 ; Recall=21.38% ; Precision=96.88%
+mAP = 42.08%
+Epoch:4/10, Total Loss: 0.132, Val Loss: 0.172, Val mAP: 0.421
+Start Train (lr: 0.00052200625)
+Start Validation
+
+Calculating validation mAP...
+45.68% = mass AP 	||	score_threhold=0.5 : F1=0.44 ; Recall=29.66% ; Precision=84.31%
+mAP = 45.68%
+Epoch:5/10, Total Loss: 0.125, Val Loss: 0.156, Val mAP: 0.457
+New best model found (mAP 0.457 > 0.446). Saving...
+Start Train (lr: 0.00044370531249999997)
+Start Validation
+
+Calculating validation mAP...
+46.11% = mass AP 	||	score_threhold=0.5 : F1=0.41 ; Recall=26.90% ; Precision=88.64%
+mAP = 46.11%
+Epoch:6/10, Total Loss: 0.118, Val Loss: 0.162, Val mAP: 0.461
+New best model found (mAP 0.461 > 0.457). Saving...
+Start Train (lr: 0.00037714951562499996)
+Start Validation
+
+Calculating validation mAP...
+43.84% = mass AP 	||	score_threhold=0.5 : F1=0.43 ; Recall=28.97% ; Precision=80.77%
+mAP = 43.84%
+Epoch:7/10, Total Loss: 0.116, Val Loss: 0.162, Val mAP: 0.438
+Start Train (lr: 0.00032057708828124994)
+Start Validation
+
+Calculating validation mAP...
+45.25% = mass AP 	||	score_threhold=0.5 : F1=0.49 ; Recall=35.86% ; Precision=76.47%
+mAP = 45.25%
+Epoch:8/10, Total Loss: 0.110, Val Loss: 0.144, Val mAP: 0.453
+Start Train (lr: 0.0002724905250390624)
+Start Validation
+
+Calculating validation mAP...
+45.61% = mass AP 	||	score_threhold=0.5 : F1=0.40 ; Recall=25.52% ; Precision=90.24%
+mAP = 45.61%
+Epoch:9/10, Total Loss: 0.101, Val Loss: 0.168, Val mAP: 0.456
+Start Train (lr: 0.00023161694628320305)
+Start Validation
+
+Calculating validation mAP...
+45.07% = mass AP 	||	score_threhold=0.5 : F1=0.47 ; Recall=33.79% ; Precision=76.56%
+mAP = 45.07%
+Epoch:10/10, Total Loss: 0.097, Val Loss: 0.151, Val mAP: 0.451
+==================== FINISHED STAGE 1 ====================
+
+
+==================== STARTING STAGE 2 ====================
+Loading weights from: /home/monstalinux/final-project/dual_stream_det_and_cls/detection/detection_logs/single_stream_fold_3/s1_last_ep010-loss0.097-val_loss0.151-val_map0.451.pth
+Applying freezing strategy for this stage...
+Number of trainable parameters for Stage 2: 27,584,493
+
+Start Train (lr: 0.0002)
+Start Validation
+
+Calculating validation mAP...
+42.99% = mass AP 	||	score_threhold=0.5 : F1=0.41 ; Recall=28.28% ; Precision=75.93%
+mAP = 42.99%
+Epoch:11/20, Total Loss: 0.147, Val Loss: 0.162, Val mAP: 0.430
+New best model found (mAP 0.430 > -1.000). Saving...
+Start Train (lr: 0.00017)
+Start Validation
+
+Calculating validation mAP...
+45.60% = mass AP 	||	score_threhold=0.5 : F1=0.40 ; Recall=26.90% ; Precision=79.59%
+mAP = 45.60%
+Epoch:12/20, Total Loss: 0.104, Val Loss: 0.149, Val mAP: 0.456
+New best model found (mAP 0.456 > 0.430). Saving...
+Start Train (lr: 0.00014450000000000002)
+Start Validation
+
+Calculating validation mAP...
+46.07% = mass AP 	||	score_threhold=0.5 : F1=0.49 ; Recall=41.38% ; Precision=60.61%
+mAP = 46.07%
+Epoch:13/20, Total Loss: 0.075, Val Loss: 0.146, Val mAP: 0.461
+New best model found (mAP 0.461 > 0.456). Saving...
+Start Train (lr: 0.00012282500000000002)
+Start Validation
+
+Calculating validation mAP...
+43.71% = mass AP 	||	score_threhold=0.5 : F1=0.46 ; Recall=32.41% ; Precision=81.03%
+mAP = 43.71%
+Epoch:14/20, Total Loss: 0.052, Val Loss: 0.207, Val mAP: 0.437
+Start Train (lr: 0.00010440125000000001)
+Start Validation
+
+Calculating validation mAP...
+44.85% = mass AP 	||	score_threhold=0.5 : F1=0.49 ; Recall=37.24% ; Precision=71.05%
+mAP = 44.85%
+Epoch:15/20, Total Loss: 0.038, Val Loss: 0.210, Val mAP: 0.449
+Start Train (lr: 8.87410625e-05)
+Start Validation
+
+Calculating validation mAP...
+47.63% = mass AP 	||	score_threhold=0.5 : F1=0.51 ; Recall=42.07% ; Precision=64.21%
+mAP = 47.63%
+Epoch:16/20, Total Loss: 0.027, Val Loss: 0.240, Val mAP: 0.476
+New best model found (mAP 0.476 > 0.461). Saving...
+Start Train (lr: 7.5429903125e-05)
+Start Validation
+
+Calculating validation mAP...
+43.45% = mass AP 	||	score_threhold=0.5 : F1=0.46 ; Recall=35.17% ; Precision=68.00%
+mAP = 43.45%
+Epoch:17/20, Total Loss: 0.019, Val Loss: 0.286, Val mAP: 0.435
+Start Train (lr: 6.411541765624999e-05)
+Start Validation
+
+Calculating validation mAP...
+45.08% = mass AP 	||	score_threhold=0.5 : F1=0.48 ; Recall=37.24% ; Precision=68.35%
+mAP = 45.08%
+Epoch:18/20, Total Loss: 0.015, Val Loss: 0.308, Val mAP: 0.451
+Start Train (lr: 5.449810500781249e-05)
+Start Validation
+
+Calculating validation mAP...
+46.09% = mass AP 	||	score_threhold=0.5 : F1=0.49 ; Recall=37.93% ; Precision=69.62%
+mAP = 46.09%
+Epoch:19/20, Total Loss: 0.012, Val Loss: 0.333, Val mAP: 0.461
+Start Train (lr: 4.6323389256640616e-05)
+Start Validation
+
+Calculating validation mAP...
+45.20% = mass AP 	||	score_threhold=0.5 : F1=0.49 ; Recall=37.24% ; Precision=72.00%
+mAP = 45.20%
+Epoch:20/20, Total Loss: 0.010, Val Loss: 0.385, Val mAP: 0.452
+==================== FINISHED STAGE 2 ====================
+
+############################## COMPLETED FOLD 4 / 5 ##############################
+
+
+############################## FOLD 5 / 5 ##############################
+Loading pre-trained weights from /home/monstalinux/final-project/dual_stream_det_and_cls/detection/RetinaNet_ResNet50.pth for SingleStreamRetinaNet
+Using SimplifiedRegressionModel; skipping weight mapping for regression head.
+Using SimplifiedClassificationModel; skipping weight mapping for classification head.
+Pre-trained weights loaded successfully into single stream model.
+
+==================== STARTING STAGE 1 ====================
+Applying freezing strategy for this stage...
+Freezing FPN adaptation layers...
+Number of trainable parameters for Stage 1: 4,076,461
+
+Start Train (lr: 0.001)
+Start Validation
+
+Calculating validation mAP...
+32.45% = mass AP 	||	score_threhold=0.5 : F1=0.02 ; Recall=1.00% ; Precision=100.00%
+mAP = 32.45%
+Epoch:1/10, Total Loss: 1.246, Val Loss: 0.167, Val mAP: 0.325
+New best model found (mAP 0.325 > -1.000). Saving...
+Start Train (lr: 0.00085)
+Start Validation
+
+Calculating validation mAP...
+39.46% = mass AP 	||	score_threhold=0.5 : F1=0.11 ; Recall=6.00% ; Precision=100.00%
+mAP = 39.46%
+Epoch:2/10, Total Loss: 0.165, Val Loss: 0.144, Val mAP: 0.395
+New best model found (mAP 0.395 > 0.325). Saving...
+Start Train (lr: 0.0007224999999999999)
+Start Validation
+
+Calculating validation mAP...
+33.97% = mass AP 	||	score_threhold=0.5 : F1=0.11 ; Recall=6.00% ; Precision=100.00%
+mAP = 33.97%
+Epoch:3/10, Total Loss: 0.150, Val Loss: 0.149, Val mAP: 0.340
+Start Train (lr: 0.000614125)
+Start Validation
+
+Calculating validation mAP...
+35.73% = mass AP 	||	score_threhold=0.5 : F1=0.32 ; Recall=21.00% ; Precision=65.62%
+mAP = 35.73%
+Epoch:4/10, Total Loss: 0.135, Val Loss: 0.143, Val mAP: 0.357
+Start Train (lr: 0.00052200625)
+Start Validation
+
+Calculating validation mAP...
+36.32% = mass AP 	||	score_threhold=0.5 : F1=0.36 ; Recall=25.00% ; Precision=65.79%
+mAP = 36.32%
+Epoch:5/10, Total Loss: 0.129, Val Loss: 0.140, Val mAP: 0.363
+Start Train (lr: 0.00044370531249999997)
+Start Validation
+
+Calculating validation mAP...
+40.69% = mass AP 	||	score_threhold=0.5 : F1=0.40 ; Recall=29.00% ; Precision=64.44%
+mAP = 40.69%
+Epoch:6/10, Total Loss: 0.122, Val Loss: 0.138, Val mAP: 0.407
+New best model found (mAP 0.407 > 0.395). Saving...
+Start Train (lr: 0.00037714951562499996)
+Start Validation
+
+Calculating validation mAP...
+42.16% = mass AP 	||	score_threhold=0.5 : F1=0.36 ; Recall=25.00% ; Precision=67.57%
+mAP = 42.16%
+Epoch:7/10, Total Loss: 0.114, Val Loss: 0.134, Val mAP: 0.422
+New best model found (mAP 0.422 > 0.407). Saving...
+Start Train (lr: 0.00032057708828124994)
+Start Validation
+
+Calculating validation mAP...
+39.21% = mass AP 	||	score_threhold=0.5 : F1=0.40 ; Recall=28.00% ; Precision=68.29%
+mAP = 39.21%
+Epoch:8/10, Total Loss: 0.108, Val Loss: 0.133, Val mAP: 0.392
+Start Train (lr: 0.0002724905250390624)
+Start Validation
+
+Calculating validation mAP...
+42.10% = mass AP 	||	score_threhold=0.5 : F1=0.42 ; Recall=31.00% ; Precision=67.39%
+mAP = 42.10%
+Epoch:9/10, Total Loss: 0.102, Val Loss: 0.131, Val mAP: 0.421
+Start Train (lr: 0.00023161694628320305)
+Start Validation
+
+Calculating validation mAP...
+43.53% = mass AP 	||	score_threhold=0.5 : F1=0.46 ; Recall=34.00% ; Precision=69.39%
+mAP = 43.53%
+Epoch:10/10, Total Loss: 0.096, Val Loss: 0.132, Val mAP: 0.435
+New best model found (mAP 0.435 > 0.422). Saving...
+==================== FINISHED STAGE 1 ====================
+
+
+==================== STARTING STAGE 2 ====================
+Loading weights from: /home/monstalinux/final-project/dual_stream_det_and_cls/detection/detection_logs/single_stream_fold_4/s1_last_ep010-loss0.096-val_loss0.132-val_map0.435.pth
+Applying freezing strategy for this stage...
+Number of trainable parameters for Stage 2: 27,584,493
+
+Start Train (lr: 0.0002)
+Start Validation
+
+Calculating validation mAP...
+39.09% = mass AP 	||	score_threhold=0.5 : F1=0.32 ; Recall=20.00% ; Precision=76.92%
+mAP = 39.09%
+Epoch:11/20, Total Loss: 0.158, Val Loss: 0.138, Val mAP: 0.391
+New best model found (mAP 0.391 > -1.000). Saving...
+Start Train (lr: 0.00017)
+Start Validation
+
+Calculating validation mAP...
+39.80% = mass AP 	||	score_threhold=0.5 : F1=0.43 ; Recall=32.00% ; Precision=64.00%
+mAP = 39.80%
+Epoch:12/20, Total Loss: 0.108, Val Loss: 0.140, Val mAP: 0.398
+New best model found (mAP 0.398 > 0.391). Saving...
+Start Train (lr: 0.00014450000000000002)
+Start Validation
+
+Calculating validation mAP...
+35.46% = mass AP 	||	score_threhold=0.5 : F1=0.40 ; Recall=29.00% ; Precision=64.44%
+mAP = 35.46%
+Epoch:13/20, Total Loss: 0.081, Val Loss: 0.142, Val mAP: 0.355
+Start Train (lr: 0.00012282500000000002)
+Start Validation
+
+Calculating validation mAP...
+33.95% = mass AP 	||	score_threhold=0.5 : F1=0.29 ; Recall=19.00% ; Precision=61.29%
+mAP = 33.95%
+Epoch:14/20, Total Loss: 0.058, Val Loss: 0.217, Val mAP: 0.340
+Start Train (lr: 0.00010440125000000001)
+Start Validation
+
+Calculating validation mAP...
+36.95% = mass AP 	||	score_threhold=0.5 : F1=0.35 ; Recall=24.00% ; Precision=64.86%
+mAP = 36.95%
+Epoch:15/20, Total Loss: 0.041, Val Loss: 0.234, Val mAP: 0.370
+Start Train (lr: 8.87410625e-05)
+Start Validation
+
+Calculating validation mAP...
+37.17% = mass AP 	||	score_threhold=0.5 : F1=0.41 ; Recall=30.00% ; Precision=62.50%
+mAP = 37.17%
+Epoch:16/20, Total Loss: 0.028, Val Loss: 0.273, Val mAP: 0.372
+Start Train (lr: 7.5429903125e-05)
+Start Validation
+
+Calculating validation mAP...
+39.71% = mass AP 	||	score_threhold=0.5 : F1=0.41 ; Recall=30.00% ; Precision=63.83%
+mAP = 39.71%
+Epoch:17/20, Total Loss: 0.021, Val Loss: 0.291, Val mAP: 0.397
+Start Train (lr: 6.411541765624999e-05)
+Start Validation
+
+Calculating validation mAP...
+39.68% = mass AP 	||	score_threhold=0.5 : F1=0.42 ; Recall=31.00% ; Precision=63.27%
+mAP = 39.68%
+Epoch:18/20, Total Loss: 0.016, Val Loss: 0.317, Val mAP: 0.397
+Start Train (lr: 5.449810500781249e-05)
+Start Validation
+
+Calculating validation mAP...
+39.02% = mass AP 	||	score_threhold=0.5 : F1=0.44 ; Recall=34.00% ; Precision=61.82%
+mAP = 39.02%
+Epoch:19/20, Total Loss: 0.013, Val Loss: 0.328, Val mAP: 0.390
+Start Train (lr: 4.6323389256640616e-05)
+Start Validation
+
+Calculating validation mAP...
+38.60% = mass AP 	||	score_threhold=0.5 : F1=0.44 ; Recall=35.00% ; Precision=58.33%
+mAP = 38.60%
+Epoch:20/20, Total Loss: 0.010, Val Loss: 0.369, Val mAP: 0.386
+==================== FINISHED STAGE 2 ====================
+
+############################## COMPLETED FOLD 5 / 5 ##############################

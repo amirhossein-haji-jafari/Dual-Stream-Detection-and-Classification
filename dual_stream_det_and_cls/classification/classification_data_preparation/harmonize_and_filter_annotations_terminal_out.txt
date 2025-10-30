@@ -1,0 +1,68 @@
+--- Pass 1: Harmonizing labels and identifying conflicting diagnoses ---
+HARMONIZE: Group ('P113', 'R') contains 'Normal' and 'Benign' with a mask. Promoting 1 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P115', 'L') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P116', 'L') contains 'Normal' and 'Benign' with a mask. Promoting 1 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P119', 'R') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P121', 'R') contains 'Normal' and 'Benign' with a mask. Promoting 1 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P123', 'L') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P138', 'L') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P140', 'L') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P141', 'L') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P141', 'R') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P143', 'L') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P144', 'L') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P145', 'R') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P152', 'R') contains 'Normal' and 'Benign' with a mask. Promoting 1 'Normal' labels to 'Benign'.
+CONFLICT: Group ('P16', 'R') has both Malignant and Benign/Normal labels. Marking for removal.
+HARMONIZE: Group ('P164', 'L') contains 'Normal' and 'Benign' with a mask. Promoting 1 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P169', 'L') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P192', 'L') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P192', 'R') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P197', 'L') contains 'Normal' and 'Benign' with a mask. Promoting 3 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P200', 'L') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P203', 'R') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P234', 'L') contains 'Normal' and 'Benign' with a mask. Promoting 1 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P244', 'L') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P245', 'R') contains 'Normal' and 'Benign' with a mask. Promoting 1 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P254', 'L') contains 'Normal' and 'Benign' with a mask. Promoting 3 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P262', 'R') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P273', 'R') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P280', 'R') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P290', 'L') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P292', 'L') contains 'Normal' and 'Benign' with a mask. Promoting 3 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P296', 'R') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P297', 'R') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P30', 'R') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P301', 'R') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P310', 'R') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P315', 'R') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P318', 'L') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P326', 'R') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P51', 'L') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P52', 'L') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P59', 'L') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P6', 'R') contains 'Normal' and 'Benign' with a mask. Promoting 1 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P69', 'L') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P73', 'L') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P8', 'L') contains 'Normal' and 'Benign' with a mask. Promoting 1 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P9', 'L') contains 'Normal' and 'Benign' with a mask. Promoting 1 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P93', 'R') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P94', 'L') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+HARMONIZE: Group ('P96', 'L') contains 'Normal' and 'Benign' with a mask. Promoting 2 'Normal' labels to 'Benign'.
+
+Applied a total of 91 label promotions ('Normal' -> 'Benign').
+
+--- Pass 2: Checking for BI-RADS and pathology inconsistencies ---
+
+Found 1 patient/side groups with conflicting diagnoses.
+Found 73 additional patient/side groups with BI-RADS inconsistencies.
+Total unique groups to be removed: 74.
+Groups to be removed: [('P102', 'R'), ('P107', 'R'), ('P111', 'R'), ('P114', 'R'), ('P12', 'L'), ('P122', 'R'), ('P128', 'L'), ('P131', 'L'), ('P132', 'R'), ('P137', 'L'), ('P14', 'R'), ('P147', 'R'), ('P149', 'R'), ('P150', 'L'), ('P154', 'L'), ('P156', 'L'), ('P156', 'R'), ('P16', 'R'), ('P161', 'L'), ('P17', 'R'), ('P173', 'L'), ('P174', 'L'), ('P179', 'L'), ('P18', 'R'), ('P181', 'L'), ('P189', 'L'), ('P19', 'L'), ('P201', 'R'), ('P208', 'R'), ('P21', 'R'), ('P211', 'L'), ('P214', 'L'), ('P22', 'L'), ('P221', 'L'), ('P230', 'R'), ('P233', 'L'), ('P243', 'R'), ('P254', 'R'), ('P261', 'L'), ('P265', 'R'), ('P274', 'R'), ('P281', 'R'), ('P284', 'L'), ('P289', 'R'), ('P29', 'L'), ('P293', 'R'), ('P295', 'R'), ('P299', 'R'), ('P301', 'L'), ('P302', 'L'), ('P305', 'L'), ('P309', 'L'), ('P31', 'R'), ('P313', 'R'), ('P316', 'R'), ('P320', 'L'), ('P326', 'L'), ('P34', 'R'), ('P37', 'L'), ('P38', 'R'), ('P40', 'R'), ('P45', 'L'), ('P45', 'R'), ('P46', 'L'), ('P6', 'L'), ('P61', 'L'), ('P65', 'L'), ('P73', 'R'), ('P86', 'R'), ('P87', 'L'), ('P90', 'R'), ('P91', 'L'), ('P94', 'R'), ('P98', 'L')]
+
+Filtering complete.
+Original number of rows: 2006
+Number of rows kept: 1734
+Number of rows removed: 272
+
+Consistent, harmonized data saved to 'annotations_consistent_harmonized.csv'
+Removed inconsistent data saved to 'annotations_removed_conflicts.csv' for review.

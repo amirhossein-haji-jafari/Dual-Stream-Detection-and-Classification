@@ -8,19 +8,20 @@ import torch
 from PIL import Image, ImageDraw, ImageFont
 from tqdm import tqdm
 
-from dual_stream_retinanet import DualStreamRetinaNet
-from ..utils import cvtColor, preprocess_input, resize_image
-from utils.utils_bbox import decodebox, non_max_suppression
-from utils.utils_map import get_map
-from immutables import Hyperparameter, ProjectPaths
+from .dual_stream_retinanet import DualStreamRetinaNet
+from ..utils import cvtColor, resize_image
+from .utils.utils_bbox import decodebox, non_max_suppression
+from .utils.utils_map import get_map
+from ..immutables import Hyperparameter, ProjectPaths
+from ..medical_image_utils import min_max_normalise
 class DualStreamDetector(object):
     """
     Class to perform inference using a trained DualStreamRetinaNet model.
     """
     _defaults = {
-        "model_path"        : ProjectPaths.best_and_last_det_model + '/fold_0/s2_best_ep013-loss0.054-val_loss0.154-val_map0.544.pth',
+        "model_path"        : ProjectPaths.best_and_last_det_model + '/fold_4/s2_best_ep029-loss0.003-val_loss0.408-val_map0.630.pth',
         "input_shape"       : Hyperparameter.input_shape,
-        "confidence"        : 0.01, 
+        "confidence"        : 0.0, 
         "draw_confidence"   : 0.5, # Confidence threshold for drawing bounding boxes.
         "nms_iou"           : 0.5,
         "letterbox_image"   : False, # Simple resize was used in training
@@ -217,14 +218,14 @@ class DualStreamDetector(object):
         image = cvtColor(image)
         image_data = resize_image(image, (self.input_shape[1], self.input_shape[0]), self.letterbox_image)
         # Add batch dimension and channel-first format
-        image_data = np.expand_dims(np.transpose(preprocess_input(np.array(image_data, dtype='float32')), (2, 0, 1)), 0)
+        image_data = np.expand_dims(np.transpose(min_max_normalise(np.array(image_data, dtype='float32')), (2, 0, 1)), 0)
         return image_data
 
 if __name__ == "__main__":
     detector = DualStreamDetector()
     
     test_on_train = False
-    test_annotation_path = ProjectPaths.val_annotations_fold_0
+    test_annotation_path = ProjectPaths.val_annotations_fold_4
     try:
         os.mkdir(ProjectPaths.predictions)
         print(f"Directory '{ProjectPaths.predictions}' created successfully.")
@@ -285,8 +286,8 @@ if __name__ == "__main__":
             cm_filename = image_name_from_file
             dm_filename = image_name_from_file.replace("_CM_", "_DM_")
             
-        dm_path = ProjectPaths.dataset + "/" + dm_filename
-        cm_path = ProjectPaths.dataset + "/" + cm_filename
+        dm_path = ProjectPaths.det_dataset + "/" + dm_filename
+        cm_path = ProjectPaths.det_dataset + "/" + cm_filename
         
         # 3. Perform detection and classification
         result_image, pred_boxes, pred_confs = detector.detect_image(

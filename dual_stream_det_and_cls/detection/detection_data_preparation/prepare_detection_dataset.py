@@ -6,7 +6,7 @@ from .detection_dataset_definitions import (
 )
 import pandas as pd
 import cv2
-from ..utils.medical_image_utils import get_bounding_boxes
+from ...medical_image_utils import get_bounding_boxes
 from tqdm import tqdm  # Add tqdm for progress bar
 
 # save_path = "/home/monstalinux/final-project/dual_stream_RetinaNet/dataset_org/"

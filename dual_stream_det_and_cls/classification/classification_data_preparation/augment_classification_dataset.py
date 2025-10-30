@@ -54,7 +54,7 @@ import pandas as pd
 import albumentations as A
 from tqdm import tqdm
 import shutil
-from immutables import ProjectPaths
+from ...immutables import ProjectPaths
 
 # --- Configuration ---
 OUTPUT_IMG_DIR = ProjectPaths.cls_dataset
@@ -78,7 +78,7 @@ def load_image_pairs_and_labels():
     """
     Scans image directories and annotation file to create a list of paired images with their labels.
     """
-    annotations_df = pd.read_csv(ProjectPaths.annotations_all_sheet_modified)
+    annotations_df = pd.read_csv(ProjectPaths.annotations_consistent_harmonized)
     
     # Create a dictionary for quick label lookup
     # The 'Image_name' in the CSV does not have an extension
@@ -164,9 +164,13 @@ def main():
 
     # Replicating the augmentations from the detection script.
     augmentations = {
-        'rotate20_elastic': A.ReplayCompose([
+        # 'rotate20_elastic': A.ReplayCompose([
+        #     A.Rotate(limit=(-20,20), p=1.0, border_mode=cv2.BORDER_CONSTANT, fill=(0,0,0)),
+        #     A.ElasticTransform(p=1.0, alpha=300, sigma=10)
+        # ]),
+        'rotate20': A.ReplayCompose([
             A.Rotate(limit=(-20,20), p=1.0, border_mode=cv2.BORDER_CONSTANT, fill=(0,0,0)),
-            A.ElasticTransform(p=1.0, alpha=300, sigma=10)
+            # A.ElasticTransform(p=1.0, alpha=300, sigma=10)
         ]),
         'hvflip_brightcont': A.Compose([
             A.HorizontalFlip(p=1.0), 

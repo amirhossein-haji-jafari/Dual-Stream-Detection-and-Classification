@@ -15,7 +15,7 @@ from sklearn.metrics import (
 )
 
 from .ds_dataloader_cls import DualStreamDataset, dual_stream_collate
-from .ds_resnet import DualStreamClassification
+from .ds_cls import DualStreamClassification
 from ..immutables import Hyperparameter, ProjectPaths
 
 def test_model(model, test_loader, device, num_classes):
@@ -154,7 +154,8 @@ def calculate_and_save_metrics(y_true, y_pred, y_scores, image_names, output_dir
 if __name__ == "__main__":
     # --- CONFIGURATION ---
     # Use the best model from your training logs
-    MODEL_PATH = os.path.join(ProjectPaths.best_and_last_cls_model, "cls_best_ep012-loss0.329-f10.867.pth")
+    # "/no elastic + harmonized labels + no smoothing + old split + synergistic/cls_best_ep013-loss0.005-f10.914.pth"
+    MODEL_PATH = os.path.join(ProjectPaths.best_and_last_cls_model, "no elastic + harmonized labels + no smoothing + old split + synergistic/cls_best_ep013-loss0.005-f10.914.pth")
     TEST_ANNOTATIONS_PATH = ProjectPaths.val_annotations_cls 
     OUTPUT_DIR = ProjectPaths.dual_stream_cls + "/prediction_results"
     

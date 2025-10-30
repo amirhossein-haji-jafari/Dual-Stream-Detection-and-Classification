@@ -16,7 +16,7 @@ import numpy as np
 
 
 from .ds_dataloader_cls import DualStreamDataset, dual_stream_collate
-from .ds_resnet import DualStreamClassification
+from .ds_cls import DualStreamClassification
 from ..immutables import Hyperparameter, ProjectPaths
 from ..callbacks import LossHistory
 from ..utils import get_lr

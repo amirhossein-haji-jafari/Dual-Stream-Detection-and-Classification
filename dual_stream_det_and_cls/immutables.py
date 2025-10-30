@@ -13,6 +13,11 @@ class ProjectPaths:
     preventing accidental path modifications during runtime.
 
     Attributes:
+        dual_stream (str): Path to the dual stream detection and classification project directory.
+        registration_logs (str): Path to the image registration logs file.
+        visualize_registration (str): Path to the directory for visualizing image registration results.
+        dual_stream_det (str): Path to the dual stream detection module directory.
+        dual_stream_cls (str): Path to the dual stream classification module directory.
         medical_reports (str): Path to the raw medical reports directory. this directory contains .docx files.
         manual_annotations (str): Path to the Excel file containing radiology manual annotations
         segmentations (str): Path to the CSV file containing radiology hand-drawn segmentations (mask).
@@ -22,12 +27,17 @@ class ProjectPaths:
         subtracted_images (str): Path to the directory containing subtracted images of CDD-CESM
         subtracted_images_aligned (str): Path to the directory containing aligned subtracted images of CDD-CESM
         annotations_all_sheet_modified (str): Path to the Excel file containing modified annotations 'all' sheet.
-        mammogram_special_cases (str): Path to the .py file containing mammogram special cases. contains lists and dictionaries.
+        annotations_consistent_harmonized (str): Path to the CSV file containing consistent and harmonized annotations (for classification).
+        font (str): Path to the font file used for rendering text in the application.
+        det_definitions (str): Path to the .py file containing dataset definitions for detection. contains lists and dictionaries.
         pretrained_retinanet (str): Path to the pre-trained Standard RetinaNet model weights.
-        best_and_last_model (str): Path to the directory containing the best and last model weights.
-        training_log (str): Path to the directory containing training logs.
-        annotations (str): Path to the text file containing original annotations.
-        aug_annotations (str): Path to the text file containing augmented annotations.
+        det_training_logs (str): Path to the directory containing detection training logs.
+        best_and_last_det_model (str): Path to the directory containing the best and last model weights.
+        det_dataset_org (str): Path to the original detection dataset directory containing aligned images and annotations.
+        det_annotations_org (str): Path to the text file containing original detection annotations.
+        yolo_dataset (str): Path to the YOLO formatted dataset directory for detection.
+        det_dataset (str): Path to the detection dataset directory containing augmented images and annotations.
+        det_annotations (str): Path to the text file containing augmented detection annotations.
         train_annotations_fold_0 (str): Path to the text file containing training annotations of fold 0 for the DualStreamRetinaNet model.
         train_annotations_fold_1 (str): Path to the text file containing training annotations of fold 1 for the DualStreamRetinaNet model.
         train_annotations_fold_2 (str): Path to the text file containing training annotations of fold 2 for the DualStreamRetinaNet model.
@@ -38,13 +48,21 @@ class ProjectPaths:
         val_annotations_fold_2 (str): Path to the text file containing validation annotations of fold 2 for the DualStreamRetinaNet model.
         val_annotations_fold_3 (str): Path to the text file containing validation annotations of fold 3 for the DualStreamRetinaNet model.
         val_annotations_fold_4 (str): Path to the text file containing validation annotations of fold 4 for the DualStreamRetinaNet model.
-        dataset_org (str): Path to the original dataset directory containing aligned images and annotations and split sets.
-        dataset (str): Path to the dataset directory containing augmented images and annotations.
-        predictions (str): Path to the directory containing model predictions.
-        evaluate_datasets (str): Path to the directory containing evaluation results.
-        font (str): Path to the font file used for rendering text in the application.
+        predictions (str): Path to the directory containing detection predictions.
+        visualize_det_datasets (str): Path to the directory for visualizing detection dataset (original images and augmented).
+
+        cls_training_logs (str): Path to the directory containing classification training logs.
+        best_and_last_cls_model (str): Path to the directory containing the best and last classification model weights.
+        cls_dataset_org (str): Path to the original classification dataset directory train and val sets.
+        cls_dataset (str): Path to the classification dataset directory containing augmented images and annotations.
+        cls_annotations (str): Path to the text file containing augmented classification annotations.
+        train_annotations_cls (str): Path to the text file containing training annotations for classification.
+        val_annotations_cls (str): Path to the text file containing validation annotations for classification.
+        pretrained_cls (str): Path to the pre-trained classification model weights.
     """
     dual_stream: str = PROJECT_ROOT + "dual_stream_det_and_cls"
+    registration_logs: str = dual_stream + "/registration_logs.txt"
+    visualize_registration: str = dual_stream + "/visualize_registration"
     dual_stream_det: str = dual_stream + "/detection"
     dual_stream_cls: str = dual_stream + "/classification"
 
@@ -57,6 +75,7 @@ class ProjectPaths:
     subtracted_images: str = PROJECT_ROOT + "dataset/Subtracted images of CDD-CESM"
     subtracted_images_aligned: str = PROJECT_ROOT + "dataset/Subtracted images of CDD-CESM aligned"
     annotations_all_sheet_modified: str = PROJECT_ROOT + "dataset/Radiology_manual_annotations_all_sheet_modified.csv"
+    annotations_consistent_harmonized: str = PROJECT_ROOT + "dataset/annotations_consistent_harmonized.csv"
     font: str = dual_stream + "/CaskaydiaCoveNerdFontMono-Regular.ttf"
     
     # detection
@@ -67,6 +86,8 @@ class ProjectPaths:
     
     det_dataset_org: str = dual_stream_det + "/dataset_org"
     det_annotations_org: str = det_dataset_org + "/annotations.txt"
+
+    yolo_dataset: str = dual_stream_det + "/yolo"
 
     det_dataset: str = dual_stream_det + '/dataset' # augmented dataset for detection
     det_annotations: str = det_dataset + "/augmented_annotations.txt"
@@ -166,21 +187,28 @@ class ProjectPaths:
 @dataclass(frozen=True)
 class Hyperparameter:
     """
-    Stores hyperparameters for the DualStreamRetinaNet model.
+    Stores hyperparameters for the DualStreamRetinaNet and DualStreamClassification models.
 
     This class uses a frozen dataclass to maintain consistent hyperparameters across the project
 
     Attributes:
         input_shape (tuple[int, int]): Input shape for the model, typically [height, width]. 
-            multiple of the network's total stride (which is often 128 for a ResNet-50/101 backbone)
+            multiple of the RetinaNet's backbone total stride (which is often 128 for a ResNet-50/101 backbone)
         num_workers (int): Number of workers for data loading.
         init_epoch (int): Initial epoch for training.
         end_epoch (int): Final epoch for training. 
-        first_stage_batch_size (int): Batch size for 1st stage of training.
-            Adjust based on GPU memory, Input Shape and Trainable Parameters
-        second_stage_batch_size (int): Batch size for 2nd stage of training.
+        first_stage_batch_size (int): Batch size for 1st stage of training of DualStreamRetinaNet.
+            Adjust based on GPU memory, Input Shape and Trainable Parameters.
+        second_stage_batch_size (int): Batch size for 2nd stage of training of DualStreamRetinaNet.
+        single_stream_mode (str): Single stream mode for ablation studies. options are:
+            'dm' : only use low-energy images.
+            'cm' : only use subtracted images.
+            'both' : use both low-energy and subtracted images.
+        use_clahe (bool): Whether to apply CLAHE preprocessing to input images.
         first_stage_lr (float): learning rate for the 1st stage of training.
         second_stage_lr (float): learning rate for the 2nd stage of training.
+        focal_loss_alpha (float): Alpha parameter for Focal Loss; balances importance of positive/negative examples.
+        focal_loss_gamma (float): Gamma parameter for Focal Loss; focuses learning on hard examples
         smooth_l1_loss_beta (fload): Beta parameter for Smooth L1 loss; controls the transition point between L1 and L2 loss.
             Lower values make the loss closer to L1, higher values make it closer to L2.
         freeze_backbone (bool): Whether to freeze ResNet backbone network during training.
@@ -212,6 +240,29 @@ class Hyperparameter:
         fpn_p5_2_dropout_rate (float): Dropout rate for FPN P5_2 layer.
         fpn_p6_dropout_rate (float): Dropout rate for FPN P6 layer.
         fpn_p7_dropout_rate (float): Dropout rate for FPN P7 layer.
+
+        fusion_method_cls (str): Which fusion method to use in classification head. options are:
+            gated
+            max
+            conv-relu
+            relu-add
+            conditional
+            synergistic
+        img_cls_dropout_rate (float): Dropout rate for the image classification head.
+        include_normal_class (bool): Whether to include 'normal' class in classification (2 classes if False, 3 if True).
+        use_unigram_label_smoothing (bool): Whether to use unigram label smoothing for classification.
+        label_smoothing_alpha (float): Alpha parameter for unigram label smoothing. defaults to 0.2.
+        freeze_backbone_cls (bool): Whether to freeze the classification backbone during training.
+        img_cls_lr (float): Learning rate for the classification model.
+        weight_decay_cls (float): Weight decay (L2 Regularization) for the classification optimizer
+        lr_scheduler_gamma_cls (float): Learning rate scheduler gamma value for classification model.
+        batch_size_cls (int): Batch size for classification model training.
+        init_epoch_cls (int): Initial epoch for classification model training.
+        end_epoch_cls (int): Final epoch for classification model training.
+        backbone (str): Backbone model for classification. options are:
+            'resnet-of-retinanet' : uses the ResNet-50 backbone from RetinaNet.
+            'ianpan_mammoscreen' : uses the ianpan/mammoscreen model from HuggingFace.
+
     """
 
     # Training parameters
@@ -221,7 +272,8 @@ class Hyperparameter:
     end_epoch: int = 10
     first_stage_batch_size: int = 16
     second_stage_batch_size: int = 4
-    single_stream_mode: str = 'cm'
+    single_stream_mode: str = 'dm'
+    use_clahe: bool = False
 
     # Learning rates
     first_stage_lr: float = 1e-3
@@ -293,10 +345,10 @@ class Hyperparameter:
     fpn_p7_dropout_rate: float = 0.10
 
     # Classification hyperparameters
-    fusion_method_cls: str = "conditional"
+    fusion_method_cls: str = "synergistic"
     img_cls_dropout_rate: float = 0.0
     include_normal_class: bool = False  # Whether to include 'normal' class in classification (2 classes if False, 3 if True)
-    use_unigram_label_smoothing: bool = True 
+    use_unigram_label_smoothing: bool = False 
     label_smoothing_alpha: float = 0.2
     freeze_backbone_cls: bool = False
     img_cls_lr: float = 1e-4 # start with 1e-3
@@ -304,7 +356,7 @@ class Hyperparameter:
     lr_scheduler_gamma_cls: float = 0.90
     batch_size_cls: int = 2
     init_epoch_cls: int = 0
-    end_epoch_cls: int = 20
+    end_epoch_cls: int = 30
     backbone: str = "ianpan_mammoscreen" 
 
 
@@ -322,7 +374,8 @@ Project Structure (based on ProjectPaths):
 │   ├── Radiology_manual_annotations.xlsx (manual_annotations)
 │   ├── Radiology_manual_annotations_all_sheet_modified.csv (annotations_all_sheet_modified)
 │   ├── Subtracted images of CDD-CESM/ (subtracted_images)
-│   └── Subtracted images of CDD-CESM aligned/ (subtracted_images_aligned)
+│   ├── Subtracted images of CDD-CESM aligned/ (subtracted_images_aligned)
+│   └── annotations_consistent_harmonized.csv (annotations_consistent_harmonized)
 └── dual_stream_det_and_cls/ (dual_stream)
     ├── CaskaydiaCoveNerdFontMono-Regular.ttf (font)
     ├── classification/ (dual_stream_cls)
@@ -334,27 +387,30 @@ Project Structure (based on ProjectPaths):
     │   │   └── val_annotations.txt (val_annotations_cls)
     │   ├── dataset_org/ (cls_dataset_org)
     │   └── ianpan_mammoscreen.pth (pretrained_cls)
-    └── detection/ (dual_stream_det)
-        ├── RetinaNet_ResNet50.pth (pretrained_retinanet)
-        ├── dataset/ (det_dataset)
-        │   ├── augmented_annotations.txt (det_annotations)
-        │   ├── train_annotations_fold_0.txt (train_annotations_fold_0)
-        │   ├── train_annotations_fold_1.txt (train_annotations_fold_1)
-        │   ├── train_annotations_fold_2.txt (train_annotations_fold_2)
-        │   ├── train_annotations_fold_3.txt (train_annotations_fold_3)
-        │   ├── train_annotations_fold_4.txt (train_annotations_fold_4)
-        │   ├── val_annotations_fold_0.txt (val_annotations_fold_0)
-        │   ├── val_annotations_fold_1.txt (val_annotations_fold_1)
-        │   ├── val_annotations_fold_2.txt (val_annotations_fold_2)
-        │   ├── val_annotations_fold_3.txt (val_annotations_fold_3)
-        │   └── val_annotations_fold_4.txt (val_annotations_fold_4)
-        ├── dataset_org/ (det_dataset_org)
-        │   └── annotations.txt (det_annotations_org)
-        ├── detection_data_preparation/
-        │   └── detection_dataset_definitions.py (det_definitions)
-        ├── detection_dataset_evaluation/
-        │   └── visualize/ (visualize_det_datasets)
-        ├── detection_logs/ (det_training_logs)
-        │   └── dual_stream/ (best_and_last_det_model)
-        └── predictions/ (predictions)
+    ├── detection/ (dual_stream_det)
+    │   ├── RetinaNet_ResNet50.pth (pretrained_retinanet)
+    │   ├── dataset/ (det_dataset)
+    │   │   ├── augmented_annotations.txt (det_annotations)
+    │   │   ├── train_annotations_fold_0.txt (train_annotations_fold_0)
+    │   │   ├── train_annotations_fold_1.txt (train_annotations_fold_1)
+    │   │   ├── train_annotations_fold_2.txt (train_annotations_fold_2)
+    │   │   ├── train_annotations_fold_3.txt (train_annotations_fold_3)
+    │   │   ├── train_annotations_fold_4.txt (train_annotations_fold_4)
+    │   │   ├── val_annotations_fold_0.txt (val_annotations_fold_0)
+    │   │   ├── val_annotations_fold_1.txt (val_annotations_fold_1)
+    │   │   ├── val_annotations_fold_2.txt (val_annotations_fold_2)
+    │   │   ├── val_annotations_fold_3.txt (val_annotations_fold_3)
+    │   │   └── val_annotations_fold_4.txt (val_annotations_fold_4)
+    │   ├── dataset_org/ (det_dataset_org)
+    │   │   └── annotations.txt (det_annotations_org)
+    │   ├── detection_data_preparation/
+    │   │   └── detection_dataset_definitions.py (det_definitions)
+    │   ├── detection_dataset_evaluation/
+    │   │   └── visualize/ (visualize_det_datasets)
+    │   ├── detection_logs/ (det_training_logs)
+    │   │   └── dual_stream/ (best_and_last_det_model)
+    │   ├── predictions/ (predictions)
+    │   └── yolo/ (yolo_dataset)
+    ├── registration_logs.txt (registration_logs)
+    └── visualize_registration/ (visualize_registration)
 """

@@ -14,10 +14,11 @@ import numpy as np
 
 AUGMENTATION_SUFFIXES = [
     '_resized',
-    '_rotate20_elastic',
+    '_rotate20',
     "_hflip_noise",
     "_hvflip_brightcont",
     "_symm_shit_blur",
+    # '_rotate20_elastic',
 ]
 
 
@@ -122,7 +123,7 @@ def check_distribution(df, label_col='Pathology Classification/ Follow up'):
 
 def train_val_split(train_size=0.8):
     # Read dataset
-    annotations = pd.read_csv(ProjectPaths.annotations_all_sheet_modified)
+    annotations = pd.read_csv(ProjectPaths.annotations_consistent_harmonized)
     # filter annotations to only include either CM or DM images
     annotations = annotations[annotations['Image_name'].str.contains('_CM_')]
     # TODO: print 'Pathology Classification/ Follow up' distribution
@@ -161,11 +162,11 @@ def train_val_split(train_size=0.8):
     print(f"Validation set distribution: {val_dist}")
 
     # Save Only Image_name column to .txt files
-    # train_df['Image_name'].to_csv(ProjectPaths.cls_dataset_org + '/train.txt', index=False, header=False)
-    # val_df['Image_name'].to_csv(ProjectPaths.cls_dataset_org + '/val.txt', index=False, header=False)
+    train_df['Image_name'].to_csv(ProjectPaths.cls_dataset_org + '/train.txt', index=False, header=False)
+    val_df['Image_name'].to_csv(ProjectPaths.cls_dataset_org + '/val.txt', index=False, header=False)
 
     return None
 
 if __name__ == "__main__":
-    train_val_split()
-    # main()
+    main()
+    # train_val_split()

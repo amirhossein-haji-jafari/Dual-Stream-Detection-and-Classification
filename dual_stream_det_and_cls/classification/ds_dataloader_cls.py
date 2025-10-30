@@ -1,8 +1,9 @@
 import numpy as np
 from PIL import Image
 from torch.utils.data.dataset import Dataset
-from ..utils import cvtColor, preprocess_input
+from ..utils import cvtColor
 from ..immutables import ProjectPaths
+from ..medical_image_utils import min_max_normalise
 class DualStreamDataset(Dataset):
     def __init__(self, annotation_lines, input_shape, num_classes, train, return_names=False):
         super().__init__()
@@ -42,13 +43,13 @@ class DualStreamDataset(Dataset):
         # images, while color transforms can be separate.
         le_image, ce_image = self.process_data(le_image, ce_image, self.input_shape)
 
-        le_image = np.transpose(preprocess_input(np.array(le_image, dtype=np.float32)), (2, 0, 1))
-        ce_image = np.transpose(preprocess_input(np.array(ce_image, dtype=np.float32)), (2, 0, 1))
+        le_image = np.transpose(min_max_normalise(np.array(le_image, dtype=np.float32)), (2, 0, 1))
+        ce_image = np.transpose(min_max_normalise(np.array(ce_image, dtype=np.float32)), (2, 0, 1))
         
         if self.return_names:
             return le_image[0:1,:,:], ce_image[0:1,:,:], image_label, image_name
         else:
-            return le_image, ce_image, image_label
+            return le_image[0:1,:,:], ce_image[0:1,:,:], image_label
 
 
     def process_data(self, le_image, ce_image, input_shape):

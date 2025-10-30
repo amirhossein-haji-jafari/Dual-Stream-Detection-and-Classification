@@ -3,7 +3,7 @@
 import numpy as np
 from PIL import Image
 from torch.utils.data.dataset import Dataset
-from ..utils import cvtColor, preprocess_input
+from ..utils import cvtColor
 from ..immutables import ProjectPaths
 from ..medical_image_utils import min_max_normalise
 

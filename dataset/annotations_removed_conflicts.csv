@@ -1,0 +1,273 @@
+Image_name,Patient_ID,Side,Type,Age,Breast density (ACR),BIRADS,Findings,View,Tags,Machine,Pathology Classification/ Follow up,Absolute_path
+P6_L_DM_MLO,P6,L,DM,73,C,4,High density mass with indistinct margin,MLO,"suspicious, mass, indistinct",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P6_L_DM_MLO.jpg
+P6_L_CM_MLO,P6,L,CESM,73,_,3,Enhancing mass with dark internal septations,MLO,"benign, mass, fibroadenoma",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P6_L_CM_MLO.jpg
+P12_L_DM_CC,P12,L,DM,63,B,3,Focal asymmetrical increased density$IMLN,CC,"asymmetry, imln",1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P12_L_DM_CC.jpg
+P12_L_DM_MLO,P12,L,DM,63,B,3,Focal asymmetrical increased density$IMLN,MLO,"asymmetry, imln",1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P12_L_DM_MLO.jpg
+P12_L_CM_CC,P12,L,CESM,63,_,4,Ductal non mass enhancement$IMLN,CC,"suspicious, non mass, ductal, imln",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P12_L_CM_CC.jpg
+P12_L_CM_MLO,P12,L,CESM,63,_,4,Ductal non mass enhancement$IMLN,MLO,"suspicious, non mass, ductal, imln",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P12_L_CM_MLO.jpg
+P14_R_DM_CC,P14,R,DM,56,_,4,Post operative scar with diffuse edematous changes ,CC,"edema, postoperative",2,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P14_R_DM_CC.jpg
+P14_R_DM_MLO,P14,R,DM,56,_,4,Post operative scar with diffuse edematous changes ,MLO,"edema, postoperative",2,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P14_R_DM_MLO.jpg
+P14_R_CM_CC,P14,R,CESM,56,_,4,Cobblestone enhancement,CC,"suspicious, cobblestone",2,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P14_R_CM_CC.jpg
+P14_R_CM_MLO,P14,R,CESM,56,_,4,Cobblestone enhancement,MLO,"suspicious, cobblestone",2,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P14_R_CM_MLO.jpg
+P16_R_DM_CC,P16,R,DM,43,C,1,Normal,CC,normal,1,Normal,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P16_R_DM_CC.jpg
+P16_R_DM_MLO,P16,R,DM,43,C,4,High density axillary mass,MLO,"malignant, mass, axillary",1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P16_R_DM_MLO.jpg
+P16_R_CM_CC,P16,R,CESM,43,_,1,No mass or non mass enhancement,CC,normal,1,Normal,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P16_R_CM_CC.jpg
+P16_R_CM_MLO,P16,R,CESM,43,_,4,Axillary heterogenously enhancing mass,MLO,"malignant, mass, axillary",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P16_R_CM_MLO.jpg
+P17_R_DM_MLO,P17,R,DM,33,B,4,Architectural distortion ,MLO,"suspicious, distortion",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P17_R_DM_MLO.jpg
+P17_R_CM_MLO,P17,R,CESM,33,_,4,Heterogenous enhacement ,MLO,"suspicious, heterogenous ",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P17_R_CM_MLO.jpg
+P18_R_DM_CC,P18,R,DM,54,C,4,Multiple equal density masses ,CC,"suspicious, masses, multiple",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P18_R_DM_CC.jpg
+P18_R_DM_MLO,P18,R,DM,54,C,4,Multiple equal density masses ,MLO,"suspicious, masses, multiple",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P18_R_DM_MLO.jpg
+P18_R_CM_CC,P18,R,CESM,54,_,2,Focus enhancement ,CC,"benign, masses, multiple",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P18_R_CM_CC.jpg
+P18_R_CM_MLO,P18,R,CESM,54,_,2,Focus enhancement ,MLO,"benign, masses, multiple",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P18_R_CM_MLO.jpg
+P19_L_DM_CC,P19,L,DM,54,C,4,High density mass with obscured margin,CC,"suspicious, mass, obscured",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P19_L_DM_CC.jpg
+P19_L_DM_MLO,P19,L,DM,54,C,4,High density mass with obscured margin,MLO,"suspicious, mass, obscured",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P19_L_DM_MLO.jpg
+P19_L_CM_CC,P19,L,CESM,54,_,2,Non enhancement ,CC,"benign, non enhancement",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P19_L_CM_CC.jpg
+P19_L_CM_MLO,P19,L,CESM,54,_,2,Non enhancement ,MLO,"benign, non enhancement",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P19_L_CM_MLO.jpg
+P21_R_DM_CC,P21,R,DM,38,C,3,Asymmetrial increased density,CC,asymmetry,1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P21_R_DM_CC.jpg
+P21_R_DM_MLO,P21,R,DM,38,C,3,Asymmetrial increased density,MLO,asymmetry,1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P21_R_DM_MLO.jpg
+P21_R_CM_CC,P21,R,CESM,38,_,4,Segmental non mass enhancement ,CC,"suspicious, non mass, segmental",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P21_R_CM_CC.jpg
+P21_R_CM_MLO,P21,R,CESM,38,_,4,Segmental non mass enhancement ,MLO,"suspicious, non mass, segmental",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P21_R_CM_MLO.jpg
+P22_L_DM_CC,P22,L,DM,39,C,3,Asymmetrial increased density and edema ,CC,asymmetry,1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P22_L_DM_CC.jpg
+P22_L_CM_CC,P22,L,CESM,39,_,5,Regional non mass enhancement ,CC,"granulomatus mastitis, non mass, regional",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P22_L_CM_CC.jpg
+P29_L_DM_CC,P29,L,DM,51,D,1,Normal,CC,normal,1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P29_L_DM_CC.jpg
+P29_L_CM_CC,P29,L,CESM,51,_,4,Segmental non mass enhancement ,CC,"suspicious non mass, segmental",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P29_L_CM_CC.jpg
+P31_R_DM_CC,P31,R,DM,39,C,4,High density mass with obscured margin,CC,"suspicious mass, obscured",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P31_R_DM_CC.jpg
+P31_R_DM_MLO,P31,R,DM,39,C,4,High density mass with obscured margin,MLO,"suspicious mass, obscured",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P31_R_DM_MLO.jpg
+P31_R_CM_CC,P31,R,CESM,39,_,2,Stippled enhancement,CC,adenosis,1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P31_R_CM_CC.jpg
+P31_R_CM_MLO,P31,R,CESM,39,_,2,Stippled enhancement,MLO,adenosis,1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P31_R_CM_MLO.jpg
+P34_R_DM_MLO,P34,R,DM,46,B,3,Asymmetrical increased density ,MLO,asymmetry,1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P34_R_DM_MLO.jpg
+P34_R_CM_MLO,P34,R,CESM,46,_,4,Segmental non mass enhancement ,MLO,"suspicious non mass, segmental",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P34_R_CM_MLO.jpg
+P37_L_DM_CC,P37,L,DM,32,C,3,Focal asymmetrical increased density,CC,focal asymmetry,1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P37_L_DM_CC.jpg
+P37_L_DM_MLO,P37,L,DM,32,C,3,Focal asymmetrical increased density,MLO,focal asymmetry,1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P37_L_DM_MLO.jpg
+P37_L_CM_CC,P37,L,CESM,32,_,4,Two ill defined heterogenously enhancing masses,CC,"suspicious masses, multiple",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P37_L_CM_CC.jpg
+P37_L_CM_MLO,P37,L,CESM,32,_,4,Two ill defined heterogenously enhancing masses,MLO,"suspicious masses, multiple",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P37_L_CM_MLO.jpg
+P38_R_DM_CC,P38,R,DM,38,C,1,Normal,CC,normal,1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P38_R_DM_CC.jpg
+P38_R_DM_MLO,P38,R,DM,38,C,1,Normal,MLO,normal,1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P38_R_DM_MLO.jpg
+P38_R_CM_CC,P38,R,CESM,38,_,4,Homogenously enhancing mass with speculated margin,CC,"suspicious mass, speculated",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P38_R_CM_CC.jpg
+P38_R_CM_MLO,P38,R,CESM,38,_,4,Homogenously enhancing mass with speculated margin,MLO,"suspicious mass, speculated",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P38_R_CM_MLO.jpg
+P40_R_DM_CC,P40,R,DM,28,B,4,High density mass with indistinct margin,CC,"suspicious mass, indistinct",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P40_R_DM_CC.jpg
+P40_R_DM_MLO,P40,R,DM,28,B,4,High density mass with indistinct margin,MLO,"suspicious mass, indistinct",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P40_R_DM_MLO.jpg
+P40_R_CM_CC,P40,R,CESM,28,_,3,Regular rim enhancement,CC,"benign mass, regular rim",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P40_R_CM_CC.jpg
+P40_R_CM_MLO,P40,R,CESM,28,_,3,Regular rim enhancement,MLO,"benign mass, regular rim",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P40_R_CM_MLO.jpg
+P45_R_DM_CC,P45,R,DM,33,B,3,Lobulated equal density mass with circumscribed margin,CC,"benign mass, circumscribed",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P45_R_DM_CC.jpg
+P45_R_DM_MLO,P45,R,DM,33,B,4,Ill defined equal density mass  ,MLO,suspicious mass,1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P45_R_DM_MLO.jpg
+P45_R_CM_CC,P45,R,CESM,33,_,3,Non enhancement ,CC,"benign, non enhancement",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P45_R_CM_CC.jpg
+P45_R_CM_MLO,P45,R,CESM,33,_,3,Non enhancement ,MLO,"benign, non enhancement",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P45_R_CM_MLO.jpg
+P45_L_DM_CC,P45,L,DM,33,B,3,Asymmetrical increased density$Equal density mass with circumscribed margin ,CC,"asymmetry, benign mass, circumscribed",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P45_L_DM_CC.jpg
+P45_L_DM_MLO,P45,L,DM,33,B,3,Asymmetrical increased density$Equal density mass with circumscribed margin ,MLO,"asymmetry, benign mass, circumscribed",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P45_L_DM_MLO.jpg
+P45_L_CM_CC,P45,L,CESM,33,_,4$3,Ductal non mass enhancement$Homogenously enhancing mass with circumscribed margin,CC,"suspicious non mass, ductal, benign mass, circumscribed",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P45_L_CM_CC.jpg
+P45_L_CM_MLO,P45,L,CESM,33,_,4$3,Ductal non mass enhancement$Homogenously enhancing mass with circumscribed margin,MLO,"suspicious non mass, ductal, benign mass, circumscribed",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P45_L_CM_MLO.jpg
+P46_L_DM_CC,P46,L,DM,21,D,1,Normal ,CC,normal,1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P46_L_DM_CC.jpg
+P46_L_DM_MLO,P46,L,DM,21,D,4,Asymmetrcial increased density and overlying microcalcifications,MLO,"asymmetry, suspicious microcalcifications",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P46_L_DM_MLO.jpg
+P46_L_CM_CC,P46,L,CESM,21,_,1,No mass or non mass enhancement,CC,normal,1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P46_L_CM_CC.jpg
+P46_L_CM_MLO,P46,L,CESM,21,_,4,Heterogenous focal non mass enhacement ,MLO,"suspicious non mass, focal",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P46_L_CM_MLO.jpg
+P61_L_DM_CC,P61,L,DM,30,_,4,Postoperative scar and asymmetrical increased density,CC,"postoperative, asymmetry",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P61_L_DM_CC.jpg
+P61_L_DM_MLO,P61,L,DM,30,_,4,Postoperative scar and asymmetrical increased density,MLO,"postoperative, asymmetry",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P61_L_DM_MLO.jpg
+P61_L_CM_CC,P61,L,CESM,30,_,4,Irregular heterogenous enhancement,CC,suspicious mass,1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P61_L_CM_CC.jpg
+P61_L_CM_MLO,P61,L,CESM,30,_,4,Irregular heterogenous enhancement,MLO,suspicious mass,1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P61_L_CM_MLO.jpg
+P65_L_DM_CC,P65,L,DM,34,D,4,Equal density mass with microlobulated margin,CC,"suspicious mass, microlobulated",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P65_L_DM_CC.jpg
+P65_L_DM_MLO,P65,L,DM,34,D,4,Equal density mass with microlobulated margin,MLO,"suspicious mass, microlobulated",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P65_L_DM_MLO.jpg
+P65_L_CM_CC,P65,L,CESM,34,_,3,Enhancing mass with dark internal septations,CC,"benign mass, fibroadenoma",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P65_L_CM_CC.jpg
+P65_L_CM_MLO,P65,L,CESM,34,_,3,Enhancing mass with dark internal septations,MLO,"benign mass, fibroadenoma",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P65_L_CM_MLO.jpg
+P73_R_DM_CC,P73,R,DM,56,B,3$2,Asymmetrical increased density with prominent duct system$Benign macrocalcification,CC,"asymmetry, prominent ducts, benign, macrocalcification",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P73_R_DM_CC.jpg
+P73_R_DM_MLO,P73,R,DM,56,B,3$2,Asymmetrical increased density with prominent duct system$Benign macrocalcification,MLO,"asymmetry, prominent ducts, benign, macrocalcification",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P73_R_DM_MLO.jpg
+P73_R_CM_CC,P73,R,CESM,56,_,4,Linear non mass enhancement,CC,"suspicious non mass, linear",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P73_R_CM_CC.jpg
+P73_R_CM_MLO,P73,R,CESM,56,_,4,Linear non mass enhancement,MLO,"suspicious non mass, linear",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P73_R_CM_MLO.jpg
+P86_R_DM_MLO,P86,R,DM,33,C,3,Focal asymmetrical increased density,MLO,focal asymmetry,1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P86_R_DM_MLO.jpg
+P86_R_CM_MLO,P86,R,CESM,33,_,4,Focal heterogenous non mass enhancement,MLO,"suspicious non mass, focal",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P86_R_CM_MLO.jpg
+P87_L_DM_CC,P87,L,DM,40,C,5,Asymmetrical increased density with overlying segmental microcalcification,CC,"malignant, asymmetry, segemental microcalcifications",1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P87_L_DM_CC.jpg
+P87_L_DM_MLO,P87,L,DM,40,C,5,Asymmetrical increased density with overlying segmental microcalcification,MLO,"malignant, asymmetry, segemental microcalcifications",1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P87_L_DM_MLO.jpg
+P87_L_CM_CC,P87,L,CESM,40,_,1,Enhancing foci with ductal non mass enhancement,CC,"malignant mass, multiple, malignant non mass, ductal ",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P87_L_CM_CC.jpg
+P87_L_CM_MLO,P87,L,CESM,40,_,5,Two homogenously enhancing masses and another mass with irregular rim enhancement and ductal non mass enhancement,MLO,"malignant mass, multiple, rim, malignant non mass, ductal ",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P87_L_CM_MLO.jpg
+P90_R_DM_CC,P90,R,DM,41,B,3,Retroareolar asymmetrical increased density ,CC,asymmetry,2,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P90_R_DM_CC.jpg
+P90_R_DM_MLO,P90,R,DM,41,B,3,Retroareolar asymmetrical increased density ,MLO,asymmetry,2,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P90_R_DM_MLO.jpg
+P90_R_CM_CC,P90,R,CESM,41,_,3,Foci of enhancement ,CC,foci,2,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P90_R_CM_CC.jpg
+P90_R_CM_MLO,P90,R,CESM,41,_,3,Foci of enhancement ,MLO,foci,2,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P90_R_CM_MLO.jpg
+P91_L_DM_MLO,P91,L,DM,44,_,3,Edema and postoperative scar with focal asymmetrical increased density,MLO,"postoperative, focal asymmetry",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P91_L_DM_MLO.jpg
+P91_L_CM_MLO,P91,L,CESM,44,_,5,Postoperative Irregular rim enhancement,MLO,"postoperative, malignant, rim",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P91_L_CM_MLO.jpg
+P94_R_DM_CC,P94,R,DM,45,B,3,Asymmetrical increased density ,CC,asymmetry,2,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P94_R_DM_CC.jpg
+P94_R_DM_MLO,P94,R,DM,45,B,3,Asymmetrical increased density ,MLO,asymmetry,2,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P94_R_DM_MLO.jpg
+P94_R_CM_CC,P94,R,CESM,45,_,5,Faintly enhancing mass with speculated margin,CC,"malignant mass, faint ",2,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P94_R_CM_CC.jpg
+P94_R_CM_MLO,P94,R,CESM,45,_,5,Homogenously enhancing mass with speculated margin,MLO,"malignant mass, homogenous, speculated",2,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P94_R_CM_MLO.jpg
+P98_L_DM_CC,P98,L,DM,48,B,4,Global asymmetrial increased density and edema pattern,CC,"suspicious, global asymmetry, edema",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P98_L_DM_CC.jpg
+P98_L_DM_MLO,P98,L,DM,48,B,4,Global asymmetrial increased density and edema pattern,MLO,"suspicious, global asymmetry, edema",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P98_L_DM_MLO.jpg
+P98_L_CM_CC,P98,L,CESM,48,_,4,Clustered ring enhancment,CC,"suspicious non mass, clustered ring",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P98_L_CM_CC.jpg
+P98_L_CM_MLO,P98,L,CESM,48,_,4,Clustered ring enhancment,MLO,"suspicious non mass, clustered ring",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P98_L_CM_MLO.jpg
+P102_R_DM_CC,P102,R,DM,39,D,3,Focal asymmetrical increased density,CC,focal asymmetry,1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P102_R_DM_CC.jpg
+P102_R_DM_MLO,P102,R,DM,39,D,3,Focal asymmetrical increased density,MLO,focal asymmetry,1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P102_R_DM_MLO.jpg
+P102_R_CM_CC,P102,R,CESM,39,_,5,Irregular rim enhancing mass,CC,"malignant mass, irregular rim",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P102_R_CM_CC.jpg
+P102_R_CM_MLO,P102,R,CESM,39,_,5,Irregular rim enhancing mass,MLO,"malignant mass, irregular rim",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P102_R_CM_MLO.jpg
+P107_R_DM_CC,P107,R,DM,35,C,5,High density mass with speculated margin,CC,"malignant mass, speculated ",1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P107_R_DM_CC.jpg
+P107_R_DM_MLO,P107,R,DM,35,C,3,Nodular increased density ,MLO,nodular density ,1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P107_R_DM_MLO.jpg
+P107_R_CM_CC,P107,R,CESM,35,_,5,Heterogenously enhancing mass and non mass enhancement ,CC,"malignant mass, malignant non mass ",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P107_R_CM_CC.jpg
+P107_R_CM_MLO,P107,R,CESM,35,_,5,Heterogenously enhancing mass and non mass enhancement ,MLO,"malignant mass, malignant non mass ",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P107_R_CM_MLO.jpg
+P111_R_DM_CC,P111,R,DM,44,C,1,Normal,CC,normal,1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P111_R_DM_CC.jpg
+P111_R_DM_MLO,P111,R,DM,44,C,3,Equal density mass with lobulated margin,MLO,"benign mass, lobulated",1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P111_R_DM_MLO.jpg
+P111_R_CM_CC,P111,R,CESM,44,_,1,No mass or non mass enhancement,CC,normal,1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P111_R_CM_CC.jpg
+P111_R_CM_MLO,P111,R,CESM,44,_,4,Heterogenously enhancing mass ,MLO,suspicious mass,1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P111_R_CM_MLO.jpg
+P114_R_DM_CC,P114,R,DM,62,B,4,Architectural distortion ,CC,"suspicious, architectural distortion",2,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P114_R_DM_CC.jpg
+P114_R_DM_MLO,P114,R,DM,62,B,4,Architectural distortion ,MLO,"suspicious, architectural distortion",2,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P114_R_DM_MLO.jpg
+P114_R_CM_CC,P114,R,CESM,62,_,4,Focal ill defined faintly enhancing mass,CC,suspicious mass ,2,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P114_R_CM_CC.jpg
+P114_R_CM_MLO,P114,R,CESM,62,_,4,Focal ill defined faintly enhancing mass,MLO,suspicious mass ,2,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P114_R_CM_MLO.jpg
+P122_R_DM_CC,P122,R,DM,57,C,4,Equal density mass with indistinct margin,CC,"suspicious mass, indistinct",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P122_R_DM_CC.jpg
+P122_R_DM_MLO,P122,R,DM,57,C,4,High density mass with indistinct margin,MLO,"suspicious mass, indistinct",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P122_R_DM_MLO.jpg
+P122_R_CM_CC,P122,R,CESM,57,_,4,Heterogenously enhancing mass ,CC,"suspicious mass, heterogenous",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P122_R_CM_CC.jpg
+P122_R_CM_MLO,P122,R,CESM,57,_,4,Heterogenously enhancing mass ,MLO,"suspicious mass, heterogenous",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P122_R_CM_MLO.jpg
+P128_L_DM_CC,P128,L,DM,57,C,5,Asymmetrical increased density and equal density nodule with indistinct margin and overlying linear branching macrocalcifications,CC,"malignant, asymmetry, nodule, indistinct, calcifications",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P128_L_DM_CC.jpg
+P128_L_DM_MLO,P128,L,DM,57,C,5,Asymmetrical increased density and equal density nodule with indistinct margin and overlying linear branching macrocalcifications,MLO,"malignant, asymmetry, nodule, indistinct, calcifications",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P128_L_DM_MLO.jpg
+P128_L_CM_CC,P128,L,CESM,57,_,3,Faint focal enhancement ,CC,"benign, focus",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P128_L_CM_CC.jpg
+P128_L_CM_MLO,P128,L,CESM,57,_,3,Faint focal enhancement ,MLO,"benign, focus",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P128_L_CM_MLO.jpg
+P131_L_DM_MLO,P131,L,DM,30,C,3,Global asymmetrical increased density,MLO,global asymmetry,1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P131_L_DM_MLO.jpg
+P131_L_CM_MLO,P131,L,CESM,30,_,5,Regional non mass enhancement ,MLO,"malignant non mass, regional",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P131_L_CM_MLO.jpg
+P132_R_DM_CC,P132,R,DM,25,D,1,Normal,CC,normal,1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P132_R_DM_CC.jpg
+P132_R_DM_MLO,P132,R,DM,25,D,4,Equal density lobulated mass with indistinct margin,MLO,"suspicious mass, indistinct",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P132_R_DM_MLO.jpg
+P132_R_CM_CC,P132,R,CESM,25,_,1,No mass or non mass enhancement,CC,normal,1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P132_R_CM_CC.jpg
+P132_R_CM_MLO,P132,R,CESM,25,_,4,Heterogenously enhancing mass ,MLO,"suspicious mass, irregular",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P132_R_CM_MLO.jpg
+P137_L_DM_MLO,P137,L,DM,45,B,1,Normal,MLO,normal,1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P137_L_DM_MLO.jpg
+P137_L_CM_MLO,P137,L,CESM,45,_,4,Regional non mass enhancement and enhacing foci,MLO,"suspicious, non mass, regional, enhancing foci ",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P137_L_CM_MLO.jpg
+P147_R_DM_CC,P147,R,DM,48,B,4,Architectural distortion,CC,"suspicious, architectural distortion",1,Normal,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P147_R_DM_CC.jpg
+P147_R_DM_MLO,P147,R,DM,48,B,3,Asymmetrical increased density ,MLO,asymmetry ,1,Normal,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P147_R_DM_MLO.jpg
+P147_R_CM_CC,P147,R,CESM,48,_,1,No mass or non mass enhancement,CC,normal,1,Normal,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P147_R_CM_CC.jpg
+P147_R_CM_MLO,P147,R,CESM,48,_,1,No mass or non mass enhancement,MLO,normal,1,Normal,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P147_R_CM_MLO.jpg
+P149_R_DM_CC,P149,R,DM,45,B,2,Pop corn macrocalcification ,CC,"benign mass, popcorn, involuting fibroadenoma",1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P149_R_DM_CC.jpg
+P149_R_DM_MLO,P149,R,DM,45,B,2,Pop corn macrocalcification ,MLO,"benign mass, popcorn, involuting fibroadenoma",1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P149_R_DM_MLO.jpg
+P149_R_CM_CC,P149,R,CESM,45,_,2,Stippled enhancement ,CC,"adenosis, stippled",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P149_R_CM_CC.jpg
+P149_R_CM_MLO,P149,R,CESM,45,_,2,Stippled enhancement ,MLO,"adenosis, stippled",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P149_R_CM_MLO.jpg
+P150_L_DM_CC,P150,L,DM,44,C,3,Asymmetrical increased density,CC,asymmetry ,1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P150_L_DM_CC.jpg
+P150_L_DM_MLO,P150,L,DM,44,C,3,Asymmetrical increased density,MLO,asymmetry ,1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P150_L_DM_MLO.jpg
+P150_L_CM_CC,P150,L,CESM,44,_,4,Segmental non mass enhancement ,CC,"suspicious non mass, segmental",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P150_L_CM_CC.jpg
+P150_L_CM_MLO,P150,L,CESM,44,_,4,Segmental non mass enhancement ,MLO,"suspicious non mass, segmental",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P150_L_CM_MLO.jpg
+P154_L_DM_CC,P154,L,DM,54,_,4,Postoperative scar and asymmetrical increased density,CC,"postoperative, asymmetry",1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P154_L_DM_CC.jpg
+P154_L_DM_MLO,P154,L,DM,54,_,4,Postoperative scar and asymmetrical increased density,MLO,"postoperative, asymmetry",1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P154_L_DM_MLO.jpg
+P154_L_CM_CC,P154,L,CESM,54,_,3,Faint enhancement,CC,"benign, non enhancement",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P154_L_CM_CC.jpg
+P154_L_CM_MLO,P154,L,CESM,54,_,3,Faint enhancement,MLO,"benign, non enhancement",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P154_L_CM_MLO.jpg
+P156_R_DM_CC,P156,R,DM,38,C,4$2,Diffuse edematous changes$IMLN,CC,"edema, imln",2,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P156_R_DM_CC.jpg
+P156_R_DM_MLO,P156,R,DM,38,C,4$2,Diffuse edematous changes$IMLN,MLO,"edema, imln",2,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P156_R_DM_MLO.jpg
+P156_R_CM_CC,P156,R,CESM,38,_,3,Non enhancement,CC,"benign, non enhancement",2,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P156_R_CM_CC.jpg
+P156_R_CM_MLO,P156,R,CESM,38,_,3,Non enhancement,MLO,"benign, non enhancement",2,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P156_R_CM_MLO.jpg
+P156_L_DM_CC,P156,L,DM,38,C,6,Diffuse edematous changes ,CC,edema,2,Normal,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P156_L_DM_CC.jpg
+P156_L_DM_MLO,P156,L,DM,38,C,6,Diffuse edematous changes ,MLO,edema,2,Normal,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P156_L_DM_MLO.jpg
+P156_L_CM_CC,P156,L,CESM,38,_,6,Non enhancement,CC,"benign, non enhancement",2,Normal,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P156_L_CM_CC.jpg
+P156_L_CM_MLO,P156,L,CESM,38,_,6,Non enhancement,MLO,"benign, non enhancement",2,Normal,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P156_L_CM_MLO.jpg
+P161_L_DM_CC,P161,L,DM,49,B,4$2,High density mass with indistinct margin$Benign macrocalcification,CC,"suspicious mass, indistinct, benign macrocalcification",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P161_L_DM_CC.jpg
+P161_L_DM_MLO,P161,L,DM,49,B,4$2,High density mass with indistinct margin$Benign macrocalcification,MLO,"suspicious mass, indistinct, benign macrocalcification",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P161_L_DM_MLO.jpg
+P161_L_CM_CC,P161,L,CESM,49,_,4,Heterogenously enhancing mass ,CC,"suspicious mass, heterogenous",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P161_L_CM_CC.jpg
+P161_L_CM_MLO,P161,L,CESM,49,_,4,Heterogenously enhancing mass ,MLO,"suspicious mass, heterogenous",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P161_L_CM_MLO.jpg
+P173_L_DM_CC,P173,L,DM,90,_,4,Flap with high density mass with microlobulated margin,CC,"flap, suspicious mass, microlobulated",1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P173_L_DM_CC.jpg
+P173_L_DM_MLO,P173,L,DM,90,_,4,Flap with high density mass with microlobulated margin,MLO,"flap, suspicious mass, microlobulated",1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P173_L_DM_MLO.jpg
+P173_L_CM_CC,P173,L,CESM,90,_,2,Flap,CC,flap,1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P173_L_CM_CC.jpg
+P173_L_CM_MLO,P173,L,CESM,90,_,5,Heterogenously enhancing mass with irregular margin,MLO,"malignant mass, irregular",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P173_L_CM_MLO.jpg
+P174_L_DM_CC,P174,L,DM,53,B,4$2,High density mass with microlobulated margin$Benign macrocalcification,CC,"suspicious mass, microlobulated, benign macrocalcification",1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P174_L_DM_CC.jpg
+P174_L_DM_MLO,P174,L,DM,53,B,4$2,High density mass with microlobulated margin$Benign macrocalcification,MLO,"suspicious mass, microlobulated, benign macrocalcification",1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P174_L_DM_MLO.jpg
+P174_L_CM_CC,P174,L,CESM,53,_,4,Irregular enhancing mass,CC,"suspicious mass, irregular",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P174_L_CM_CC.jpg
+P174_L_CM_MLO,P174,L,CESM,53,_,3,Enhancing mass with circumscribed margin ,MLO,"benign mass, circumscribed",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P174_L_CM_MLO.jpg
+P179_L_DM_CC,P179,L,DM,18,D,1,Normal,CC,normal,1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P179_L_DM_CC.jpg
+P179_L_DM_MLO,P179,L,DM,18,D,1,Normal,MLO,normal,1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P179_L_DM_MLO.jpg
+P179_L_CM_CC,P179,L,CESM,18,_,4,Focal non mass enhancement,CC,"suspicious non mass, focal",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P179_L_CM_CC.jpg
+P179_L_CM_MLO,P179,L,CESM,18,_,4,Focal non mass enhancement,MLO,"suspicious non mass, focal",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P179_L_CM_MLO.jpg
+P181_L_DM_CC,P181,L,DM,48,C,3,Asymmetrical increased density and IMLN,CC,"asymmetry, IMLN",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P181_L_DM_CC.jpg
+P181_L_DM_MLO,P181,L,DM,48,C,3,Asymmetrical increased density and IMLN,MLO,"asymmetry, IMLN",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P181_L_DM_MLO.jpg
+P181_L_CM_CC,P181,L,CESM,48,_,4,Faint patchy areas of heterogenous enhancement ,CC,"suspicious, heterogenous, patchy",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P181_L_CM_CC.jpg
+P181_L_CM_MLO,P181,L,CESM,48,_,4,Faint patchy areas of heterogenous enhancement ,MLO,"suspicious, heterogenous, patchy",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P181_L_CM_MLO.jpg
+P189_L_DM_CC,P189,L,DM,43,C,4,Three ill defined high density masses ,CC,"suspicious mass, multiple",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P189_L_DM_CC.jpg
+P189_L_CM_CC,P189,L,CESM,43,_,2,Non enhancement,CC,"benign, non enhancement",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P189_L_CM_CC.jpg
+P201_R_DM_MLO,P201,R,DM,43,B,6,Normal,MLO,normal,1,Normal,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P201_R_DM_MLO.jpg
+P201_R_CM_MLO,P201,R,CESM,43,_,6,No mass or non mass enhancement,MLO,normal,1,Normal,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P201_R_CM_MLO.jpg
+P208_R_DM_CC,P208,R,DM,43,C,4,Cluster of microcalcifications,CC,"suspicious, microcalcifications",1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P208_R_DM_CC.jpg
+P208_R_DM_MLO,P208,R,DM,43,C,5,Equal density mass with speculated margin with adjacent cluster of microcalcifications,MLO,"malignant, mass, microcalcifications, speculated",1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P208_R_DM_MLO.jpg
+P208_R_CM_CC,P208,R,CESM,43,_,1,No mass or non mass enhancement,CC,normal,1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P208_R_CM_CC.jpg
+P208_R_CM_MLO,P208,R,CESM,43,_,5,Faint homogenously enhancing mass,MLO,"malignant, mass, homogenous",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P208_R_CM_MLO.jpg
+P211_L_DM_CC,P211,L,DM,49,D,3,Multiple equal density masses with circumscribed margin,CC,"benign mass, multiple, circumscribed",1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P211_L_DM_CC.jpg
+P211_L_DM_MLO,P211,L,DM,49,D,3,Multiple equal density masses with circumscribed margin,MLO,"benign mass, multiple, circumscribed",1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P211_L_DM_MLO.jpg
+P211_L_CM_CC,P211,L,CESM,49,_,4,Multiple rim mass enhancement and segmental non mass enhancement,CC,"benign mass, multiple, rim, cysts, suspicious, non mass, segmental",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P211_L_CM_CC.jpg
+P211_L_CM_MLO,P211,L,CESM,49,_,4,Multiple rim mass enhancement and segmental non mass enhancement,MLO,"benign mass, multiple, rim, cysts, suspicious, non mass, segmental",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P211_L_CM_MLO.jpg
+P214_L_DM_CC,P214,L,DM,45,C,1,Normal,CC,normal,1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P214_L_DM_CC.jpg
+P214_L_DM_MLO,P214,L,DM,45,C,1,Normal,MLO,normal,1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P214_L_DM_MLO.jpg
+P214_L_CM_CC,P214,L,CESM,45,_,1,No mass or non mass enhancement,CC,normal,1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P214_L_CM_CC.jpg
+P214_L_CM_MLO,P214,L,CESM,45,_,1,No mass or non mass enhancement,MLO,normal,1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P214_L_CM_MLO.jpg
+P221_L_DM_CC,P221,L,DM,44,C,1,Normal,CC,normal,1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P221_L_DM_CC.jpg
+P221_L_CM_CC,P221,L,CESM,44,_,4,Heterogenously enhancing masses with surrounding satellites,CC,"suspicious mass, multiple",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P221_L_CM_CC.jpg
+P230_R_DM_CC,P230,R,DM,43,C,1,Normal,CC,normal,2,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P230_R_DM_CC.jpg
+P230_R_DM_MLO,P230,R,DM,43,C,1,Normal,MLO,normal,2,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P230_R_DM_MLO.jpg
+P230_R_CM_CC,P230,R,CESM,43,_,1,No mass or non mass enhancement,CC,normal,2,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P230_R_CM_CC.jpg
+P230_R_CM_MLO,P230,R,CESM,43,_,1,No mass or non mass enhancement,MLO,normal,2,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P230_R_CM_MLO.jpg
+P233_L_DM_CC,P233,L,DM,60,_,3$2,Postoperative scar and assymetrical increased density$Benign macrocalcifications ,CC,"postoperative, asymmetry, benign macrocalcifications",1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P233_L_DM_CC.jpg
+P233_L_DM_MLO,P233,L,DM,60,_,3$2,Postoperative scar and assymetrical increased density$Benign macrocalcifications ,MLO,"postoperative, asymmetry, benign macrocalcifications",1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P233_L_DM_MLO.jpg
+P233_L_CM_CC,P233,L,CESM,60,_,4,Heterogenous enhacement ,CC,"postoperative, heterogenous enhancement, recurrence",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P233_L_CM_CC.jpg
+P233_L_CM_MLO,P233,L,CESM,60,_,4,Heterogenous enhacement ,MLO,"postoperative, heterogenous enhancement, recurrence",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P233_L_CM_MLO.jpg
+P243_R_DM_CC,P243,R,DM,55,C,3,Asymmetrical increased density ,CC,asymmetry,1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P243_R_DM_CC.jpg
+P243_R_DM_MLO,P243,R,DM,55,C,3,Asymmetrical increased density ,MLO,asymmetry,1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P243_R_DM_MLO.jpg
+P243_R_CM_CC,P243,R,CESM,55,_,5,Heterogenously enhancing mass with surrounding satellites,CC,"malignant mass, multiple, multifocal, satellites",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P243_R_CM_CC.jpg
+P243_R_CM_MLO,P243,R,CESM,55,_,5,Heterogenously enhancing mass with surrounding satellites,MLO,"malignant mass, multiple, multifocal, satellites",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P243_R_CM_MLO.jpg
+P254_R_DM_CC,P254,R,DM,50,C,3,Focal asymmetrical increased density ,CC,focal asymmetry,1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P254_R_DM_CC.jpg
+P254_R_DM_MLO,P254,R,DM,50,C,3,Focal asymmetrical increased density ,MLO,focal asymmetry,1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P254_R_DM_MLO.jpg
+P254_R_CM_CC,P254,R,CESM,50,_,4,Focal ill defined enhancing mass,CC,suspicous mass,1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P254_R_CM_CC.jpg
+P254_R_CM_MLO,P254,R,CESM,50,_,4,Focal ill defined enhancing mass,MLO,suspicous mass,1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P254_R_CM_MLO.jpg
+P261_L_DM_CC,P261,L,DM,52,B,3,Asymmetrical increased density ,CC,asymmetry,1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P261_L_DM_CC.jpg
+P261_L_DM_MLO,P261,L,DM,52,B,3,Asymmetrical increased density ,MLO,asymmetry,1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P261_L_DM_MLO.jpg
+P261_L_CM_CC,P261,L,CESM,52,_,4,Segmental non mass enhancement ,CC,"suspicious non mass, segmental",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P261_L_CM_CC.jpg
+P261_L_CM_MLO,P261,L,CESM,52,_,4,Segmental non mass enhancement ,MLO,"suspicious non mass, segmental",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P261_L_CM_MLO.jpg
+P265_R_DM_CC,P265,R,DM,39,C,4,High density mass with microlobulated margin,CC,"suspicous mass,microlobulated",1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P265_R_DM_CC.jpg
+P265_R_DM_MLO,P265,R,DM,39,C,3,Asymmetrical increased density ,MLO,asymmetry,1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P265_R_DM_MLO.jpg
+P265_R_CM_CC,P265,R,CESM,39,_,5$2,Heterogenously enhancing mass with irregular margin$Stippled enhancement,CC,"suspicous mass, heterogenous, adenosis",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P265_R_CM_CC.jpg
+P265_R_CM_MLO,P265,R,CESM,39,_,5$2,Heterogenously enhancing mass with irregular margin$Stippled enhancement,MLO,"suspicous mass, heterogenous, adenosis",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P265_R_CM_MLO.jpg
+P274_R_DM_CC,P274,R,DM,59,B,2,Dilated retroareolar duct,CC,"dilated duct, benign ",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P274_R_DM_CC.jpg
+P274_R_DM_MLO,P274,R,DM,59,B,2,Dilated retroareolar duct,MLO,"dilated duct, benign ",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P274_R_DM_MLO.jpg
+P274_R_CM_CC,P274,R,CESM,59,_,4,Ductal non mass enhancement,CC,"suspicious non mass, ductal",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P274_R_CM_CC.jpg
+P274_R_CM_MLO,P274,R,CESM,59,_,4,Ductal non mass enhancement,MLO,"suspicious non mass, ductal",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P274_R_CM_MLO.jpg
+P281_R_DM_CC,P281,R,DM,66,C,4,Architectural distortion and equal density mass with indistinct margin,CC,"suspicious mass, indistinct, architectural distortion",1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P281_R_DM_CC.jpg
+P281_R_DM_MLO,P281,R,DM,66,C,3,Asymmetrical increased density ,MLO,asymmetry,1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P281_R_DM_MLO.jpg
+P281_R_CM_CC,P281,R,CESM,66,_,4$3,Faint irregular heterogenously enhancing mass$ Homogenously enhancing mass,CC,"suspicious mass, intradermal nodule, sebacous cyst",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P281_R_CM_CC.jpg
+P281_R_CM_MLO,P281,R,CESM,66,_,4,Faint irregular heterogenously enhancing mass,MLO,suspicious mass,1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P281_R_CM_MLO.jpg
+P284_L_DM_CC,P284,L,DM,48,C,4,Clusters of pleomorphic microcalcification,CC,"suspicious, clusters, microcalcifications",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P284_L_DM_CC.jpg
+P284_L_DM_MLO,P284,L,DM,48,C,4,Clusters of pleomorphic microcalcification,MLO,"suspicious, clusters, microcalcifications",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P284_L_DM_MLO.jpg
+P284_L_CM_CC,P284,L,CESM,48,_,3,Non enhancement,CC,"benign, non enhancement ",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P284_L_CM_CC.jpg
+P284_L_CM_MLO,P284,L,CESM,48,_,3,Non enhancement,MLO,"benign, non enhancement ",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P284_L_CM_MLO.jpg
+P289_R_DM_CC,P289,R,DM,32,C,3,Asymmetrical increased density ,CC,asymmetry,1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P289_R_DM_CC.jpg
+P289_R_DM_MLO,P289,R,DM,32,C,3,Asymmetrical increased density ,MLO,asymmetry,1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P289_R_DM_MLO.jpg
+P289_R_CM_CC,P289,R,CESM,32,_,4,Multiple enhancing nodules,CC,"suspicious nodules, multiple, multifocal",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P289_R_CM_CC.jpg
+P289_R_CM_MLO,P289,R,CESM,32,_,4,Multiple enhancing nodules,MLO,"suspicious nodules, multiple, multifocal",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P289_R_CM_MLO.jpg
+P293_R_DM_CC,P293,R,DM,43,C,4,High density mass with circumscribed margin,CC,"suspicious mass, circumscribed",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P293_R_DM_CC.jpg
+P293_R_DM_MLO,P293,R,DM,43,C,4,High density mass with circumscribed margin,MLO,"suspicious mass, circumscribed",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P293_R_DM_MLO.jpg
+P293_R_CM_CC,P293,R,CESM,43,_,4,Irregualr rim enhancing mass,CC,"suspicious mass, rim",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P293_R_CM_CC.jpg
+P293_R_CM_MLO,P293,R,CESM,43,_,4,Irregualr rim enhancing mass,MLO,"suspicious mass, rim",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P293_R_CM_MLO.jpg
+P295_R_DM_CC,P295,R,DM,36,C,3,Asymmetrical increased density ,CC,asymmetry,1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P295_R_DM_CC.jpg
+P295_R_DM_MLO,P295,R,DM,36,C,3,Asymmetrical increased density ,MLO,asymmetry,1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P295_R_DM_MLO.jpg
+P295_R_CM_CC,P295,R,CESM,36,_,5,Heterogenous regional non mass enhancement ,CC,"malignant non mass, regional",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P295_R_CM_CC.jpg
+P295_R_CM_MLO,P295,R,CESM,36,_,5,Heterogenous regional non mass enhancement ,MLO,"malignant non mass, regional",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P295_R_CM_MLO.jpg
+P299_R_DM_CC,P299,R,DM,57,B,5,Architectural distortion with overlying microcalcifications ,CC,"malignant, architectural distortion, microcalcifications",1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P299_R_DM_CC.jpg
+P299_R_DM_MLO,P299,R,DM,57,B,1,Normal,MLO,normal,1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P299_R_DM_MLO.jpg
+P299_R_CM_CC,P299,R,CESM,57,_,5,Irregular heterogenously enhancing mass ,CC,"malignant mass, irregular",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P299_R_CM_CC.jpg
+P299_R_CM_MLO,P299,R,CESM,57,_,1,No mass or non mass enhancement,MLO,normal,1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P299_R_CM_MLO.jpg
+P301_L_DM_CC,P301,L,DM,55,B,5$2,Three high density masses with speculated margin and surrounding nodules$Benign macrocalcification,CC,"malignant mass, multiple, multicentric, speculated, benign macrocalcification",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P301_L_DM_CC.jpg
+P301_L_DM_MLO,P301,L,DM,55,B,5$2,Three high density masses with speculated margin and surrounding nodules$Benign macrocalcification,MLO,"malignant mass, multiple, multicentric, speculated, benign macrocalcification",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P301_L_DM_MLO.jpg
+P301_L_CM_CC,P301,L,CESM,55,_,5,Two irregular heterogenously enhancing masses and rim enhancing mass ,CC,"malignant mass, multiple, irregular, rim",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P301_L_CM_CC.jpg
+P301_L_CM_MLO,P301,L,CESM,55,_,5,Two irregular heterogenously enhancing masses and rim enhancing mass ,MLO,"malignant mass, multiple, irregular, rim",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P301_L_CM_MLO.jpg
+P302_L_DM_CC,P302,L,DM,42,B,4,High density mass with circumscribed margin,CC,"suspicious mass, circumscribed",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P302_L_DM_CC.jpg
+P302_L_DM_MLO,P302,L,DM,42,B,4,High density mass with circumscribed margin,MLO,"suspicious mass, circumscribed",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P302_L_DM_MLO.jpg
+P302_L_CM_CC,P302,L,CESM,42,_,5,Heterogenously ehancing mass ,CC,"malignant mass, heterogenous",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P302_L_CM_CC.jpg
+P302_L_CM_MLO,P302,L,CESM,42,_,5,Heterogenously ehancing mass ,MLO,"malignant mass, heterogenous",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P302_L_CM_MLO.jpg
+P305_L_DM_CC,P305,L,DM,33,C,1,Normal,CC,normal,1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P305_L_DM_CC.jpg
+P305_L_DM_MLO,P305,L,DM,33,C,4,Architectural distortion,MLO,"suspicious, architectural distortion",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P305_L_DM_MLO.jpg
+P305_L_CM_CC,P305,L,CESM,33,_,4,Irregular heterogenous enhancement ,CC,"suspicious, irregular ",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P305_L_CM_CC.jpg
+P305_L_CM_MLO,P305,L,CESM,33,_,4,Irregular heterogenous enhancement ,MLO,"suspicious, irregular ",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P305_L_CM_MLO.jpg
+P309_L_DM_CC,P309,L,DM,37,C,3,Asymmetrical increased density ,CC,asymmetry,1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P309_L_DM_CC.jpg
+P309_L_DM_MLO,P309,L,DM,37,C,3,Asymmetrical increased density ,MLO,asymmetry,1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P309_L_DM_MLO.jpg
+P309_L_CM_CC,P309,L,CESM,37,_,4,Segmental non mass enhancement ,CC,"suspicious non mass, segmental",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P309_L_CM_CC.jpg
+P309_L_CM_MLO,P309,L,CESM,37,_,4,Segmental non mass enhancement ,MLO,"suspicious non mass, segmental",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P309_L_CM_MLO.jpg
+P313_R_DM_CC,P313,R,DM,52,C,3$2,Focal asymmetrical increased density and multiple equal density nodules$Benign macrocalcification,CC,"focal asymmetry, benign nodule, multiple, benign macrocalcification",1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P313_R_DM_CC.jpg
+P313_R_DM_MLO,P313,R,DM,52,C,3$2,Focal asymmetrical increased density and multiple equal density nodules$Benign macrocalcification,MLO,"focal asymmetry, benign nodule, multiple, benign macrocalcification",1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P313_R_DM_MLO.jpg
+P313_R_CM_CC,P313,R,CESM,52,_,4,Segmental non mass enhancement and multiple enhancing nodules,CC,"suspicious non mass, segmental, nodules, multiple",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P313_R_CM_CC.jpg
+P313_R_CM_MLO,P313,R,CESM,52,_,4,Segmental non mass enhancement and multiple enhancing nodules,MLO,"suspicious non mass, segmental, nodules, multiple",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P313_R_CM_MLO.jpg
+P316_R_DM_CC,P316,R,DM,68,B,4$2,Diffuse edematous changes$Benign macrocalcification,CC,"edema, benign macrocalcifications",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P316_R_DM_CC.jpg
+P316_R_DM_MLO,P316,R,DM,68,B,4$2,Diffuse edematous changes$Benign macrocalcification,MLO,"edema, benign macrocalcifications",1,Benign,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P316_R_DM_MLO.jpg
+P316_R_CM_CC,P316,R,CESM,68,_,3,Non enhancement,CC,"benign, non enhancement",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P316_R_CM_CC.jpg
+P316_R_CM_MLO,P316,R,CESM,68,_,3,Non enhancement,MLO,"benign, non enhancement",1,Benign,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P316_R_CM_MLO.jpg
+P320_L_DM_CC,P320,L,DM,45,_,2,Edema and postoperative scar with surgical clips,CC,"postoperative, surgical clips",1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P320_L_DM_CC.jpg
+P320_L_DM_MLO,P320,L,DM,45,_,2,Edema and postoperative scar with surgical clips,MLO,"postoperative, surgical clips",1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P320_L_DM_MLO.jpg
+P320_L_CM_CC,P320,L,CESM,45,_,2,Non enhancement,CC,postoperative,1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P320_L_CM_CC.jpg
+P320_L_CM_MLO,P320,L,CESM,45,_,2,Non enhancement,MLO,postoperative,1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P320_L_CM_MLO.jpg
+P326_L_DM_CC,P326,L,DM,51,C,3,Asymmetrical increased density ,CC,asymmetry,1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P326_L_DM_CC.jpg
+P326_L_DM_MLO,P326,L,DM,51,C,3,Asymmetrical increased density ,MLO,asymmetry,1,Malignant,/home/monstalinux/final-project/dataset/Low energy images of CDD-CESM/P326_L_DM_MLO.jpg
+P326_L_CM_CC,P326,L,CESM,51,_,4,Segmental non mass enhancement,CC,"suspicious non mass, segmental",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P326_L_CM_CC.jpg
+P326_L_CM_MLO,P326,L,CESM,51,_,4,Segmental non mass enhancement,MLO,"suspicious non mass, segmental",1,Malignant,/home/monstalinux/final-project/dataset/Subtracted images of CDD-CESM/P326_L_CM_MLO.jpg

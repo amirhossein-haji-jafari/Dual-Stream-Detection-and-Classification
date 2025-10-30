@@ -16,7 +16,7 @@ from .single_stream_dataloader import SingleStreamDataset, single_stream_collate
 from .single_stream_retinanet import SingleStreamRetinaNet
 from ..immutables import Hyperparameter, ProjectPaths
 from ..callbacks import LossHistory
-from ..utils import cvtColor, get_lr, preprocess_input, resize_image
+from ..utils import cvtColor, get_lr, resize_image
 from ..medical_image_utils import min_max_normalise
 from .utils.utils_bbox import decodebox, non_max_suppression
 from .utils.utils_map import get_map
@@ -35,8 +35,8 @@ def evaluate_map_on_validation_set(model, val_lines, cuda, save_dir):
 
     detection_class_name = "mass"
     
-    # Determine which stream(s) to evaluate (default 'cm').
-    stream_mode = getattr(Hyperparameter, "single_stream_mode", "cm").lower()
+    # Determine which stream(s) to evaluate (default 'dm').
+    stream_mode = getattr(Hyperparameter, "single_stream_mode", "dm").lower()
 
     # In single-stream, we evaluate each image from the val set independently
     val_images_to_process = []
@@ -251,7 +251,7 @@ def run_training_for_fold(fold_k):
     loss_history = LossHistory(log_dir, model, input_shape=Hyperparameter.input_shape)
 
     # Which stream to include for this run (expects 'both'/'cm'/'dm' in Hyperparameter.single_stream_mode)
-    include_stream_mode = getattr(Hyperparameter, "single_stream_mode", "cm")
+    include_stream_mode = getattr(Hyperparameter, "single_stream_mode", "dm")
 
     # --- STAGE 1 ---
     s1_batch_size = Hyperparameter.first_stage_batch_size

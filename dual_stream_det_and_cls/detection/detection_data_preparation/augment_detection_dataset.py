@@ -86,7 +86,7 @@ import albumentations as A
 from tqdm import tqdm
 import re
 import shutil
-from ...immutables import ProjectPaths
+from ...immutables import ProjectPaths, Hyperparameter
 from ...medical_image_utils import clahe
 
 # --- Configuration ---
@@ -270,8 +270,11 @@ def main():
         # --- Save Original Resized Images ---
         base_dm_name = data['base_dm_name'] + "_resized" + OUTPUT_EXTENSION
         base_cm_name = data['base_cm_name'] + "_resized" + OUTPUT_EXTENSION
-        resized_dm_image = clahe(resized_dm_image)
-        resized_cm_image = clahe(resized_cm_image)
+
+        if Hyperparameter.use_clahe:
+            resized_dm_image = clahe(resized_dm_image)
+            resized_cm_image = clahe(resized_cm_image)
+
         cv2.imwrite(os.path.join(OUTPUT_IMG_DIR, base_dm_name), resized_dm_image)
         cv2.imwrite(os.path.join(OUTPUT_IMG_DIR, base_cm_name), resized_cm_image)
         # Only write annotation for the original image type
@@ -361,8 +364,11 @@ def main():
 
             aug_dm_name = f"{data['base_dm_name']}_{aug_name}{OUTPUT_EXTENSION}"
             aug_cm_name = f"{data['base_cm_name']}_{aug_name}{OUTPUT_EXTENSION}"
-            aug_dm_image = clahe(aug_dm_image)
-            aug_cm_image = clahe(aug_cm_image)
+
+            if Hyperparameter.use_clahe:
+                aug_dm_image = clahe(aug_dm_image)
+                aug_cm_image = clahe(aug_cm_image)
+                
             cv2.imwrite(os.path.join(OUTPUT_IMG_DIR, aug_dm_name), aug_dm_image)
             cv2.imwrite(os.path.join(OUTPUT_IMG_DIR, aug_cm_name), aug_cm_image)
 

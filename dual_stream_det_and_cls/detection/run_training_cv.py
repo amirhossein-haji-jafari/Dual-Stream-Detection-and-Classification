@@ -38,7 +38,7 @@ from .dual_stream_dataloader import DualStreamDataset, dual_stream_collate
 from .dual_stream_retinanet import DualStreamRetinaNet
 from ..immutables import Hyperparameter, ProjectPaths
 from ..callbacks import LossHistory
-from ..utils import cvtColor, get_lr, preprocess_input, resize_image
+from ..utils import cvtColor, get_lr, resize_image
 from ..medical_image_utils import min_max_normalise
 from .utils.utils_bbox import decodebox, non_max_suppression
 from .utils.utils_map import get_map
@@ -75,8 +75,6 @@ def evaluate_map_on_validation_set(model, val_lines, cuda, save_dir):
             continue
             
         image_height, image_width = np.array(np.shape(dm_image)[0:2])
-        # dm_image_data = np.expand_dims(np.transpose(preprocess_input(np.array(resize_image(cvtColor(dm_image), (Hyperparameter.input_shape[1], Hyperparameter.input_shape[0]), False), dtype='float32')), (2, 0, 1)), 0)
-        # cm_image_data = np.expand_dims(np.transpose(preprocess_input(np.array(resize_image(cvtColor(cm_image), (Hyperparameter.input_shape[1], Hyperparameter.input_shape[0]), False), dtype='float32')), (2, 0, 1)), 0)
 
         dm_image_data = np.expand_dims(np.transpose(min_max_normalise(np.array(resize_image(cvtColor(dm_image), (Hyperparameter.input_shape[1], Hyperparameter.input_shape[0]), False), dtype='float32')), (2, 0, 1)), 0)
         cm_image_data = np.expand_dims(np.transpose(min_max_normalise(np.array(resize_image(cvtColor(cm_image), (Hyperparameter.input_shape[1], Hyperparameter.input_shape[0]), False), dtype='float32')), (2, 0, 1)), 0)
@@ -272,7 +270,7 @@ def run_training_for_fold(fold_k):
     gen_val_s2 = DataLoader(val_dataset_s2, shuffle=False, batch_size=s2_batch_size, num_workers=Hyperparameter.num_workers, pin_memory=True, drop_last=True, collate_fn=dual_stream_collate)
     epoch_step_s2, epoch_step_val_s2 = num_train // s2_batch_size, num_val // s2_batch_size
 
-    run_training_stage("Stage 2", model, 10, 20, gen_s2, gen_val_s2, val_lines, epoch_step_s2, epoch_step_val_s2, 2e-4, False, save_dir, initial_weights_path=last_model_s1)
+    run_training_stage("Stage 2", model, 10, 30, gen_s2, gen_val_s2, val_lines, epoch_step_s2, epoch_step_val_s2, 2e-4, False, save_dir, initial_weights_path=last_model_s1)
 
 
 if __name__ == "__main__":
