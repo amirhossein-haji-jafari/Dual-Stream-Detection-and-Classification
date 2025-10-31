@@ -22,18 +22,26 @@ import numpy as np
 import cv2
 from tqdm import tqdm
 
+# Optimization Monitoring
+def command_iteration(method):
+    if method.GetOptimizerIteration() == 0:
+        print("Starting registration...")
+    if method.GetOptimizerIteration() % 50 == 0:
+        print(f"Iteration: {method.GetOptimizerIteration()}")
+        print(f"Metric value: {method.GetMetricValue()}")
+
 
 def register_images(fixed_image_path,
                                        moving_image_path,
-                                       transform_type='similarity2d',
-                                       optimizer_type='regular',
+                                       transform_type='euler2d',
+                                       optimizer_type='stepGradient',
                                        metric='mattes',
                                        use_gradient=False,
-                                       histogram_match=True,
+                                       histogram_match=False,
                                        num_threads=24,
-                                       sampling_percentage=0.85,
-                                       shrink_factors=[4,2,1],
-                                       smoothing_sigmas=[2,1,0]):
+                                       sampling_percentage=0.90,
+                                       shrink_factors=[8, 4, 2, 1] ,
+                                       smoothing_sigmas=[4, 2, 1, 0]):
     """
     Registers a moving image to a fixed image using SimpleITK.
 
@@ -88,25 +96,10 @@ def register_images(fixed_image_path,
 
     # Registration method setup
     registration_method = sitk.ImageRegistrationMethod()
-
-    # Initial transform
-    if transform_type.lower() == 'euler2d':
-        initial_transform = sitk.Euler2DTransform()
-    else:
-        initial_transform = sitk.Similarity2DTransform()
-
-    initial_transform = sitk.CenteredTransformInitializer(
-        fixed_for_reg,
-        moving_for_reg,
-        initial_transform,
-        sitk.CenteredTransformInitializerFilter.GEOMETRY
-    )
-    registration_method.SetInitialTransform(initial_transform, inPlace=False)
-
     # Metric selection
     metric_lower = metric.lower()
     if metric_lower == 'mattes':
-        registration_method.SetMetricAsMattesMutualInformation(numberOfHistogramBins=64)
+        registration_method.SetMetricAsMattesMutualInformation(numberOfHistogramBins=128)
     elif metric_lower == 'mean_squares' or metric_lower == 'meansquares':
         registration_method.SetMetricAsMeanSquares()
     elif metric_lower == 'correlation':
@@ -114,7 +107,40 @@ def register_images(fixed_image_path,
     else:
         raise ValueError(f"Unsupported metric: {metric}")
 
-    registration_method.SetMetricSamplingStrategy(registration_method.REGULAR)
+    # Initial transform
+    if transform_type.lower() == 'euler2d':
+        base_transform = sitk.Euler2DTransform()
+    else:
+        base_transform = sitk.Similarity2DTransform()
+    # registration_method.SetInitialTransform(base_transform, inPlace=False)
+    # Trying both GEOMETRY and MOMENTS initialization
+    initial_transform_geo = sitk.CenteredTransformInitializer(
+        fixed_for_reg,
+        moving_for_reg,
+        base_transform,
+        sitk.CenteredTransformInitializerFilter.GEOMETRY
+    )
+    # Set this transform on the registration method to evaluate it
+    registration_method.SetInitialTransform(initial_transform_geo)
+    # metric_geometry = registration_method.MetricEvaluate(fixed_for_reg, moving_for_reg)
+    # initial_transform_moments = sitk.CenteredTransformInitializer(
+    #     fixed_for_reg, 
+    #     moving_for_reg,
+    #     base_transform,
+    #     sitk.CenteredTransformInitializerFilter.MOMENTS
+    # )
+    # # Set this transform on the registration method to evaluate it
+    # registration_method.SetInitialTransform(initial_transform_moments)
+    # metric_moments = registration_method.MetricEvaluate(fixed_for_reg, moving_for_reg)
+    # # Choose better initialization
+    # if metric_moments < metric_geometry:
+    #     initial_transform = initial_transform_moments
+    # else:
+    #     initial_transform = initial_transform_geo
+    # registration_method.SetInitialTransform(initial_transform, inPlace=False)
+
+    registration_method.SetMetricSamplingStrategy(registration_method.RANDOM)
+    # registration_method.SetMetricSamplingStrategy(registration_method.REGULAR)
     registration_method.SetMetricSamplingPercentage(sampling_percentage)
 
     # Multi-resolution
@@ -123,20 +149,28 @@ def register_images(fixed_image_path,
     registration_method.SmoothingSigmasAreSpecifiedInPhysicalUnitsOn()
 
     # Optimizer selection
-    if optimizer_type.lower() == 'regular':
+    if optimizer_type.lower() in ('regular', 'regularstep', 'regularstepgradientdescent', 'rsgd', 'stepgradient' ):
         registration_method.SetOptimizerAsRegularStepGradientDescent(
             learningRate=2.0,
-            minStep=1e-4,
-            numberOfIterations=1000,
-            relaxationFactor=0.5
+            minStep=1e-6,
+            numberOfIterations=2000,
+            relaxationFactor=0.7,
+            gradientMagnitudeTolerance=1e-6
         )
     elif optimizer_type.lower() in ('gradient', 'gradientdescent', 'gd'):
         # Basic gradient descent; parameters can be tuned by caller
-        registration_method.SetOptimizerAsGradientDescent(learningRate=1.0, numberOfIterations=1000)
+        registration_method.SetOptimizerAsGradientDescent(learningRate=0.1,
+                                                          numberOfIterations=2000,
+                                                          convergenceMinimumValue=1e-6,
+                                                          convergenceWindowSize=10,
+                                                          estimateLearningRate=registration_method.EachIteration
+                                                          )
     else:
-        raise ValueError(f"Unsupported optimizer_type: {optimizer_type}")
-
+        raise ValueError(f"Unsupported optimizer_type: {optimizer_type}")\
+        
+    # registration_method.AddCommand(sitk.sitkIterationEvent, lambda: command_iteration(registration_method))
     registration_method.SetOptimizerScalesFromPhysicalShift()
+    # registration_method.SetOptimizerScalesFromIndexShift()
     registration_method.SetInterpolator(sitk.sitkLinear)
 
     # Execute registration on chosen images
@@ -145,7 +179,7 @@ def register_images(fixed_image_path,
     # Log info
     try:
         with open(ProjectPaths.registration_logs, "a") as log_file:
-            log_file.write(f"Registration between {os.path.basename(fixed_image_path)} and {os.path.basename(moving_image_path)}\n")
+            log_file.write(f"Registration between fixed {os.path.basename(fixed_image_path)} and moving {os.path.basename(moving_image_path)}\n")
             log_file.write("Optimizer stop condition: " + registration_method.GetOptimizerStopConditionDescription() + "\n")
             log_file.write("Final metric value: " + str(registration_method.GetMetricValue()) + "\n\n")
     except Exception:
