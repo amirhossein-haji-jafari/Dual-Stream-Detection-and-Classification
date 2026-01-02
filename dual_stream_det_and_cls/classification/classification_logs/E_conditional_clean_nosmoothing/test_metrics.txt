@@ -1,0 +1,37 @@
+--- Model Evaluation Metrics ---
+
+1. Confusion Matrix
+----------------------------------------
+                 | Predicted Benign | Predicted Malignant
+-----------------|------------------|--------------------
+Actual Benign    | TN = 41           | FP = 6             
+Actual Malignant | FN = 5            | TP = 50            
+----------------------------------------
+
+2. Key Components
+   - True Positives (TP):  50 (Malignant correctly identified)
+   - True Negatives (TN):  41 (Benign correctly identified)
+   - False Positives (FP): 6 (Benign classified as Malignant)
+   - False Negatives (FN): 5 (Malignant classified as Benign)
+
+3. Performance Metrics
+   - Accuracy:           0.8922
+   - Precision (PPV):    0.8929
+   - Recall (Sensitivity): 0.9091
+   - F1-Score:           0.9009
+   - AUC:                0.9308
+   - NPV:                0.8913
+
+4. Misclassified Images
+----------------------------------------
+- P145_L_CM_MLO_resized.jpg: Actual (Malignant), Predicted (Benign)
+- P119_R_CM_MLO_resized.jpg: Actual (Benign), Predicted (Malignant)
+- P323_L_CM_CC_resized.jpg: Actual (Malignant), Predicted (Benign)
+- P28_L_CM_MLO_resized.jpg: Actual (Malignant), Predicted (Benign)
+- P125_L_CM_CC_resized.jpg: Actual (Benign), Predicted (Malignant)
+- P11_R_CM_MLO_resized.jpg: Actual (Benign), Predicted (Malignant)
+- P217_L_CM_CC_resized.jpg: Actual (Benign), Predicted (Malignant)
+- P73_L_CM_CC_resized.jpg: Actual (Benign), Predicted (Malignant)
+- P217_L_CM_MLO_resized.jpg: Actual (Benign), Predicted (Malignant)
+- P265_L_CM_MLO_resized.jpg: Actual (Malignant), Predicted (Benign)
+- P64_R_CM_CC_resized.jpg: Actual (Malignant), Predicted (Benign)

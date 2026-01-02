@@ -218,6 +218,7 @@ def run_training_stage(stage_name, model, start_epoch, end_epoch, train_gen, val
             current_best_map=best_map_for_stage,
         )
         lr_scheduler.step()
+        torch.cuda.empty_cache()
     
     print(f"{'='*20} FINISHED {stage_name.upper()} {'='*20}\n")
     return last_model_path
@@ -253,24 +254,24 @@ def run_training_for_fold(fold_k):
     loss_history = LossHistory(log_dir, model, input_shape=Hyperparameter.input_shape)
 
     # --- STAGE 1: Initial Training ---
-    s1_batch_size = 16
+    s1_batch_size = Hyperparameter.first_stage_batch_size
     train_dataset_s1 = DualStreamDataset(train_lines, Hyperparameter.input_shape, Hyperparameter.num_classes, train=True)
     val_dataset_s1 = DualStreamDataset(val_lines, Hyperparameter.input_shape, Hyperparameter.num_classes, train=False)
     gen_s1 = DataLoader(train_dataset_s1, shuffle=True, batch_size=s1_batch_size, num_workers=Hyperparameter.num_workers, pin_memory=True, drop_last=True, collate_fn=dual_stream_collate)
     gen_val_s1 = DataLoader(val_dataset_s1, shuffle=False, batch_size=s1_batch_size, num_workers=Hyperparameter.num_workers, pin_memory=True, drop_last=True, collate_fn=dual_stream_collate)
     epoch_step_s1, epoch_step_val_s1 = num_train // s1_batch_size, num_val // s1_batch_size
 
-    last_model_s1 = run_training_stage("Stage 1", model, 0, 10, gen_s1, gen_val_s1, val_lines, epoch_step_s1, epoch_step_val_s1, 1e-3, True, save_dir)
+    last_model_s1 = run_training_stage("Stage 1", model, Hyperparameter.first_stage_init_epoch, Hyperparameter.first_stage_end_epoch, gen_s1, gen_val_s1, val_lines, epoch_step_s1, epoch_step_val_s1, 1e-3, True, save_dir)
     
     # --- STAGE 2: Fine-Tuning ---
-    s2_batch_size = 4
+    s2_batch_size = Hyperparameter.second_stage_batch_size
     train_dataset_s2 = DualStreamDataset(train_lines, Hyperparameter.input_shape, Hyperparameter.num_classes, train=True)
     val_dataset_s2 = DualStreamDataset(val_lines, Hyperparameter.input_shape, Hyperparameter.num_classes, train=False)
     gen_s2 = DataLoader(train_dataset_s2, shuffle=True, batch_size=s2_batch_size, num_workers=Hyperparameter.num_workers, pin_memory=True, drop_last=True, collate_fn=dual_stream_collate)
     gen_val_s2 = DataLoader(val_dataset_s2, shuffle=False, batch_size=s2_batch_size, num_workers=Hyperparameter.num_workers, pin_memory=True, drop_last=True, collate_fn=dual_stream_collate)
     epoch_step_s2, epoch_step_val_s2 = num_train // s2_batch_size, num_val // s2_batch_size
 
-    run_training_stage("Stage 2", model, 10, 30, gen_s2, gen_val_s2, val_lines, epoch_step_s2, epoch_step_val_s2, 2e-4, False, save_dir, initial_weights_path=last_model_s1)
+    run_training_stage("Stage 2", model, Hyperparameter.second_stage_init_epoch, Hyperparameter.second_stage_end_epoch, gen_s2, gen_val_s2, val_lines, epoch_step_s2, epoch_step_val_s2, 2e-4, False, save_dir, initial_weights_path=last_model_s1)
 
 
 if __name__ == "__main__":

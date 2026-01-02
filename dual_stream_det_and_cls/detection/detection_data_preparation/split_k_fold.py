@@ -27,19 +27,20 @@ AUGMENTATION_SUFFIXES = [
     "_hflip_noise",
     "_hvflip_brightcont",
     '_resized',
-    '_rotate20',
     "_symm_shit_blur",
-    # '_rotate20_elastic',
+    '_rotate20_elastic',
+    "_gridshuffle",
+    '_cutout',
+    # '_cutout_mulnoise',
+    # '_rotate20',
     # '_hflip',
     # '_vflip',
     # '_hvflip', 
     # '_blur',
     # '_brightcont',
-    # '_cutout',
     # '_shift',
     # "_hflip_cutout",
     # "_shift_blur",
-    # "_gridshuffle",
 ]
 
 
@@ -149,7 +150,7 @@ def generate_per_fold_annotations(k=5):
 
 if __name__ == "__main__":
     # Step 1: Create the k-fold splits based on patient ID.
-    create_k_folds_by_patient(k=5)
+    # create_k_folds_by_patient(k=5)
     
     # Step 2: Generate the corresponding training and validation annotation files for each fold.
     generate_per_fold_annotations(k=5)

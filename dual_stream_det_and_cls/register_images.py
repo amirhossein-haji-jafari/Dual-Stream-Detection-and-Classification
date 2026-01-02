@@ -34,7 +34,7 @@ def command_iteration(method):
 def register_images(fixed_image_path,
                                        moving_image_path,
                                        transform_type='euler2d',
-                                       optimizer_type='stepGradient',
+                                       optimizer_type='gd',
                                        metric='mattes',
                                        use_gradient=False,
                                        histogram_match=False,
@@ -99,7 +99,7 @@ def register_images(fixed_image_path,
     # Metric selection
     metric_lower = metric.lower()
     if metric_lower == 'mattes':
-        registration_method.SetMetricAsMattesMutualInformation(numberOfHistogramBins=128)
+        registration_method.SetMetricAsMattesMutualInformation(numberOfHistogramBins=256)
     elif metric_lower == 'mean_squares' or metric_lower == 'meansquares':
         registration_method.SetMetricAsMeanSquares()
     elif metric_lower == 'correlation':

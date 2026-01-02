@@ -209,14 +209,18 @@ def main():
         # 'vflip': A.Compose([A.VerticalFlip(p=1.0)], bbox_params=BBOX_PARAMS),
         # 'hvflip': A.Compose([A.HorizontalFlip(p=1.0), A.VerticalFlip(p=1.0)], bbox_params=BBOX_PARAMS),
         # 'rotate20': A.ReplayCompose([A.Rotate(limit=(-20,20), p=1.0, border_mode=cv2.BORDER_CONSTANT, fill=(0,0,0))], bbox_params=BBOX_PARAMS),
-        # 'rotate20_elastic': A.ReplayCompose([A.Rotate(limit=(-20,20), p=1.0, border_mode=cv2.BORDER_CONSTANT, fill=(0,0,0)),
-        #                         A.ElasticTransform(p=1.0, alpha=300, sigma=10, keypoint_remapping_method='mask')
-        #                         ], bbox_params=BBOX_PARAMS),
+        'rotate20_elastic': A.ReplayCompose([A.Rotate(limit=(-20,20), p=1.0, border_mode=cv2.BORDER_CONSTANT, fill=(0,0,0)),
+                                A.ElasticTransform(p=1.0, alpha=300, sigma=10, keypoint_remapping_method='mask')
+                                ], bbox_params=BBOX_PARAMS),
         'rotate20': A.ReplayCompose([A.Rotate(limit=(-20,20), p=1.0, border_mode=cv2.BORDER_CONSTANT, fill=(0,0,0)),
                                 ], bbox_params=BBOX_PARAMS),
         # 'blur': A.Compose([A.GaussianBlur(blur_limit=(3, 7), p=1.0)]),
         # 'brightcont': A.Compose([A.RandomBrightnessContrast(p=1.0)]),
-        # 'cutout': A.Compose([A.CoarseDropout(num_holes_range=(1,2), hole_height_range=(0.05, 0.15), hole_width_range=(0.1, 0.2), fill=0, p=1.0)]),
+        'cutout': A.Compose([A.CoarseDropout(num_holes_range=(1,3), hole_height_range=(0.05, 0.15), hole_width_range=(0.1, 0.2), fill=0, p=1.0)]),
+        # 'cutout_mulnoise': A.Compose([
+        #     A.CoarseDropout(num_holes_range=(1,3), hole_height_range=(0.05, 0.15), hole_width_range=(0.1, 0.2), fill=0, p=1.0),
+        #     A.MultiplicativeNoise(multiplier=[0.8, 1.4],per_channel=False,elementwise=True),
+        #     ]),
         'hvflip_brightcont': A.Compose([
             A.HorizontalFlip(p=1.0), 
             A.VerticalFlip(p=1.0), 
@@ -226,9 +230,9 @@ def main():
         #     A.HorizontalFlip(p=1.0),
         #     A.CoarseDropout(num_holes_range=(1,3), hole_height_range=(0.05, 0.15), hole_width_range=(0.1, 0.2), fill=0, p=1.0)
         # ], bbox_params=BBOX_PARAMS),
-        # 'gridshuffle': A.ReplayCompose([
-        #     A.RandomGridShuffle(grid=(3,3), p=1.0),
-        # ], bbox_params=BBOX_PARAMS),
+        'gridshuffle': A.ReplayCompose([
+            A.RandomGridShuffle(grid=(3,3), p=1.0),
+        ], bbox_params=BBOX_PARAMS),
         'symm_shit_blur': A.ReplayCompose([
             A.GaussianBlur(blur_limit=(2, 7), p=1.0),
             A.Affine(translate_percent={'x': 0.2, 'y':  0.05}, p=1.0, border_mode=cv2.BORDER_CONSTANT, fill=(0, 0, 0))
@@ -244,10 +248,13 @@ def main():
     for pair_key, data in tqdm(paired_annotations.items(), desc="Augmenting Pairs"):
         dm_image = cv2.imread(data['dm_path'], cv2.IMREAD_COLOR)
         cm_image = cv2.imread(data['cm_path'], cv2.IMREAD_COLOR)
-        
         if dm_image is None or cm_image is None:
             print(f"Warning: Could not read images for pair {pair_key}. Skipping.")
             continue
+        
+        if Hyperparameter.use_clahe:
+            dm_image = clahe(dm_image)
+            cm_image = clahe(cm_image)
             
         original_bboxes_coords = [b[:4] for b in data['bboxes']]
         original_labels = [b[4] for b in data['bboxes']]
@@ -271,9 +278,6 @@ def main():
         base_dm_name = data['base_dm_name'] + "_resized" + OUTPUT_EXTENSION
         base_cm_name = data['base_cm_name'] + "_resized" + OUTPUT_EXTENSION
 
-        if Hyperparameter.use_clahe:
-            resized_dm_image = clahe(resized_dm_image)
-            resized_cm_image = clahe(resized_cm_image)
 
         cv2.imwrite(os.path.join(OUTPUT_IMG_DIR, base_dm_name), resized_dm_image)
         cv2.imwrite(os.path.join(OUTPUT_IMG_DIR, base_cm_name), resized_cm_image)
@@ -364,10 +368,6 @@ def main():
 
             aug_dm_name = f"{data['base_dm_name']}_{aug_name}{OUTPUT_EXTENSION}"
             aug_cm_name = f"{data['base_cm_name']}_{aug_name}{OUTPUT_EXTENSION}"
-
-            if Hyperparameter.use_clahe:
-                aug_dm_image = clahe(aug_dm_image)
-                aug_cm_image = clahe(aug_cm_image)
                 
             cv2.imwrite(os.path.join(OUTPUT_IMG_DIR, aug_dm_name), aug_dm_image)
             cv2.imwrite(os.path.join(OUTPUT_IMG_DIR, aug_cm_name), aug_cm_image)

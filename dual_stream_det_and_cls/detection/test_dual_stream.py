@@ -14,12 +14,14 @@ from .utils.utils_bbox import decodebox, non_max_suppression
 from .utils.utils_map import get_map
 from ..immutables import Hyperparameter, ProjectPaths
 from ..medical_image_utils import min_max_normalise
+
+VAL_ANN_PATH = "/home/monstalinux/final-project/dual_stream_det_and_cls/detection/detection_logs/dual_stream/D_synergistic_baseAugs_elastic_gridshuffle_cutout_no_clahe/val_annotations_fold_4.txt"
 class DualStreamDetector(object):
     """
     Class to perform inference using a trained DualStreamRetinaNet model.
     """
     _defaults = {
-        "model_path"        : ProjectPaths.best_and_last_det_model + '/fold_4/s2_best_ep029-loss0.003-val_loss0.408-val_map0.630.pth',
+        "model_path"        : ProjectPaths.best_and_last_det_model + '/D_synergistic_baseAugs_elastic_gridshuffle_cutout_no_clahe/fold_4/s2_best_ep021-loss0.006-val_loss0.281-val_map0.641.pth',
         "input_shape"       : Hyperparameter.input_shape,
         "confidence"        : 0.0, 
         "draw_confidence"   : 0.5, # Confidence threshold for drawing bounding boxes.
@@ -225,7 +227,7 @@ if __name__ == "__main__":
     detector = DualStreamDetector()
     
     test_on_train = False
-    test_annotation_path = ProjectPaths.val_annotations_fold_4
+    test_annotation_path = VAL_ANN_PATH
     try:
         os.mkdir(ProjectPaths.predictions)
         print(f"Directory '{ProjectPaths.predictions}' created successfully.")
@@ -316,40 +318,112 @@ if __name__ == "__main__":
         output_path = ProjectPaths.predictions + f"/pred_{base_name}.jpg"
         result_image.save(output_path)
 
+
     # --- 6. Calculate and Report Metrics ---
     print("\n--- Evaluation Results ---")
 
-    # Detection Metrics (AP)
-    print("Calculating Average Precision (AP) for 'mass' detection...")
-    get_map(MINOVERLAP=0.5, draw_plot=False, path=str(map_out_path))
+    # --- Detection Metrics (AP) ---
+    def extract_metrics(results_path, class_name="mass"):
+        metrics = {}
+        try:
+            with open(results_path, "r") as f:
+                for line in f:
+                    if f"{class_name} AP" in line:
+                        metrics['AP'] = float(line.split('%')[0]) / 100.0
+                    elif f"{class_name} F1-score" in line:
+                        metrics['F1'] = float(line.split(':')[1].strip()) / 100.0
+                    elif f"{class_name} Recall" in line:
+                        metrics['Recall'] = float(line.split(':')[1].strip()) / 100.0
+                    elif f"{class_name} Precision" in line:
+                        metrics['Precision'] = float(line.split(':')[1].strip()) / 100.0
+        except Exception:
+            pass
+        return metrics
 
-    mass_ap = 0.0
-    try:
-        with open(map_out_path + "/results/results.txt", "r") as f:
-            for line in f:
-                if "mass AP" in line:
-                    mass_ap = float(line.split('%')[0]) / 100.0
-                    break
-        det_results_str = (
-            f"Object Detection Metrics:\n"
-            f"----------------------------------------------------------\n"
-            f"  - Average Precision (AP) for 'mass' class (IoU=0.5): {mass_ap:.4f}\n"
-            f"----------------------------------------------------------\n"
-        )
-    except Exception as e:
-        det_results_str = (
-            f"Object Detection Metrics:\n"
-            f"----------------------------------------------------------\n"
-            f"  - Could not calculate AP. Error: {e}\n"
-            f"----------------------------------------------------------\n"
-        )
-    print(det_results_str)
+    ap_results = {}
+    detailed_metrics = {}
+
+    # Create results directory and subdirectories
+    results_dir = os.path.join(map_out_path, "results")
+    if os.path.exists(results_dir):
+        shutil.rmtree(results_dir)
+    os.makedirs(results_dir, exist_ok=True)
+
+    # AP at MINOVERLAP=0
+    print("Calculating Average Precision (AP) for 'mass' detection (MINOVERLAP=0)...")
+    get_map(MINOVERLAP=0, draw_plot=False, path=str(map_out_path))
+    metrics_0 = extract_metrics(os.path.join(results_dir, "results.txt"))
+    ap_results["AP0"] = metrics_0.get('AP')
+    detailed_metrics["0.00"] = metrics_0
+
+    # AP at MINOVERLAP=1
+    print("Calculating Average Precision (AP) for 'mass' detection (MINOVERLAP=1)...")
+    get_map(MINOVERLAP=0.01, draw_plot=False, path=str(map_out_path))
+    metrics_1 = extract_metrics(os.path.join(results_dir, "results.txt"))
+    ap_results["AP1"] = metrics_1.get('AP')
+    detailed_metrics["0.01"] = metrics_1
+
+    # Ensure results directory exists before each calculation
+    os.makedirs(results_dir, exist_ok=True)
     
+    # AP50 (MINOVERLAP=0.50)
+    print("Calculating AP50 (MINOVERLAP=0.50)...")
+    get_map(MINOVERLAP=0.50, draw_plot=False, path=str(map_out_path))
+    metrics_50 = extract_metrics(os.path.join(results_dir, "results.txt"))
+    ap_results["AP50"] = metrics_50.get('AP')
+    detailed_metrics["0.50"] = metrics_50
+
+    # AP@[.50:.05:.95]
+    ap_list = []
+    for ov in np.arange(0.50, 0.96, 0.05):
+        print(f"Calculating AP at MINOVERLAP={ov:.2f}...")
+        os.makedirs(results_dir, exist_ok=True)
+        get_map(MINOVERLAP=ov, draw_plot=False, path=str(map_out_path))
+        metrics = extract_metrics(os.path.join(results_dir, "results.txt"))
+        if metrics.get('AP') is not None:
+            ap_list.append(metrics.get('AP'))
+        detailed_metrics[f"{ov:.2f}"] = metrics
+    
+    if ap_list:
+        ap_results["AP@[.50:.05:.95]"] = np.mean(ap_list)
+    else:
+        ap_results["AP@[.50:.05:.95]"] = None
+
+    # --- Reporting ---
+    det_results_str = (
+        f"Object Detection Metrics:\n"
+        f"----------------------------------------------------------\n"
+        f"  - AP (MINOVERLAP=0): {ap_results['AP0']:.4f}\n"
+        f"  - AP50 (MINOVERLAP=0.50): {ap_results['AP50']:.4f}\n"
+        f"  - AP@[.50:.05:.95]: {ap_results['AP@[.50:.05:.95]']:.4f}\n"
+        f"----------------------------------------------------------\n\n"
+        f"Detailed Metrics for Each IoU Threshold:\n"
+        f"----------------------------------------------------------\n"
+    )
+
+    # Add detailed metrics for each threshold
+    for threshold, metrics in sorted(detailed_metrics.items()):
+        det_results_str += (
+            "IoU Threshold = {}:\n"
+            "  - AP: {:.4f}\n"
+            "  - F1-score: {:.4f}\n"
+            "  - Recall: {:.4f}\n"
+            "  - Precision: {:.4f}\n"
+            "----------------------------------------------------------\n"
+        ).format(
+            threshold,
+            metrics.get('AP', 0.0),
+            metrics.get('F1', 0.0),
+            metrics.get('Recall', 0.0),
+            metrics.get('Precision', 0.0)
+        )
+
+    print(det_results_str)
+
     # Save results to a file
     results_file_path = ProjectPaths.predictions + "/evaluation_results.txt"
     with open(results_file_path, "w") as f:
         f.write("--- Evaluation Results ---\n\n")
-        # f.write(cls_results_str)
         f.write(det_results_str)
     print(f"Evaluation results saved to {results_file_path}")
 

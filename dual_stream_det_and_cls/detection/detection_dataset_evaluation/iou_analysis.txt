@@ -1,0 +1,1601 @@
+--- Starting Analysis of /home/monstalinux/final-project/dual_stream_det_and_cls/detection/dataset_org/annotations.txt ---
+
+--- Image: P102_R_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P102_R_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P103_R_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P103_R_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P105_R_CM_CC ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P105_R_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P106_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P106_R_DM_CC ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P107_R_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P111_R_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P113_L_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P113_L_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P116_R_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P116_R_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P119_L_CM_CC ---
+Number of findings: 4
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0283
+  - Average IoU: 0.0064
+
+--- Image: P119_L_CM_MLO ---
+Number of findings: 7
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0420
+  - Average IoU: 0.0049
+
+--- Image: P11_R_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P11_R_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P121_L_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P122_L_CM_CC ---
+Number of findings: 3
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0458
+  - Average IoU: 0.0153
+
+--- Image: P122_L_CM_MLO ---
+Number of findings: 3
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0453
+  - Average IoU: 0.0151
+
+--- Image: P122_R_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P122_R_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P125_L_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P125_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P126_L_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P126_L_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P128_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P128_L_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P129_L_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P129_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P12_L_CM_CC ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P12_L_CM_MLO ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P132_R_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P134_R_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P13_R_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P142_R_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P142_R_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P143_L_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P146_R_CM_MLO ---
+Number of findings: 4
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P146_R_DM_CC ---
+Number of findings: 5
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0911
+  - Average IoU: 0.0120
+
+--- Image: P148_R_DM_CC ---
+Number of findings: 3
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P148_R_DM_MLO ---
+Number of findings: 3
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P149_L_CM_CC ---
+Number of findings: 5
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P149_L_DM_MLO ---
+Number of findings: 3
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P149_R_CM_CC ---
+Number of findings: 3
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P149_R_CM_MLO ---
+Number of findings: 3
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P152_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P152_L_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P153_L_CM_CC ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P153_L_CM_MLO ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P153_R_CM_MLO ---
+Number of findings: 3
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P155_L_CM_CC ---
+Number of findings: 6
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0761
+  - Average IoU: 0.0161
+
+--- Image: P155_L_CM_MLO ---
+Number of findings: 6
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.3512
+  - Average IoU: 0.0689
+
+--- Image: P156_R_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P15_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P161_L_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P161_L_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P161_R_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P161_R_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P163_R_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P165_R_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P165_R_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P16_R_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P171_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P172_L_CM_CC ---
+Number of findings: 6
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.1401
+  - Average IoU: 0.0260
+
+--- Image: P172_L_CM_MLO ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P172_R_CM_CC ---
+Number of findings: 5
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0984
+  - Average IoU: 0.0272
+
+--- Image: P172_R_CM_MLO ---
+Number of findings: 4
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.3088
+  - Average IoU: 0.0906
+
+--- Image: P174_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P174_L_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P177_L_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P177_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P177_R_CM_MLO ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P177_R_DM_CC ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0785
+  - Maximum IoU: 0.0785
+  - Average IoU: 0.0785
+
+--- Image: P180_R_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P180_R_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P183_L_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P183_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P188_R_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P188_R_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P189_L_DM_CC ---
+Number of findings: 5
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0718
+  - Average IoU: 0.0131
+
+--- Image: P190_L_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P190_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P191_L_CM_CC ---
+Number of findings: 8
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0254
+  - Average IoU: 0.0009
+
+--- Image: P191_L_DM_MLO ---
+Number of findings: 8
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.1031
+  - Average IoU: 0.0139
+
+--- Image: P191_R_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P191_R_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P193_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P196_L_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P196_R_CM_MLO ---
+Number of findings: 3
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P19_L_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P19_L_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P205_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P206_L_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P206_L_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P207_L_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P207_L_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P208_R_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P209_L_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P209_L_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P210_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P210_L_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P211_L_DM_CC ---
+Number of findings: 3
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0178
+  - Average IoU: 0.0059
+
+--- Image: P211_L_DM_MLO ---
+Number of findings: 3
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0728
+  - Average IoU: 0.0243
+
+--- Image: P212_L_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P212_L_DM_MLO ---
+Number of findings: 4
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0587
+  - Average IoU: 0.0098
+
+--- Image: P213_L_CM_MLO ---
+Number of findings: 4
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0983
+  - Average IoU: 0.0330
+
+--- Image: P213_L_DM_CC ---
+Number of findings: 4
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0702
+  - Average IoU: 0.0155
+
+--- Image: P215_L_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P216_R_CM_CC ---
+Number of findings: 3
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.2152
+  - Average IoU: 0.0953
+
+--- Image: P216_R_DM_MLO ---
+Number of findings: 8
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.1627
+  - Average IoU: 0.0219
+
+--- Image: P217_L_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P217_L_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P221_L_CM_CC ---
+Number of findings: 5
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P223_L_CM_CC ---
+Number of findings: 6
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0588
+  - Average IoU: 0.0069
+
+--- Image: P223_L_DM_MLO ---
+Number of findings: 4
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0065
+  - Average IoU: 0.0011
+
+--- Image: P228_R_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P228_R_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P229_R_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P232_L_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P232_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P238_R_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P238_R_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P239_R_CM_CC ---
+Number of findings: 3
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0862
+  - Average IoU: 0.0287
+
+--- Image: P239_R_CM_MLO ---
+Number of findings: 3
+IoU Stats for this image:
+  - Minimum IoU: 0.0482
+  - Maximum IoU: 0.2097
+  - Average IoU: 0.1268
+
+--- Image: P241_R_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P243_R_CM_MLO ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0648
+  - Maximum IoU: 0.0648
+  - Average IoU: 0.0648
+
+--- Image: P246_R_CM_MLO ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0630
+  - Maximum IoU: 0.0630
+  - Average IoU: 0.0630
+
+--- Image: P247_L_DM_MLO ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P248_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P248_L_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P24_R_CM_MLO ---
+Number of findings: 3
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P24_R_DM_CC ---
+Number of findings: 4
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P251_R_DM_CC ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P251_R_DM_MLO ---
+Number of findings: 3
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P254_R_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P254_R_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P255_L_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P255_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P257_R_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P257_R_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P259_L_CM_MLO ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0161
+  - Maximum IoU: 0.0161
+  - Average IoU: 0.0161
+
+--- Image: P259_L_DM_CC ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0886
+  - Maximum IoU: 0.0886
+  - Average IoU: 0.0886
+
+--- Image: P25_L_DM_MLO ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P260_R_CM_MLO ---
+Number of findings: 3
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0967
+  - Average IoU: 0.0355
+
+--- Image: P260_R_DM_CC ---
+Number of findings: 4
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0548
+  - Average IoU: 0.0117
+
+--- Image: P262_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P263_R_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P263_R_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P264_L_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P264_L_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P265_R_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P266_R_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P266_R_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P267_L_CM_CC ---
+Number of findings: 3
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0964
+  - Average IoU: 0.0411
+
+--- Image: P267_L_CM_MLO ---
+Number of findings: 3
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0639
+  - Average IoU: 0.0390
+
+--- Image: P268_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P268_L_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P269_L_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P269_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P271_L_CM_MLO ---
+Number of findings: 3
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0062
+  - Average IoU: 0.0021
+
+--- Image: P271_L_DM_CC ---
+Number of findings: 3
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.2079
+  - Average IoU: 0.0693
+
+--- Image: P271_R_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P271_R_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P273_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P273_L_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P274_L_CM_CC ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P274_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P275_L_DM_CC ---
+Number of findings: 3
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.3403
+  - Average IoU: 0.1336
+
+--- Image: P275_L_DM_MLO ---
+Number of findings: 3
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0357
+  - Average IoU: 0.0119
+
+--- Image: P276_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P276_L_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P277_L_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P277_L_DM_MLO ---
+Number of findings: 3
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P278_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P278_L_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P280_L_CM_CC ---
+Number of findings: 5
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.1934
+  - Average IoU: 0.0521
+
+--- Image: P280_L_DM_MLO ---
+Number of findings: 8
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.2091
+  - Average IoU: 0.0291
+
+--- Image: P281_R_CM_CC ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P281_R_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P283_L_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P283_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P284_R_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P284_R_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P285_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P285_L_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P287_L_CM_CC ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P287_R_DM_CC ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P287_R_DM_MLO ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P289_R_DM_CC ---
+Number of findings: 4
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0274
+  - Average IoU: 0.0046
+
+--- Image: P289_R_DM_MLO ---
+Number of findings: 4
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0335
+  - Average IoU: 0.0093
+
+--- Image: P290_R_CM_CC ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0160
+  - Maximum IoU: 0.0160
+  - Average IoU: 0.0160
+
+--- Image: P290_R_DM_MLO ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P291_R_CM_CC ---
+Number of findings: 4
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0126
+  - Average IoU: 0.0021
+
+--- Image: P291_R_CM_MLO ---
+Number of findings: 3
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P292_R_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P292_R_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P293_R_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P293_R_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P294_R_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P294_R_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P295_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P295_L_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P296_L_CM_MLO ---
+Number of findings: 4
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P296_L_DM_CC ---
+Number of findings: 5
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P299_R_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P2_R_CM_CC ---
+Number of findings: 8
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P2_R_CM_MLO ---
+Number of findings: 9
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0227
+  - Average IoU: 0.0006
+
+--- Image: P301_L_DM_CC ---
+Number of findings: 4
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P301_L_DM_MLO ---
+Number of findings: 3
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P302_L_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P302_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P303_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P303_L_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P304_R_DM_CC ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0285
+  - Maximum IoU: 0.0285
+  - Average IoU: 0.0285
+
+--- Image: P304_R_DM_MLO ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0646
+  - Maximum IoU: 0.0646
+  - Average IoU: 0.0646
+
+--- Image: P307_L_CM_CC ---
+Number of findings: 4
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.1992
+  - Average IoU: 0.0453
+
+--- Image: P307_L_CM_MLO ---
+Number of findings: 5
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.1081
+  - Average IoU: 0.0188
+
+--- Image: P308_L_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P308_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P309_R_CM_MLO ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P309_R_DM_CC ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P310_L_CM_CC ---
+Number of findings: 8
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.2105
+  - Average IoU: 0.0276
+
+--- Image: P310_L_DM_MLO ---
+Number of findings: 6
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.1185
+  - Average IoU: 0.0131
+
+--- Image: P311_L_CM_CC ---
+Number of findings: 6
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.3803
+  - Average IoU: 0.0560
+
+--- Image: P311_L_DM_MLO ---
+Number of findings: 4
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.4197
+  - Average IoU: 0.1201
+
+--- Image: P312_L_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P312_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P314_L_CM_CC ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P314_L_DM_MLO ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P315_L_DM_CC ---
+Number of findings: 3
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P315_L_DM_MLO ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P316_L_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P316_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P317_L_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P317_L_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P318_R_CM_CC ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0027
+  - Maximum IoU: 0.0027
+  - Average IoU: 0.0027
+
+--- Image: P318_R_CM_MLO ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P319_L_CM_CC ---
+Number of findings: 4
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.1458
+  - Average IoU: 0.0538
+
+--- Image: P319_L_DM_MLO ---
+Number of findings: 4
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0870
+  - Average IoU: 0.0296
+
+--- Image: P319_R_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P319_R_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P322_L_CM_CC ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P322_L_CM_MLO ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0065
+  - Maximum IoU: 0.0065
+  - Average IoU: 0.0065
+
+--- Image: P323_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P323_L_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P325_R_CM_MLO ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P325_R_DM_CC ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P35_L_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P35_L_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P37_L_DM_CC ---
+Number of findings: 3
+IoU Stats for this image:
+  - Minimum IoU: 0.0731
+  - Maximum IoU: 0.1672
+  - Average IoU: 0.1067
+
+--- Image: P37_L_DM_MLO ---
+Number of findings: 3
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.1329
+  - Average IoU: 0.0657
+
+--- Image: P38_R_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P38_R_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P3_L_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P3_L_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P40_L_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P40_L_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P40_R_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P40_R_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P44_R_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P45_L_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P45_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P45_R_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P45_R_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P47_R_DM_CC ---
+Number of findings: 4
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0145
+  - Average IoU: 0.0044
+
+--- Image: P55_R_DM_CC ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P55_R_DM_MLO ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.4015
+  - Maximum IoU: 0.4015
+  - Average IoU: 0.4015
+
+--- Image: P56_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P60_L_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P62_L_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P62_L_DM_MLO ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P62_R_DM_CC ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P62_R_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P64_L_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P64_L_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P64_R_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P65_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P66_L_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P66_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P66_R_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P66_R_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P67_L_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P67_R_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P68_L_CM_CC ---
+Number of findings: 7
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0389
+  - Average IoU: 0.0033
+
+--- Image: P68_L_CM_MLO ---
+Number of findings: 3
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0211
+  - Average IoU: 0.0070
+
+--- Image: P6_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P72_R_CM_CC ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P77_R_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P7_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P81_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P81_L_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P82_L_CM_CC ---
+Number of findings: 4
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0815
+  - Average IoU: 0.0209
+
+--- Image: P82_L_DM_MLO ---
+Number of findings: 5
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0907
+  - Average IoU: 0.0190
+
+--- Image: P89_R_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P89_R_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P93_L_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P93_L_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P94_R_CM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P94_R_CM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P95_L_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P96_R_CM_MLO ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P96_R_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P97_L_CM_MLO ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P97_L_DM_CC ---
+Number of findings: 2
+IoU Stats for this image:
+  - Minimum IoU: 0.0000
+  - Maximum IoU: 0.0000
+  - Average IoU: 0.0000
+
+--- Image: P99_R_DM_CC ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+--- Image: P99_R_DM_MLO ---
+Number of findings: 1
+Not enough findings to calculate IoU.
+
+
+--- Overall Dataset IoU Analysis ---
+Total pairwise IoUs calculated: 680
+Overall Mean IoU: 0.0192
+Overall Median IoU: 0.0000
+Overall Std Dev IoU: 0.0526
+50th percentile: 0.0000
+75th percentile: 0.0000
+90th percentile: 0.0703
+95th percentile: 0.1033
+99th percentile: 0.2942
+
+Histogram of IoU distribution saved to '/iou_distribution.jpg'

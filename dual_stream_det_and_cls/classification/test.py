@@ -154,9 +154,9 @@ def calculate_and_save_metrics(y_true, y_pred, y_scores, image_names, output_dir
 if __name__ == "__main__":
     # --- CONFIGURATION ---
     # Use the best model from your training logs
-    # "/no elastic + harmonized labels + no smoothing + old split + synergistic/cls_best_ep013-loss0.005-f10.914.pth"
-    MODEL_PATH = os.path.join(ProjectPaths.best_and_last_cls_model, "no elastic + harmonized labels + no smoothing + old split + synergistic/cls_best_ep013-loss0.005-f10.914.pth")
-    TEST_ANNOTATIONS_PATH = ProjectPaths.val_annotations_cls 
+    # "~/final-project/dual_stream_det_and_cls/classification/classification_logs/A_synergistic_original_no_smoothing/cls_best_ep001-loss0.742-f10.849.pth"
+    MODEL_PATH = os.path.join(ProjectPaths.dual_stream_cls, "classification_logs/E_conditional_clean_no_smoothing/cls_best_ep001-loss0.693-f10.909.pth")
+    TEST_ANNOTATIONS_PATH = ProjectPaths.test_mdib_annotations_cls
     OUTPUT_DIR = ProjectPaths.dual_stream_cls + "/prediction_results"
     
     # Create output directory if it doesn't exist

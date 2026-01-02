@@ -164,14 +164,14 @@ def main():
 
     # Replicating the augmentations from the detection script.
     augmentations = {
-        # 'rotate20_elastic': A.ReplayCompose([
-        #     A.Rotate(limit=(-20,20), p=1.0, border_mode=cv2.BORDER_CONSTANT, fill=(0,0,0)),
-        #     A.ElasticTransform(p=1.0, alpha=300, sigma=10)
-        # ]),
-        'rotate20': A.ReplayCompose([
+        'rotate20_elastic': A.ReplayCompose([
             A.Rotate(limit=(-20,20), p=1.0, border_mode=cv2.BORDER_CONSTANT, fill=(0,0,0)),
-            # A.ElasticTransform(p=1.0, alpha=300, sigma=10)
+            A.ElasticTransform(p=1.0, alpha=300, sigma=10)
         ]),
+        # 'rotate20': A.ReplayCompose([
+        #     A.Rotate(limit=(-20,20), p=1.0, border_mode=cv2.BORDER_CONSTANT, fill=(0,0,0)),
+        #     # A.ElasticTransform(p=1.0, alpha=300, sigma=10)
+        # ]),
         'hvflip_brightcont': A.Compose([
             A.HorizontalFlip(p=1.0), 
             A.VerticalFlip(p=1.0), 
@@ -185,6 +185,10 @@ def main():
             A.HorizontalFlip(p=1.0),
             A.GaussNoise(std_range=[0.05, 0.1], mean_range=[0, 0],per_channel=False ,noise_scale_factor=1)
         ]),
+        'gridshuffle': A.ReplayCompose([
+            A.RandomGridShuffle(grid=(3,3), p=1.0),
+        ]),
+        'cutout': A.Compose([A.CoarseDropout(num_holes_range=(1,3), hole_height_range=(0.05, 0.15), hole_width_range=(0.1, 0.2), fill=0, p=1.0)]),
     }
     
     new_annotations = []

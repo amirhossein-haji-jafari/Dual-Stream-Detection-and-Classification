@@ -287,8 +287,7 @@ def get_map(MINOVERLAP, draw_plot, path = './map_out', map_show=True):
         
     if os.path.exists(RESULTS_FILES_PATH):
         shutil.rmtree(RESULTS_FILES_PATH)
-    else:
-        os.makedirs(RESULTS_FILES_PATH)
+    os.makedirs(RESULTS_FILES_PATH)
     if draw_plot:
         os.makedirs(os.path.join(RESULTS_FILES_PATH, "AP"))
         os.makedirs(os.path.join(RESULTS_FILES_PATH, "F1"))

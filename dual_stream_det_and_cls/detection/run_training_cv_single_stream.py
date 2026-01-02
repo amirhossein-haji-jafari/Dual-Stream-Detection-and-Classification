@@ -35,70 +35,106 @@ def evaluate_map_on_validation_set(model, val_lines, cuda, save_dir):
 
     detection_class_name = "mass"
     
-    # Determine which stream(s) to evaluate (default 'dm').
     stream_mode = getattr(Hyperparameter, "single_stream_mode", "dm").lower()
 
-    # In single-stream, we evaluate each image from the val set independently
-    val_images_to_process = []
-    for line in val_lines:
-        parts = line.strip().split()
-        if not parts: continue
-        orig = parts[0]
-        if stream_mode == 'both':
-            val_images_to_process.append(orig)
-            val_images_to_process.append(orig.replace("_CM_", "_DM_") if "_CM_" in orig else orig.replace("_DM_", "_CM_"))
-        elif stream_mode == 'cm':
-            if "_CM_" in orig:
-                val_images_to_process.append(orig)
-            else:
-                val_images_to_process.append(orig.replace("_DM_", "_CM_"))
-        elif stream_mode == 'dm':
-            if "_DM_" in orig:
-                val_images_to_process.append(orig)
-            else:
-                val_images_to_process.append(orig.replace("_CM_", "_DM_"))
-        else:
-            val_images_to_process.append(orig)
-            val_images_to_process.append(orig.replace("_CM_", "_DM_") if "_CM_" in orig else orig.replace("_DM_", "_CM_"))
-
-    # Create a lookup for annotations
+    # Create a lookup for annotations keyed by a normalized base name
     annotation_lookup = {}
     for line in val_lines:
         parts = line.strip().split()
-        base_name = os.path.splitext(parts[0])[0].replace("_CM_", "_").replace("_DM_", "_")
-        annotation_lookup[base_name] = [list(map(int, bbox_str.split(',')))[:4] for bbox_str in parts[2:]]
+        if not parts: continue
+        base_name = parts[0].replace("_CM_", "_").replace("_DM_", "_")
+        if base_name not in annotation_lookup:
+            annotation_lookup[base_name] = {
+                'boxes': [list(map(int, bbox_str.split(',')))[:4] for bbox_str in parts[2:]],
+                'original_path': parts[0]
+            }
 
-    for image_name in tqdm(val_images_to_process, desc="Evaluating mAP on validation set"):
-        image_id = Path(image_name).stem
-        base_name_lookup = image_id.replace("_CM_", "_").replace("_DM_", "_")
-        gt_boxes = annotation_lookup.get(base_name_lookup, [])
+    # Determine the set of items to iterate over for evaluation
+    if stream_mode == 'dual_channel':
+        iterable = tqdm(sorted(annotation_lookup.items()), desc="Evaluating mAP on validation set (dual_channel)")
+    else:
+        val_images_to_process = set()
+        for line in val_lines:
+            parts = line.strip().split()
+            if not parts: continue
+            orig = parts[0]
+            if stream_mode == 'both':
+                val_images_to_process.add(orig)
+                val_images_to_process.add(orig.replace("_CM_", "_DM_") if "_CM_" in orig else orig.replace("_DM_", "_CM_"))
+            elif stream_mode == 'cm':
+                val_images_to_process.add(orig if "_CM_" in orig else orig.replace("_DM_", "_CM_"))
+            elif stream_mode == 'dm':
+                val_images_to_process.add(orig if "_DM_" in orig else orig.replace("_CM_", "_DM_"))
+        iterable = tqdm(sorted(list(val_images_to_process)), desc=f"Evaluating mAP on validation set ({stream_mode})")
 
-        image_path = os.path.join(ProjectPaths.det_dataset, image_name)
+    for item in iterable:
+        gt_boxes, image_id, image_data, image_height, image_width = None, None, None, None, None
 
-        try:
-            image = Image.open(image_path)
-        except FileNotFoundError:
-            print(f"Warning: Could not open validation image {image_path}. Skipping.")
-            continue
+        if stream_mode == 'dual_channel':
+            base_name, data = item
+            gt_boxes = data['boxes']
+            original_path = data['original_path']
+            image_id = base_name
+
+            cm_fname = original_path if "_CM_" in original_path else original_path.replace("_DM_", "_CM_")
+            dm_fname = original_path if "_DM_" in original_path else original_path.replace("_CM_", "_DM_")
             
-        image_height, image_width = np.array(np.shape(image)[0:2])
-        # image_data = np.expand_dims(np.transpose(preprocess_input(np.array(resize_image(cvtColor(image), (Hyperparameter.input_shape[1], Hyperparameter.input_shape[0]), False), dtype='float32')), (2, 0, 1)), 0)
-        image_data = np.expand_dims(np.transpose(min_max_normalise(np.array(resize_image(cvtColor(image), (Hyperparameter.input_shape[1], Hyperparameter.input_shape[0]), False), dtype='float32')), (2, 0, 1)), 0)
+            cm_path = os.path.join(ProjectPaths.det_dataset, cm_fname)
+            dm_path = os.path.join(ProjectPaths.det_dataset, dm_fname)
 
-        with torch.no_grad():
-            images = torch.from_numpy(image_data).type(torch.FloatTensor).to(model.device)
-            regression, classification, anchors = model(images, cuda=cuda)
-            decoded_boxes = decodebox(regression[0], anchors[0], Hyperparameter.input_shape)
-            prediction_tensor = torch.cat([decoded_boxes, classification[0]], axis=-1)
-            results = non_max_suppression(prediction_tensor, Hyperparameter.input_shape, (image_height, image_width), False, conf_thres=0.02, nms_thres=0.5)
+            try:
+                cm_image_pil = Image.open(cm_path).convert('L')
+                dm_image_pil = Image.open(dm_path).convert('L')
+            except FileNotFoundError as e:
+                print(f"Warning: Could not open validation image pair for {base_name}. Error: {e}. Skipping.")
+                continue
 
-        with open(os.path.join(map_out_val, "ground-truth", f"{image_id}.txt"), "w") as f:
-            for box in gt_boxes: f.write(f"{detection_class_name} {box[0]} {box[1]} {box[2]} {box[3]}\n")
+            image_height, image_width = cm_image_pil.height, cm_image_pil.width
+            h, w = Hyperparameter.input_shape
 
-        with open(os.path.join(map_out_val, "detection-results", f"{image_id}.txt"), "w") as f:
-            if results[0] is not None:
-                for i, box in enumerate(results[0][:, :4]):
-                    f.write(f"{detection_class_name} {results[0][i, 4]} {int(box[1])} {int(box[0])} {int(box[3])} {int(box[2])}\n")
+            cm_resized = cm_image_pil.resize((w, h), Image.BICUBIC)
+            dm_resized = dm_image_pil.resize((w, h), Image.BICUBIC)
+
+            combined_data = np.zeros((h, w, 3), dtype=np.float32)
+            combined_data[..., 0] = np.array(dm_resized, dtype=np.float32)
+            combined_data[..., 1] = np.array(cm_resized, dtype=np.float32)
+            
+            image_data = np.expand_dims(np.transpose(min_max_normalise(combined_data), (2, 0, 1)), 0)
+
+        else: # Original single-stream logic
+            image_name = item
+            image_id = Path(image_name).stem
+            base_name_lookup = image_id.replace("_CM_", "_").replace("_DM_", "_")
+            gt_boxes = annotation_lookup.get(base_name_lookup, {}).get('boxes', [])
+
+            image_path = os.path.join(ProjectPaths.det_dataset, image_name)
+            try:
+                image = Image.open(image_path)
+            except FileNotFoundError:
+                print(f"Warning: Could not open validation image {image_path}. Skipping.")
+                continue
+            
+            image_height, image_width = np.array(image).shape[0:2]
+            resized_img = resize_image(cvtColor(image), (Hyperparameter.input_shape[1], Hyperparameter.input_shape[0]), False)
+            normalized_img = min_max_normalise(np.array(resized_img, dtype='float32'))
+            image_data = np.expand_dims(np.transpose(normalized_img, (2, 0, 1)), 0)
+
+        # Common inference and result generation part
+        if image_data is not None:
+            with torch.no_grad():
+                images = torch.from_numpy(image_data).type(torch.FloatTensor).to(model.device)
+                regression, classification, anchors = model(images, cuda=cuda)
+                decoded_boxes = decodebox(regression[0], anchors[0], Hyperparameter.input_shape)
+                prediction_tensor = torch.cat([decoded_boxes, classification[0]], axis=-1)
+                results = non_max_suppression(prediction_tensor, Hyperparameter.input_shape, (image_height, image_width), False, conf_thres=0.02, nms_thres=0.5)
+
+            with open(os.path.join(map_out_val, "ground-truth", f"{image_id}.txt"), "w") as f:
+                for box in gt_boxes: f.write(f"{detection_class_name} {box[0]} {box[1]} {box[2]} {box[3]}\n")
+
+            with open(os.path.join(map_out_val, "detection-results", f"{image_id}.txt"), "w") as f:
+                if results[0] is not None:
+                    for i, box in enumerate(results[0][:, :4]):
+                        f.write(f"{detection_class_name} {results[0][i, 4]} {int(box[1])} {int(box[0])} {int(box[3])} {int(box[2])}\n")
 
     get_map(MINOVERLAP=0.5, draw_plot=False, path=str(map_out_val))
     mass_ap = 0.0
@@ -219,6 +255,7 @@ def run_training_stage(stage_name, model, start_epoch, end_epoch, train_gen, val
             current_best_map=best_map_for_stage,
         )
         lr_scheduler.step()
+        torch.cuda.empty_cache()
     
     print(f"{'='*20} FINISHED {stage_name.upper()} {'='*20}\n")
     return last_model_path
@@ -250,7 +287,6 @@ def run_training_for_fold(fold_k):
     log_dir = os.path.join(save_dir, f"loss_{time_str}")
     loss_history = LossHistory(log_dir, model, input_shape=Hyperparameter.input_shape)
 
-    # Which stream to include for this run (expects 'both'/'cm'/'dm' in Hyperparameter.single_stream_mode)
     include_stream_mode = getattr(Hyperparameter, "single_stream_mode", "dm")
 
     # --- STAGE 1 ---
@@ -261,7 +297,7 @@ def run_training_for_fold(fold_k):
     gen_val_s1 = DataLoader(val_dataset_s1, shuffle=False, batch_size=s1_batch_size, num_workers=Hyperparameter.num_workers, pin_memory=True, drop_last=True, collate_fn=single_stream_collate)
     epoch_step_s1, epoch_step_val_s1 = train_dataset_s1.length // s1_batch_size, val_dataset_s1.length // s1_batch_size
 
-    last_model_s1 = run_training_stage("Stage 1", model, 0, 10, gen_s1, gen_val_s1, val_lines, epoch_step_s1, epoch_step_val_s1, Hyperparameter.first_stage_lr, True, save_dir)
+    last_model_s1 = run_training_stage("Stage 1", model, Hyperparameter.first_stage_init_epoch, Hyperparameter.first_stage_end_epoch, gen_s1, gen_val_s1, val_lines, epoch_step_s1, epoch_step_val_s1, Hyperparameter.first_stage_lr, True, save_dir)
     
     # --- STAGE 2 ---
     s2_batch_size = Hyperparameter.second_stage_batch_size
@@ -271,7 +307,7 @@ def run_training_for_fold(fold_k):
     gen_val_s2 = DataLoader(val_dataset_s2, shuffle=False, batch_size=s2_batch_size, num_workers=Hyperparameter.num_workers, pin_memory=True, drop_last=True, collate_fn=single_stream_collate)
     epoch_step_s2, epoch_step_val_s2 = train_dataset_s2.length // s2_batch_size, val_dataset_s2.length // s2_batch_size
 
-    run_training_stage("Stage 2", model, 10, 20, gen_s2, gen_val_s2, val_lines, epoch_step_s2, epoch_step_val_s2, Hyperparameter.second_stage_lr, False, save_dir, initial_weights_path=last_model_s1)
+    run_training_stage("Stage 2", model, Hyperparameter.second_stage_init_epoch, Hyperparameter.second_stage_end_epoch, gen_s2, gen_val_s2, val_lines, epoch_step_s2, epoch_step_val_s2, Hyperparameter.second_stage_lr, False, save_dir, initial_weights_path=last_model_s1)
 
 if __name__ == "__main__":
     NUM_FOLDS = 5

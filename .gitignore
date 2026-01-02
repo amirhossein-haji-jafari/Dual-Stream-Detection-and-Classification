@@ -3,6 +3,7 @@
 **/*.pth
 **/*.pt
 **/*.png
+**/*.identifier
 implementations/head2toe/checkpoints
 implementations/mmcb/previous runs
 implementations/ERetinaNet/VOCdevkit

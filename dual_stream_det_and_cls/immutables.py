@@ -112,9 +112,20 @@ class ProjectPaths:
     cls_dataset: str = dual_stream_cls + "/dataset"
     cls_annotations: str = cls_dataset + "/augmented_cls_annotations.txt"
     train_annotations_cls: str = cls_dataset + "/train_annotations_augmented.txt"
+    train_annotations_cls_org: str = cls_dataset + '/train_annotations_augmented_org.txt'
     val_annotations_cls: str = cls_dataset + "/val_annotations.txt"
+    val_annotations_cls_org: str = cls_dataset + "/val_annotations_org.txt"
     pretrained_cls: str = dual_stream_cls + "/ianpan_mammoscreen.pth"
-
+    # mdib dataset
+    ttrain_lists: str = dual_stream_cls + "/classification_data_preparation/ttrain_lists.txt"
+    ttval_lists: str = dual_stream_cls + "/classification_data_preparation/ttval_lists.txt"
+    ttest_lists: str = dual_stream_cls + "/classification_data_preparation/ttest_lists.txt"
+    train_mdib: str = dual_stream_cls + "/classification_data_preparation/train_mdib.txt"
+    val_mdib: str = dual_stream_cls + "/classification_data_preparation/val_mdib.txt"
+    test_mdib: str = dual_stream_cls + "/classification_data_preparation/test_mdib.txt"
+    train_mdib_annotations_cls: str = cls_dataset + "/train_mdib_annotations_augmented.txt"
+    val_mdib_annotations_cls: str = cls_dataset + "/val_mdib_annotations.txt"
+    test_mdib_annotations_cls: str = cls_dataset + "/test_mdib_annotations.txt"
 
     def __str__(self):
         """Generates a string representation of the project's directory structure."""
@@ -268,11 +279,13 @@ class Hyperparameter:
     # Training parameters
     input_shape: tuple[int, int] = (640, 640)  # Input shape for the model, typically [height, width]
     num_workers: int = 8
-    init_epoch: int = 0
-    end_epoch: int = 10
+    first_stage_init_epoch: int = 0
+    first_stage_end_epoch: int = 10
+    second_stage_init_epoch: int = 10
+    second_stage_end_epoch: int = 25
     first_stage_batch_size: int = 16
     second_stage_batch_size: int = 4
-    single_stream_mode: str = 'dm'
+    single_stream_mode: str = 'dual_channel'
     use_clahe: bool = False
 
     # Learning rates

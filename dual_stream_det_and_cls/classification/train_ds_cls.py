@@ -385,5 +385,6 @@ if __name__ == "__main__":
                 num_classes
             )
             lr_scheduler.step()
+            torch.cuda.empty_cache()
     else:
         print("Training did not start due to missing training or validation data.")

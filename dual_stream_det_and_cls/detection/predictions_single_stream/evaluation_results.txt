@@ -1,0 +1,74 @@
+Object Detection Metrics (DUAL_CHANNEL Stream):
+----------------------------------------------------------
+  - AP (MINOVERLAP=0): 0.5289
+  - AP50 (MINOVERLAP=0.50): 0.3406
+  - AP@[.50:.05:.95]: 0.1491
+----------------------------------------------------------
+
+Detailed Metrics:
+IoU Threshold = 0.00:
+  - AP: 0.5289
+  - F1: 0.0000
+  - Recall: 0.0000
+  - Precision: 0.0000
+-------------------
+IoU Threshold = 0.50:
+  - AP: 0.3406
+  - F1: 0.0000
+  - Recall: 0.0000
+  - Precision: 0.0000
+-------------------
+IoU Threshold = 0.55:
+  - AP: 0.3317
+  - F1: 0.0000
+  - Recall: 0.0000
+  - Precision: 0.0000
+-------------------
+IoU Threshold = 0.60:
+  - AP: 0.2841
+  - F1: 0.0000
+  - Recall: 0.0000
+  - Precision: 0.0000
+-------------------
+IoU Threshold = 0.65:
+  - AP: 0.2136
+  - F1: 0.0000
+  - Recall: 0.0000
+  - Precision: 0.0000
+-------------------
+IoU Threshold = 0.70:
+  - AP: 0.1295
+  - F1: 0.0000
+  - Recall: 0.0000
+  - Precision: 0.0000
+-------------------
+IoU Threshold = 0.75:
+  - AP: 0.0932
+  - F1: 0.0000
+  - Recall: 0.0000
+  - Precision: 0.0000
+-------------------
+IoU Threshold = 0.80:
+  - AP: 0.0568
+  - F1: 0.0000
+  - Recall: 0.0000
+  - Precision: 0.0000
+-------------------
+IoU Threshold = 0.85:
+  - AP: 0.0296
+  - F1: 0.0000
+  - Recall: 0.0000
+  - Precision: 0.0000
+-------------------
+IoU Threshold = 0.90:
+  - AP: 0.0081
+  - F1: 0.0000
+  - Recall: 0.0000
+  - Precision: 0.0000
+-------------------
+IoU Threshold = 0.95:
+  - AP: 0.0038
+  - F1: 0.0000
+  - Recall: 0.0000
+  - Precision: 0.0000
+-------------------

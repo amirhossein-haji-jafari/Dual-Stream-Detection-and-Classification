@@ -1,3 +1,0 @@
-Class distributions: {'Normal': '41.48%', 'Malignant': '33.00%', 'Benign': '25.52%'}
-Training set distribution: {'Normal': '39.63%', 'Malignant': '32.68%', 'Benign': '27.69%'}
-Validation set distribution: {'Normal': '47.30%', 'Malignant': '34.02%', 'Benign': '18.67%'}

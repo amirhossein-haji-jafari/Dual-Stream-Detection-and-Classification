@@ -14,11 +14,13 @@ import numpy as np
 
 AUGMENTATION_SUFFIXES = [
     '_resized',
-    '_rotate20',
     "_hflip_noise",
     "_hvflip_brightcont",
     "_symm_shit_blur",
-    # '_rotate20_elastic',
+    '_rotate20_elastic',
+    "_gridshuffle",
+    "_cutout",
+    # '_rotate20',
 ]
 
 

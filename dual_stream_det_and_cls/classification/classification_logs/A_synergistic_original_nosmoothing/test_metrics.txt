@@ -1,0 +1,47 @@
+--- Model Evaluation Metrics ---
+
+1. Confusion Matrix
+----------------------------------------
+                 | Predicted Benign | Predicted Malignant
+-----------------|------------------|--------------------
+Actual Benign    | TN = 26           | FP = 8             
+Actual Malignant | FN = 13           | TP = 59            
+----------------------------------------
+
+2. Key Components
+   - True Positives (TP):  59 (Malignant correctly identified)
+   - True Negatives (TN):  26 (Benign correctly identified)
+   - False Positives (FP): 8 (Benign classified as Malignant)
+   - False Negatives (FN): 13 (Malignant classified as Benign)
+
+3. Performance Metrics
+   - Accuracy:           0.8019
+   - Precision (PPV):    0.8806
+   - Recall (Sensitivity): 0.8194
+   - F1-Score:           0.8489
+   - AUC:                0.7982
+   - NPV:                0.6667
+
+4. Misclassified Images
+----------------------------------------
+- P107_R_CM_CC_resized.jpg: Actual (Malignant), Predicted (Benign)
+- P299_R_CM_MLO_resized.jpg: Actual (Malignant), Predicted (Benign)
+- P103_R_CM_MLO_resized.jpg: Actual (Benign), Predicted (Malignant)
+- P301_L_CM_MLO_resized.jpg: Actual (Benign), Predicted (Malignant)
+- P320_L_CM_CC_resized.jpg: Actual (Malignant), Predicted (Benign)
+- P145_L_CM_MLO_resized.jpg: Actual (Malignant), Predicted (Benign)
+- P145_L_CM_CC_resized.jpg: Actual (Malignant), Predicted (Benign)
+- P99_R_CM_MLO_resized.jpg: Actual (Malignant), Predicted (Benign)
+- P298_L_CM_CC_resized.jpg: Actual (Malignant), Predicted (Benign)
+- P265_R_CM_CC_resized.jpg: Actual (Malignant), Predicted (Benign)
+- P298_L_CM_MLO_resized.jpg: Actual (Malignant), Predicted (Benign)
+- P64_L_CM_CC_resized.jpg: Actual (Benign), Predicted (Malignant)
+- P98_L_CM_MLO_resized.jpg: Actual (Benign), Predicted (Malignant)
+- P91_L_CM_MLO_resized.jpg: Actual (Benign), Predicted (Malignant)
+- P83_L_CM_MLO_resized.jpg: Actual (Malignant), Predicted (Benign)
+- P98_L_CM_CC_resized.jpg: Actual (Benign), Predicted (Malignant)
+- P301_L_CM_CC_resized.jpg: Actual (Benign), Predicted (Malignant)
+- P118_L_CM_CC_resized.jpg: Actual (Benign), Predicted (Malignant)
+- P320_L_CM_MLO_resized.jpg: Actual (Malignant), Predicted (Benign)
+- P83_L_CM_CC_resized.jpg: Actual (Malignant), Predicted (Benign)
+- P99_R_CM_CC_resized.jpg: Actual (Malignant), Predicted (Benign)

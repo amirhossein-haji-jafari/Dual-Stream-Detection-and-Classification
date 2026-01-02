@@ -20,20 +20,21 @@ import cv2
 import matplotlib.pyplot as plt
 from tqdm import tqdm
 
-# --- Project Imports ---
-# Assuming the script is run from a location where this path is valid
-from immutables import ProjectPaths
+
+from ...immutables import ProjectPaths
 from ...medical_image_utils import get_segmented_image, alpha_blend
-from detection_data_preparation.detection_dataset_definitions import mass_union_mass_enhancement, aligned_image_names
+from ..detection_data_preparation.detection_dataset_definitions import mass_union_mass_enhancement, aligned_image_names
 
 
 # Define the suffixes for the different augmentations
 AUGMENTATION_SUFFIXES = [
-    '_resized',
-    '_rotate20',
+    # '_resized',
+    '_rotate20_elastic',
     "_hvflip_brightcont",
-    "_symm_shit_blur",
     "_hflip_noise",
+    "_symm_shit_blur",
+    "_gridshuffle",
+    '_cutout',
     # '_rotate20_elastic',
     # '_hflip',
     # '_vflip',
